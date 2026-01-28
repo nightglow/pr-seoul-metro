@@ -1,0 +1,463 @@
+@charset "UTF-8";
+
+@import url(jquery-ui.css);
+@import url(swiper-bundle.min.css);
+@import url(reset.css);
+@import url(font.css);
+
+
+
+/* setting */
+.setting {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px 20px;
+    gap: 10px;
+}
+.setting li {
+    width: 100%;
+    display: block;
+}
+/* //setting */
+
+
+/* 접근권한 설정 */
+.area_access {
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+}
+.area_access li {
+    width: 100%;
+    display: block;
+}
+.access {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    position: relative;
+}
+
+.access > .ico_acc01 {width: 100%;display: block;font-size: 17rem;font-weight: 400;line-height: 1;color: #020C15D1;padding-left: 40px;}
+.access > .ico_acc01::before {content: '';position: absolute;top : 50%;left: 20px;transform: translateY(-50%);width: 28px;height: 28px;background: url('../img/ico_setting_d_07.svg') no-repeat center/100%;}
+.access > .ico_acc01.active::before {background-image: url('../img/ico_setting_on_07.svg');}
+
+.access > .ico_acc02 {width: 100%;display: block;font-size: 17rem;font-weight: 400;line-height: 1;color: #020C15D1;padding-left: 40px;}
+.access > .ico_acc02::before {content: '';position: absolute;top : 50%;left: 20px;transform: translateY(-50%);width: 28px;height: 28px;background: url('../img/ico_setting_d_08.svg') no-repeat center/100%;}
+.access > .ico_acc02.active::before {background-image: url('../img/ico_setting_on_08.svg');}
+
+.access > .ico_acc03 {width: 100%;display: block;font-size: 17rem;font-weight: 400;line-height: 1;color: #020C15D1;padding-left: 40px;}
+.access > .ico_acc03::before {content: '';position: absolute;top : 50%;left: 20px;transform: translateY(-50%);width: 28px;height: 28px;background: url('../img/ico_setting_d_09.svg') no-repeat center/100%;}
+.access > .ico_acc03.active::before {background-image: url('../img/ico_setting_on_09.svg');}
+
+.access > .ico_acc04 {width: 100%;display: block;font-size: 17rem;font-weight: 400;line-height: 1;color: #020C15D1;padding-left: 40px;}
+.access > .ico_acc04::before {content: '';position: absolute;top : 50%;left: 20px;transform: translateY(-50%);width: 28px;height: 28px;background: url('../img/ico_setting_d_10.svg') no-repeat center/100%;}
+.access > .ico_acc04.active::before {background-image: url('../img/ico_setting_on_10.svg');}
+
+.access > .ico_acc05 {width: 100%;display: block;font-size: 17rem;font-weight: 400;line-height: 1;color: #020C15D1;padding-left: 40px;}
+.access > .ico_acc05::before {content: '';position: absolute;top : 50%;left: 20px;transform: translateY(-50%);width: 28px;height: 28px;background: url('../img/ico_setting_d_11.svg') no-repeat center/100%;}
+.access > .ico_acc05.active::before {background-image: url('../img/ico_setting_on_11.svg');}
+
+.access > .ico_acc06 {width: 100%;display: block;font-size: 17rem;font-weight: 400;line-height: 1;color: #020C15D1;padding-left: 40px;}
+.access > .ico_acc06::before {content: '';position: absolute;top : 50%;left: 20px;transform: translateY(-50%);width: 28px;height: 28px;background: url('../img/ico_setting_d_12.svg') no-repeat center/100%;}
+.access > .ico_acc06.active::before {background-image: url('../img/ico_setting_on_12.svg');}
+
+/* //접근권한 설정 */
+
+
+/* 드래그 앤 드롭 */
+.app_menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    /* padding: 16px; */
+}
+.app_item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.app_item.over .ico {
+    border: 2px dashed #4a90d9;
+}
+.app_item .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 15rem;
+    font-weight: 500;
+    line-height: 1;
+    color: #2B3942;
+    text-align: center;
+    margin-top: 6px;
+}
+.app_item>.ico {
+    width: 74px;
+    height: 74px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .1);
+}
+.app_item>.ico.app01::before {content: '';width: 36px;height: 36px;background: url('../img/ico_app01.svg') no-repeat center/100%;}
+.app_item>.ico.app02::before {content: '';width: 36px;height: 36px;background: url('../img/ico_app02.svg') no-repeat center/100%;}
+.app_item>.ico.app03::before {content: '';width: 36px;height: 36px;background: url('../img/ico_app03.svg') no-repeat center/100%;}
+.app_item>.ico.app04::before {content: '';width: 36px;height: 36px;background: url('../img/ico_app04.svg') no-repeat center/100%;}
+.app_item>.ico.app05::before {content: '';width: 36px;height: 36px;background: url('../img/ico_app05.svg') no-repeat center/100%;}
+.app_item>.ico.app06::before {content: '';width: 36px;height: 36px;background: url('../img/ico_app06.svg') no-repeat center/100%;}
+.app_item>.ico.app07::before {content: '';width: 36px;height: 36px;background: url('../img/ico_app07.svg') no-repeat center/100%;}
+.app_item>.ico.app08::before {content: '';width: 36px;height: 36px;background: url('../img/ico_app08.svg') no-repeat center/100%;}
+.app_item>.ico.app09::before {content: '';width: 36px;height: 36px;background: url('../img/ico_app09.svg') no-repeat center/100%;}
+.app_item>.ico.app10::before {content: '';width: 36px;height: 36px;background: url('../img/ico_app10.svg') no-repeat center/100%;}
+/* //드래그 앤 드롭 */
+
+
+/* banner */
+.banner {
+    width: 100%;
+    display: block;
+}
+.banner-swiper {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding-top: 200px;
+    /* border: 1px solid red; */
+}
+.banner_item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.banner_img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0 20px; */
+}
+.banner_img img {
+    /* width: 340px; */
+    width: 100%;
+    max-height: 90px;
+}
+
+.banner-swiper .swiper-pagination {position: relative;margin-top: 12px;}
+.banner-swiper .swiper-pagination-bullet {width: 8px;height: 8px;background: #ccc;opacity: 1;}
+.banner-swiper .swiper-pagination-bullet-active {width: 20px;border-radius: 4px;background: #333;}
+/* //banner */
+
+
+
+.splash {
+    width: 100%;
+    height: 100%;
+    display: block;
+    
+    background-image: url('../img/img_splash_m.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% 327px;
+    background-color: #EBF0F5;
+}
+
+.splash .area_contents01 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    
+    margin-top: 128px;
+    padding-left: 52px;
+    box-sizing: border-box;
+}
+.splash .area_contents01 .logo_txt01 {
+    width: 100%;
+    display: block;
+    margin-top: 19px;
+}
+.splash .area_contents01 .logo_txt01 .txt01{
+    width: 100%;
+    display: block;
+
+    font-family: "TheJamsil";
+    font-size: 42rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #0A1648;
+}
+.splash .area_contents01 .logo_02 {
+    width: 100%;
+    display: block;
+    margin-top: 56px;
+}
+.splash .area_contents01 .logo_txt02 {
+    width: 100%;
+    display: block;
+    margin-top: 15px;
+}
+.splash .area_contents01 .logo_txt02 .txt01{
+    width: 100%;
+    display: block;
+
+    font-size: 13rem;
+    font-weight: 400;
+    line-height: 23px;
+    color: #505B66;
+}
+
+
+
+/* login */
+.login {
+    width: 100%;
+    height: 100%;
+    display: block;
+    
+    background-image: url('../img/img_splash_m.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% 327px;
+    background-color: #EBF0F5;
+}
+
+.login > .area_content01 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap : 59px 0;
+}
+.login > .area_content01 .left_box {
+    width: 100%;
+    display: block;
+}
+.login > .area_content01 .left_box .area_tit01 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 72px;
+    padding-left: 49px;
+}
+.login > .area_content01 .left_box .area_tit01 .logo_01 {
+    width: 100%;
+    display: block;
+}
+.login > .area_content01 .left_box .area_tit01 .logo_txt01 {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+.login > .area_content01 .left_box .area_tit01 .logo_txt01 .txt01{
+    width: 100%;
+    display: block;
+
+    font-family: "TheJamsil";
+    font-size: 35rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -4%;
+    color: #0A1648;
+}
+.login > .area_content01 .right_box {
+    width: 100%;
+    height: 100%;
+    padding: 0 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px 0;
+}
+.login .area_content01 .right_box .area_tit01 {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px 0;
+}
+.login .area_content01 .right_box .area_content01 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.login .area_content01 .right_box .area_content01 .logo_02{
+    width: 100%;
+    
+    display: block;
+    margin-top: auto;
+    margin-bottom: 38px;
+    text-align: center;
+}
+.login .group_tit01 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+}
+.login .group_tit01 .left_box01 {
+    width: 100%;
+    display: flex;
+    align-items:center;
+}
+.login .group_tit01 .left_box01 .txt01 {
+    width: max-content;
+    display: inline-block;
+
+    font-size: 15rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #4D555C;
+}
+.login .group_tit01 .left_box01 .txt02 {
+    width: max-content;
+    display: inline-block;
+
+    font-size: 15rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #1F5EFF;
+}
+.login .group_tit01 .line {
+    width: 2px;
+    height: 16px;
+    display: inline-block;
+    background-color: #CDCDCD;
+    margin: 0 11px;
+}
+.login .group_tit01 .right_box01 {
+    width: 100%;
+    display: block;
+}
+/* // login */
+
+
+
+.myapp01 {
+    width: calc(100% - 40px) ;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+
+    padding-top:12px;
+    padding-bottom: 30px;
+}
+.myapp01 .left_box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 20px; */
+}
+.myapp01 .left_box .area_tit01 {
+    width: 100%;
+    display: block;
+}
+.myapp01 .left_box .area_tit01 .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 17rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #191B1D;
+}
+.myapp01 .left_box .area_content01 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.myapp01 .left_box .area_content01 .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 15rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #191B1D;
+    position: relative;
+    padding-right: 14px;
+}
+.myapp01 .left_box .area_content01 .txt01::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 11px;
+    background: url('../img/ico_arr_left.svg') no-repeat center/100%;
+}
+.myapp01 .right_box {
+    width: 100%;
+    display: block;
+}
+
+.myapp02 {
+    width: 100% ;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0 20px;
+
+    padding-top:12px;
+    padding-bottom: 30px;
+}
+.myapp02 .left_box {
+    width: 100%;
+    display: block;
+    padding: 10px 20px 20px 20px;
+}
+.myapp02 .left_box .area_tit01 {
+    width: 100%;
+    display: block;
+
+    font-size: 20rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #2C333B;
+}
+.myapp02 .right_box {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #EBF0F5;
+    padding: 26px 20px;
+    min-height: 500px;
+}
+
+/* 픽스 버튼 영역 */
+.area_footer {
+    padding: 32px 16px 16px 18px;
+}
+
+
+
+@media (min-width: 768px) {
+    .app_menu { 
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+}
