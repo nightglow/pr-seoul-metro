@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-@import url(jquery-ui.css);
-@import url(swiper-bundle.min.css);
-@import url(reset.css);
-@import url(font.css);
-
-
 
 /* setting */
 .setting {
