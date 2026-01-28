@@ -1,0 +1,75 @@
+@import url(../pub/css/reset.css);
+@import url(../pub/css/font.css);
+
+html {
+    height: 100%;
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Pretendard';
+    font-size: 1.6rem;
+}
+
+/*  */
+.wrap {
+    margin: 0 20px;
+    margin-bottom: 50px;
+}
+
+caption {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+h3 {
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+thead tr th {
+    border: 1px solid #ececec;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #ccc;
+}
+
+tbody tr td {
+    border: 1px solid #ececec;
+    padding: 10px 20px;
+    border-top: 0;
+    vertical-align: middle;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #f8f8f8;
+}
+
+tbody tr:last-child td {
+    border-bottom: 1px solid #ccc;
+}
+
+
+.lv01 {width: 10%;}
+.lv02 {width: 15%;}
+.lv03 {width: 14%;}
+.lv04 {width: 14%;}
+.lv05 {width: 4%;}
+.lv06 {width: 10%;}
+.lv07 {width: 8%;}
+.lv08 {width: 5%;}
+.lv09 {width: 20%;}
+
+.tac {
+    text-align: center;
+}
