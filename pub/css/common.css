@@ -21,6 +21,7 @@ body {
     font-family: "Pretendard GOV", -apple-system, BlinkMacSystemFont, "Malgun Gothic", sans-serif;
 }
 
+
 .mt20 {margin-top: 20px;}
 
 html.menu_open, body.menu_open{ overflow:hidden; }
@@ -337,6 +338,44 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     background-image: url('../img/ico_eye_on.svg');
 }
 /* //input */
+
+.common_inp03 {width: 100%;display: block;position: relative;}
+.common_inp03 > .inp_pw {
+    width: 100%;
+    height: 22px;
+    display: block;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.common_inp03 .btn_pw {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    right: 0;   
+    transform: translateY(-50%);
+    background: url('../img/ico_eye_d.svg') no-repeat center / 100%;
+    cursor: pointer;
+}
+.common_inp03:has(.inp_pw:focus) .btn_pw {
+    background-image: url('../img/ico_eye_f.svg');
+}
+.common_inp03.active .btn_pw {
+    background-image: url('../img/ico_eye_on.svg');
+}
+.common_inp03 > input[type='text'],
+.common_inp03 > input[type='password'] {
+    border: 1px solid transparent;
+}
+.common_inp03 > input[type='text'],
+.common_inp03 > input[type='password']:focus  {
+    border: 1px solid transparent;
+}
+
+
+
+
 
 /* Bottom Sheet */
 .dim {
@@ -822,4 +861,19 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     background-repeat: no-repeat;
     background-position: center center;
     right: 10.5px;
+}
+
+
+/* 픽스 버튼 영역 */
+.area_footer {
+    padding: 32px 16px 16px 18px;
+}
+.area_footer01 {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 0 8px;
+
+    padding: 32px 20px 18px 20px;
 }

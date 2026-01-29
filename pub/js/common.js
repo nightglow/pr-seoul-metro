@@ -19,10 +19,7 @@ $(function () {
         }
     });
     
-
     password.init();
-
-
 });
 
 
@@ -88,14 +85,8 @@ const Tab = {
 // 
 const Alert = {
     get: (id) => document.querySelector(`[data-alert="${id}"]`),
-
-    open(id) {
-        this.get(id)?.classList.add('active');
-    },
-
-    close(id) {
-        this.get(id)?.classList.remove('active');
-    }
+    open(id)  {this.get(id)?.classList.add('active');},
+    close(id) {this.get(id)?.classList.remove('active');}
 };
 
 
@@ -206,21 +197,23 @@ const DragDrop = {
 // 패스워드
 const password = {
     init() {
-        this.toggleBtn = document.querySelector('.btn_pw');
-        if (!this.toggleBtn) return;
-        
-        this.input = document.querySelector('.inp_pw');
-        if (!this.input) return;
-        
         this.bindEvents();
     },
     bindEvents() {
-        this.toggleBtn.addEventListener('click', () => this.toggle());
+        document.addEventListener('click', (e) => {
+            const btn = e.target.closest('.btn_pw');
+            if (!btn) return;
+            
+            this.toggle(btn);
+        });
     },
-    toggle() {
-        const isPassword = this.input.type === 'password';
-        this.input.type = isPassword ? 'text' : 'password';
-        this.toggleBtn.closest('.common_inp02').classList.toggle('active', isPassword);
+    toggle(btn) {
+        const parent = btn.closest('div');
+        const input = parent.querySelector('.inp_pw');
+        
+        const isPassword = input.type === 'password';
+        input.type = isPassword ? 'text' : 'password';
+        parent.classList.toggle('active', isPassword);
     }
 };
 

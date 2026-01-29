@@ -450,7 +450,6 @@
     margin-top: 10px;
     display: block;
     padding-bottom: 130px;
-
 }
 .area_terms .tit01 {
     width: 100%;
@@ -524,25 +523,108 @@
 }
 /* //개인정보 수집 */
 
-.mt4 {margin-top: 4px;}
-.mt10 {margin-top: 10px;}
 
 
-/* 픽스 버튼 영역 */
-.area_footer {
-    padding: 32px 16px 16px 18px;
+/* 비밀번호 등록,찾기 */
+.area_regist_pw {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px 0;
 }
-.area_footer01 {
+.area_regist_pw .left_box {
     width: 100%;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
-    gap: 0 8px;
 
-    padding: 32px 20px 18px 20px;
+    flex-direction: column;
+}
+.area_regist_pw .left_box .txt01 {
+    width: 100%;
+    display: block;
+    font-size: 20rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #2C333B;
+    text-align: center;
+}
+.area_regist_pw .left_box .txt02 {
+    width: 100%;
+    display: block;
+    font-size: 17rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #2C333B;
+    text-align: center;
+}
+
+.area_regist_check {
+    width: 100%;
+    display: block;
+}
+
+.area_regist_check li + li {
+    margin-top: 12px;
 }
 
 
+.mt4 {margin-top: 4px;}
+.mt10 {margin-top: 10px;}
+.mt70 {margin-top: 70px;}
+
+
+
+.f_group02 {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.f_group02 > .area_tit01 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 12px 20px 14px 20px;
+    border: 1px solid #8597A880;
+    border-radius: 8px;
+}
+.f_group02 > .area_tit01:has(.inp_pw:focus) {
+    border: 1px solid #8597A880;
+}
+.f_group02 > .area_tit01 .left_box02 {
+    width: 100%;
+    display: flex;
+    gap: 0 4px;
+}
+.f_group02 > .area_tit01 .left_box02 .txt01 {
+    width: max-content;
+    display: block;
+    flex-shrink: 0;
+
+    font-size: 15rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #020C15B8;
+}
+.f_group02 > .area_tit01 .left_box02 .txt02 {
+    width: 100%;
+    display: block;
+
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #FF5930;
+}
+.f_group02 > .area_tit01 .right_box02 {
+    width: 100%;
+    display: flex;
+}
 
 
 
