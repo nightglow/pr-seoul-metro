@@ -48,6 +48,25 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 .btn_tertiary:disabled {background-color: #E6EAED;}
 .btn_tertiary:disabled > .txt {color: #383C4C80;}
 
+.btn_lineblue {
+    display: inline-flex;
+    min-width: 63px;
+    padding: 7.5px 11.5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 2px solid #1F5EFF;
+    background: #FFF;
+}
+.btn_lineblue .txt {
+    color: #1F5EFF;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
 
 .f_group01 {
     width: 100%;
@@ -757,7 +776,7 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 .all_menu_top {
     width: 100%;
     background-image: url(../img/bg_menutop.png);
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     padding: 21px 16px 21px 28px;
     display: flex;

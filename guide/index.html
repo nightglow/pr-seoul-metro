@@ -404,6 +404,10 @@
             dep01: '', dep02: '소속선택', dep03: '', dep04: '', memo: '' },
         { path: '/jo', f_name: 'TRAC-003.html', type: 'page', state:'진행중',
             dep01: '', dep02: '선로작업승인부 상세', dep03: '', dep04: '', memo: '' },
+        { path: '/jo', f_name: 'TRAC-003_01.html', type: 'page', state:'진행중',
+            dep01: '', dep02: '선로작업승인부 상세', dep03: '', dep04: '', memo: '선택한 작업은 미승인 건입니다.' },
+        { path: '/jo', f_name: 'TRAC-003_02.html', type: 'page', state:'진행중',
+            dep01: '', dep02: '선로작업승인부 상세', dep03: '', dep04: '', memo: '감독부서 소속이 아닌 작업자는..' },
         { path: '/jo', f_name: 'TRAC-004.html', type: 'popup', state:'진행중',
             dep01: '', dep02: '진출입 QR코드 체크', dep03: '', dep04: '', memo: '' },
         { path: '/jo', f_name: 'TRAC-005.html', type: 'bottom sheet', state:'진행중',
@@ -534,7 +538,7 @@
             <td>${el.dep03}</td>
             <td>${el.dep04}</td>
             <td class='tac'>${el.path}</td>
-            <td><a href='../pub/html/ml/${el.f_name}'> ${el.f_name}</a></td>
+            <td><a href='../pub/html/pm/${el.f_name}'> ${el.f_name}</a></td>
             <td >${el.type}</td>
             <td class='tac'>${el.state}</td>
             <td>${el.memo}</td>
@@ -549,7 +553,7 @@
             <td>${el.dep03}</td>
             <td>${el.dep04}</td>
             <td class='tac'>${el.path}</td>
-            <td><a href='../pub/html/ml/${el.f_name}'> ${el.f_name}</a></td>
+            <td><a href='../pub/html/jo/${el.f_name}'> ${el.f_name}</a></td>
             <td >${el.type}</td>
             <td class='tac'>${el.state}</td>
             <td>${el.memo}</td>
@@ -564,7 +568,7 @@
             <td>${el.dep03}</td>
             <td>${el.dep04}</td>
             <td class='tac'>${el.path}</td>
-            <td><a href='../pub/html/ml/${el.f_name}'> ${el.f_name}</a></td>
+            <td><a href='../pub/html/ts/${el.f_name}'> ${el.f_name}</a></td>
             <td >${el.type}</td>
             <td class='tac'>${el.state}</td>
             <td>${el.memo}</td>
