@@ -573,6 +573,46 @@
 }
 
 
+/* 간편로그인 */
+.area_simple {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px 0;
+}
+.area_simple .left_box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+}
+.area_simple .left_box .txt01 {
+    width: 100%;
+    display: block;
+    font-size: 20rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #2C333B;
+    text-align: center;
+}
+.area_simple .left_box .txt02 {
+    width: 100%;
+    display: block;
+    font-size: 17rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #2C333B;
+    text-align: center;
+}
+
+/* //간편로그인 */
+
 .mt4 {margin-top: 4px;}
 .mt10 {margin-top: 10px;}
 .mt70 {margin-top: 70px;}
@@ -625,6 +665,80 @@
     width: 100%;
     display: flex;
 }
+
+
+/*  */
+.f_group03{
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.f_group03 > .area_tit01 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 14px 12px 4px 20px;
+    border: 1px solid #8597A880;
+    border-radius: 8px;
+}
+.f_group03 > .area_tit01 .left_box03 {
+    width: 100%;
+    display: flex;
+    gap: 0 4px;
+}
+.f_group03 > .area_tit01 .left_box03 .txt01 {
+    width: max-content;
+    display: block;
+    flex-shrink: 0;
+
+    font-size: 15rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #020C15B8;
+}
+.f_group03 > .area_tit01 .left_box03 .txt02 {
+    width: 100%;
+    display: block;
+
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #FF5930;
+}
+.f_group03 > .area_tit01 .right_box03 {
+    width: 100%;
+    display: flex;
+}
+.f_group03 > .area_tit01 .right_box03 .common_inp04 .btn_secondary {
+    max-width: 69px;
+    height: 40px;
+}
+.f_group03 > .area_tit01 .right_box03 .common_inp04 .btn_secondary .txt{
+    font-size: 15rem; 
+}
+.f_group03 .time {
+    width: 100%;
+    display: none;
+
+    font-size: 15rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #FF5930;
+    padding-top: 6px;
+    padding-left: 20px;
+}
+
+.f_group03.active .time{
+    display: block;
+}
+
+
+
+
+
+
 
 
 
