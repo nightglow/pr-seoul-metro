@@ -23,7 +23,7 @@ body {
 
 .mt20 {margin-top: 20px;}
 
-
+html.menu_open, body.menu_open{ overflow:hidden; }
 
 /* button */
 .btn_primary {width: 100%;height: 48px;display: flex;align-items: center;justify-content: center;background-color: #162C8F;border-radius: 10px;}
@@ -280,6 +280,27 @@ body {
 .btn_setting_06 > .area_content01::after {content: '';width: 28px;height: 28px;position: absolute;top: 50%;right: 0;transform: translateY(-50%);background: url('../img/ico_setting_arr.svg') no-repeat center/100%;}
 .btn_setting_06 > .area_content01 .txt01 {width: 100%;display: block;text-align: left;font-size: 17rem;font-weight: 400;line-height: 1;color: #070F16D1;}
 .btn_setting_06 > .area_content01 .txt02 {width: 100%;display: block;text-align: left;font-size: 15rem;font-weight: 400;line-height: 1;color: #73757E;}
+
+.btn_close.type02 {
+    display: block;
+    background-image: url('../img/btn_close_w.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.btn_hamburger {
+    display: block;
+    background-image: url('../img/btn_hamburger.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
 /* //button */
 
 
@@ -649,3 +670,156 @@ body {
     margin-top: 16px;
 }
 /* //Alert */
+
+/* 전체메뉴 */
+.dimmed{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.5);
+    z-index: 1000;
+}
+.all_menu{
+    position:fixed;
+    top:0;
+    right:0;
+    height:100vh;
+    width:310px;
+    max-width:90vw;
+    background:#fff;
+    z-index:1001;
+    transform:translateX(0);
+}
+.all_menu_top {
+    width: 100%;
+    background-image: url(../img/bg_menutop.png);
+    background-size: contain;
+    background-position: center center;
+    padding: 21px 16px 21px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.all_menu_top .all_menu_user {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+}
+.all_menu_top .all_menu_user span {
+    font-size: 18px;
+    font-weight: 400;
+}
+.all_menu_top .all_menu_btn {
+    width: 96px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.swith_label.type02 {
+    position: relative;
+}
+.swith_label.type02 .swith_check {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: none;
+    width: 53px;
+}
+.swith_label.type02 .swith_check::before {
+    background-color: #18E2D7;
+    cursor: pointer;
+}
+.swith_label.type02 .swith_check:checked::before {
+    left: 31px;
+}
+.swith_label.type02 span {
+    position: absolute;
+    color: #fff;
+    font-size: 12rem;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: -0.12px;
+    top: 50%;
+    left: 29px;
+    transform: translateY(-50%);
+    transition: left 250ms linear;
+    cursor: default;
+}
+.swith_label.type02:has(.swith_check:checked) span {
+    left: 10px;
+}
+
+.all_menu_cont {
+    width: 100%;
+    height: calc(100% - 73px);
+    position: relative;
+    overflow-y: auto;
+    padding: 25px 22px 25px 25px;
+}
+.all_menu_1depth {
+    width: 100%;
+}
+.all_menu_1depth > li {
+    width: 100%;
+}
+.all_menu_1depth > li ~ li {
+    margin-top: 22px;
+}
+.all_menu_1depth > li > .item {
+    color: #2C333B;
+    font-size: 19rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: block;
+    width: 100%;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #E6EAED;
+    position: relative;
+}
+.all_menu_1depth > li > .item::after {
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/ico_arr_left02.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    right: 0;
+    transition: transform 0.3s ease;
+}
+.all_menu_1depth > li > .item.active {
+    border-bottom: 1px solid #8295A7;
+}
+.all_menu_1depth > li > .item.active::after {
+    transform: rotate(-90deg);
+}
+
+.all_menu_2depth {
+    background: rgba(235, 240, 245, 0.50);
+    padding-top: 17px;
+    display: none;
+}
+.all_menu_2depth > li ~ li {
+    margin-top: 17px;
+}
+.all_menu_2depth > li > .item {
+    color: #2C333B;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 24px;
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 0 10.5px 17px;
+    border-bottom: 1px solid #E6EAED;
+}
+.all_menu_2depth > li > .item::after {
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/ico_arr_left03.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    right: 10.5px;
+}

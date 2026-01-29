@@ -224,4 +224,100 @@ const password = {
     }
 };
 
+//전체메뉴
+$(document).ready(function () {
 
+
+    var $menu = $("#all_menu");
+    var DURATION = 400;
+
+    function ensureDimmed() {
+        var $dim = $(".dimmed");
+        if ($dim.length) return $dim;
+
+        // 필요할 때만 생성
+        $dim = $('<div class="dimmed" aria-hidden="true"></div>');
+        $("body").append($dim);
+
+        // dimmed 클릭 시 닫기
+        $dim.on("click", closeAllMenu);
+
+        return $dim;
+    }
+
+    function slideTo(percent) {
+        // percent: 0(열림) ~ 100(닫힘)
+        $menu.stop(true, true).animate(
+        { x: percent },
+        {
+            duration: DURATION,
+            step: function (now) {
+            $menu.css("transform", "translateX(" + now + "%)");
+            }
+        }
+        );
+    }
+
+    function openAllMenu() {
+        var $dim = ensureDimmed();
+        $dim.stop(true, true).fadeIn(DURATION);
+        slideTo(0);
+        $("html, body").addClass("menu_open");
+    }
+
+    function closeAllMenu() {
+        var $dim = $(".dimmed");
+        if ($dim.length) {
+        $dim.stop(true, true).fadeOut(DURATION, function () {
+            // 완전히 필요 없으면 제거(원하면 제거하지 말고 유지해도 됨)
+            $(this).remove();
+        });
+        }
+        slideTo(100);
+        $("html, body").removeClass("menu_open");
+    }
+
+    // 열기
+    $(document).on("click", ".btn_hamburger", openAllMenu);
+
+    // 닫기 버튼
+    $(document).on("click", ".all_menu_close", closeAllMenu);
+
+    // ESC 닫기
+    $(document).on("keydown", function (e) {
+        if (e.key === "Escape") closeAllMenu();
+    });
+
+    //큰글씨 스위치
+    $('.swith_label.type02 .swith_check').on('change', function () {
+        const $label = $(this).closest('.swith_label');
+        const $span = $label.find('span');
+
+        if ($(this).is(':checked')) {
+            $span.text('일반');
+        } else {
+            $span.text('큰글');
+        }
+    });
+
+    // 2depth 기본 닫힘
+    $('.all_menu_2depth').hide();
+
+    $('.all_menu_1depth > li > .item').on('click', function (e) {
+        const $li = $(this).parent('li');
+        const $subMenu = $li.children('.all_menu_2depth');
+
+        // 2depth 없는 1depth는 아무 동작 안 함
+        if ($subMenu.length === 0) return;
+
+        e.preventDefault();
+
+        // 다른 2depth 닫기 + active 제거
+        $('.all_menu_2depth').not($subMenu).slideUp(200);
+        $('.all_menu_1depth > li > .item').not(this).removeClass('active');
+
+        // 현재 1depth만 active + 2depth 토글
+        $(this).toggleClass('active');
+        $subMenu.stop(true, true).slideToggle(200);
+    });
+});
