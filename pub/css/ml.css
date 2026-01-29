@@ -575,14 +575,14 @@
 
 /* 간편로그인 */
 .area_simple {
-    width: 100%;
+    width: calc(100% - 40px);
     max-width: 360px;
     margin: 0 auto;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 40px 0;
+    gap: 40px;
 }
 .area_simple .left_box {
     width: 100%;
@@ -610,6 +610,18 @@
     color: #2C333B;
     text-align: center;
 }
+
+.area_simple_check {
+    width: 100%;
+    display: block;
+}
+.area_simple_check li +  li {
+    margin-top: 12px;
+}
+
+
+
+
 
 /* //간편로그인 */
 
@@ -667,7 +679,6 @@
 }
 
 
-/*  */
 .f_group03{
     width: calc(100% - 40px);
     margin: 0 auto;
@@ -737,8 +748,146 @@
 
 
 
+.btn_pin {
+    width: 100%;
+    min-height: 68px;
+    
+    display: flex;align-items: center;
+    justify-content: space-between;
+    gap: 0 17px;
+
+    padding: 17px 20px;
+    border-radius: 8px;
+    border: 1px solid #8597A880;
+}
+.btn_pin > .txt01{
+    width: 100%;
+    display: block;
+    position: relative;
+
+    font-size: 17rem;
+    font-weight: 500;
+    line-height: 1;
+    padding-left: 67px;
+} 
+.btn_pin > .txt01::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: url('../img/ico_login_01.svg') no-repeat center/100%;
+    width: 50px;
+    height: 50px;
+}
+.btn_pin:hover {
+    border: 1px solid #8597A8;
+    box-shadow:0 0px 8px 0px #00000094;
+}
+
+.btn_pattern {
+    width: 100%;
+    min-height: 68px;
+    
+    display: flex;align-items: center;
+    justify-content: space-between;
+    gap: 0 17px;
+
+    padding: 17px 20px;
+    border-radius: 8px;
+    border: 1px solid #8597A880;
+}
+.btn_pattern > .txt01{
+    width: 100%;
+    display: block;
+    position: relative;
+
+    font-size: 17rem;
+    font-weight: 500;
+    line-height: 1;
+    padding-left: 67px;
+} 
+.btn_pattern > .txt01::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: url('../img/ico_login_02.svg') no-repeat center/100%;
+    width: 50px;
+    height: 50px;
+}
+.btn_pattern:hover {
+    border: 1px solid #8597A8;
+    box-shadow:0 0px 8px 0px #00000094;
+}
 
 
+.btn_finger {
+    width: 100%;
+    min-height: 68px;
+    
+    display: flex;align-items: center;
+    justify-content: space-between;
+    gap: 0 17px;
+
+    padding: 17px 20px;
+    border-radius: 8px;
+    border: 1px solid #8597A880;
+}
+.btn_finger > .txt01{
+    width: 100%;
+    display: block;
+    position: relative;
+
+    font-size: 17rem;
+    font-weight: 500;
+    line-height: 1;
+    padding-left: 67px;
+} 
+.btn_finger > .txt01::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: url('../img/ico_login_03.svg') no-repeat center/100%;
+    width: 50px;
+    height: 50px;
+}
+.btn_finger:hover {
+    border: 1px solid #8597A8;
+    box-shadow:0 0px 8px 0px #00000094;
+}
+
+
+
+
+
+.btn_regist {
+    width: 100%;
+    height: 33px;
+    max-width: 78px;
+    
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50px;
+    background-color: #8894CA33;
+}
+.btn_regist .txt01 {
+    width: max-content;
+    display: block;
+
+    font-size: 14rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #162C8F;
+}
+.btn_regist.active {
+    display: flex;
+}
 
 
 
