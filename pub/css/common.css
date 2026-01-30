@@ -321,6 +321,18 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     height: 24px;
     cursor: pointer;
 }
+
+.btn_read_all {
+    width: 103px;
+    min-height: 33px;
+    display: block;
+
+    padding: 6px 10px;
+    margin-left: auto;
+    border: 1px solid #B5B7BA;
+    border-radius: 100px;
+    background-color: #fff;
+}
 /* //button */
 
 
