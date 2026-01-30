@@ -90,6 +90,13 @@ const Alert = {
 };
 
 
+const Popup = {
+    get: (id) => document.querySelector(`[data-popup="${id}"]`),
+    open(id)  {this.get(id)?.classList.add('active');},
+    close(id) {this.get(id)?.classList.remove('active');}
+};
+
+
 // 드래그엔 드롭
 const DragDrop = {
     container: null,
@@ -116,13 +123,8 @@ const DragDrop = {
         this.container.addEventListener('dragstart', (e) => e.preventDefault());
     },
 
-    getPointer(e) {
-        return e.touches ? e.touches[0] : e;
-    },
-
-    getEndPointer(e) {
-        return e.changedTouches ? e.changedTouches[0] : e;
-    },
+    getPointer(e) {return e.touches ? e.touches[0] : e;},
+    getEndPointer(e) {return e.changedTouches ? e.changedTouches[0] : e;},
 
     onStart(e) {
         const item = e.target.closest('.app_item');
@@ -220,7 +222,6 @@ const password = {
 //전체메뉴
 $(document).ready(function () {
 
-
     var $menu = $("#all_menu");
     var DURATION = 400;
 
@@ -314,3 +315,6 @@ $(document).ready(function () {
         $subMenu.stop(true, true).slideToggle(200);
     });
 });
+
+
+
