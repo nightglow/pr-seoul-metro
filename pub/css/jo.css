@@ -1,0 +1,575 @@
+/* area divier */
+.divider {
+    width: 100%;
+    height: 8px;
+    background-color: #F8F9FA;
+    margin: 20px 0;
+}
+.divider02 {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(133, 151, 168, 0.50);
+}
+
+/* field box */
+.select_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+}
+.select_box .inp_line {
+    border: 1px solid transparent;
+    width: calc(100% - 24px);
+}
+.select_box .inp_line:focus {
+    border: 1px solid transparent;
+}
+.select_box .inp_line::placeholder {
+    padding-left: 4px;
+    color: #B5B7BA;
+}
+
+.input_box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.input_box:has(.inp_num) {
+    align-items: flex-start;
+}
+.input_box input[type='text'] {
+    border: 1px solid transparent;
+    font-size: 18rem;
+    width: calc(100% - 24px);
+}
+.input_box input[type='text']:focus {
+    border: 1px solid transparent;
+}
+.input_box input[type='text']::placeholder {
+    padding-left: 5px;
+}
+.input_box input.inp_num {
+    padding-top: 1px;
+}
+.input_box .div_bar {
+    color: #73757E;
+    font-size: 20rem;
+    font-weight: 500;
+    line-height: 1.2;
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.field_box_date {
+    width: 100%;
+    height: 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+.field_box_date .txt01 {
+    color: #B5B7BA;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.sel_item {
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+    color: #070F16;
+    font-size: 17rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.tab_cont_wrap {
+    padding: 20px 0 80px;
+}
+
+/* 선로작업승인부 */
+.sch_box {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+}
+.trackwork_sch {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 12px;
+}
+.sch_box .btn_secondary {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+
+.sch_result_box {
+    padding: 20px;
+}
+.list_tit_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.list_tit_wrap .left_box .list_tit {
+    color: #070F16;
+    font-size: 18rem;
+    font-weight: 600;
+    line-height: 1.4
+}
+.list_tit_wrap .right_box .total_num {
+    color: #2C333B;
+    font-size: 15rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.list_tit_wrap .right_box .total_num span {
+    color: #1F5EFF;
+}
+
+.result_list_wrap {
+    border-top: 1px solid #73757E;
+    margin-top: 12px;
+    padding-top: 10px;
+}
+.result_list > li ~ li {
+    border-top: 1px solid rgba(133, 151, 168, 0.50);
+    margin-top: 13px;
+    padding-top: 12px;
+}
+
+.linework_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+.linework_box .left_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+}
+.linework_box .left_box .linework_tit {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.linework_box .left_box .linework_tit .line_info_img {
+    width: 56px;
+    height: 56px;
+}
+.linework_box .left_box .linework_tit .line_info_txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+.linework_box .left_box .linework_tit .line_info_txt .tit01 {
+    color: #4B5058;
+    text-align: center;
+    font-size: 15rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.linework_box .left_box .linework_tit .line_info_txt .tit02 {
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.linework_box .left_box .linework_tit.line1 .tit02 {
+    color: #253B95
+}
+.linework_box .left_box .linework_tit.line2 .tit02 {
+    color: #00A23F;
+}
+.linework_box .left_box .linework_tit.line3 .tit02 {
+    color: #ED6C00;
+}
+.linework_box .left_box .linework_tit.line4 .tit02 {
+    color: #009BCE;
+}
+.linework_box .left_box .linework_tit.line5 .tit02 {
+    color: #794998;
+}
+.linework_box .left_box .linework_tit.line6 .tit02 {
+    color: #7C4932;
+}
+.linework_box .left_box .linework_tit.line7 .tit02 {
+    color: #6C6F36;
+}
+.linework_box .left_box .linework_tit.line8 .tit02 {
+    color: #C30067;
+}
+.linework_box .right_box {
+    width: 100%;
+}
+.linework_box .right_box .linework_cont {
+    display: flex;
+    width: 100%;
+    padding: 12px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    border-radius: 10px;
+    background: rgba(245, 248, 250, 0.50);
+}
+.linework_box .right_box .linework_cont .linework_cont_tit .tit01 {
+    color: #070F16;
+    font-size: 17rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+
+/* 모터카운행여부 */
+.motorcar_line_list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+    width: calc(100% - 40px);
+    margin: 20px auto 0;
+}
+.motorcar_line_list .motorcar_line {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.motorcar_line_list .motorcar_line ~ .motorcar_line {
+    border-top: 1px solid #E6EAED;
+    padding-top: 12px;
+}
+.motorcar_line_tit {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+}
+.motorcar_line_tit .motorcar_icon {
+    width: 56px;
+    height: 56px;
+}
+.motorcar_line_tit .motorcar_txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 4px;
+    gap: 2px;
+    width: 100%;
+}
+.motorcar_line_tit .motorcar_txt .txt01 {
+    color: #4B5058;
+    font-size: 15rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.motorcar_line_tit .motorcar_txt .tit01 {
+    color: #070F16;
+    font-size: 17rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.motorcar_route_box {
+    width: 100%;
+    background-color: #EBF0F580;
+    border-radius: 10px;
+    padding: 24px 16px;
+}
+.motorcar_route_box .motorcar_route {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+}
+.motorcar_route_box .motorcar_route ~ .motorcar_route {
+    margin-top: 24px;
+}
+.motorcar_route_box .motorcar_route .route_tit {
+    color: #73757E;
+    text-align: right;
+    font-size: 15rem;
+    font-weight: 400;
+    line-height: 1.4;
+    min-width: 35px;
+}
+.motorcar_route_box .motorcar_route .route_dot {
+    width: 26px;
+    height: 26px;
+    border-radius: 999px;
+    background-color: #fff;
+    border: 6px solid #fff;
+    position: relative;
+}
+.motorcar_route_box .motorcar_route .route_dot::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 999px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.motorcar_route_box .motorcar_route .route_dot::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 60px;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+.motorcar_route_box .motorcar_route:last-child .route_dot::before {
+    top: -18px;
+    height: 50px;
+}
+.motorcar_route_box .motorcar_route .route_dot.line1{
+    border-color: #253B95
+}
+.route_dot.line1:before {
+    background-color: #253B95
+}
+.motorcar_route_box .motorcar_route .route_dot.line2{
+    border-color: #00A23F;
+}
+.route_dot.line2:before {
+    background-color: #00A23F;
+}
+.motorcar_route_box .motorcar_route .route_dot.line3 {
+    border-color: #ED6C00;
+}
+.route_dot.line3::before {
+    background-color: #ED6C00;
+}
+.motorcar_route_box .motorcar_route .route_dot.line4 {
+    border-color: #009BCE;
+}
+.route_dot.line4::before {
+    background-color: #009BCE;
+}
+.motorcar_route_box .motorcar_route .route_dot.line5 {
+    border-color: #794998;
+}
+.route_dot.line5::before {
+    background-color: #794998;
+}
+.motorcar_route_box .motorcar_route .route_dot.line6 {
+    border-color: #7C4932;
+}
+.route_dot.line6::before {
+    background-color: #7C4932;
+}
+.motorcar_route_box .motorcar_route .route_dot.line7 {
+    border-color: #6C6F36;
+}
+.route_dot.line7::before {
+    background-color: #6C6F36;
+}
+.motorcar_route_box .motorcar_route .route_dot.line8 {
+    border-color: #C30067;
+}
+.route_dot.line8::before {
+    background-color: #C30067;
+}
+.motorcar_route_box .motorcar_route .route_name {
+    color: #070F16;
+    font-size: 17rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-left: 3px;
+    max-width: 196px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 운행정보 */
+.cont_wrap {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+.tit_wrap01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.tit_wrap01 .left_box .tit01 {
+    color: #070F16;
+    font-size: 18rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+.tit_wrap01 + .tbl_box01,
+.tit_wrap01 + .tbl_box02 {
+    margin-top: 6px;
+}
+
+.f_group04 {
+    display: flex;
+    flex-direction: column;
+}
+.f_group04 > .area_tit01 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 13px 12px 9.5px 20px;
+    border: 1px solid #8597A880;
+    border-radius: 8px;
+}
+.f_group04 > .area_tit01:has(.inp_num) {
+    padding: 13px 12px 8.5px 20px;
+}
+.f_group04 > .area_tit01 .left_box02 {
+    width: 100%;
+    display: flex;
+    gap: 0 4px;
+}
+.f_group04 > .area_tit01 .left_box02 .txt01 {
+    width: max-content;
+    display: block;
+    flex-shrink: 0;
+    font-size: 15rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(2, 12, 21, 0.72);
+}
+.f_group04 > .area_tit01 .left_box02 .txt02 {
+    width: 100%;
+    display: block;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #FF5930;
+}
+.f_group04 > .area_tit01 .right_box02 {
+    width: 100%;
+    display: flex;
+}
+.f_group04.disabled {
+    background-color: rgba(230, 230, 230, 0.50);
+}
+
+.info_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.noti_message01 {
+    position: relative;
+    color: rgba(7, 15, 22, 0.82);
+    font-size: 15rem;
+    font-weight: 500;
+    line-height: 1.4;
+    padding-left: 24px;
+}
+.noti_message01::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/ico_alert_04.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+    top:0;
+    left: 0;
+}
+
+.bs_inp_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.bs_inp_wrap .tit_wrap01 {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+.bs_inp_wrap .tit_wrap01 .left_box {
+    padding: 0;
+}
+.bs_inp_wrap .tab_btn_wrap {
+    width: calc(100% - 40px);
+    margin: 7.5px auto 0;
+}
+.bs_inp_wrap .divider02 {
+    width: calc(100% - 40px);
+    margin: 4px auto 0;
+}
+.confirm_txt_box {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.confirm_txt_box .date01 {
+    color: #1F5EFF;
+    text-align: center;
+    font-size: 17rem;
+    font-weight: 500;
+    line-height: 1.4
+}
+.confirm_txt_box .txt01 {
+    color: var(--Text-02, #2C333B);
+    font-size: 17rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.bs_bottom_btn {
+    width: calc(100% - 40px);
+    margin: 0 auto 18px;
+}
+
+.message_box01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 0 30px 16px 26px;
+}
+.message_box01 .area_content01 .txt01 {
+    color: #070F16;
+    text-align: center;
+    font-size: 20rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.bs_scroll_tbl {
+    width: calc(100% - 40px);
+    height: 267px;
+    margin: 20px auto;
+    overflow: auto;
+}
+
+
+@media (min-width: 750px) {
+    .motorcar_route_box .motorcar_route .route_name {
+        max-width: 580px;
+    }
+}

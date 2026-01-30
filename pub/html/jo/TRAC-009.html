@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>서울교통공사 인사관리</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jo.css">
+
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <div id="header"></div>
+
+        <!-- all menu -->
+        <div class="all_menu" id="all_menu" style="transform: translateX(100%); x: 100px;">
+            <div class="all_menu_top">
+                <div class="all_menu_user">김교통<span> 님</span></div>
+                <div class="all_menu_btn">
+                    <label class="swith_label type02">
+                        <input type="checkbox" class="swith_check" />
+                        <span>큰글</span>
+                    </label>
+                    <button type="button" class="btn_close type02 all_menu_close">
+                        <label class="blind">닫기</label>
+                    </button>
+                </div>
+            </div>
+            <div class="all_menu_cont">
+                <ul class="all_menu_1depth">
+                    <li>
+                        <a href="javascript:;" class="item">선로작업승인부</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="item">마음건강 자가진단</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- contents -->
+        <div class="contents">
+            <div class="tab_wrap">
+                <ul class="tab_nav">
+                    <li><a href="#tab1"><span class="tit01">선로작업승인부</span></a></li>
+                    <li><a href="#tab2"><span class="tit01">모터카운행여부</span></a></li>
+                </ul>
+            </div>
+
+            <div id="tab1">선로작업승인부 내용</div>
+            <div id="tab2">
+                <div class="tab_cont_wrap">
+                    <div class="motorcar_line_select">
+                        <div class="f_group02">
+                            <label class="area_tit01" onclick="BottomSheet.show('sheet1');">
+                                <div class="left_box02">
+                                    <span class="txt01">모터카 운행 노선</span>
+                                    <!-- <span class="txt02">*</span> -->
+                                </div>
+                                <div class="right_box02 mt10">
+                                    <div class="select_box">
+                                        <input type="text" name="input_line" id="inp_line" class="inp_line" value="" placeholder="전체" readonly>
+                                        <button type="button" class="btn_bsopen">
+                                            <label class="blind">열기</label>
+                                        </button>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="motorcar_line_list">
+                        <!-- 운행노선 블럭 -->
+                        <div class="motorcar_line">
+                            <div class="motorcar_line_tit">
+                                <div class="motorcar_icon">
+                                    <img src="../../img/ico_line5.svg" alt="5호선">
+                                </div>
+                                <div class="motorcar_txt">
+                                    <span class="txt01">하선</span>
+                                    <span class="tit01">비)모터카-별내 전기모터카<br>(축전지형, 별내)</span>
+                                </div>
+                            </div>
+                            <div class="motorcar_route_box">
+                                <div class="motorcar_route">
+                                    <div class="route_tit">시점</div>
+                                    <div class="route_dot line5"></div><!-- 호선에 따라서 line1 ~ line8 로 숫자 수정 -->
+                                    <div class="route_name">고덕차량기지</div>
+                                </div>
+                                <div class="motorcar_route">
+                                    <div class="route_tit">경유1</div>
+                                    <div class="route_dot line5"></div><!-- 호선에 따라서 line1 ~ line8 로 숫자 수정 -->
+                                    <div class="route_name">광나루</div>
+                                </div>
+                                <div class="motorcar_route">
+                                    <div class="route_tit">종점</div>
+                                    <div class="route_dot line5"></div><!-- 호선에 따라서 line1 ~ line8 로 숫자 수정 -->
+                                    <div class="route_name">고덕차량기지</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 운행노선 블럭 -->
+                        <div class="motorcar_line">
+                            <div class="motorcar_line_tit">
+                                <div class="motorcar_icon">
+                                    <img src="../../img/ico_line3.svg" alt="3호선">
+                                </div>
+                                <div class="motorcar_txt">
+                                    <span class="txt01">하선</span>
+                                    <span class="tit01">트랙머신(B2S) 3호</span>
+                                </div>
+                            </div>
+                            <div class="motorcar_route_box">
+                                <div class="motorcar_route">
+                                    <div class="route_tit">시점</div>
+                                    <div class="route_dot line3"></div><!-- 호선에 따라서 line1 ~ line8 로 숫자 수정 -->
+                                    <div class="route_name">충무로(3)</div>
+                                </div>
+                                <div class="motorcar_route">
+                                    <div class="route_tit">경유1</div>
+                                    <div class="route_dot line3"></div><!-- 호선에 따라서 line1 ~ line8 로 숫자 수정 -->
+                                    <div class="route_name">압구정</div>
+                                </div>
+                                <div class="motorcar_route">
+                                    <div class="route_tit">경유2</div>
+                                    <div class="route_dot line3"></div><!-- 호선에 따라서 line1 ~ line8 로 숫자 수정 -->
+                                    <div class="route_name">수서(3)</div>
+                                </div>
+                                <div class="motorcar_route">
+                                    <div class="route_tit">종점</div>
+                                    <div class="route_dot line3"></div><!-- 호선에 따라서 line1 ~ line8 로 숫자 수정 -->
+                                    <div class="route_name">수서차량기지</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 운행노선 블럭 -->
+                        <div class="motorcar_line">
+                            <div class="motorcar_line_tit">
+                                <div class="motorcar_icon">
+                                    <img src="../../img/ico_line4.svg" alt="4호선">
+                                </div>
+                                <div class="motorcar_txt">
+                                    <span class="txt01">유치선</span>
+                                    <span class="tit01">레일탐상차 1호</span>
+                                </div>
+                            </div>
+                            <div class="motorcar_route_box">
+                                <div class="motorcar_route">
+                                    <div class="route_tit">시점</div>
+                                    <div class="route_dot line4"></div><!-- 호선에 따라서 line1 ~ line8 로 숫자 수정 -->
+                                    <div class="route_name">한성대입구</div>
+                                </div>
+                                <div class="motorcar_route">
+                                    <div class="route_tit">종점</div>
+                                    <div class="route_dot line4"></div><!-- 호선에 따라서 line1 ~ line8 로 숫자 수정 -->
+                                    <div class="route_name">한성대입구</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <ul class="app_bar">
+                <li>
+                    <button type="button" class="btn_nav_home">
+                        <span class="ico"><i class="blind">홈</i></span>
+                        <span class="txt01">홈</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn_nav_fac active"><!-- 선택시 : active 클리스추가-->
+                        <span class="ico"><i class="blind">즐겨찾기</i></span>
+                        <span class="txt01">즐겨찾기</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn_nav_store">
+                        <span class="ico"><i class="blind">앱스토어</i></span>
+                        <span class="txt01">앱스토어</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn_nav_setting" onclick="location.href = 'SETT_001.html'">
+                        <span class="ico"><i class="blind">설정</i></span>
+                        <span class="txt01">설정</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 모터카 운행 호선 -->
+        <div class="dim" data-sheet='sheet1'>
+            <div class="sheet bh70">
+                <div class="left_box">
+                    <div class="area_tit01">
+                        <span class="txt01">모터카 운행 호선</span>
+                        <button type="button" class="btn_close" onclick="BottomSheet.hide('sheet1');">
+                            <label class="blind">닫기</label>
+                        </button>
+                    </div>
+                </div>
+                <div class="right_box">
+                    <!-- 호선 선택 -->
+                    <ul class="item_list">
+                        <li>
+                            <div class="item_rdo">
+                                <label class="rdo_select" for="rdo02_0">
+                                    <input type="radio" name="rdo02" id="rdo02_0" checked>
+                                    <span class="ico_check"></span>
+                                    <span class="txt01">전체</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_rdo">
+                                <label class="rdo_select" for="rdo02_1">
+                                    <input type="radio" name="rdo02" id="rdo02_1">
+                                    <span class="ico_check"></span>
+                                    <span class="txt01">1호선</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_rdo">
+                                <label class="rdo_select" for="rdo02_2">
+                                    <input type="radio" name="rdo02" id="rdo02_2">
+                                    <span class="ico_check"></span>
+                                    <span class="txt01">2호선</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_rdo">
+                                <label class="rdo_select" for="rdo02_3">
+                                    <input type="radio" name="rdo02" id="rdo02_3">
+                                    <span class="ico_check"></span>
+                                    <span class="txt01">3호선</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_rdo">
+                                <label class="rdo_select" for="rdo02_4">
+                                    <input type="radio" name="rdo02" id="rdo02_4">
+                                    <span class="ico_check"></span>
+                                    <span class="txt01">4호선</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_rdo">
+                                <label class="rdo_select" for="rdo02_5">
+                                    <input type="radio" name="rdo02" id="rdo02_5">
+                                    <span class="ico_check"></span>
+                                    <span class="txt01">5호선</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_rdo">
+                                <label class="rdo_select" for="rdo02_6">
+                                    <input type="radio" name="rdo02" id="rdo02_6">
+                                    <span class="ico_check"></span>
+                                    <span class="txt01">6호선</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_rdo">
+                                <label class="rdo_select" for="rdo02_7">
+                                    <input type="radio" name="rdo02" id="rdo02_7">
+                                    <span class="ico_check"></span>
+                                    <span class="txt01">7호선</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_rdo">
+                                <label class="rdo_select" for="rdo02_8">
+                                    <input type="radio" name="rdo02" id="rdo02_8">
+                                    <span class="ico_check"></span>
+                                    <span class="txt01">8호선</span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <div>
+
+</body>
+
+</html>

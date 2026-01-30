@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>서울교통공사 인사관리</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jo.css">
+
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <div id="header"></div>
+
+        <!-- contents -->
+        <div class="contents">
+            <div class="cont_wrap">
+                <div class="tit_wrap01">
+                    <div class="left_box">
+                        <span class="tit01">운행정보</span>
+                    </div>
+                    <div class="right_box">
+                        <button type="button" class="btn_line">
+                            <span class="txt01">관제전달사항</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="tbl_box01">
+                    <ul class="tbl_list">
+                        <li>
+                            <span class="tit01">작업명</span>
+                            <span class="txt01">양방향 전기집진기 현장점검</span>
+                        </li>
+                        <li>
+                            <span class="tit01">작업구분</span>
+                            <span class="txt01">공사,용역(외주)</span>
+                        </li>
+                        <li>
+                            <span class="tit01">운행번호</span>
+                            <span class="txt01">2</span>
+                        </li>
+                        <li>
+                            <span class="tit01">작업일</span>
+                            <span class="txt01">2026-01-20</span>
+                        </li>
+                        <li>
+                            <span class="tit01">예정시간</span>
+                            <span class="txt01">12:00 ~15:00</span>
+                        </li>
+                        <li>
+                            <span class="tit01">작업역 구간</span>
+                            <span class="txt01">동대문역사문화공원</span>
+                        </li>
+                        <li>
+                            <span class="tit01">경유</span>
+                            <span class="txt01">-</span>
+                        </li>
+                        <li>
+                            <span class="tit01">추가 출입역</span>
+                            <span class="txt01">-</span>
+                        </li>
+                        <li>
+                            <span class="tit01">선로출입</span>
+                            <span class="txt01">출입</span>
+                        </li>
+                        <li>
+                            <span class="tit01">선로진입</span>
+                            <span class="txt01">단전 이후</span>
+                        </li>
+                        <li>
+                            <span class="tit01">검토자</span>
+                            <span class="txt01">이서울</span>
+                        </li>
+                        <li>
+                            <span class="tit01">2차검토자</span>
+                            <span class="txt01">-</span>
+                        </li>
+                        <li>
+                            <span class="tit01">승인자</span>
+                            <span class="txt01">김교통</span>
+                        </li>
+                        <li>
+                            <span class="tit01">외주업체</span>
+                            <span class="txt01">-</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tit_wrap01 mt20">
+                    <div class="left_box">
+                        <span class="tit01">작업자 정보</span>
+                    </div>
+                </div>
+                <div class="info_wrap mt10">
+                    <div class="f_group04">
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">감독자/사번</span>
+                                <!-- <span class="txt02">*</span> -->
+                            </div>
+                            <div class="right_box02 mt10">
+                                <div class="input_box">
+                                    <input type="text" class="inp_name" placeholder="" value="김흥부" name="s_name">
+                                    <span class="div_bar">/</span>
+                                    <input type="text" class="inp_num" placeholder="" value="123459876" name="s_num">
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="f_group04">
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">연락처</span>
+                                <!-- <span class="txt02">*</span> -->
+                            </div>
+                            <div class="right_box02 mt10">
+                                <div class="input_box">
+                                    <input type="text" class="inp_num" placeholder="" value="123456987" name="phone_num">
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="divider02"></div>
+                    <div class="f_group04">
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">작업자 / 작업자 외 인원</span>
+                                <!-- <span class="txt02">*</span> -->
+                            </div>
+                            <div class="right_box02 mt10">
+                                <div class="input_box">
+                                    <input type="text" class="inp_name" placeholder="" value="최장화" name="w_name">
+                                    <span class="div_bar">/</span>
+                                    <input type="text" class="inp_num" placeholder="" value="3" name="w_num">
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="f_group04">
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">연락처</span>
+                                <!-- <span class="txt02">*</span> -->
+                            </div>
+                            <div class="right_box02 mt10">
+                                <div class="input_box">
+                                    <input type="text" class="inp_num" placeholder="" value="123456987" name="phone_num02">
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="divider02"></div>
+                    <div class="f_group04">
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">현장대리인</span>
+                                <!-- <span class="txt02">*</span> -->
+                            </div>
+                            <div class="right_box02 mt10">
+                                <div class="input_box">
+                                    <input type="text" class="inp_name" placeholder="" value="" name="a_name">
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="f_group04">
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">연락처</span>
+                                <!-- <span class="txt02">*</span> -->
+                            </div>
+                            <div class="right_box02 mt10">
+                                <div class="input_box">
+                                    <input type="text" class="inp_num" placeholder="" value="123456987" name="phone_num03">
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="divider02"></div>
+                    <div class="f_group04">
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">작업입회차</span>
+                                <!-- <span class="txt02">*</span> -->
+                            </div>
+                            <div class="right_box02 mt10">
+                                <div class="input_box">
+                                    <input type="text" class="inp_num" placeholder="" value="" name="e_num">
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="f_group04">
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">연락처</span>
+                                <!-- <span class="txt02">*</span> -->
+                            </div>
+                            <div class="right_box02 mt10">
+                                <div class="input_box">
+                                    <input type="text" class="inp_num" placeholder="123456987" value="" name="phone_num04">
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="divider02"></div>
+                    <div class="f_group04">
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">운전원</span>
+                                <!-- <span class="txt02">*</span> -->
+                            </div>
+                            <div class="right_box02 mt10">
+                                <div class="input_box">
+                                    <input type="text" class="inp_num" placeholder="" value="" name="d_num">
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="f_group04">
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">연락처</span>
+                                <!-- <span class="txt02">*</span> -->
+                            </div>
+                            <div class="right_box02 mt10">
+                                <div class="input_box">
+                                    <input type="text" class="inp_num" placeholder="123456987" value="" name="phone_num05">
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="cont_wrap">
+                <div class="tit_wrap01">
+                    <div class="left_box">
+                        <span class="tit01">진출입 정보</span>
+                    </div>
+                </div>
+                <div class="tbl_box02">
+                    <ul class="tbl_list">
+                        <li>
+                            <span class="tit01">진입역</span>
+                            <span class="txt01">동대문역사문화공원</span>
+                        </li>
+                        <li>
+                            <span class="tit01">진입시간</span>
+                            <span class="txt01">15:15</span>
+                        </li>
+                        <li>
+                            <span class="tit01">진출역</span>
+                            <span class="txt01">종로3가</span>
+                        </li>
+                        <li>
+                            <span class="tit01">진출시간</span>
+                            <span class="txt01">15:25</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="noti_message01 mt20">
+                    진입,진출역과 진입,진출시간은 체크된 경우에만 출력
+                </div>
+            </div>
+            <div class="f_group01 mt40">
+                <button type="button" class="btn_primary">
+                    <span class="txt">현장 진출입 QR코드 확인</span>
+                </button>
+            </div>
+        </div>
+    <div>
+
+</body>
+
+</html>
