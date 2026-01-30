@@ -747,16 +747,14 @@
 
 
 
-
 .btn_pin {
     width: 100%;
     min-height: 68px;
     
-    display: flex;align-items: center;
-    justify-content: space-between;
-    gap: 0 17px;
+    display: flex;
+    align-items: center;
 
-    padding: 17px 20px;
+    padding: 17px 20px; 
     border-radius: 8px;
     border: 1px solid #8597A880;
 }
@@ -764,11 +762,12 @@
     width: 100%;
     display: block;
     position: relative;
-
+    padding-left: 67px;
+    
+    text-align:left;
     font-size: 17rem;
     font-weight: 500;
     line-height: 1;
-    padding-left: 67px;
 } 
 .btn_pin > .txt01::before {
     content: '';
@@ -785,15 +784,16 @@
     box-shadow:0 0px 8px 0px #00000094;
 }
 
+
+
 .btn_pattern {
     width: 100%;
     min-height: 68px;
     
-    display: flex;align-items: center;
-    justify-content: space-between;
-    gap: 0 17px;
+    display: flex;
+    align-items: center;
 
-    padding: 17px 20px;
+    padding: 17px 20px; 
     border-radius: 8px;
     border: 1px solid #8597A880;
 }
@@ -801,11 +801,12 @@
     width: 100%;
     display: block;
     position: relative;
-
+    padding-left: 67px;
+    
+    text-align:left;
     font-size: 17rem;
     font-weight: 500;
     line-height: 1;
-    padding-left: 67px;
 } 
 .btn_pattern > .txt01::before {
     content: '';
@@ -827,11 +828,10 @@
     width: 100%;
     min-height: 68px;
     
-    display: flex;align-items: center;
-    justify-content: space-between;
-    gap: 0 17px;
+    display: flex;
+    align-items: center;
 
-    padding: 17px 20px;
+    padding: 17px 20px; 
     border-radius: 8px;
     border: 1px solid #8597A880;
 }
@@ -839,11 +839,12 @@
     width: 100%;
     display: block;
     position: relative;
-
+    padding-left: 67px;
+    
+    text-align:left;
     font-size: 17rem;
     font-weight: 500;
     line-height: 1;
-    padding-left: 67px;
 } 
 .btn_finger > .txt01::before {
     content: '';
@@ -864,7 +865,7 @@
 
 
 
-.btn_regist {
+.state {
     width: 100%;
     height: 33px;
     max-width: 78px;
@@ -873,19 +874,15 @@
     align-items: center;
     justify-content: center;
 
-    border-radius: 50px;
-    background-color: #8894CA33;
-}
-.btn_regist .txt01 {
-    width: max-content;
-    display: block;
-
     font-size: 14rem;
     font-weight: 600;
     line-height: 1;
     color: #162C8F;
+    
+    border-radius: 50px;
+    background-color: #8894CA33;
 }
-.btn_regist.active {
+.state.active {
     display: flex;
 }
 
