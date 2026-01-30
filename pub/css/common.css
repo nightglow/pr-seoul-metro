@@ -9,6 +9,8 @@
 @import url(ml.css);
 /* 인사관리 */
 @import url(pm.css);
+/* 안전환경관리 */
+@import url(jo.css);
 
 
 
@@ -902,6 +904,14 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     width: 100%;
     display: flex;
     justify-content: flex-start;
+}
+.popup_wrap .left_box .area_tit01 .txt01 {
+    width: max-content;
+    display: block;
+    font-size:  20rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #2C333B;
 }
 .popup_wrap .left_box .area_content01 {
     width: max-content;
