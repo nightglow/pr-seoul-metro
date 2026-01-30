@@ -784,8 +784,6 @@
     box-shadow:0 0px 8px 0px #00000094;
 }
 
-
-
 .btn_pattern {
     width: 100%;
     min-height: 68px;
@@ -823,7 +821,6 @@
     box-shadow:0 0px 8px 0px #00000094;
 }
 
-
 .btn_finger {
     width: 100%;
     min-height: 68px;
@@ -860,9 +857,6 @@
     border: 1px solid #8597A8;
     box-shadow:0 0px 8px 0px #00000094;
 }
-
-
-
 
 
 .state {
@@ -929,6 +923,134 @@
 }
 /* //간편인증 등록 */
 
+
+/* 다른 간편인증 방법으로 로그인 */
+
+.area_btn01 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.area_btn01 .box_btn01 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    padding: 10px 0;
+}
+
+
+.btn_other_finger {
+    width: 70px;
+    height: 70px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid transparent;
+    background-color: #D9D9D936;
+}
+.btn_other_finger::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: url('../img/ico_login_03.svg') no-repeat center/100%;
+}
+.btn_other_finger:hover {
+    border: 1px solid #8597A8;
+    box-shadow:0 0px 8px 0px #00000094;
+}
+.btn_other_finger .txt01 {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top : 80px;
+
+    font-size: 17rem;
+    font-weight: 500;
+    line-height: 1;
+    color: #2B3942;
+}
+
+.btn_other_pin {
+    width: 70px;
+    height: 70px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid transparent;
+    background-color: #D9D9D936;
+}
+.btn_other_pin::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: url('../img/ico_login_01.svg') no-repeat center/100%;
+}
+.btn_other_pin:hover {
+    border: 1px solid #8597A8;
+    box-shadow:0 0px 8px 0px #00000094;
+}
+.btn_other_pin .txt01 {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top : 80px;
+
+    font-size: 17rem;
+    font-weight: 500;
+    line-height: 1;
+    color: #2B3942;
+}
+
+.btn_other_pattern {
+    width: 70px;
+    height: 70px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid transparent;
+    background-color: #D9D9D936;
+}
+.btn_other_pattern::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: url('../img/ico_login_02.svg') no-repeat center/100%;
+}
+.btn_other_pattern:hover {
+    border: 1px solid #8597A8;
+    box-shadow:0 0px 8px 0px #00000094;
+}
+.btn_other_pattern .txt01 {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top : 80px;
+
+    font-size: 17rem;
+    font-weight: 500;
+    line-height: 1;
+    color: #2B3942;
+}
+
+
+
+/* /다른 간편인증 방법으로 로그인 */
 
 
 /* @media (min-width: 768px) { */
