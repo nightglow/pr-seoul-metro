@@ -30,6 +30,9 @@ body {
 
 html.menu_open, body.menu_open{ overflow:hidden; }
 
+/* point color */
+.point_color01 { color: #1F5EFF !important; }
+
 /* button */
 .btn_primary {width: 100%;height: 48px;display: flex;align-items: center;justify-content: center;background-color: #162C8F;border-radius: 10px;}
 .btn_primary > .txt {width: 100%;display: block;font-size: 17rem;font-weight: 600;color: #fff;line-height: 1.4;}
@@ -90,14 +93,6 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     font-weight: 600;
     line-height: 1.4;
 }
-
-.btn_center_box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
-
 
 .f_group01 {
     width: 100%;
