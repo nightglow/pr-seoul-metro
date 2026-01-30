@@ -693,7 +693,7 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     align-items: center;
     
     min-width: 280px;
-    min-height: 236px;
+    /* min-height: 236px; */
     max-width: 85%;
     max-height: 85%;
 
@@ -714,7 +714,7 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 }
 .alert_wrap .left_box .area_content01 {
     width: 100%;
-    min-height: 52px;
+    /* min-height: 52px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -754,6 +754,11 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     width: 100%;
     display: block;
     margin-top: 16px;
+}
+
+.alert_wrap .right_box01 {
+    width: 100%;
+    display: block;
 }
 /* //Alert */
 
