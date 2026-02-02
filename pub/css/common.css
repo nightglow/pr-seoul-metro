@@ -30,6 +30,7 @@ body {
 .mt5 { margin-top: 5px; }
 .mt10 {margin-top: 10px;}
 .mt12 {margin-top: 12px;}
+.mt18 {margin-top: 18px;}
 .mt20 {margin-top: 20px;}
 .mt25 {margin-top: 25px;}
 .mt40 { margin-top: 40px;}
@@ -102,6 +103,44 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     font-weight: 600;
     line-height: 1.4;
 }
+
+
+
+
+.btn_approver {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid transparent;
+    background-color: #E6EAED;
+    padding: 15px 9px;
+    min-height: 48px;
+    border-radius: 8px;
+
+    flex-shrink: 0;
+}
+.btn_approver > .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 15rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #020C15B2;
+}
+.btn_approver.active {
+    border: 2px solid #162C8F;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.20);
+}
+.btn_approver.active > .txt01 {
+    font-weight: 600;
+    color: #162C8F;
+}
+
+
 
 .f_group01 {
     width: 100%;
@@ -708,6 +747,9 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 .sheet.act.bh50 {
     height: 50%;
 }
+.sheet.act.bh60 {
+    height: 60%;
+}
 .sheet.act.bh70 {
     height: 70%;
 }
@@ -863,7 +905,7 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     width: 100%;
     height: 100%;
     display: block;
-    overflow-y: auto;;
+    /* overflow-y: auto; */
 }
 .footer {
     width: 100%;

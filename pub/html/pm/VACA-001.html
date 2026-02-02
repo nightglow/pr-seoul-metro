@@ -42,7 +42,8 @@
                                         </div>
                                         <div class="right_box02 mt12">
                                             <div class="common_inp05"><!-- active -->
-                                                <input type="text" class="inp_pw" placeholder="휴가구분을 선택하세요." name="0" value="연차"/>
+                                                <input type="text" class="inp_pw" placeholder="휴가구분을 선택하세요." name="0"
+                                                    value="연차" />
                                                 <span class="ico_arr">
                                                     <i class="blind">선택표시</i>
                                                 </span>
@@ -60,7 +61,8 @@
                                         </div>
                                         <div class="right_box02 mt12">
                                             <div class="common_inp05"><!-- active -->
-                                                <input type="text" class="inp_pw" placeholder="휴가유형을 선택하세요." name="0" value="장기재직휴가 10년 이상"/>
+                                                <input type="text" class="inp_pw" placeholder="휴가유형을 선택하세요." name="0"
+                                                    value="장기재직휴가 10년 이상" />
                                                 <span class="ico_arr">
                                                     <i class="blind">선택표시</i>
                                                 </span>
@@ -75,9 +77,9 @@
                                         <div class="left_box02">
                                             <span class="txt01">잔여휴가일수</span>
                                         </div>
-                                        <div class="right_box02 "mt12>
+                                        <div class="right_box02 " mt12>
                                             <div class="common_inp06"><!-- active -->
-                                                <input type="text" class="inp_txt" name="0" value="30"/>
+                                                <input type="text" class="inp_txt" name="0" value="30" />
                                                 <span class="ico_txt">일</span>
                                             </div>
                                         </div>
@@ -93,7 +95,7 @@
                                         </div>
                                         <div class="right_box02 mt12">
                                             <div class="common_inp05"><!-- active -->
-                                                <input type="text" class="inp_pw" placeholder="휴가사유를 입력하세요." name="0"/>
+                                                <input type="text" class="inp_pw" placeholder="휴가사유를 입력하세요." name="0" />
                                                 <span class="ico_arr">
                                                     <i class="blind">선택표시</i>
                                                 </span>
@@ -111,9 +113,11 @@
                                         </div>
                                         <div class="right_box02 mt12">
                                             <div class="common_inp07">
-                                                <input type="text" class="inp_start" name="0" value="2026-01-01" disabled/>
+                                                <input type="text" class="inp_start" name="0" value="2026-01-01"
+                                                    disabled />
                                                 <span class="txt01">~</span>
-                                                <input type="text" class="inp_end" name="0" value="2026-01-01" disabled/>
+                                                <input type="text" class="inp_end" name="0" value="2026-01-01"
+                                                    disabled />
                                                 <button type="button" class="btn_calendar">
                                                     <i class="blind">달력</i>
                                                 </button>
@@ -130,7 +134,7 @@
                                         </div>
                                         <div class="right_box02 mt12">
                                             <div class="common_inp06"><!-- active -->
-                                                <input type="text" class="inp_txt" name="0" value="3"/>
+                                                <input type="text" class="inp_txt" name="0" value="3" />
                                                 <span class="ico_txt">일</span>
                                             </div>
                                         </div>
@@ -146,7 +150,8 @@
                                         </div>
                                         <div class="right_box02 mt12">
                                             <div class="common_inp08">
-                                                <input type="text" class="inp_file" name="0" placeholder="10MB이하 파일" value="file_name.jpg, file_name_01.jpg" disabled/>
+                                                <input type="text" class="inp_file" name="0" placeholder="10MB이하 파일"
+                                                    value="file_name.jpg, file_name_01.jpg" disabled />
                                                 <button type="button" class="btn_files">
                                                     <span class="txt01">파일찾기</span>
                                                 </button>
@@ -201,11 +206,33 @@
                             </ol>
                         </div>
 
-                        <div>
-                            <span>결제자</span>
+                        <div class="approver mt18">
+                            <div class="left_box01">
+                                <span class="txt01">결제자</span>
+                                <span class="txt02">*</span>
+                            </div>
+                            <div class="right_box01">
+                                <ul class="area_approver mt10">
+                                    <li>
+                                        <button type="button" class="btn_approver active"><!-- active 활성화 -->
+                                            <span class="txt01">결제선 초기화</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn_approver"><!-- active 활성화 -->
+                                            <span class="txt01">결재선 지정</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn_approver"><!-- active 활성화 -->
+                                            <span class="txt01">결재선 불러오기</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
 
@@ -223,8 +250,18 @@
                 </div>
             </div>
         </div>
-    <div>
+        <div>
 </body>
+
+<script>
+
+    const toggleBtn = document.querySelector('.btn_approver');
+
+    toggleBtn.addEventListener('click', function () {
+        this.classList.toggle('active');
+    });
+
+</script>
 
 
 </html>
