@@ -59,24 +59,24 @@
             <div id="tab2">
                 <div class="tab_cont_wrap">
                     <div class="motorcar_line_select">
-                        <div class="f_group02">
-                            <label class="area_tit01" onclick="BottomSheet.show('sheet1');">
-                                <div class="left_box02">
-                                    <span class="txt01">모터카 운행 노선</span>
-                                    <!-- <span class="txt02">*</span> -->
-                                </div>
-                                <div class="right_box02 mt10">
-                                    <div class="select_box">
-                                        <input type="text" name="input_line" id="inp_line" class="inp_line" value="" placeholder="전체" readonly>
-                                        <button type="button" class="btn_bsopen">
-                                            <label class="blind">열기</label>
-                                        </button>
-                                    </div>
-                                </div>
-                            </label>
+                        <div class="left_box">
+                            <span class="tit01">진출입 구분</span>
+                        </div>
+                        <div class="right_box">
+                            <select name="" id="">
+                                <option value="0">전체</option>
+                                <option value="1">1호선</option>
+                                <option value="2">2호선</option>
+                                <option value="3">3호선</option>
+                                <option value="4">4호선</option>
+                                <option value="5">5호선</option>
+                                <option value="6">6호선</option>
+                                <option value="7">7호선</option>
+                                <option value="8">8호선</option>
+                            </select>
                         </div>
                     </div>
-
+                    <div class="divider"></div>
                     <div class="motorcar_line_list">
                         <!-- 운행노선 블럭 -->
                         <div class="motorcar_line">
@@ -198,106 +198,6 @@
                     </button>
                 </li>
             </ul>
-        </div>
-
-        <!-- 모터카 운행 호선 -->
-        <div class="dim" data-sheet='sheet1'>
-            <div class="sheet bh70">
-                <div class="left_box">
-                    <div class="area_tit01">
-                        <span class="txt01">모터카 운행 호선</span>
-                        <button type="button" class="btn_close" onclick="BottomSheet.hide('sheet1');">
-                            <label class="blind">닫기</label>
-                        </button>
-                    </div>
-                </div>
-                <div class="right_box">
-                    <!-- 호선 선택 -->
-                    <ul class="item_list">
-                        <li>
-                            <div class="item_rdo">
-                                <label class="rdo_select" for="rdo02_0">
-                                    <input type="radio" name="rdo02" id="rdo02_0" checked>
-                                    <span class="ico_check"></span>
-                                    <span class="txt01">전체</span>
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item_rdo">
-                                <label class="rdo_select" for="rdo02_1">
-                                    <input type="radio" name="rdo02" id="rdo02_1">
-                                    <span class="ico_check"></span>
-                                    <span class="txt01">1호선</span>
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item_rdo">
-                                <label class="rdo_select" for="rdo02_2">
-                                    <input type="radio" name="rdo02" id="rdo02_2">
-                                    <span class="ico_check"></span>
-                                    <span class="txt01">2호선</span>
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item_rdo">
-                                <label class="rdo_select" for="rdo02_3">
-                                    <input type="radio" name="rdo02" id="rdo02_3">
-                                    <span class="ico_check"></span>
-                                    <span class="txt01">3호선</span>
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item_rdo">
-                                <label class="rdo_select" for="rdo02_4">
-                                    <input type="radio" name="rdo02" id="rdo02_4">
-                                    <span class="ico_check"></span>
-                                    <span class="txt01">4호선</span>
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item_rdo">
-                                <label class="rdo_select" for="rdo02_5">
-                                    <input type="radio" name="rdo02" id="rdo02_5">
-                                    <span class="ico_check"></span>
-                                    <span class="txt01">5호선</span>
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item_rdo">
-                                <label class="rdo_select" for="rdo02_6">
-                                    <input type="radio" name="rdo02" id="rdo02_6">
-                                    <span class="ico_check"></span>
-                                    <span class="txt01">6호선</span>
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item_rdo">
-                                <label class="rdo_select" for="rdo02_7">
-                                    <input type="radio" name="rdo02" id="rdo02_7">
-                                    <span class="ico_check"></span>
-                                    <span class="txt01">7호선</span>
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item_rdo">
-                                <label class="rdo_select" for="rdo02_8">
-                                    <input type="radio" name="rdo02" id="rdo02_8">
-                                    <span class="ico_check"></span>
-                                    <span class="txt01">8호선</span>
-                                </label>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
     <div>
 
