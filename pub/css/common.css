@@ -141,6 +141,33 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 }
 
 
+.btn_approver01 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #162C8F;
+    background-color: #fff;
+    padding: 15px 32px;
+    min-height: 48px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+.btn_approver01 > .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 15rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #020C15B2;
+}
+
+
+
+
+
 
 .f_group01 {
     width: 100%;

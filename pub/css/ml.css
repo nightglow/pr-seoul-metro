@@ -1164,9 +1164,7 @@
 
 
 
-
-/* @media (min-width: 768px) { */
-@media (min-width: 750px) {
+@media (min-width: 749px) {
     
     .login > .area_content01 { 
         align-items: normal;
