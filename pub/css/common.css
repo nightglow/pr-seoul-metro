@@ -1408,7 +1408,7 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     border: 0;
     padding: 0;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
