@@ -113,7 +113,7 @@
 }
 
 .sch_result_box {
-    padding: 20px;
+    padding: 0 20px 20px;
 }
 .list_tit_wrap {
     display: flex;
@@ -141,6 +141,9 @@
     border-top: 1px solid #73757E;
     margin-top: 12px;
     padding-top: 10px;
+}
+.result_list {
+    margin-bottom: 20px;
 }
 .result_list > li ~ li {
     border-top: 1px solid rgba(133, 151, 168, 0.50);
@@ -290,7 +293,7 @@
 }
 .motorcar_route_box {
     width: 100%;
-    background-color: #EBF0F580;
+    background: rgba(245, 248, 250, 0.50);
     border-radius: 10px;
     padding: 24px 16px;
 }
@@ -409,6 +412,9 @@
     width: calc(100% - 40px);
     margin: 0 auto;
 }
+.cont_wrap:last-child {
+    padding-bottom: 80px;
+}
 .tit_wrap01 {
     display: flex;
     justify-content: space-between;
@@ -490,7 +496,7 @@
     content: '';
     width: 20px;
     height: 20px;
-    background-image: url(../img/ico_alert_04.svg);
+    background-image: url(../img/ico_alert_06.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 20px 20px;
@@ -568,6 +574,9 @@
 }
 
 /* 진입번호 */
+.popup_wrap .right_box .area_tit01:has(.edit_cont_box) {
+    min-height: auto;
+}
 .edit_cont_box {
     display: flex;
     padding: 26px 52px 25px 53px;
@@ -593,8 +602,234 @@
     line-height: 1.4;
 }
 
+.process_result_box {
+    text-align: center;
+    margin-top: 12px;
+}
+.process_result_box .txt01 {
+    color:#2C333B;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.popup_wrap .right_box .area_tit01 .box_tit01:has(.txt03) {
+    max-width: 240px;
+}
+.popup_wrap .right_box .area_tit01 .box_tit01 li .txt03 {
+    color: #2C333B;
+    text-align: left;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.popup_wrap .right_box .area_tit01 .box_tit01 li .img01 {
+    display: block;
+    text-align: center;
+}
+.popup_wrap .right_box .area_tit01:has(.img01),
+.popup_wrap .right_box .area_tit01:has(.img01) .box_tit01 {
+    min-height: auto;
+}
+
+/* 모터카운행여부 */
+.motorcar_line_select {
+    width: calc(100% - 40px);
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tab_cont_wrap > .motorcar_line_select {
+    margin-top: 0;
+}
+.motorcar_line_select .left_box .tit01 {
+    color: #070F16;
+    font-size: 18rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+.motorcar_line_select .right_box select {
+    border-radius: 8px;
+    border: 1px solid rgba(133, 151, 168, 0.50);
+    background: #fff;
+    padding: 12px 12px 12px 20px;
+    width: 155px;
+    color: rgba(7, 15, 22, 0.40);
+    font-size: 18rem;
+    font-weight: 500;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("../img/ico_arr_bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+}
+
+/* 마음건강 자가진단 */
+.select_diagnosis {
+    width: calc(100% - 40px);
+    margin: 10px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.select_diagnosis li {
+    width: 100%;
+}
+.select_diagnosis .sel_item {
+    border-radius: 8px;
+    border: 1px solid rgba(133, 151, 168, 0.50);
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 208px;
+}
+.select_diagnosis .sel_item .txt_box01 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+    height: 100px;
+    background-image: url(../img/img_health_personal.png);
+    background-repeat: no-repeat;
+    background-position: left 30px center;
+    background-size: 97px 100px;
+    margin: 20px 0px 0 0;
+}
+.select_diagnosis .sel_item .txt_box01 .txt01 {
+    color: #2C333B;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.4;
+    display: block;
+    width: 118px;
+    height: 75px;
+}
+.select_diagnosis .sel_item .txt_box02 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+    height: 100px;
+    background-image: url(../img/img_health_group.png);
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    background-size: 125px 109px;
+    margin: 20px 0px 0 0;
+}
+.select_diagnosis .sel_item .txt_box02 .txt01 {
+    color: #2C333B;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.4;
+    display: block;
+    width: 118px;
+    height: 75px;
+}
+.select_diagnosis .sel_item button {
+    width: calc(100% - 40px);
+    margin: 0 20px 20px;
+}
+
+.info_box01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px 0;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 18px 21px 18px 20px;
+    border-radius: 8px;
+    background: #EDF5FF;
+}
+.info_box01 .tit01 {
+    color: rgba(7, 15, 22, 0.82);
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.info_box01 .txt_list li {
+    color: #4B5058;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.35;
+}
+.info_box01 .txt_list li ~ li {
+    margin-top: 7px;
+}
+
+/* 개인용 자가진단 체크박스 */
+.chk_card_group {
+    width: calc(100% - 40px);
+    margin: 20px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+.chk_card {
+    display: block;
+    cursor: pointer;
+}
+.chk_card input {
+    position: absolute;
+    opacity: 0;
+}
+.chk_card .card {
+    height: 120px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    /* transition: all 0.2s ease; */
+}
+.chk_card .icon {
+    font-size: 32px;
+}
+.chk_card .text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+}
+.chk_card input:checked + .card {
+    border-width: 2px;
+    border-color: #1F5EFF;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.chk_card input:focus-visible + .card {
+    outline: 3px solid #1F5EFF;
+    outline-offset: 2px;
+}
+
+
+
 @media (min-width: 750px) {
     .motorcar_route_box .motorcar_route .route_name {
         max-width: 580px;
+    }
+    
+    .select_diagnosis li {
+        width: calc(50% - 6px);
+    }
+    
+    .select_diagnosis .sel_item {
+        height: 208px;
+    }
+    
+    .select_diagnosis .sel_item .txt_box01,
+    .select_diagnosis .sel_item .txt_box02 {
+        padding-right: 54px;
+    }
+
+    .chk_card_group {
+        grid-template-columns: repeat(5, 1fr);
     }
 }
