@@ -174,6 +174,7 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     width: 24px;
     height: 24px;
 }
+
 .btn_nav_home {
     display: flex;
     align-items: center;
@@ -410,6 +411,153 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     background-color: #fff;
 }
 /* //button */
+
+
+/* 첨부파일 */
+.btn_close_file {
+    display: block;
+    background-image: url('../img/btn_close_file.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    width: 24px;
+    height: 24px;
+}
+.btn_files {
+    width: max-content;
+    height: 40px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F5EFF;
+    border-radius: 8px;
+    padding: 9px 15px;
+
+    flex-shrink: 0;
+}
+.btn_files .txt01  {
+    width: 100%;
+    display: block;
+
+    font-size: 15rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #FFF;
+}
+
+.f_group07 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.f_group07 > .area_tit01 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 12px 6px 6px 20px;
+    border: 1px solid #8597A880;
+    border-radius: 8px;
+}
+.f_group07 > .area_tit01:has(.inp_pw:focus) {
+    border: 1px solid #8597A880;
+}
+.f_group07 > .area_tit01 .left_box02 {
+    width: 100%;
+    display: flex;
+    gap: 0 4px;
+}
+.f_group07 > .area_tit01 .left_box02 .txt01 {
+    width: max-content;
+    display: block;
+    flex-shrink: 0;
+
+    font-size: 15rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #020C15B8;
+}
+.f_group07 > .area_tit01 .left_box02 .txt02 {
+    width: 100%;
+    display: block;
+
+    font-size: 15rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #FF5930;
+}
+.f_group07  > .area_tit01 .right_box02 {
+    width: 100%;
+    display: flex;
+}
+
+.f_group07 > .area_contens01 {
+    width: 100%;
+    display: block;
+
+    padding: 7px 18px;
+    background-color:  #F5F8FA80;
+    border-radius: 6px;
+    margin-top: 6px;
+}
+.f_group07 > .area_contens01 > ul {
+    width: 100%;
+    display: block;
+}
+.f_group07 > .area_contens01 > ul li + li {
+    margin-top: 12px;
+}
+
+
+.common_inp08 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.common_inp08 > .inp_file {
+    width: 100%;
+    height: 22px;
+    display: block;
+    font-size: 18rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #070F16D1;
+
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.common_inp08 > input[type='text'].inp_file {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+.common_inp08 > input[type='text'].inp_file:focus  {
+    border: 1px solid transparent;
+}
+
+.file_list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.file_list > .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #2C333B;
+
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* // 첨부파일 */
+
+
+
 
 
 /* input */
