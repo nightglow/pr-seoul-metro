@@ -26,9 +26,16 @@ body {
 }
 
 
+.mt4 {margin-top: 4px;}
 .mt5 { margin-top: 5px; }
+.mt10 {margin-top: 10px;}
+.mt12 {margin-top: 12px;}
 .mt20 {margin-top: 20px;}
-.mt40 { margin-top: 40px; }
+.mt25 {margin-top: 25px;}
+.mt40 { margin-top: 40px;}
+.mt70 {margin-top: 70px;}
+
+
 
 html.menu_open, body.menu_open{ overflow:hidden; }
 
@@ -860,7 +867,7 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 }
 .footer {
     width: 100%;
-    min-height: 70px; 
+    /* min-height: 70px;  */
     background-color: #FFF;
 
     position: fixed;
