@@ -835,7 +835,7 @@
     gap: 8px 10px;
 }
 .diagnosis_box .tab-group.radio .tab-item .tab-btn {
-    padding: 9.5px 12px;
+    padding: 9.5px 9px;
 }
 
 .diagnosis_result {
@@ -907,6 +907,27 @@
     font-weight: 600;
 }
 
+.diagnosis_agree_box {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 1px solid rgba(133, 151, 168, 0.50);
+    background: #FFF;
+    padding: 18px 21px 18px 20px;
+}
+.diagnosis_agree_box ul li {
+    color: #4B5058;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.35
+}
+.diagnosis_agree_box ul li ~ li {
+    margin-top: 7px;
+}
+
+.chk_card_group.screening {
+    grid-template-columns: repeat(1, 1fr);
+}
 
 
 @media (min-width: 749px) {
