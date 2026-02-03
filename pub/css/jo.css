@@ -514,6 +514,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    margin-bottom: 80px;
 }
 .bs_inp_wrap .tit_wrap01 {
     width: calc(100% - 40px);
