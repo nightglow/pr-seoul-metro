@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>서울교통공사 인사관리</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <div id="header"></div>
+
+        <!-- all menu -->
+        <div class="all_menu" id="all_menu" style="transform: translateX(100%); x: 100px;">
+            <div class="all_menu_top">
+                <div class="all_menu_user">김교통<span> 님</span></div>
+                <div class="all_menu_btn">
+                    <label class="swith_label type02">
+                        <input type="checkbox" class="swith_check" />
+                        <span>큰글</span>
+                    </label>
+                    <button type="button" class="btn_close type02 all_menu_close">
+                        <label class="blind">닫기</label>
+                    </button>
+                </div>
+            </div>
+            <div class="all_menu_cont">
+                <ul class="all_menu_1depth">
+                    <li>
+                        <a href="javascript:;" class="item">선로작업승인부</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="item">마음건강 자가진단</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- contents -->
+        <div class="contents">
+            <div class="tab_wrap">
+                <ul class="tab_nav">
+                    <li><a href="#tab1"><span class="tit01">우울증상</span></a></li>
+                    <li><a href="#tab2"><span class="tit01">공황장애</span></a></li>
+                </ul>
+            </div>
+
+            <div id="tab1">
+                <div class="tab_cont_wrap">
+                    <div class="info_box01">
+                        <div class="tit01">우울증상 측정</div>
+                        <ul class="txt_list">
+                            <li>아래의 질문을 잘 읽으신 후, 지난 1주동안 느끼고 행동한 것을 가장 잘 나타낸다고 생각되는 문항을 체크해 주세요.(출처 : CES-D)</li>
+                        </ul>
+                    </div>
+                    <div class="diagnosis_list">
+                        <div class="diagnosis_box">
+                            <div class="tit01">1. 평소에는 성가시지 않았던 일이 성가시게 느껴졌다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer1">
+                                        <span class="tab-btn">거의 드물게(1일 이하)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer2">
+                                        <span class="tab-btn">때로(1~2일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer3" checked>
+                                        <span class="tab-btn">상당히(3~4일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer4">
+                                        <span class="tab-btn">대부분(5~7일)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">2. 별로 먹고 싶지 않았다. 입맛이 없었다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer1">
+                                        <span class="tab-btn">거의 드물게(1일 이하)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer2" checked>
+                                        <span class="tab-btn">때로(1~2일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer3">
+                                        <span class="tab-btn">상당히(3~4일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer4">
+                                        <span class="tab-btn">대부분(5~7일)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">3. 가족이나 친구가 도와주더라도 울적한 기분을 떨칠 수 없었다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer1" checked>
+                                        <span class="tab-btn">거의 드물게(1일 이하)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer2">
+                                        <span class="tab-btn">때로(1~2일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer3">
+                                        <span class="tab-btn">상당히(3~4일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer4">
+                                        <span class="tab-btn">대부분(5~7일)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">4. 나도 다른 사람만큼 기분이 좋았다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer1">
+                                        <span class="tab-btn">거의 드물게(1일 이하)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer2">
+                                        <span class="tab-btn">때로(1~2일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer3" checked>
+                                        <span class="tab-btn">상당히(3~4일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer4">
+                                        <span class="tab-btn">대부분(5~7일)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">5. 하고 있는 일에 마음을 집중하기가 어려웠다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer1">
+                                        <span class="tab-btn">거의 드물게(1일 이하)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer2" checked>
+                                        <span class="tab-btn">때로(1~2일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer3">
+                                        <span class="tab-btn">상당히(3~4일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer4">
+                                        <span class="tab-btn">대부분(5~7일)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">6. 우울했다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer1">
+                                        <span class="tab-btn">거의 드물게(1일 이하)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer2" checked>
+                                        <span class="tab-btn">때로(1~2일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer3">
+                                        <span class="tab-btn">상당히(3~4일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer4">
+                                        <span class="tab-btn">대부분(5~7일)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">7. 하는 일마다 힘들게 느꼈다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer1">
+                                        <span class="tab-btn">거의 드물게(1일 이하)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer2" checked>
+                                        <span class="tab-btn">때로(1~2일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer3">
+                                        <span class="tab-btn">상당히(3~4일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer4">
+                                        <span class="tab-btn">대부분(5~7일)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">8. 미래에 대해 희망적으로 느꼈다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q08" value="answer1">
+                                        <span class="tab-btn">거의 드물게(1일 이하)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q08" value="answer2" checked>
+                                        <span class="tab-btn">때로(1~2일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q08" value="answer3">
+                                        <span class="tab-btn">상당히(3~4일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q08" value="answer4">
+                                        <span class="tab-btn">대부분(5~7일)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">9. 내 인생을 실패작이라고 생각했다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q09" value="answer1">
+                                        <span class="tab-btn">거의 드물게(1일 이하)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q09" value="answer2" checked>
+                                        <span class="tab-btn">때로(1~2일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q09" value="answer3">
+                                        <span class="tab-btn">상당히(3~4일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q09" value="answer4">
+                                        <span class="tab-btn">대부분(5~7일)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">10. 무서움을 느꼈다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q10" value="answer1">
+                                        <span class="tab-btn">거의 드물게(1일 이하)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q10" value="answer2" checked>
+                                        <span class="tab-btn">때로(1~2일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q10" value="answer3">
+                                        <span class="tab-btn">상당히(3~4일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q10" value="answer4">
+                                        <span class="tab-btn">대부분(5~7일)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">11. 잠을 설쳤다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q11" value="answer1">
+                                        <span class="tab-btn">거의 드물게(1일 이하)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q11" value="answer2" checked>
+                                        <span class="tab-btn">때로(1~2일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q11" value="answer3">
+                                        <span class="tab-btn">상당히(3~4일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q11" value="answer4">
+                                        <span class="tab-btn">대부분(5~7일)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">12. 행복했다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q12" value="answer1">
+                                        <span class="tab-btn">거의 드물게(1일 이하)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q12" value="answer2" checked>
+                                        <span class="tab-btn">때로(1~2일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q12" value="answer3">
+                                        <span class="tab-btn">상당히(3~4일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q12" value="answer4">
+                                        <span class="tab-btn">대부분(5~7일)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">13. 평소보다 말을 적게 했다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q13" value="answer1">
+                                        <span class="tab-btn">거의 드물게(1일 이하)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q13" value="answer2" checked>
+                                        <span class="tab-btn">때로(1~2일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q13" value="answer3">
+                                        <span class="tab-btn">상당히(3~4일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q13" value="answer4">
+                                        <span class="tab-btn">대부분(5~7일)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">14. 외로움을 느꼈다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q14" value="answer1">
+                                        <span class="tab-btn">거의 드물게(1일 이하)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q14" value="answer2" checked>
+                                        <span class="tab-btn">때로(1~2일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q14" value="answer3">
+                                        <span class="tab-btn">상당히(3~4일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q14" value="answer4">
+                                        <span class="tab-btn">대부분(5~7일)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">15. 사람들이 불친절했다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q15" value="answer1">
+                                        <span class="tab-btn">거의 드물게(1일 이하)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q15" value="answer2" checked>
+                                        <span class="tab-btn">때로(1~2일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q15" value="answer3">
+                                        <span class="tab-btn">상당히(3~4일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q15" value="answer4">
+                                        <span class="tab-btn">대부분(5~7일)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">16. 인생이 즐거웠다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q16" value="answer1">
+                                        <span class="tab-btn">거의 드물게(1일 이하)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q16" value="answer2" checked>
+                                        <span class="tab-btn">때로(1~2일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q16" value="answer3">
+                                        <span class="tab-btn">상당히(3~4일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q16" value="answer4">
+                                        <span class="tab-btn">대부분(5~7일)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">17. 울음을 터뜨린 적이 있었다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q17" value="answer1">
+                                        <span class="tab-btn">거의 드물게(1일 이하)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q17" value="answer2" checked>
+                                        <span class="tab-btn">때로(1~2일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q17" value="answer3">
+                                        <span class="tab-btn">상당히(3~4일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q17" value="answer4">
+                                        <span class="tab-btn">대부분(5~7일)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">18. 슬픔을 느꼈다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q18" value="answer1">
+                                        <span class="tab-btn">거의 드물게(1일 이하)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q18" value="answer2" checked>
+                                        <span class="tab-btn">때로(1~2일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q18" value="answer3">
+                                        <span class="tab-btn">상당히(3~4일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q18" value="answer4">
+                                        <span class="tab-btn">대부분(5~7일)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">19. 사람들이 나를 싫어한다고 느꼈다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q19" value="answer1">
+                                        <span class="tab-btn">거의 드물게(1일 이하)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q19" value="answer2" checked>
+                                        <span class="tab-btn">때로(1~2일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q19" value="answer3">
+                                        <span class="tab-btn">상당히(3~4일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q19" value="answer4">
+                                        <span class="tab-btn">대부분(5~7일)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">20. 일을 제대로 진척시킬 수 없었다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q20" value="answer1">
+                                        <span class="tab-btn">거의 드물게(1일 이하)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q20" value="answer2" checked>
+                                        <span class="tab-btn">때로(1~2일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q20" value="answer3">
+                                        <span class="tab-btn">상당히(3~4일)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q20" value="answer4">
+                                        <span class="tab-btn">대부분(5~7일)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab2">탭2 내용</div>
+        </div>
+        <div class="footer">
+            <div class="f_group01">
+                <button type="button" class="btn_primary" disabled>
+                    <span class="txt">다음 검사하기</span>
+                </button>
+            </div>
+        </div>
+    <div>
+
+</body>
+
+</html>

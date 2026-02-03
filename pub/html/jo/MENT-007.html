@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>서울교통공사 인사관리</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <div id="header"></div>
+
+        <!-- all menu -->
+        <div class="all_menu" id="all_menu" style="transform: translateX(100%); x: 100px;">
+            <div class="all_menu_top">
+                <div class="all_menu_user">김교통<span> 님</span></div>
+                <div class="all_menu_btn">
+                    <label class="swith_label type02">
+                        <input type="checkbox" class="swith_check" />
+                        <span>큰글</span>
+                    </label>
+                    <button type="button" class="btn_close type02 all_menu_close">
+                        <label class="blind">닫기</label>
+                    </button>
+                </div>
+            </div>
+            <div class="all_menu_cont">
+                <ul class="all_menu_1depth">
+                    <li>
+                        <a href="javascript:;" class="item">선로작업승인부</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="item">마음건강 자가진단</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- contents -->
+        <div class="contents">
+            <div class="tab_wrap">
+                <ul class="tab_nav">
+                    <li><a href="#tab1"><span class="tit01">음주문제</span></a></li>
+                    <li><a href="#tab2"><span class="tit01">수면문제</span></a></li>
+                </ul>
+            </div>
+
+            <div id="tab1">
+                <div class="tab_cont_wrap">
+                    <div class="info_box01">
+                        <div class="tit01">AUDIT-K(알코올 사용장애 선별검사)측정</div>
+                        <ul class="txt_list">
+                            <li>다음의 각  문장을 읽고 자신에게 알맞은 답변에 체크하여 주시기 바랍니다. (AUDIT-K)</li>
+                        </ul>
+                    </div>
+                    <div class="diagnosis_list">
+                        <div class="diagnosis_box">
+                            <div class="tit01">1. 얼마나 자주 술을 마십니까?</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer1">
+                                        <span class="tab-btn">전혀 안마심</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer2">
+                                        <span class="tab-btn">월1회 이하</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer3" checked>
+                                        <span class="tab-btn">월 2~4회</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer4">
+                                        <span class="tab-btn">주 2~3회</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer5">
+                                        <span class="tab-btn">4회</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">2. 술을 마시는 날은 보통 몇 잔을 마십니까?</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer1">
+                                        <span class="tab-btn">1~2잔</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer2">
+                                        <span class="tab-btn">3~4잔</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer3" checked>
+                                        <span class="tab-btn">5~6잔</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer4">
+                                        <span class="tab-btn">7~8잔</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer5">
+                                        <span class="tab-btn">10잔 이상</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">3. 한 번에 술좌석에서 6잔(또는 맥주 2,000cc)이상을 마시는 횟수는 어느정도 입니까?</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer1">
+                                        <span class="tab-btn">없음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer2">
+                                        <span class="tab-btn">월 1회 미만</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer3" checked>
+                                        <span class="tab-btn">월 1회</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer4">
+                                        <span class="tab-btn">주 1회</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer5">
+                                        <span class="tab-btn">거의 매일</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">4. 지난 1년간 일단 술을 마시기 시작하여 자제가 안 된 적이 있습니까?</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer1">
+                                        <span class="tab-btn">없음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer2">
+                                        <span class="tab-btn">월 1회 미만</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer3" checked>
+                                        <span class="tab-btn">월 1회</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer4">
+                                        <span class="tab-btn">주 1회</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer5">
+                                        <span class="tab-btn">거의 매일</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">5. 지난 1년간 음주 때문에 일상생활에 지장을 받은 적이 있습니까?</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer1">
+                                        <span class="tab-btn">없음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer2">
+                                        <span class="tab-btn">월 1회 미만</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer3" checked>
+                                        <span class="tab-btn">월 1회</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer4">
+                                        <span class="tab-btn">주 1회</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer5">
+                                        <span class="tab-btn">거의 매일</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">6. 지난 1년간 과음 후 다음날 아침 정신을 차리기 위해 해장술을 마신 적이 있습니까?</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer1">
+                                        <span class="tab-btn">없음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer2">
+                                        <span class="tab-btn">월 1회 미만</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer3" checked>
+                                        <span class="tab-btn">월 1회</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer4">
+                                        <span class="tab-btn">주 1회</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer5">
+                                        <span class="tab-btn">거의 매일</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">7. 지난 1년간 음주 후 술을 마신 것에 대해 후회한 적이 있습니까?</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer1">
+                                        <span class="tab-btn">없음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer2">
+                                        <span class="tab-btn">월 1회 미만</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer3" checked>
+                                        <span class="tab-btn">월 1회</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer4">
+                                        <span class="tab-btn">주 1회</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer5">
+                                        <span class="tab-btn">거의 매일</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">8. 지난 1년간 술이 깬 후에 취중의 일을 기억할 수 없었던 적이 있습니까?</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q08" value="answer1">
+                                        <span class="tab-btn">없음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q08" value="answer2">
+                                        <span class="tab-btn">월 1회 미만</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q08" value="answer3" checked>
+                                        <span class="tab-btn">월 1회</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q08" value="answer4">
+                                        <span class="tab-btn">주 1회</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q08" value="answer5">
+                                        <span class="tab-btn">거의 매일</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">9. 당신의 음주로 인해 자신이나 다른 사람이 다친 적이 있습니까?</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q09" value="answer1">
+                                        <span class="tab-btn">없음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q09" value="answer2">
+                                        <span class="tab-btn">있지만 지난 1년간 없음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q09" value="answer3" checked>
+                                        <span class="tab-btn">지난 1년간 있음</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">10. 가족이나 의사가 당신의 음주에 대해 걱정을 하거나 또는 술을 끊거나 줄이라고 권고를 한 적이 있습니까?</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q10" value="answer1">
+                                        <span class="tab-btn">없음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q10" value="answer2">
+                                        <span class="tab-btn">있지만 지난 1년간 없음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q10" value="answer3" checked>
+                                        <span class="tab-btn">지난 1년간 있음</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab2">탭2 내용</div>
+        </div>
+        <div class="footer">
+            <div class="f_group01">
+                <button type="button" class="btn_primary" disabled>
+                    <span class="txt">다음 검사하기</span>
+                </button>
+            </div>
+        </div>
+    <div>
+
+</body>
+
+</html>

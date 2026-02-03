@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>서울교통공사 인사관리</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <div id="header"></div>
+
+        <!-- all menu -->
+        <div class="all_menu" id="all_menu" style="transform: translateX(100%); x: 100px;">
+            <div class="all_menu_top">
+                <div class="all_menu_user">김교통<span> 님</span></div>
+                <div class="all_menu_btn">
+                    <label class="swith_label type02">
+                        <input type="checkbox" class="swith_check" />
+                        <span>큰글</span>
+                    </label>
+                    <button type="button" class="btn_close type02 all_menu_close">
+                        <label class="blind">닫기</label>
+                    </button>
+                </div>
+            </div>
+            <div class="all_menu_cont">
+                <ul class="all_menu_1depth">
+                    <li>
+                        <a href="javascript:;" class="item">선로작업승인부</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="item">마음건강 자가진단</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- contents -->
+        <div class="contents">
+            <div class="motorcar_line_select">
+                <div class="left_box">
+                    <span class="tit01">작업 정보 조회 호선</span>
+                </div>
+                <div class="right_box">
+                    <select name="" id="">
+                        <option value="0">전체</option>
+                        <option value="1" selected>1호선</option>
+                        <option value="2">2호선</option>
+                        <option value="3">3호선</option>
+                        <option value="4">4호선</option>
+                        <option value="5">5호선</option>
+                        <option value="6">6호선</option>
+                        <option value="7">7호선</option>
+                        <option value="8">8호선</option>
+                    </select>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="sch_result_box">
+                <ul class="result_list">
+                    <li>
+                        <div class="linework_box">
+                            <div class="left_box">
+                                <div class="linework_tit line1"><!-- 호선에 따라서 line1 ~ line8 로 숫자 수정 -->
+                                    <div class="line_info_txt">
+                                        <span class="tit02">정보통신1사업소 개량팀</span>
+                                        <ul class="dot_list01">
+                                            <li>개량공사(1호선)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="linework_btn">
+                                    <button type="button" class="btn_lineblue">
+                                        <span class="txt">상세보기</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="right_box">
+                                <div class="linework_cont">
+                                    <div class="linework_cont_tit">
+                                        <span class="tit01">작업구간</span>
+                                    </div>
+                                    <ul class="dot_list01">
+                                        <li>서울역(1) ~ 종각</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="linework_box">
+                            <div class="left_box">
+                                <div class="linework_tit line1"><!-- 호선에 따라서 line1 ~ line8 로 숫자 수정 -->
+                                    <div class="line_info_txt">
+                                        <span class="tit02">전기1사업소 전로팀</span>
+                                        <ul class="dot_list01">
+                                            <li>전차선 점검</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="linework_btn">
+                                    <button type="button" class="btn_lineblue">
+                                        <span class="txt">상세보기</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="right_box">
+                                <div class="linework_cont">
+                                    <div class="linework_cont_tit">
+                                        <span class="tit01">작업구간</span>
+                                    </div>
+                                    <ul class="dot_list01">
+                                        <li>시청 ~ 종로3가</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <button type="button" class="btn_more_view">
+                    <span class="txt01">더보기</span>
+                    <span class="ico_arr01"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <ul class="app_bar">
+                <li>
+                    <button type="button" class="btn_nav_home">
+                        <span class="ico"><i class="blind">홈</i></span>
+                        <span class="txt01">홈</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn_nav_fac active"><!-- 선택시 : active 클리스추가-->
+                        <span class="ico"><i class="blind">즐겨찾기</i></span>
+                        <span class="txt01">즐겨찾기</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn_nav_store">
+                        <span class="ico"><i class="blind">앱스토어</i></span>
+                        <span class="txt01">앱스토어</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn_nav_setting" onclick="location.href = 'SETT_001.html'">
+                        <span class="ico"><i class="blind">설정</i></span>
+                        <span class="txt01">설정</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    <div>
+
+</body>
+
+</html>

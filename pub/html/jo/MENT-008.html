@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>서울교통공사 인사관리</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <div id="header"></div>
+
+        <!-- all menu -->
+        <div class="all_menu" id="all_menu" style="transform: translateX(100%); x: 100px;">
+            <div class="all_menu_top">
+                <div class="all_menu_user">김교통<span> 님</span></div>
+                <div class="all_menu_btn">
+                    <label class="swith_label type02">
+                        <input type="checkbox" class="swith_check" />
+                        <span>큰글</span>
+                    </label>
+                    <button type="button" class="btn_close type02 all_menu_close">
+                        <label class="blind">닫기</label>
+                    </button>
+                </div>
+            </div>
+            <div class="all_menu_cont">
+                <ul class="all_menu_1depth">
+                    <li>
+                        <a href="javascript:;" class="item">선로작업승인부</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="item">마음건강 자가진단</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- contents -->
+        <div class="contents">
+            <div class="tab_wrap">
+                <ul class="tab_nav">
+                    <li><a href="#tab1"><span class="tit01">수면문제</span></a></li>
+                    <li><a href="#tab2"><span class="tit01">상태불안척도</span></a></li>
+                </ul>
+            </div>
+
+            <div id="tab1">
+                <div class="tab_cont_wrap">
+                    <div class="info_box01">
+                        <div class="tit01">수면문제 측정</div>
+                        <ul class="txt_list">
+                            <li>아래의 문항을 잘 읽으신 후 지난 2주동안 당신의 수면상태를 가장 잘 나타낸다고 생각되는 답변에 체크하여 주세요. 한 문장도 빠짐없이 답해 주시기 바랍니다. (출처 : ISI-K)</li>
+                        </ul>
+                    </div>
+                    <div class="diagnosis_list">
+                        <div class="diagnosis_box">
+                            <div class="tit01">1. 잠자리에 누운 후 잠드는 데 30분 이상 걸린다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer1">
+                                        <span class="tab-btn">전혀 그렇지 않다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer2">
+                                        <span class="tab-btn">거의 그렇지 않다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer3" checked>
+                                        <span class="tab-btn">가끔 그렇다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer4">
+                                        <span class="tab-btn">자주 그렇다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer5">
+                                        <span class="tab-btn">매일 그렇다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">2. 잠이 들고 얼마 지나지 않아 깬다. 다시 잠들기 힘들다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer1">
+                                        <span class="tab-btn">전혀 그렇지 않다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer2">
+                                        <span class="tab-btn">거의 그렇지 않다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer3" checked>
+                                        <span class="tab-btn">가끔 그렇다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer4">
+                                        <span class="tab-btn">자주 그렇다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer5">
+                                        <span class="tab-btn">매일 그렇다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">3. 새벽에 너무 일찍 깬다. 다시 잠들지 못한다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer1">
+                                        <span class="tab-btn">전혀 그렇지 않다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer2">
+                                        <span class="tab-btn">거의 그렇지 않다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer3" checked>
+                                        <span class="tab-btn">가끔 그렇다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer4">
+                                        <span class="tab-btn">자주 그렇다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer5">
+                                        <span class="tab-btn">매일 그렇다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">4. 수면 상태에 만족하지 않는다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer1">
+                                        <span class="tab-btn">전혀 그렇지 않다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer2">
+                                        <span class="tab-btn">거의 그렇지 않다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer3" checked>
+                                        <span class="tab-btn">가끔 그렇다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer4">
+                                        <span class="tab-btn">자주 그렇다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer5">
+                                        <span class="tab-btn">매일 그렇다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">5. 수면 문제로 일상생활에 지장을 받는다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer1">
+                                        <span class="tab-btn">전혀 그렇지 않다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer2">
+                                        <span class="tab-btn">거의 그렇지 않다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer3" checked>
+                                        <span class="tab-btn">가끔 그렇다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer4">
+                                        <span class="tab-btn">자주 그렇다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer5">
+                                        <span class="tab-btn">매일 그렇다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">6. 수면 문제로 다른 사람들이 걱정한다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer1">
+                                        <span class="tab-btn">전혀 그렇지 않다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer2">
+                                        <span class="tab-btn">거의 그렇지 않다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer3" checked>
+                                        <span class="tab-btn">가끔 그렇다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer4">
+                                        <span class="tab-btn">자주 그렇다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer5">
+                                        <span class="tab-btn">매일 그렇다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">7. 수면 상태에 대해 걱정한다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer1">
+                                        <span class="tab-btn">전혀 그렇지 않다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer2">
+                                        <span class="tab-btn">거의 그렇지 않다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer3" checked>
+                                        <span class="tab-btn">가끔 그렇다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer4">
+                                        <span class="tab-btn">자주 그렇다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer5">
+                                        <span class="tab-btn">매일 그렇다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab2">탭2 내용</div>
+        </div>
+        <div class="footer">
+            <div class="f_group01">
+                <button type="button" class="btn_primary" disabled>
+                    <span class="txt">다음 검사하기</span>
+                </button>
+            </div>
+        </div>
+    <div>
+
+</body>
+
+</html>

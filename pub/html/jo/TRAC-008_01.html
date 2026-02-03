@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>서울교통공사 인사관리</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+
+<body>
+    <button type="button" class="btn_primary" onclick="Popup.open('popup01')">
+        <span class="txt">관제전달사항</span>
+    </button>
+
+    <div class="popup_dim" data-popup="popup01">
+        <div class="popup_wrap">
+            <div class="left_box">
+                <div class="area_tit01">
+                    <span class="txt01">관제전달사항</span>
+                </div>
+                <div class="area_content01">
+                    <button class="btn_close" onclick="Popup.close('popup01')">
+                        <i class="blind">닫기</i>
+                    </button>
+                </div>
+            </div>
+            <div class="right_box">
+                <div class="area_tit01">
+                    <ul class="box_tit01">
+                        <li>
+                            <span class="img01">
+                                <img src="../../img/ico_alert_02.svg" alt="알림">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="txt01">
+                                전달 내용이 없습니다.
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="area_footer02">
+                    <button type="button" class="btn_primary" onclick="Popup.close('popup01')">
+                        <span class="txt">확인</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+</body>
+
+</html>

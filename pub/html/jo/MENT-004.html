@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>서울교통공사 인사관리</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <div id="header"></div>
+
+        <!-- all menu -->
+        <div class="all_menu" id="all_menu" style="transform: translateX(100%); x: 100px;">
+            <div class="all_menu_top">
+                <div class="all_menu_user">김교통<span> 님</span></div>
+                <div class="all_menu_btn">
+                    <label class="swith_label type02">
+                        <input type="checkbox" class="swith_check" />
+                        <span>큰글</span>
+                    </label>
+                    <button type="button" class="btn_close type02 all_menu_close">
+                        <label class="blind">닫기</label>
+                    </button>
+                </div>
+            </div>
+            <div class="all_menu_cont">
+                <ul class="all_menu_1depth">
+                    <li>
+                        <a href="javascript:;" class="item">선로작업승인부</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="item">마음건강 자가진단</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- contents -->
+        <div class="contents">
+            <div class="tab_wrap">
+                <ul class="tab_nav">
+                    <li><a href="#tab1"><span class="tit01">외상 후 스트레스 장애</span></a></li>
+                    <li><a href="#tab2"><span class="tit01">우울증상</span></a></li>
+                </ul>
+            </div>
+
+            <div id="tab1">
+                <div class="tab_cont_wrap">
+                    <div class="info_box01">
+                        <div class="tit01">외상 후 스트레스 장애(PTSD)측정</div>
+                        <ul class="txt_list">
+                            <li>아래의 질문은 스트레스를 주는 생활사건을 경험한 후에 사람들이 겪는 경험목록입니다. 지난 일주일간 얼마나 자주 경험하였는지 각 문항을 체크해 주세요. 만약 그 기간동안 경험하지 못했다면 '전혀 없다'를 체크해 주세요.(출처 : IES-R-K)</li>
+                        </ul>
+                    </div>
+                    <div class="diagnosis_list">
+                        <div class="diagnosis_box">
+                            <div class="tit01">1. 그 사건을 떠올리게 하는 어떤 것이 나에게 그때의 감정을 다시 불러일으켰다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer1">
+                                        <span class="tab-btn">전혀 없다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer2">
+                                        <span class="tab-btn">드물게 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer3" checked>
+                                        <span class="tab-btn">가끔 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer4">
+                                        <span class="tab-btn">자주 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer5">
+                                        <span class="tab-btn">많이 있다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">2. 나는 수면을 지속하는데 어려움이 있었다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer1">
+                                        <span class="tab-btn">전혀 없다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer2">
+                                        <span class="tab-btn">드물게 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer3">
+                                        <span class="tab-btn">가끔 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer4" checked>
+                                        <span class="tab-btn">자주 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer5">
+                                        <span class="tab-btn">많이 있다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">3. 나는 다른 일들로 인해 그 사건을 생각하게 된다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer1">
+                                        <span class="tab-btn">전혀 없다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer2" checked>
+                                        <span class="tab-btn">드물게 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer3">
+                                        <span class="tab-btn">가끔 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer4">
+                                        <span class="tab-btn">자주 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer5">
+                                        <span class="tab-btn">많이 있다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">4. 나는 그 사건 이후로 예민하고 화가 난다고 느꼈다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer1">
+                                        <span class="tab-btn">전혀 없다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer2" checked>
+                                        <span class="tab-btn">드물게 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer3">
+                                        <span class="tab-btn">가끔 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer4">
+                                        <span class="tab-btn">자주 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer5">
+                                        <span class="tab-btn">많이 있다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">5. 그 사건에 대해 생각하거나 떠오를 때마다 혼란스러워지기 때문에 회피하려고 했다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer1">
+                                        <span class="tab-btn">전혀 없다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer2" checked>
+                                        <span class="tab-btn">드물게 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer3">
+                                        <span class="tab-btn">가끔 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer4">
+                                        <span class="tab-btn">자주 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer5">
+                                        <span class="tab-btn">많이 있다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">6. 내가 생각하지 않으려고 해도 그 사건이 생각난다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer1">
+                                        <span class="tab-btn">전혀 없다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer2">
+                                        <span class="tab-btn">드물게 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer3" checked>
+                                        <span class="tab-btn">가끔 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer4">
+                                        <span class="tab-btn">자주 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer5">
+                                        <span class="tab-btn">많이 있다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">7. 그 사건이 일어나지 않았거나 현실이 아닌 것처럼 느꼈다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer1">
+                                        <span class="tab-btn">전혀 없다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer2">
+                                        <span class="tab-btn">드물게 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer3" checked>
+                                        <span class="tab-btn">가끔 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer4">
+                                        <span class="tab-btn">자주 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer5">
+                                        <span class="tab-btn">많이 있다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">8. 그 사건을 상기시키는 것들을 멀리하며 지냈다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q08" value="answer1">
+                                        <span class="tab-btn">전혀 없다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q08" value="answer2">
+                                        <span class="tab-btn">드물게 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q08" value="answer3" checked>
+                                        <span class="tab-btn">가끔 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q08" value="answer4">
+                                        <span class="tab-btn">자주 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q08" value="answer5">
+                                        <span class="tab-btn">많이 있다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">9. 그 사건의 영상이나 나의 마음속에 갑자기 떠오르곤 했다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q09" value="answer1">
+                                        <span class="tab-btn">전혀 없다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q09" value="answer2">
+                                        <span class="tab-btn">드물게 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q09" value="answer3" checked>
+                                        <span class="tab-btn">가끔 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q09" value="answer4">
+                                        <span class="tab-btn">자주 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q09" value="answer5">
+                                        <span class="tab-btn">많이 있다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">10. 나는 신경이 예민해졌고 쉽게 깜짝 놀랐다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q10" value="answer1">
+                                        <span class="tab-btn">전혀 없다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q10" value="answer2">
+                                        <span class="tab-btn">드물게 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q10" value="answer3" checked>
+                                        <span class="tab-btn">가끔 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q10" value="answer4">
+                                        <span class="tab-btn">자주 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q10" value="answer5">
+                                        <span class="tab-btn">많이 있다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">11. 그 사건에 관해 생각하지 않기 위해 노력했다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q11" value="answer1">
+                                        <span class="tab-btn">전혀 없다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q11" value="answer2">
+                                        <span class="tab-btn">드물게 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q11" value="answer3" checked>
+                                        <span class="tab-btn">가끔 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q11" value="answer4">
+                                        <span class="tab-btn">자주 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q11" value="answer5">
+                                        <span class="tab-btn">많이 있다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">12. 나는 그 사건에 관해 여전히 많은 감정을 가지고 있다는 것을 알지만 신경 쓰고 싶지 않다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q12" value="answer1">
+                                        <span class="tab-btn">전혀 없다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q12" value="answer2">
+                                        <span class="tab-btn">드물게 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q12" value="answer3" checked>
+                                        <span class="tab-btn">가끔 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q12" value="answer4">
+                                        <span class="tab-btn">자주 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q12" value="answer5">
+                                        <span class="tab-btn">많이 있다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">13. 그 사건에 대한 나의 감정은 무감각한 느낌이었다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q13" value="answer1">
+                                        <span class="tab-btn">전혀 없다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q13" value="answer2">
+                                        <span class="tab-btn">드물게 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q13" value="answer3" checked>
+                                        <span class="tab-btn">가끔 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q13" value="answer4">
+                                        <span class="tab-btn">자주 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q13" value="answer5">
+                                        <span class="tab-btn">많이 있다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">14. 나는 마치 사건 당시로 돌아간 것처럼 느껴 지거나 행동할 때가 있었다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q14" value="answer1">
+                                        <span class="tab-btn">전혀 없다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q14" value="answer2">
+                                        <span class="tab-btn">드물게 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q14" value="answer3" checked>
+                                        <span class="tab-btn">가끔 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q14" value="answer4">
+                                        <span class="tab-btn">자주 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q14" value="answer5">
+                                        <span class="tab-btn">많이 있다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">15. 나는 그 사건 이후로 잠들기가 어려웠다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q15" value="answer1">
+                                        <span class="tab-btn">전혀 없다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q15" value="answer2">
+                                        <span class="tab-btn">드물게 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q15" value="answer3" checked>
+                                        <span class="tab-btn">가끔 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q15" value="answer4">
+                                        <span class="tab-btn">자주 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q15" value="answer5">
+                                        <span class="tab-btn">많이 있다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">16. 나는 그 사건에 대한 강한 감정들이 물밀 듯 밀려오는 것을 느꼈다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q16" value="answer1">
+                                        <span class="tab-btn">전혀 없다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q16" value="answer2">
+                                        <span class="tab-btn">드물게 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q16" value="answer3" checked>
+                                        <span class="tab-btn">가끔 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q16" value="answer4">
+                                        <span class="tab-btn">자주 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q16" value="answer5">
+                                        <span class="tab-btn">많이 있다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">17. 내 기억에서 그 사건을 지워버리려고 노력했다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q17" value="answer1">
+                                        <span class="tab-btn">전혀 없다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q17" value="answer2">
+                                        <span class="tab-btn">드물게 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q17" value="answer3" checked>
+                                        <span class="tab-btn">가끔 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q17" value="answer4">
+                                        <span class="tab-btn">자주 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q17" value="answer5">
+                                        <span class="tab-btn">많이 있다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">18. 나는 집중하는데 어려움이 있었다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q18" value="answer1">
+                                        <span class="tab-btn">전혀 없다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q18" value="answer2">
+                                        <span class="tab-btn">드물게 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q18" value="answer3" checked>
+                                        <span class="tab-btn">가끔 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q18" value="answer4">
+                                        <span class="tab-btn">자주 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q18" value="answer5">
+                                        <span class="tab-btn">많이 있다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">19. 그 사건을 떠올리게 하는 어떤 것에도 식은땀, 호흡곤란, 오심, 심장 두근거림 같은 신체반응을 일으켰다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q19" value="answer1">
+                                        <span class="tab-btn">전혀 없다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q19" value="answer2">
+                                        <span class="tab-btn">드물게 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q19" value="answer3" checked>
+                                        <span class="tab-btn">가끔 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q19" value="answer4">
+                                        <span class="tab-btn">자주 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q19" value="answer5">
+                                        <span class="tab-btn">많이 있다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">20. 나는 그 사건에 관한 꿈을 꾼 적이 있었다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q20" value="answer1">
+                                        <span class="tab-btn">전혀 없다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q20" value="answer2">
+                                        <span class="tab-btn">드물게 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q20" value="answer3" checked>
+                                        <span class="tab-btn">가끔 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q20" value="answer4">
+                                        <span class="tab-btn">자주 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q20" value="answer5">
+                                        <span class="tab-btn">많이 있다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">21. 내가 주위를 경계하고 감시하고 있다고 느꼈다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q21" value="answer1">
+                                        <span class="tab-btn">전혀 없다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q21" value="answer2">
+                                        <span class="tab-btn">드물게 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q21" value="answer3" checked>
+                                        <span class="tab-btn">가끔 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q21" value="answer4">
+                                        <span class="tab-btn">자주 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q21" value="answer5">
+                                        <span class="tab-btn">많이 있다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">22. 나는 그 사건에 대해 이야기하지 않으려고 노력했다.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q22" value="answer1">
+                                        <span class="tab-btn">전혀 없다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q22" value="answer2">
+                                        <span class="tab-btn">드물게 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q22" value="answer3" checked>
+                                        <span class="tab-btn">가끔 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q22" value="answer4">
+                                        <span class="tab-btn">자주 있다</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q22" value="answer5">
+                                        <span class="tab-btn">많이 있다</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab2">탭2 내용</div>
+        </div>
+        <div class="footer">
+            <div class="f_group01">
+                <button type="button" class="btn_primary" disabled>
+                    <span class="txt">다음 검사하기</span>
+                </button>
+            </div>
+        </div>
+    <div>
+
+</body>
+
+</html>

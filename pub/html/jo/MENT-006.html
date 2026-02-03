@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>서울교통공사 인사관리</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <div id="header"></div>
+
+        <!-- all menu -->
+        <div class="all_menu" id="all_menu" style="transform: translateX(100%); x: 100px;">
+            <div class="all_menu_top">
+                <div class="all_menu_user">김교통<span> 님</span></div>
+                <div class="all_menu_btn">
+                    <label class="swith_label type02">
+                        <input type="checkbox" class="swith_check" />
+                        <span>큰글</span>
+                    </label>
+                    <button type="button" class="btn_close type02 all_menu_close">
+                        <label class="blind">닫기</label>
+                    </button>
+                </div>
+            </div>
+            <div class="all_menu_cont">
+                <ul class="all_menu_1depth">
+                    <li>
+                        <a href="javascript:;" class="item">선로작업승인부</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="item">마음건강 자가진단</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- contents -->
+        <div class="contents">
+            <div class="tab_wrap">
+                <ul class="tab_nav">
+                    <li><a href="#tab1"><span class="tit01">공황장애</span></a></li>
+                    <li><a href="#tab2"><span class="tit01">음주문제</span></a></li>
+                </ul>
+            </div>
+
+            <div id="tab1">
+                <div class="tab_cont_wrap">
+                    <div class="info_box01">
+                        <div class="tit01">공황장애 측정</div>
+                        <ul class="txt_list">
+                            <li>다음의 질문들은 공황발작이나 제한된 증상 발작과 관련된 것들입니다. 이 설문지에서 공황 발작이란 아래에 열거된 증상들 중 4개 이상이 동반되는 갑작스러운 공포나 불편감을 말합니다.(갑작스럽게 일어난다는 것은 증상이 “10분 이내에 최고조＂에 달하는 것을 의미합니다.)</li>
+                        </ul>
+                    </div>
+                    <div class="diagnosis_list">
+                        <div class="diagnosis_box">
+                            <div class="tit01">다음은 공황 발작 시 야기될 수 있는 증상들입니다.<br>
+                                이 중 10분 이내에 최고조로 동시에 경험했던 증상들을 선택하세요.
+                            </div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group chk" role="checkgroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:체크박스 -->
+                                    <label class="tab-item">
+                                        <input type="checkbox" name="sel_symptoms" value="answer1">
+                                        <span class="tab-btn">심계항진, 심장의 두근거림</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="checkbox" name="sel_symptoms" value="answer2">
+                                        <span class="tab-btn">현기증, 불안정감, 머리 띵함, 어지러움</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="checkbox" name="sel_symptoms" value="answer3" checked>
+                                        <span class="tab-btn">땀흘림</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="checkbox" name="sel_symptoms" value="answer4">
+                                        <span class="tab-btn">비현실감 또는 이인증</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="checkbox" name="sel_symptoms" value="answer5">
+                                        <span class="tab-btn">떨림 혹은 전율</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="checkbox" name="sel_symptoms" value="answer6">
+                                        <span class="tab-btn">감각 이상(마비감 또는 찌릿찌릿한 감각)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="checkbox" name="sel_symptoms" value="answer7">
+                                        <span class="tab-btn">숨가쁜 느낌 또는 숨이 막히는 느낌</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="checkbox" name="sel_symptoms" value="answer8">
+                                        <span class="tab-btn">오한 또는 얼굴이 화끈 달아오름</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="checkbox" name="sel_symptoms" value="answer9">
+                                        <span class="tab-btn">질식감</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="checkbox" name="sel_symptoms" value="answer10">
+                                        <span class="tab-btn">자제력 상실, 또는 미치 것 같은 두려움</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="checkbox" name="sel_symptoms" value="answer11">
+                                        <span class="tab-btn">흉부 통증 또는 가슴 답답함</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="checkbox" name="sel_symptoms" value="answer12">
+                                        <span class="tab-btn">죽음에 대한 두려움</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="checkbox" name="sel_symptoms" value="answer13">
+                                        <span class="tab-btn">토할 것 같은 느낌 혹은 복부 불편감</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">1. 지난주 동안 공황 발작 또는 제한된 증상 발작을 얼마나 자주 경험하셨습니까?</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio02" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer1">
+                                        <span class="tab-btn">공황이나 제한된 증상도 없음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer2">
+                                        <span class="tab-btn">완전한 공황 발작은 없고, 제한된 증상 발작은 하루 1회를 넘지 않음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer3" checked>
+                                        <span class="tab-btn">주1~2회의 완전한 공황발작, 하루에 제한된 증상 발작을 여러 번 경험</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer4">
+                                        <span class="tab-btn">주3회 이상의 완전한 공황 발작, 그러나 평균 하루에 1회 이상은 아님</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q01" value="answer5">
+                                        <span class="tab-btn">하루에 여러 번 완전한 공황 발작이 일어남. 발작이 없는 날보다 있는 날이 더 많음</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">2. 만약 지난주에 공황 발작이 있었다면 공황 발작이 일어날 때 얼마나 불쾌했습니까?(두려웠습니까?) (* 만약 한번 이상의 공황 발작을 경험했다면, 평균적으로 평가해 주세요.)<br>만약 완전한 공황 발작은 없었지만 제한된 증상 발작들만 경험했다면, 제한된 증상 발작에 대해 평가하세요.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio02" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer1">
+                                        <span class="tab-btn">지난 한주간 공황이나 제한된 증상 발적이 없거나, 이로 인한 불쾌감이 없었음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer2">
+                                        <span class="tab-btn">경도의 불쾌감(그다지 강하지 않았음)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer3" checked>
+                                        <span class="tab-btn">중증도의 불쾌감(강하긴 했지만 견딜만 했음)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer4">
+                                        <span class="tab-btn">심한 불쾌감(매우 강했음)</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q02" value="answer5">
+                                        <span class="tab-btn">극심하고 심각한 고통감(모든 발작 동안 극심하게 고통스러웠음)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">3. 지난주 동안 다음 공황 발작이 일어날까봐 또는 발작과 관련된 공포에 대해서 얼마나 불안하고 걱정하셨나요?(예를들어 신체적 또는 정신적 건강 문제 혹은 사회적으로 당황스러운 상황을 야기할까봐 걱정하고 불안한 것을 말합니다.)</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio02" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer1">
+                                        <span class="tab-btn">전혀 염려하지 않았음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer2">
+                                        <span class="tab-btn">간혹 걱정하거나 약간만 염려했음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer3" checked>
+                                        <span class="tab-btn">자주 걱정하거나 중간 정도 염려했음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer4">
+                                        <span class="tab-btn">매우 자주 걱정하거나 내무 방해가 될 정도였음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q03" value="answer5">
+                                        <span class="tab-btn">거의 지속적으로 걱정했으며 아무 것도 할 수 없을 정도였음</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">4. 지난주 동안 공황 발작이 올 것 같은 공포 때문에 어떤 장소나 상황(예를들어 대중교통, 극장, 군중들 속, 터널, 다리, 쇼핑몰, 혼자 있을 때)을 회피했거나 두려움(피하고 싶은 느낌이 드는 불편함)을 느낀 적이 있습니까?<br>아니면 같은 이유로 그런 상황에 처한다면 피해야만 하거나 두려움을 느낄 다른 상황이 있었습니까? 만약 어느 한 경우라도 그렇다면 지난주 동안의 공포와 회피의 정도를 평가해 주세요.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio02" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer1">
+                                        <span class="tab-btn">전혀 아니다. 두려움이나 회피가 전혀 없음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer2">
+                                        <span class="tab-btn">종종 두려움이나 회피가 있기는 하지만 평소대로 상황에 직면하거나 참을 수 있음. 일상생활을 조정할 필요는 거의 또는 전혀 없음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer3" checked>
+                                        <span class="tab-btn">현저한 불안이나 회피가 있으나 견딜만 함. 두려운 상황을 피하기는 사지만 동료와 함께 있으면 직면할 수 있음. 일상생활에 약간의 조정이 필요하나 전반적인 기능 손상은 없음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer4">
+                                        <span class="tab-btn">극심한 회피, 회피 때문에 일상 활동을 하는 것이 힘들었고 중요한 과제를 수행할 수 없음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q04" value="answer5">
+                                        <span class="tab-btn">거의 지속적으로 걱정했으며 아무 것도 할 수 없을 정도였음</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">5. 지난주 동안 공황 발작 시 경험하는 것과 유사한 신체 감각을 일으키거나 혹은 공황발작을 야기할까봐 두려워서 어떤 활동(예들 들어 신체적 운동, 성관계, 뜨거운 물로 샤워나 목욕하기, 커피마시기, 흥분되거나 무서운 영화 보기)을 회피했거나 두려움(피하거나 그만하고 싶을 정도로 그 활동을 하는 것이 불편함)을 느낀 적이 있습니까? 아니면 같은 이유로 지난주 동안 피해야만 했거나 두려움을 느꼈던 다른 활동이 있었습니까? 만약 어느 한 경우라도 그렇다면 지난주 동안 활동에 대한 공포와 회피를 평가해 주세요.</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio02" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer1">
+                                        <span class="tab-btn">신체 감각의 불편감 때문에 특정 상황이나 활동을 피하거나 두려워 한적이 없음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer2">
+                                        <span class="tab-btn">종종 두려움이나 회피가 있기는 하지만 평소대로 거의 불편감 없이 신체적 감각을 야기하는 활동과 상황을 직면하거나 참아낼 수 있음. 이로인한 일상생활의 수정이 거의 필요하지 않음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer3" checked>
+                                        <span class="tab-btn">현저한 회피가 있기는 하나 견딜만함. 완전히는 아니지만 제한적으로 일생생활의 수정이 필요함</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer4">
+                                        <span class="tab-btn">강한 회피, 생활의 근본적인 수정을 해야하거나 기능 상 실질적인 방해를 받음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q05" value="answer5">
+                                        <span class="tab-btn">광범위 하고 치명적인 회피 일상생활의 광범위한 수정이 필요하며 중요한 과제나 활동은 수행하지 못함</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">6. 지난주 동안 상기 증상들 모두가(공황, 제한된 증상, 발작, 발작과 관련된 걱정, 발작 때문에 상황이나 활동을 두려워함) 집안일을 하거나 직장에서 업무를 수행하는데 얼마나 방해를 했습니까?<br>(지난주 동안의 집안일이나 직장에서의 업무가 평소보다 적었다면 만약 일상적인 양이었다면 얼마나 할 수 있었을 지를 고려해 응답해 주세요)</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio02" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer1">
+                                        <span class="tab-btn">집이나 직장에서 공황 장애 증상으로 방해받은 적이 전혀 없음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer2">
+                                        <span class="tab-btn">집안일이나 직장에서의 업무 수행에 약간 방해를 받음. 그러나 문제가 없을 경우와 마찬가지로 거의 모든 일을 처리할 수 있음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer3" checked>
+                                        <span class="tab-btn">집안일이나 직장에서의 업무 수행에 현저하게 방해를 받음. 그러나 여전히 해야 할 일을 처리할 수 있음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer4">
+                                        <span class="tab-btn">집안일이나 직장에서의 업무 수행에 근본적인 손상이 있음. 이런 문제들 때문에 할 수 없는 중요한 일들이 많음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q06" value="answer5">
+                                        <span class="tab-btn">극심함. 치명적인 손상, 증상 때문에 집안일이나 직장에서의 업무 수행을 전혀 랄 수가 없음</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="diagnosis_box">
+                            <div class="tit01">7. 지난 주 동안 공황발작, 제한된 증상 발작, 발작과 관련된 걱정, 발작으로 인한 상황 및 활동에 대한 두려움이 사회 활동을 얼마나 방해했습니까?(지난주 동안 사회적 활동을 할 기회가 없었다면 만약 기회가 있었을 경우 어떻게 했을지 생각해서 응답해 주세요)</div>
+                            <div class="tab_btn_wrap">
+                                <fieldset class="tab-group radio02" role="radiogroup">
+                                    <legend class="blind">답변 선택</legend>
+                                    <!-- 탭버튼:라디오 -->
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer1">
+                                        <span class="tab-btn">전혀 방해 받지 않음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer2">
+                                        <span class="tab-btn">사회 활동에 약간 방해를 받음. 그러나 문제가 없을 경우와 마찬가지로 거의 모든 일을 처리할 수 있음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer3" checked>
+                                        <span class="tab-btn">사회 활동에 현저하게 방해를 받음. 그러나 노력한다면 거의 모든 일을 처리할 수 있음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer4">
+                                        <span class="tab-btn">사회적 수행에 근본적인 손상이 있음. 이러한 문제 때문에 할 수 없는 사회적 일들이 많음</span>
+                                    </label>
+                                    <label class="tab-item">
+                                        <input type="radio" name="q07" value="answer5">
+                                        <span class="tab-btn">극심함. 치명적인 손상, 증상 때문에 어떠한 사회활동도 하기가 힘듬</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab2">탭2 내용</div>
+        </div>
+        <div class="footer">
+            <div class="f_group01">
+                <button type="button" class="btn_primary" disabled>
+                    <span class="txt">다음 검사하기</span>
+                </button>
+            </div>
+        </div>
+    <div>
+
+</body>
+
+</html>
