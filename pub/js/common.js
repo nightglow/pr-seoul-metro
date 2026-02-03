@@ -96,6 +96,11 @@ const Popup = {
     close(id) {this.get(id)?.classList.remove('active');}
 };
 
+const Fullpopup = {
+    get: (id) => document.querySelector(`[data-full="${id}"]`),
+    open(id)  {this.get(id)?.classList.add('active');},
+    close(id) {this.get(id)?.classList.remove('active');}
+};
 
 // 드래그엔 드롭
 const DragDrop = {

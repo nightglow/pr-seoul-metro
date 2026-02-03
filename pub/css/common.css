@@ -1151,12 +1151,64 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 .popup_wrap .right_box {
     width: 100%;
     
-    
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 /* //popup */
+
+/* full popup */
+.full_popup_dim {
+    position: absolute;
+    inset: 0;
+    z-index: 1000;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.56);
+    
+}
+.full_popup_dim.active {
+    display: block;
+}
+.full_popup_wrap {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #fff;
+}
+.full_popup_wrap .left_box {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    background-color: #fff;
+    position: relative;
+}
+.full_popup_wrap .left_box .area_tit01 {
+    width: 100%;
+    display: block;
+}
+.full_popup_wrap .left_box .area_tit01 .txt01{
+    width: 100%;
+    display: block;
+
+    text-align: center;
+    font-size: 17rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #070F16D1;
+}
+.full_popup_wrap .left_box .area_content01 {
+    width: max-content;
+    display: block;
+    position: absolute;
+    right: 16px;
+}
+.full_popup_wrap .right_box {
+    width: 100%;
+    display: block;
+}
+/* //full popup */
 
 /* 전체메뉴 */
 .dimmed{
