@@ -1221,13 +1221,13 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     line-height: 14px;
     letter-spacing: -0.12px;
     top: 50%;
-    left: 29px;
+    left: 25px;
     transform: translateY(-50%);
     transition: left 250ms linear;
     cursor: default;
 }
 .swith_label.type02:has(.swith_check:checked) span {
-    left: 10px;
+    left: 7px;
 }
 
 .all_menu_cont {
