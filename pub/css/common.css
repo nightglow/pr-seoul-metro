@@ -794,18 +794,18 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     height: 95%;
 }
 
-.sheet .left_box {
+.sheet > .left_box {
     width: 100%;
     display: block;
     padding: 20px 20px 0 20px;
 }
-.sheet .left_box > .area_tit01 {
+.sheet > .left_box > .area_tit01 {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.sheet .left_box > .area_tit01 .txt01 {
+.sheet > .left_box > .area_tit01 .txt01 {
     width: max-content;
     display: block;
     
