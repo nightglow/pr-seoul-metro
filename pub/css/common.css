@@ -1438,19 +1438,6 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     justify-content: flex-start;
     align-items: center;
 }
-
-.tab-group.radio {
-    flex-wrap: wrap;
-}
-.tab-group.radio .tab-item {
-    flex: 0 0 calc(50% - 6px);
-    width: 50%;
-}
-
-.tab-group.checkbox {
-    flex-direction: column;
-}
-
 .tab-item input {
     position: absolute;
     opacity: 0;
@@ -1483,6 +1470,37 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     outline-offset: 2px;
 }
 
+.tab-group.radio {
+    flex-wrap: wrap;
+}
+.tab-group.radio .tab-item {
+    flex: 0 0 calc(50% - 6px);
+    width: 50%;
+}
+.tab-group.radio02 {
+    flex-wrap: wrap;
+}
+.tab-group.radio02 .tab-item {
+    width: 100%;
+}
+.tab-group.radio02 .tab-item .tab-btn {
+    justify-content: flex-start;
+    height: auto;
+    padding: 9.5px 12px;
+    text-align: left;
+}
+
+.tab-group.chk {
+    flex-wrap: wrap;
+}
+.tab-group.chk .tab-item {
+    width: 100%;
+}
+.tab-group.chk .tab-item .tab-btn {
+    justify-content: flex-start;
+    padding: 0 12px;
+    text-align: left;
+}
 
 /* table */
 .tbl_row01 {
@@ -1606,4 +1624,21 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 .rdo_item input:focus-visible + span::before {
     outline: 2px solid #93c5fd;
     outline-offset: 2px;
+}
+
+/* 기본 select */
+select {
+    border-radius: 8px;
+    border: 1px solid rgba(133, 151, 168, 0.50);
+    background: #fff;
+    padding: 12px 12px 12px 20px;
+    color: rgba(7, 15, 22, 0.40);
+    font-size: 18rem;
+    font-weight: 500;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("../img/ico_arr_bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
 }
