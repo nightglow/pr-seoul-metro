@@ -77,7 +77,7 @@
                                         <div class="left_box02">
                                             <span class="txt01">잔여휴가일수</span>
                                         </div>
-                                        <div class="right_box02 " mt12>
+                                        <div class="right_box02 mt12">
                                             <div class="common_inp06"><!-- active -->
                                                 <input type="text" class="inp_txt" name="0" value="30" />
                                                 <span class="ico_txt">일</span>
@@ -215,7 +215,7 @@
                             <div class="right_box01">
                                 <ul class="area_approver01 mt10">
                                     <li>
-                                        <div class="appr_line01">
+                                        <div class="apro_user">
                                             <div class="left_box">
                                                 <span class="txt01">김교통</span>
                                                 <button type="button" class="btn_close">
@@ -224,16 +224,69 @@
                                             </div>
                                             <div class="right_box">
                                                 <div class="area_tit01">
-                                                    <div class="txt01">
-                                                        스마트 개발팀
+                                                    <div class="box_info01">
+                                                        <span class="txt01">스마트개발팀</span> 
                                                         <span class="line"><i class="blind">라인</i></span>
-                                                        차장
+                                                        <span class="txt02">차장</span>
                                                     </div>
+                                                    <span class="txt03">20102939</span>
                                                 </div>
                                                 <div class="area_contents01">
                                                     <button type="button" class="btn_approver01 active"><!-- active 활성화 -->
                                                         <span class="txt01">요청</span>
                                                     </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="apro_user">
+                                            <div class="left_box">
+                                                <span class="txt01">박교통</span>
+                                                <button type="button" class="btn_close">
+                                                    <span class="blind">닫기</span>
+                                                </button>
+                                            </div>
+                                            <div class="right_box">
+                                                <div class="area_tit01">
+                                                    <div class="box_info01">
+                                                        <span class="txt01">영업본부 영업지원처</span> 
+                                                        <span class="line"><i class="blind">라인</i></span>
+                                                        <span class="txt02">차장</span>
+                                                    </div>
+                                                    <span class="txt03">20102939</span>
+                                                </div>
+                                                <div class="area_contents01">
+                                                    <select class="btn_select" name="">
+                                                        <option value="" selected>협조</option>
+                                                        <option value="">전결</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="apro_user">
+                                            <div class="left_box">
+                                                <span class="txt01">최교통</span>
+                                                <button type="button" class="btn_close">
+                                                    <span class="blind">닫기</span>
+                                                </button>
+                                            </div>
+                                            <div class="right_box">
+                                                <div class="area_tit01">
+                                                    <div class="box_info01">
+                                                        <span class="txt01">영업본부</span> 
+                                                        <span class="line"><i class="blind">라인</i></span>
+                                                        <span class="txt02">부장</span>
+                                                    </div>
+                                                    <span class="txt03">20102939</span>
+                                                </div>
+                                                <div class="area_contents01">
+                                                    <select class="btn_select" name="">
+                                                        <option value="">협조</option>
+                                                        <option value="" selected>전결</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
@@ -265,11 +318,11 @@
 
 <script>
 
-    const toggleBtn = document.querySelector('.btn_approver');
+    // const toggleBtn = document.querySelector('.btn_approver');
 
-    toggleBtn.addEventListener('click', function () {
-        this.classList.toggle('active');
-    });
+    // toggleBtn.addEventListener('click', function () {
+    //     this.classList.toggle('active');
+    // });
 
 </script>
 

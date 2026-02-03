@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>서울교통공사 인사관리</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+
+<body>
+    
+    <button type="button" class="btn_primary" onclick="BottomSheet.show('sheet2')">
+        <span class="txt">결재자지정</span>
+    </button>
+
+    <!-- 결재자지정 -->
+    <div class="dim act" data-sheet='sheet2'>
+        <div class="sheet act bh85">
+            <div class="left_box">
+                <div class="area_tit01">
+                    <span class="txt01">결재자지정</span>
+                    <button type="button" class="btn_close" onclick="BottomSheet.hide('sheet2');">
+                        <label class="blind">닫기</label>
+                    </button>
+                </div>
+            </div>
+            <div class="right_box">
+                <div class="area_pick">
+                    <div class="left_box01">
+                        <ul class="radio_group02 mt12">
+                            <li>
+                                <label class="rdo_item">
+                                    <input type="radio" name="period" checked>
+                                    <span>성명으로 찾기</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="rdo_item">
+                                    <input type="radio" name="period">
+                                    <span>조직도에서 찾기</span>
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="pick_search mt12">
+                            <input type="text" class="inp_srch" placeholder="결재자 성명을 입력하세요" />
+                            <button type="button" class="btn_secondary">
+                                <span class="txt">검색</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="right_box01">
+                        <div class="area_tit01">
+                            <span class="txt01">검색결과</span>
+                            <span class="txt02">총<span class="txt03">3</span>건</span>
+                        </div>
+                        <div class="area_contents01">
+                            <ul class="area_search01">
+                                <li>
+                                    <div class="f_group09">
+                                        <div class="item_rdo">
+                                            <label class="rdo_select" for="rdo01_1">
+                                                <input type="radio" name="rdo01" id="rdo01_1">
+                                                <span class="ico_check"></span>
+                                                <div class="box_info02">
+                                                    <div class="area_tit02">
+                                                        <span class="txt_01">김교통</span>
+                                                    </div>
+                                                    <div class="area_content02">
+                                                        <span class="txt_02">영업본부 영업지원처</span>
+                                                        <span class="line"><i class="blind">라인</i></span>
+                                                        <span class="txt_03">차장</span>
+                                                        <span class="line"><i class="blind">라인</i></span>
+                                                        <span class="txt_03">20102939</span>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="f_group09">
+                                        <div class="item_rdo">
+                                            <label class="rdo_select" for="rdo01_2">
+                                                <input type="radio" name="rdo01" id="rdo01_2">
+                                                <span class="ico_check"></span>
+                                                <div class="box_info02">
+                                                    <div class="area_tit02">
+                                                        <span class="txt_01">김교통</span>
+                                                    </div>
+                                                    <div class="area_content02">
+                                                        <span class="txt_02">영업본부 영업지원처</span>
+                                                        <span class="line"><i class="blind">라인</i></span>
+                                                        <span class="txt_03">차장</span>
+                                                        <span class="line"><i class="blind">라인</i></span>
+                                                        <span class="txt_03">20102939</span>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="f_group09">
+                                        <div class="item_rdo">
+                                            <label class="rdo_select" for="rdo01_3">
+                                                <input type="radio" name="rdo01" id="rdo01_3">
+                                                <span class="ico_check"></span>
+                                                <div class="box_info02">
+                                                    <div class="area_tit02">
+                                                        <span class="txt_01">김교통</span>
+                                                    </div>
+                                                    <div class="area_content02">
+                                                        <span class="txt_02">영업본부 영업지원처</span>
+                                                        <span class="line"><i class="blind">라인</i></span>
+                                                        <span class="txt_03">차장</span>
+                                                        <span class="line"><i class="blind">라인</i></span>
+                                                        <span class="txt_03">20102939</span>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="f_group09">
+                                        <div class="item_rdo">
+                                            <label class="rdo_select" for="rdo01_4">
+                                                <input type="radio" name="rdo01" id="rdo01_4">
+                                                <span class="ico_check"></span>
+                                                <div class="box_info02">
+                                                    <div class="area_tit02">
+                                                        <span class="txt_01">김교통</span>
+                                                    </div>
+                                                    <div class="area_content02">
+                                                        <span class="txt_02">영업본부 영업지원처</span>
+                                                        <span class="line"><i class="blind">라인</i></span>
+                                                        <span class="txt_03">차장</span>
+                                                        <span class="line"><i class="blind">라인</i></span>
+                                                        <span class="txt_03">20102939</span>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="f_group09">
+                                        <div class="item_rdo">
+                                            <label class="rdo_select" for="rdo01_5">
+                                                <input type="radio" name="rdo01" id="rdo01_5">
+                                                <span class="ico_check"></span>
+                                                <div class="box_info02">
+                                                    <div class="area_tit02">
+                                                        <span class="txt_01">김교통</span>
+                                                    </div>
+                                                    <div class="area_content02">
+                                                        <span class="txt_02">영업본부 영업지원처</span>
+                                                        <span class="line"><i class="blind">라인</i></span>
+                                                        <span class="txt_03">차장</span>
+                                                        <span class="line"><i class="blind">라인</i></span>
+                                                        <span class="txt_03">20102939</span>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="f_group09">
+                                        <div class="item_rdo">
+                                            <label class="rdo_select" for="rdo01_6">
+                                                <input type="radio" name="rdo01" id="rdo01_6">
+                                                <span class="ico_check"></span>
+                                                <div class="box_info02">
+                                                    <div class="area_tit02">
+                                                        <span class="txt_01">김교통</span>
+                                                    </div>
+                                                    <div class="area_content02">
+                                                        <span class="txt_02">영업본부 영업지원처</span>
+                                                        <span class="line"><i class="blind">라인</i></span>
+                                                        <span class="txt_03">차장</span>
+                                                        <span class="line"><i class="blind">라인</i></span>
+                                                        <span class="txt_03">20102939</span>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="area_footer01">
+                    <button type="button" class="btn_primary">
+                    <span class="txt">선택하기</span>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

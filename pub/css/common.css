@@ -820,6 +820,9 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     overflow-y: scroll;
     /* padding-bottom: 30px; */
 }
+.sheet .right_box.noscl {
+    overflow-y: initial;
+}
 .sheet .right_box::-webkit-scrollbar {
     display: none;
 }
