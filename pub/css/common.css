@@ -143,15 +143,15 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 
 .btn_approver01 {
     width: 100%;
+    min-width: 90px;
+    min-height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
 
     border: 2px solid #162C8F;
-    background-color: #fff;
-    padding: 15px 32px;
-    min-height: 48px;
     border-radius: 8px;
+    background-color: #fff;
     flex-shrink: 0;
 }
 .btn_approver01 > .txt01 {
