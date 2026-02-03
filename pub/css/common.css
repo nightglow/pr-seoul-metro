@@ -30,6 +30,7 @@ body {
 .mt5 { margin-top: 5px; }
 .mt10 {margin-top: 10px;}
 .mt12 {margin-top: 12px;}
+.mt16 {margin-top: 16px;}
 .mt18 {margin-top: 18px;}
 .mt20 {margin-top: 20px;}
 .mt25 {margin-top: 25px;}
@@ -1528,6 +1529,7 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     border-bottom: 1px solid rgba(130, 149, 167, 0.20);
     background: #FFF;
     padding: 12px;
+    vertical-align: middle;
 }
 .tbl_row01 tbody td .txt_box01 {
     display: flex;
