@@ -847,6 +847,9 @@
     align-items: center;
     gap: 6px;
 }
+.diagnosis_result img {
+    width: 93px;
+}
 .diagnosis_result .tit01 {
     color: #070F16;
     text-align: center;
