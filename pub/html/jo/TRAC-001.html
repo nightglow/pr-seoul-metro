@@ -48,11 +48,15 @@
 
         <!-- contents -->
         <div class="contents">
-            <div class="tab_wrap">
-                <ul class="tab_nav">
-                    <li><a href="#tab1"><span class="tit01">선로작업승인부</span></a></li>
-                    <li><a href="#tab2"><span class="tit01">모터카운행여부</span></a></li>
-                </ul>
+            <div class="tab_wrap01">
+                <div class="swiper tab_swiper01">
+                    <ul class="swiper-wrapper tab_nav">
+                        <li class="swiper-slide"><a href="#tab1" class="act"><span class="tit01">선로작업승인부</span></a></li>
+                        <li class="swiper-slide"><a href="#tab2"><span class="tit01">모터카운행여부</span></a></li>
+                    </ul>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
 
             <div id="tab1">
@@ -254,116 +258,6 @@
                 </div>
             </div>
             <div id="tab2">
-                <div class="tab_cont_wrap">
-                    <div class="motorcar_line_select">
-                        <div class="f_group02">
-                            <label class="area_tit01" onclick="BottomSheet.show('sheet1');">
-                                <div class="left_box02">
-                                    <span class="txt01">모터카 운행 노선</span>
-                                    <!-- <span class="txt02">*</span> -->
-                                </div>
-                                <div class="right_box02 mt10">
-                                    <div class="select_box">
-                                        <input type="text" name="input_line" id="inp_line" class="inp_line" value="" placeholder="전체" readonly>
-                                        <button type="button" class="btn_bsopen">
-                                            <label class="blind">열기</label>
-                                        </button>
-                                    </div>
-                                </div>
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="motorcar_line_list">
-                        <!-- 운행노선 블럭 -->
-                        <div class="motorcar_line">
-                            <div class="motorcar_line_tit">
-                                <div class="motorcar_icon">
-                                    <img src="../../img/ico_line5.svg" alt="5호선">
-                                </div>
-                                <div class="motorcar_txt">
-                                    <span class="txt01">하선</span>
-                                    <span class="tit01">비)모터카-별내 전기모터카<br>(축전지형, 별내)</span>
-                                </div>
-                            </div>
-                            <div class="motorcar_route_box">
-                                <div class="motorcar_route">
-                                    <div class="route_tit">시점</div>
-                                    <div class="route_dot line5"></div><!-- 호선에 따라서 line1 ~ line8 로 숫자 수정 -->
-                                    <div class="route_name">고덕차량기지</div>
-                                </div>
-                                <div class="motorcar_route">
-                                    <div class="route_tit">경유1</div>
-                                    <div class="route_dot line5"></div><!-- 호선에 따라서 line1 ~ line8 로 숫자 수정 -->
-                                    <div class="route_name">광나루</div>
-                                </div>
-                                <div class="motorcar_route">
-                                    <div class="route_tit">종점</div>
-                                    <div class="route_dot line5"></div><!-- 호선에 따라서 line1 ~ line8 로 숫자 수정 -->
-                                    <div class="route_name">고덕차량기지</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 운행노선 블럭 -->
-                        <div class="motorcar_line">
-                            <div class="motorcar_line_tit">
-                                <div class="motorcar_icon">
-                                    <img src="../../img/ico_line3.svg" alt="3호선">
-                                </div>
-                                <div class="motorcar_txt">
-                                    <span class="txt01">하선</span>
-                                    <span class="tit01">트랙머신(B2S) 3호</span>
-                                </div>
-                            </div>
-                            <div class="motorcar_route_box">
-                                <div class="motorcar_route">
-                                    <div class="route_tit">시점</div>
-                                    <div class="route_dot line3"></div><!-- 호선에 따라서 line1 ~ line8 로 숫자 수정 -->
-                                    <div class="route_name">충무로(3)</div>
-                                </div>
-                                <div class="motorcar_route">
-                                    <div class="route_tit">경유1</div>
-                                    <div class="route_dot line3"></div><!-- 호선에 따라서 line1 ~ line8 로 숫자 수정 -->
-                                    <div class="route_name">압구정</div>
-                                </div>
-                                <div class="motorcar_route">
-                                    <div class="route_tit">경유2</div>
-                                    <div class="route_dot line3"></div><!-- 호선에 따라서 line1 ~ line8 로 숫자 수정 -->
-                                    <div class="route_name">수서(3)</div>
-                                </div>
-                                <div class="motorcar_route">
-                                    <div class="route_tit">종점</div>
-                                    <div class="route_dot line3"></div><!-- 호선에 따라서 line1 ~ line8 로 숫자 수정 -->
-                                    <div class="route_name">수서차량기지</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 운행노선 블럭 -->
-                        <div class="motorcar_line">
-                            <div class="motorcar_line_tit">
-                                <div class="motorcar_icon">
-                                    <img src="../../img/ico_line4.svg" alt="4호선">
-                                </div>
-                                <div class="motorcar_txt">
-                                    <span class="txt01">유치선</span>
-                                    <span class="tit01">레일탐상차 1호</span>
-                                </div>
-                            </div>
-                            <div class="motorcar_route_box">
-                                <div class="motorcar_route">
-                                    <div class="route_tit">시점</div>
-                                    <div class="route_dot line4"></div><!-- 호선에 따라서 line1 ~ line8 로 숫자 수정 -->
-                                    <div class="route_name">한성대입구</div>
-                                </div>
-                                <div class="motorcar_route">
-                                    <div class="route_tit">종점</div>
-                                    <div class="route_dot line4"></div><!-- 호선에 따라서 line1 ~ line8 로 숫자 수정 -->
-                                    <div class="route_name">한성대입구</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 

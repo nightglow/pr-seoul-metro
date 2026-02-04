@@ -48,15 +48,19 @@
 
         <!-- contents -->
         <div class="contents">
-            <div class="tab_wrap">
-                <ul class="tab_nav">
-                    <li><a href="#tab1"><span class="tit01">선로작업승인부</span></a></li>
-                    <li><a href="#tab2"><span class="tit01">모터카운행여부</span></a></li>
-                </ul>
+            <div class="tab_wrap01">
+                <div class="swiper tab_swiper01">
+                    <ul class="swiper-wrapper tab_nav">
+                        <li class="swiper-slide"><a href="#tab1"><span class="tit01">선로작업승인부</span></a></li>
+                        <li class="swiper-slide"><a href="#tab2" class="act"><span class="tit01">모터카운행여부</span></a></li>
+                    </ul>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
 
             <div id="tab1">선로작업승인부 내용</div>
-            <div id="tab2">
+            <div id="tab2" style="display: block;">
                 <div class="tab_cont_wrap">
                     <div class="motorcar_line_select">
                         <div class="left_box">
@@ -171,7 +175,12 @@
         </div>
 
     <div>
-
+    
+    <script>
+        $(function () {
+            TabManager.showTab( document.querySelector('.tab_nav li:nth-child(2) a') );
+        });
+    </script>
 </body>
 
 </html>
