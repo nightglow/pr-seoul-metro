@@ -1,3 +1,4 @@
+/* 메인 */
 .member_card_box {
     width: calc(100% - 40px);
     margin: 0 auto;
@@ -168,6 +169,7 @@
     gap: 20px;
 }
 .app_block_box .text_box {
+    width: 100%;
     display: inline-flex;
     padding: 23px 29px 28px 30px;
     flex-direction: column;
@@ -190,4 +192,167 @@
     line-height: 1.4;
     text-align: center;
     word-break: keep-all;
+}
+
+/* 월 스케줄 확인 */
+.cont_wrap:has(.monthly_tbl_box) {
+    padding-bottom: 0;
+}
+.monthly_tit {
+    color: #070F16;
+    font-size: 25rem;
+    font-weight: 500;
+    line-height: normal;
+}
+.monthly_tit span {
+    font-size: 18rem;
+    font-weight: 400;
+}
+.monthly_tbl_box .monthlye_select {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 10px;
+}
+.btn_prev {
+    display: block;
+    background-image: url(../img/btn_calendar_arr.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.btn_next {
+    display: block;
+    background-image: url(../img/btn_calendar_arr.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    transform: rotate(180deg);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.calendar_tit {
+    color: #2C333B;
+    text-align: center;
+    font-size: 17rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.monthly_tbl_box .calendar_table {
+    width: 100%;
+}
+.monthly_tbl_box .calendar_table caption {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.monthly_tbl_box .calendar_table thead th {
+    color: rgba(50, 63, 79, 0.54);
+    text-align: center;
+    font-size: 14rem;
+    font-weight: 500;
+    line-height: 1.4;
+    border-bottom: 1px solid rgba(115, 132, 149, 0.05);
+    padding: 8px 0;
+}
+.monthly_tbl_box .calendar_table thead th.th_weekend {
+    color: #EE444A;
+}
+.monthly_tbl_box .calendar_table tbody td .calendar_date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.monthly_tbl_box .calendar_table tbody td .calendar_date .date01 {
+    height: 42px;
+    padding: 5px 6.8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+.monthly_tbl_box .calendar_table tbody td .calendar_date .date01 .txt01 {
+    text-align: center;
+    font-size: 14rem;
+    font-weight: 500;
+    line-height: 1.4;
+    width: 32px;
+    height: 32px;
+    padding: 6px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.monthly_tbl_box .calendar_table tbody td.date_default .calendar_date .date01 .txt01 {
+    color: rgba(11, 15, 19, 0.91);
+}
+.monthly_tbl_box .calendar_table tbody td.date_weekend .calendar_date .date01 .txt01 {
+    color: #EE444A;
+}
+.monthly_tbl_box .calendar_table tbody td.date_disabled .calendar_date .date01 .txt01 {
+    color: rgba(111, 125, 140, 0.40);
+}
+.monthly_tbl_box .calendar_table tbody td.date_highlight .calendar_date .date01 .txt01 {
+    border-radius: 12px;
+    background: var(--Color-blue, #1F5EFF);
+    color: #fff;
+}
+.monthly_tbl_box .calendar_table tbody td .calendar_date:hover .date01 .txt01 {
+    border-radius: 12px;
+    font-weight: 700;
+    background: rgba(130, 149, 167, 0.11);
+    color: rgba(11, 15, 19, 0.91);
+}
+.monthly_tbl_box .calendar_table tbody td .calendar_date .date_schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.monthly_tbl_box .calendar_table tbody td .calendar_date .date_schedule .dia_num {
+    display: flex;
+    min-width: 45px;
+    width: 100%;
+    padding: 0 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 2px;
+    background: #C9D8FE;
+    color: #1F5EFF;
+    text-align: center;
+    font-size: 12rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.monthly_tbl_box .calendar_table tbody td .calendar_date .date_schedule .start_time {
+    color: #73757E;
+    font-size: 12rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+
+@media (min-width: 749px) {
+    .monthly_tbl_box .calendar_table tbody td .calendar_date .date_schedule {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .monthly_tbl_box .calendar_table tbody td .calendar_date .date_schedule .start_time ~ .start_time {
+        margin-left: 14px;
+    }
 }
