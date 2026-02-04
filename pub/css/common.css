@@ -1647,6 +1647,13 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 .tbl_row01 {
     width: 100%;
 }
+.tbl_row01 caption {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
 .tbl_row01 thead th {
     border-top: 1px solid #73757E;
     border-bottom: 1px solid rgba(133, 151, 168, 0.50);
