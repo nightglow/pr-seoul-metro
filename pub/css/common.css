@@ -942,7 +942,6 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 }
 .footer {
     width: 100%;
-    /* min-height: 70px;  */
     background-color: #FFF;
 
     position: fixed;
@@ -950,7 +949,6 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     left: 0;
     right: 0;
     z-index: 10;
-    
 }
 /* // layout */
 
