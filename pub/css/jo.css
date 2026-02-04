@@ -21,6 +21,7 @@
 .select_box .inp_line {
     border: 1px solid transparent;
     width: calc(100% - 24px);
+    font-size: 18rem;
 }
 .select_box .inp_line:focus {
     border: 1px solid transparent;
@@ -51,6 +52,9 @@
 }
 .input_box input[type='text']::placeholder {
     padding-left: 5px;
+}
+.input_box input[type='text']:disabled {
+    color: #73757E;
 }
 .input_box input.inp_num {
     padding-top: 1px;
