@@ -951,6 +951,16 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     text-align: center;
     white-space: nowrap;
 }
+.tab_wrap01 .tab_swiper01 .tab_nav li a.act .tit02 {
+    width: max-content;
+    display: inline-block;
+    font-size: 17rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #1F5EFF;
+    text-align: center;
+    white-space: nowrap;
+}
 .tab_wrap01 .tab_swiper01 .tab_nav li a.act {
     border-bottom: 1px solid #495057;
 }
@@ -1025,6 +1035,7 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     display: block;
     /* overflow-y: auto; */
 }
+
 .footer {
     width: 100%;
     background-color: #FFF;

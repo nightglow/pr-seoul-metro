@@ -6,11 +6,27 @@
     justify-content: center;
     flex-direction: column;
 }
-.tab_content01 .left_box {
+.tab_content01 > .left_box {
     width: 100%;
     display: block;
     padding: 10px 20px 80px 20px;
 }
+
+
+.tab_content02 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px 0;
+    padding-bottom: 100px;
+}
+.tab_content02 > .left_box {
+    width: 100%;
+    display: block;
+    padding: 0 20px;
+}
+
 
 .area_vacation {
     width: 100%;
@@ -20,6 +36,104 @@
 
     gap: 12px 0;
 }
+
+
+.area_summation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+}
+.area_summation li {
+    width: 100%;
+    display: block;
+}
+.area_summation li > .area_tit01 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.area_summation li > .area_tit01 .txt01 {
+    width: max-content;
+    display: block;
+
+    font-size: 18rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #070F16;
+    flex-shrink: 0;
+}
+.area_summation li > .area_tit01 .txt02 {
+    width: 100%;
+    display: block;
+
+    font-size: 18rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #FF5930;
+}
+.area_summation li .area_contents01 {
+    padding: 16px 20px;
+    background-color: #EDF5FF;
+    border-radius: 10px;
+}
+
+.area_summation li .area_contents02 {
+    width: 100%;
+    display: block;
+}
+
+
+textarea.txta01 {
+    width: 100%;    
+    /* max-width: 350px; */
+    height: 150px;
+    border-radius: 8px;
+    padding: 20px;
+
+    font-size: 17rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #2C333B;
+
+    border: 1px solid #8597A880;
+}
+
+
+
+
+.summation {
+    width: 100%;
+}
+.summation tr {
+    width: 100%;
+}
+.summation tr + tr td {
+    padding-top: 10px;
+}
+.summation tr td > .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #070F16;
+}
+.summation tr td > .txt02 {
+    width: 100%;
+    display: block;
+
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #070F16;
+    text-align: right;
+}
+
+
+
 
 
 .f_group04 {
@@ -928,8 +1042,6 @@
     text-align: center;
     margin-top: 10px;
 }
-
-
 
 
 
