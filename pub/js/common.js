@@ -1,13 +1,15 @@
 
 $(function () {
-     
+
     $("#header").load("../../html/header.html");
 
-    Tab.init();
+    // Tab.init();
     DragDrop.init('#drag_drop');
 
+    password.init();
 
-    const bannerSwiper = new Swiper('.banner-swiper', {
+    // 배너
+    const b1annerSwiper = new Swiper('.banner-swiper', {
         loop: true,
         autoplay: {
             delay: 3000,
@@ -18,8 +20,24 @@ $(function () {
             clickable: true
         }
     });
+
+    // tab
+    const tabSwiper = new Swiper('.tab_swiper01', {
+        slidesPerView: 'auto',
+        freeMode: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        }
+    });
+
+
     
-    password.init();
+
+    TabManager.init();
+
+
+
 });
 
 
@@ -48,14 +66,14 @@ const BottomSheet = {
 };
 
 
-// tab
+// tab 삭제 예정 ----
 const Tab = {
     contents: null,
     nav: null,
 
     init: function () {
         this.nav = document.querySelector('.tab_nav');
-        if(!this.nav) return;
+        if (!this.nav) return;
 
         this.contents = document.querySelectorAll('div[id^="tab"]');
         this.bindEvents();
@@ -81,25 +99,65 @@ const Tab = {
         });
     }
 };
+// ----------------
+
+const TabManager = {
+        init() {
+            this.tabLinks = document.querySelectorAll('.tab_nav a');
+            this.tabContents = document.querySelectorAll('[id^="tab"]');
+            this.initTabs();
+            this.bindEvents();
+        },
+
+        initTabs() {
+            this.tabContents.forEach(content => {
+                content.style.display = content.id === 'tab1' ? 'block' : 'none';
+            });
+        },
+
+        bindEvents() {
+            this.tabLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    this.showTab(link);
+                });
+            });
+        },
+
+        showTab(link) {
+            const targetId = link.getAttribute('href');
+
+            this.tabLinks.forEach(l => l.classList.remove('act'));
+            link.classList.add('act');
+
+            this.tabContents.forEach(content => {
+                content.style.display = content.id === targetId.substring(1) ? 'block' : 'none';
+            });
+        }
+    };
+
+
+
+
 
 // 
 const Alert = {
     get: (id) => document.querySelector(`[data-alert="${id}"]`),
-    open(id)  {this.get(id)?.classList.add('active');},
-    close(id) {this.get(id)?.classList.remove('active');}
+    open(id) { this.get(id)?.classList.add('active'); },
+    close(id) { this.get(id)?.classList.remove('active'); }
 };
 
 
 const Popup = {
     get: (id) => document.querySelector(`[data-popup="${id}"]`),
-    open(id)  {this.get(id)?.classList.add('active');},
-    close(id) {this.get(id)?.classList.remove('active');}
+    open(id) { this.get(id)?.classList.add('active'); },
+    close(id) { this.get(id)?.classList.remove('active'); }
 };
 
 const Fullpopup = {
     get: (id) => document.querySelector(`[data-full="${id}"]`),
-    open(id)  {this.get(id)?.classList.add('active');},
-    close(id) {this.get(id)?.classList.remove('active');}
+    open(id) { this.get(id)?.classList.add('active'); },
+    close(id) { this.get(id)?.classList.remove('active'); }
 };
 
 // 드래그엔 드롭
@@ -128,8 +186,8 @@ const DragDrop = {
         this.container.addEventListener('dragstart', (e) => e.preventDefault());
     },
 
-    getPointer(e) {return e.touches ? e.touches[0] : e;},
-    getEndPointer(e) {return e.changedTouches ? e.changedTouches[0] : e;},
+    getPointer(e) { return e.touches ? e.touches[0] : e; },
+    getEndPointer(e) { return e.changedTouches ? e.changedTouches[0] : e; },
 
     onStart(e) {
         const item = e.target.closest('.app_item');
@@ -210,14 +268,14 @@ const password = {
         document.addEventListener('click', (e) => {
             const btn = e.target.closest('.btn_pw');
             if (!btn) return;
-            
+
             this.toggle(btn);
         });
     },
     toggle(btn) {
         const parent = btn.closest('div');
         const input = parent.querySelector('.inp_pw');
-        
+
         const isPassword = input.type === 'password';
         input.type = isPassword ? 'text' : 'password';
         parent.classList.toggle('active', isPassword);
@@ -247,13 +305,13 @@ $(document).ready(function () {
     function slideTo(percent) {
         // percent: 0(열림) ~ 100(닫힘)
         $menu.stop(true, true).animate(
-        { x: percent },
-        {
-            duration: DURATION,
-            step: function (now) {
-            $menu.css("transform", "translateX(" + now + "%)");
+            { x: percent },
+            {
+                duration: DURATION,
+                step: function (now) {
+                    $menu.css("transform", "translateX(" + now + "%)");
+                }
             }
-        }
         );
     }
 
@@ -267,10 +325,10 @@ $(document).ready(function () {
     function closeAllMenu() {
         var $dim = $(".dimmed");
         if ($dim.length) {
-        $dim.stop(true, true).fadeOut(DURATION, function () {
-            // 완전히 필요 없으면 제거(원하면 제거하지 말고 유지해도 됨)
-            $(this).remove();
-        });
+            $dim.stop(true, true).fadeOut(DURATION, function () {
+                // 완전히 필요 없으면 제거(원하면 제거하지 말고 유지해도 됨)
+                $(this).remove();
+            });
         }
         slideTo(100);
         $("html, body").removeClass("menu_open");

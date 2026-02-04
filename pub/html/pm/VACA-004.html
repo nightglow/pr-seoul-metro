@@ -22,12 +22,18 @@
         <div id="header"></div>
 
         <div class="contents">
-            <div class="tab_wrap">
-                <ul class="tab_nav">
-                    <li><a href="#tab1"><span class="tit01">휴가신청</span></a></li>
-                    <li><a href="#tab2"><span class="tit01">휴가취소신청</span></a></li>
-                </ul>
+            <!-- 마크업 수정 -->
+            <div class="tab_wrap01">
+                <div class="swiper tab_swiper01">
+                    <ul class="swiper-wrapper tab_nav">
+                        <li class="swiper-slide"><a href="#tab1" class="act"><span class="tit01">휴가신청</span></a></li>
+                        <li class="swiper-slide"><a href="#tab2"><span class="tit01">휴가취소신청</span></a></li>
+                    </ul>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
+            <!-- // 마크업 수정 -->
 
             <div id="tab1">
                 <div class="tab_content01">
@@ -301,7 +307,6 @@
 
             <div id="tab2">
             </div>
-
         </div>
 
         <div class="footer">
@@ -315,16 +320,6 @@
         </div>
         <div>
 </body>
-
-<script>
-
-    // const toggleBtn = document.querySelector('.btn_approver');
-
-    // toggleBtn.addEventListener('click', function () {
-    //     this.classList.toggle('active');
-    // });
-
-</script>
 
 
 </html>
