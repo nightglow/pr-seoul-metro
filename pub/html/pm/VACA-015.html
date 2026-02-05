@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>서울교통공사 인사관리</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header"></div>
+
+        <div class="contents scrl">
+            <div class="tab_wrap01">
+                <div class="swiper tab_swiper01">
+                    <ul class="swiper-wrapper tab_nav">
+                        <li class="swiper-slide"><a href="#tab1" class="act"><span class="tit01">기타근무신청</span></a></li>
+                        <li class="swiper-slide"><a href="#tab2"><span class="tit01">기타근무 취소신청</span></a></li>
+                    </ul>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div id="tab1"></div>
+
+            <div id="tab2">
+                <div class="tab_content02">
+                    <div class="left_box mt25">
+                        <ul class="area_summation">
+                            <li>
+                                <div class="area_tit01">
+                                    <span class="txt01">신청정보</span>
+                                    <!-- <span class="txt02">*</span> -->
+                                </div>
+                                <div class="area_contents01 mt10">
+                                    <table class="summation">
+                                        <caption class="blind">신청정보</caption>
+                                        <colgroup>
+                                            <col style="width: 50%;">
+                                            <col style="width: 50%;">   
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td><span class="txt01">신청구분</span></td>
+                                                <td><span class="txt02">기타근무</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="txt01">휴가기간</span></td>
+                                                <td>
+                                                    <span class="txt02">YYYY.MM.DD 부터</span>
+                                                    <span class="txt02">YYYY.MM.DD 까지</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="txt01">신청상태</span></td>
+                                                <td><span class="txt02">승인</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                            </li>
+                            <li>
+                                <div class="area_tit01">
+                                    <span class="txt01">취소신청사유</span>
+                                    <!-- <span class="txt02">*</span> -->
+                                </div>
+                                <div class="area_contents02 mt10">
+                                    <textarea name="" id="" class="txta01" placeholder="취소신청 사유를 입력하세요."></textarea>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="approver mt18">
+                            <div class="left_box01">
+                                <span class="txt01">결제자</span>
+                                <span class="txt02">*</span>
+                            </div>
+                            <div class="right_box01">
+                                <ul class="area_approver mt10">
+                                    <li>
+                                        <button type="button" class="btn_approver active"><!-- active 활성화 -->
+                                            <span class="txt01">결제선 초기화</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn_approver"><!-- active 활성화 -->
+                                            <span class="txt01">결재선 지정</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn_approver"><!-- active 활성화 -->
+                                            <span class="txt01">결재선 불러오기</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right_box">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="area_footer02">
+                <div class="f_group01">
+                    <button type="button" class="btn_primary">
+                        <span class="txt">취소신청</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    <div>
+</body>
+
+<script>
+    $(function () {
+        TabManager.showTab( document.querySelector('.tab_nav li:nth-child(2) a') );
+    });
+</script>
+
+</html>

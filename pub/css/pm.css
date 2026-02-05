@@ -3,7 +3,7 @@
 .tab_content01 {
     width: 100%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
 }
 .tab_content01 > .left_box {
@@ -16,7 +16,7 @@
 .tab_content02 {
     width: 100%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
     gap: 12px 0;
     padding-bottom: 100px;
@@ -26,7 +26,6 @@
     display: block;
     padding: 0 20px;
 }
-
 
 .area_vacation {
     width: 100%;
@@ -1048,6 +1047,367 @@ textarea.txta01 {
 
 
 
+.bt_contents01 {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.bt_contents01 > .area_bt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.bt_contents01 > .area_bt li {
+    width: 100%;
+    display: block;
+}
+
+
+.f_group10 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.f_group10 > .area_tit01 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 12px 20px 14px 20px;
+    border: 1px solid #8597A880;
+    border-radius: 8px;
+}
+.f_group10 > .area_tit01:has(.inp_pw:focus) {
+    border: 1px solid #8597A880;
+}
+.f_group10 > .area_tit01 .left_box02 {
+    width: 100%;
+    display: flex;
+    gap: 0 4px;
+}
+.f_group10 > .area_tit01 .left_box02 .txt01 {
+    width: max-content;
+    display: block;
+    flex-shrink: 0;
+
+    font-size: 15rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #020C15B8;
+}
+.f_group10 > .area_tit01 .left_box02 .txt02 {
+    width: 100%;
+    display: block;
+
+    font-size: 15rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #FF5930;
+}
+.f_group10 > .area_tit01 .right_box02 {
+    width: 100%;
+    display: flex;
+}
+
+
+.common_inp10 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.common_inp10 .inp_cal {
+    width: 100%;
+    height: 22px;
+    display: block;
+    font-size: 18rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.common_inp10 > input[type='text'].inp_cal {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+.common_inp10 > input[type='text'].inp_cal:focus  {
+    border: 1px solid transparent;
+}
+
+
+
+
+
+
+.auto_h {
+    width: 100%;
+    height: calc(100% - 94px);
+}
+.board_contain{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.board_title {
+    width: 100%;
+    padding: 0 16px;
+}
+
+.board_header {
+    width:  calc(100% - 32px);
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #73757E;
+}
+.board_header .txt01{
+    width: 100%;
+    display: block;
+
+    font-size: 18rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #070F16;
+}
+.board_header .txt02{
+    width: max-content;
+    display: inline-block;
+    
+    font-size: 15rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #2C333B;
+    flex-shrink: 0;
+}
+.board_header .txt03{
+    width: max-content;
+    display: inline-block;
+    
+    font-size: 15rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #1F5EFF;
+    flex-shrink: 0;
+    padding-left: 4px;
+}
+
+.board_list{
+    flex: 1;   
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+
+    margin-bottom: 10px;
+    padding: 0 16px;
+}
+
+.list-box{
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+.list-box li {
+   border-bottom: 1px solid #8597A880;
+}
+.list-box li + li {
+    margin-top: 12px;
+}
+
+
+
+.amends {
+    width: 100%;
+    max-height: 104px;
+    
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.amends > .left_box {
+    width: 75%;
+    display: inline-block;
+}
+.amends > .left_box .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 18rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #1F5EFF;
+}
+.amends > .left_box .txt02 {
+    width: 100%;
+    display: block;
+
+    font-size: 15rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #383C4CB2;
+}
+
+.amends .right_box {
+    width: 25%;
+    display: block;
+    align-content: flex-end;
+    justify-items: flex-end;
+
+} 
+
+.badge01 {
+    width: 100%;
+    height: 24px;
+    max-width: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+    background-color: #669FD533;
+
+    font-size: 13rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #162C8F;
+
+    padding: 4px 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 진행중 */
+.f_group11 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.f_group11 > .area_tit01 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 12px 20px 14px 20px;
+    border: 1px solid #8597A880;
+    border-radius: 8px;
+    /* background-color: #E6E6E680; */
+}
+.f_group11 > .area_tit01:has(.inp_pw:focus) {
+    border: 1px solid #8597A880;
+}
+.f_group11 > .area_tit01 .left_box02 {
+    width: 100%;
+    display: flex;
+    gap: 0 4px;
+}
+.f_group11 > .area_tit01 .left_box02 .txt01 {
+    width: max-content;
+    display: block;
+    flex-shrink: 0;
+
+    font-size: 15rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #020C15B8;
+}
+.f_group11 > .area_tit01 .left_box02 .txt02 {
+    width: 100%;
+    display: block;
+
+    font-size: 15rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #FF5930;
+}
+.f_group11 > .area_tit01 .right_box02 {
+    width: 100%;
+    display: flex;
+}
+
+
+.common_inp11 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.common_inp11 .inp_start {
+    width: 100%;
+    height: 22px;
+    display: block;
+    font-size: 18rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+}
+.common_inp11 .inp_txt01 {
+    width: max-content;
+    height: 22px;
+    display: block;
+    font-size: 20rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.common_inp11 .inp_end {
+    width: 100%;
+    height: 22px;
+    display: block;
+    font-size: 18rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.common_inp11 > input[type='text'].inp_start {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+.common_inp11 > input[type='text'].inp_end {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+.common_inp11 > input[type='text'].inp_start:focus  {
+    border: 1px solid transparent;
+}
+.common_inp11 > input[type='text'].inp_end:focus  {
+    border: 1px solid transparent;
+}
+
+.btn_arr_down {
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url('../img/ico_arr_bottom.svg') no-repeat center/100%;
+    flex-shrink: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1078,3 +1438,4 @@ textarea.txta01 {
         max-height: 187px;
     }
 }
+

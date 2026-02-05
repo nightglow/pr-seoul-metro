@@ -30,6 +30,7 @@ body {
 
 .mt4 {margin-top: 4px;}
 .mt5 { margin-top: 5px; }
+.mt6 { margin-top: 6px; }
 .mt10 {margin-top: 10px;}
 .mt12 {margin-top: 12px;}
 .mt16 {margin-top: 16px;}
@@ -40,8 +41,14 @@ body {
 .mt70 {margin-top: 70px;}
 
 
+.lock {
+    overflow: hidden;
+    touch-action: none;
+}
 
 html.menu_open, body.menu_open{ overflow:hidden; }
+
+
 
 /* point color */
 .point_color01 { color: #1F5EFF !important; }
@@ -168,6 +175,30 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 }
 
 
+
+
+.btn_approver02 {
+    width: 100%;
+    max-width: 63px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #1F5EFF;
+    border-radius: 8px;
+    background-color: #fff;
+    flex-shrink: 0;
+}
+.btn_approver02 > .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 15rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #1F5EFF;
+}
 
 
 
@@ -774,6 +805,9 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 .sheet.act.bh35 {
     height: 35%;
 }
+.sheet.act.bh40 {
+    height: 40%;
+}
 .sheet.act.bh50 {
     height: 50%;
 }
@@ -1029,6 +1063,10 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     display: block;
     /* overflow-y: auto; */
 }
+.contents.overf {
+    overflow: hidden;
+}
+
 
 .footer {
     width: 100%;
