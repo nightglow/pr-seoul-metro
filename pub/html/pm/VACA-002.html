@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>서울교통공사 인사관리</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+
+<body>
+
+    <button type="button" class="btn_primary" onclick="BottomSheet.show('sheet2')">
+        <span class="txt">기간선택</span>
+    </button>
+
+    <!-- 기간선택 -->
+    <div class="dim act" data-sheet='sheet2'>
+        <div class="sheet act bh70">
+            <div class="left_box">
+                <div class="area_tit01">
+                    <span class="txt01">기간선택</span>
+                    <button type="button" class="btn_close" onclick="BottomSheet.hide('sheet2');">
+                        <label class="blind">닫기</label>
+                    </button>
+                </div>
+            </div>
+            <div class="right_box">
+                <div class="bt_contents01">
+                    <ul class="area_bt">
+                        <li>
+                            <div class="f_group10">
+                                <label class="area_tit01">
+                                    <!-- <div class="left_box02">
+                                        <span class="txt01">휴가기간</span>
+                                        <span class="txt02">*</span>
+                                    </div> -->
+                                    <div class="right_box02">
+                                        <div class="common_inp10">
+                                            <input type="text" class="inp_cal" name="0" value="2026-01-01" disabled />
+                                            <button type="button" class="btn_calendar">
+                                                <i class="blind">달력</i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="f_group10">
+                                <label class="area_tit01">
+                                    <div class="right_box02">
+                                        <div class="common_inp10">
+                                            <input type="text" class="inp_cal" name="0" value="2026-01-01" disabled />
+                                            <button type="button" class="btn_calendar">
+                                                <i class="blind">달력</i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <button type="button" class="btn_secondary">
+                                <span class="txt">적용</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab_btn_wrap">
+                        <fieldset class="tab-group radio" role="radiogroup">
+                            <legend class="blind">답변 선택</legend>
+                            <!-- 탭버튼:라디오 -->
+                            <label class="tab-item">
+                                <input type="radio" name="q01" value="answer1">
+                                <span class="tab-btn">1개월</span>
+                            </label>
+                            <label class="tab-item">
+                                <input type="radio" name="q01" value="answer2">
+                                <span class="tab-btn">3개월</span>
+                            </label>
+                            <label class="tab-item">
+                                <input type="radio" name="q01" value="answer3" checked>
+                                <span class="tab-btn">6개월</span>
+                            </label>
+                            <label class="tab-item">
+                                <input type="radio" name="q01" value="answer4">
+                                <span class="tab-btn">1년</span>
+                            </label>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="area_footer01">
+                    <button type="button" class="btn_primary">
+                        <span class="txt">선택하기</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
