@@ -22,20 +22,227 @@
         <div id="header"></div>
 
         <div class="contents">
-            
-            <div class="area_restore">
+
+            <div class="area_restore01">
+                <div class="common_tit01">
+                    <div class="left_box01">
+                        <span class="txt01">구분</span>
+                        <span class="txt02">*</span>
+                    </div>
+                    <div class="right_box01"></div>
+                </div>
+                <div class="tab_btn_wrap">
+                    <fieldset class="tab-group radio" role="radiogroup">
+                        <legend class="blind">휴복직 구분</legend>
+                        <label class="tab-item">
+                            <input type="radio" name="q01" value="answer1" checked>
+                            <span class="tab-btn">휴직</span>
+                        </label>
+                        <label class="tab-item">
+                            <input type="radio" name="q01" value="answer2">
+                            <span class="tab-btn">복직</span>
+                        </label>
+                    </fieldset>
+                </div>
+            </div>
+
+            <ul class="area_restore02 mt20">
+                <li>
+                    <div class="f_group04">
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">휴가유형</span>
+                                <span class="txt02">*</span>
+                            </div>
+                            <div class="right_box02 mt12">
+                                <div class="common_inp05"><!-- active -->
+                                    <input type="text" class="inp_pw" placeholder="휴가구분을 선택하세요." name="0"
+                                        value="육아휴직" />
+                                    <span class="ico_arr">
+                                        <i class="blind">선택표시</i>
+                                    </span>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <button type="button" class="btn_secondary">
+                        <span class="txt">가족정보 저장</span>
+                    </button>
+                </li>
+                <li>
+                    <div class="f_group04">
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">휴직사유</span>
+                                <span class="txt02">*</span>
+                            </div>
+                            <div class="right_box02 mt12">
+                                <div class="common_inp05"><!-- active -->
+                                    <input type="text" class="inp_pw" placeholder="근무사유를 입력하세요." name="0"
+                                        value="" />
+                                    <span class="ico_arr">
+                                        <i class="blind">선택표시</i>
+                                    </span>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="f_group06">
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">휴직기간</span>
+                                <span class="txt02">*</span>
+                            </div>
+                            <div class="right_box02 mt12">
+                                <div class="common_inp07">
+                                    <input type="text" class="inp_start" name="0" value="2026-01-01"
+                                        disabled />
+                                    <span class="inp_txt01">~</span>
+                                    <input type="text" class="inp_end" name="0" value="2026-01-01"
+                                        disabled />
+                                    <button type="button" class="btn_calendar">
+                                        <i class="blind">달력</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="f_group05">
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">휴직차수</span>
+                            </div>
+                            <div class="right_box02 mt12">
+                                <div class="common_inp06"><!-- active -->
+                                    <input type="text" class="inp_txt" name="0" value="30" />
+                                    <span class="ico_txt">일</span>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="f_group07">
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">첨부파일</span>
+                                <!-- <span class="txt02">*</span> -->
+                            </div>
+                            <div class="right_box02 mt12">
+                                <div class="common_inp08">
+                                    <input type="text" class="inp_file" name="0" placeholder="10MB이하 파일"
+                                        value="file_name.jpg, file_name_01.jpg" disabled />
+                                    <button type="button" class="btn_files">
+                                        <span class="txt01">파일찾기</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </label>
+                        <div class="area_contens01">
+                            <ul>
+                                <li>
+                                    <div class="file_list">
+                                        <span class="txt01">file_name_name_name_name</span>
+                                        <button class="btn_close_file">
+                                            <span class="blind">닫기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="file_list">
+                                        <span class="txt01">file_name_name_name_name_name_name_name</span>
+                                        <button class="btn_close_file">
+                                            <span class="blind">닫기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="divider">
+                <i class="blind">구분선</i>
+            </div>
+
+            <div class="area_restore01">
+                <div class="common_tit02">
+                    <div class="left_box01">
+                        <span class="txt01">안내</span>
+                        <!-- <span class="txt02">*</span> -->
+                    </div>
+                    <div class="right_box01">
+                        <span class="txt03">※ 아래의 순서대로 결재 지정을 해주세요.</span>
+                    </div>
+                </div>
                 <ul>
                     <li>
-                        <div class="restore">
-    
+                        <div class="examine">
+                            <div class="left_box">
+                                <span class="num">1</span>
+                            </div>
+                            <div class="right_box">
+                                <span class="txt01">검토자1</span>
+                                <ul class="examine_info">
+                                    <li class="txt02">김장화 과장</li>
+                                    <li class="txt03">인사처 인사기획팀 (처, 원, 센터, 사업소)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="examine">
+                            <div class="left_box">
+                                <span class="num">2</span>
+                            </div>
+                            <div class="right_box">
+                                <span class="txt01">검토자2</span>
+                                <ul class="examine_info">
+                                    <li class="txt02">나홍련 부장</li>
+                                    <li class="txt03">인사처 인사기획팀 (처, 원, 센터, 사업소)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="examine">
+                            <div class="left_box">
+                                <span class="num">3</span>
+                            </div>
+                            <div class="right_box">
+                                <span class="txt01">검토자3</span>
+                                <ul class="examine_info">
+                                    <li class="txt02">김흥부 대리</li>
+                                    <li class="txt03">인사처 인사기획팀 (처, 원, 센터, 사업소)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="examine">
+                            <div class="left_box">
+                                <span class="num">4</span>
+                            </div>
+                            <div class="right_box">
+                                <span class="txt01">결재자</span>
+                                <ul class="examine_info">
+                                    <li class="txt02">박놀부 부장</li>
+                                    <li class="txt03">인사처 인사기획팀 (처, 원, 센터, 사업소)</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>
-
-
+            
             <!-- 결재자 -->
-            <div class="comm_pd20">
+            <div class="area_restore01">
                 <div class="approver mt18">
                     <div class="left_box01">
                         <span class="txt01">결제자</span>
@@ -62,6 +269,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
         <div class="footer">
@@ -73,7 +281,7 @@
                 </div>
             </div>
         </div>
-    <div>
+        <div>
 </body>
 
 </html>
