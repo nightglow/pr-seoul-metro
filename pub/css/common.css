@@ -1857,3 +1857,48 @@ select {
     background-repeat: no-repeat;
     background-position: right 12px center;
 }
+
+
+
+/* 라디오, 체크박스 */
+.cm_area {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 0;
+    cursor: pointer;
+}
+.cm_area input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+.cm_label {
+    display: inline-block;
+    margin-left: 8px;
+    
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 13px;
+    color: #131313;
+    
+    word-wrap: break-word;
+    white-space: wrap;
+}
+.cm_mark {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.cm_mark.cm_check {background-image: url('../img/ico_ckb_off.svg');}
+.cm_area input:checked ~ .cm_mark.cm_check {background-image: url('../img/ico_ckb_on.svg');}
+
+.cm_mark.cm_radio {background-image: url('../img/ico_rdo_off.svg');}
+.cm_area input:checked ~ .cm_mark.cm_radio {background-image: url('../img/ico_rdo_on.svg');}
+/* //라디오, 체크박스 */
