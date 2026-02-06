@@ -278,6 +278,15 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     color: #4D555C;
     line-height: 1;
 }
+.btn_home {
+    display: block;
+    background-image: url('../img/btn_home.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    width: 24px;
+    height: 24px;
+}
 .btn_back {
     display: block;
     background-image: url('../img/btn_back.svg');
@@ -541,6 +550,37 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     border-radius: 100px;
     background-color: #fff;
 }
+
+/* 헤더 즐겨찾기 버튼 체크박스타입 */
+.btn_fav {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 0;
+    cursor: pointer;
+}
+.btn_fav > input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+.btn_fav .cm_fav {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.btn_fav .cm_fav.cm_check {
+    background-image: url('../img/ico_fav_d.svg');
+}
+.btn_fav input:checked ~ .cm_fav.cm_check {
+    background-image: url('../img/ico_fav_on.svg');
+}
+
 /* //button */
 
 
@@ -1126,6 +1166,8 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     line-height: 1.4;
     text-align: center;
 }
+
+
 .h_wrap .gnb {
     width: 100%;
     display: flex;
@@ -1136,6 +1178,11 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 }
 
 .h_wrap .gnb_nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.h_wrap .gnb_set {
     width: 100%;
     display: flex;
     align-items: center;
@@ -1905,4 +1952,27 @@ select {
 
 .cm_mark.cm_radio {background-image: url('../img/ico_rdo_off.svg');}
 .cm_area input:checked ~ .cm_mark.cm_radio {background-image: url('../img/ico_rdo_on.svg');}
+
 /* //라디오, 체크박스 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
