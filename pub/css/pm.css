@@ -1386,7 +1386,7 @@ textarea.txta01 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 15px;
+    left: 20px;
 
     width: 24px;
     height: 24px;
@@ -1396,7 +1396,7 @@ textarea.txta01 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 15px;
+    right: 20px;
     transition: transform 0.3s;
     background: url('../img/ico_arr_down.svg') no-repeat center/100%;
     width: 24px;
@@ -1433,7 +1433,7 @@ textarea.txta01 {
     display: block;
     position: absolute;
     top: 50%;
-    left: 16px;
+    left: 20px;
     transform: translateY(-50%);
 
     background-repeat: no-repeat;
@@ -1467,16 +1467,6 @@ textarea.txta01 {
 
 
 
-
-
-
-
-
-
-
-
-
-/* 진행중 */
 .f_group11 {
     width: 100%;
     display: flex;
@@ -1490,7 +1480,6 @@ textarea.txta01 {
     padding: 12px 20px 14px 20px;
     border: 1px solid #8597A880;
     border-radius: 8px;
-    /* background-color: #E6E6E680; */
 }
 .f_group11 > .area_tit01:has(.inp_pw:focus) {
     border: 1px solid #8597A880;
@@ -1523,6 +1512,7 @@ textarea.txta01 {
     width: 100%;
     display: flex;
 }
+
 
 
 .common_inp11 {
@@ -1582,7 +1572,7 @@ textarea.txta01 {
 
 
 .comm_pd20 {
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
     margin: 0 auto;
     display: block;
     padding-bottom: 100px;
@@ -1797,13 +1787,58 @@ textarea.txta01 {
 
 
 
+.common_tit01 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.common_tit01 > .left_box01 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.common_tit01 > .left_box01 .txt01 {
+    width: max-content;
+    display: inline-block;
+    
+    font-size: 18rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #070F16;
+}
+.common_tit01 > .left_box01 .txt02 {
+    width: max-content;
+    display: inline-block;
+    
+    font-size: 18rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #FF5930;
+}
+
+.common_tit01 > .right_box01 {
+    width: 100%;
+    display: block;
+}
 
 
+.area_restore01 {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
 
-
-
-
-
+.area_restore02 {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.area_restore02 li {
+    width: 100%;
+    display: block;
+}
 
 
 
