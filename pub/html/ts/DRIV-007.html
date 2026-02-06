@@ -62,6 +62,18 @@
                     <div class="left_box">
                         <div class="tit01">김교통<span>님</span></div>
                     </div>
+                    <div class="right_box">
+                        <ul class="calendar_legend">
+                            <li>
+                                <span class="legend_ico01"></span>
+                                <span class="txt01">본인</span>
+                            </li>
+                            <li>
+                                <span class="legend_ico02"></span>
+                                <span class="txt01">동료</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="monthly_tbl_box">
                     <div class="monthlye_select">
@@ -143,14 +155,9 @@
                                     </button>
                                 </td>
                                 <td>
-                                    <button class="calendar_date" onclick="BottomSheet.show('sheet1')">
+                                    <button class="calendar_date">
                                         <div class="date01">
                                             <span class="txt01">1</span>
-                                        </div>
-                                        <div class="date_schedule">
-                                            <span class="dia_num">02</span>
-                                            <span class="start_time">15:20</span>
-                                            <span class="start_time">17:12</span>
                                         </div>
                                     </button>
                                 </td>
@@ -198,15 +205,10 @@
                                         </div>
                                     </button>
                                 </td>
-                                <td class="date_default date_highlight" onclick="BottomSheet.show('sheet1')">
+                                <td class="date_default date_highlight">
                                     <button class="calendar_date">
                                         <div class="date01">
                                             <span class="txt01">8</span>
-                                        </div>
-                                        <div class="date_schedule">
-                                            <span class="dia_num">02</span>
-                                            <span class="start_time">15:20</span>
-                                            <span class="start_time">17:12</span>
                                         </div>
                                     </button>
                                 </td>
@@ -220,21 +222,20 @@
                                     </button>
                                 </td>
                                 <td class="date_default">
-                                    <button class="calendar_date" onclick="BottomSheet.show('sheet1')">
+                                    <button class="calendar_date">
                                         <div class="date01">
                                             <span class="txt01">10</span>
-                                        </div>
-                                        <div class="date_schedule">
-                                            <span class="dia_num">02</span>
-                                            <span class="start_time">15:20</span>
-                                            <span class="start_time">17:12</span>
                                         </div>
                                     </button>
                                 </td>
                                 <td class="date_default">
-                                    <button class="calendar_date">
+                                    <button class="calendar_date" onclick="BottomSheet.show('sheet1')">
                                         <div class="date01">
                                             <span class="txt01">11</span>
+                                        </div>
+                                        <div class="date_schedule02">
+                                            <span class="dia_num01">09</span>
+                                            <span class="dia_num02">10</span>
                                         </div>
                                     </button>
                                 </td>
@@ -246,9 +247,12 @@
                                     </button>
                                 </td>
                                 <td class="date_default">
-                                    <button class="calendar_date">
+                                    <button class="calendar_date" onclick="BottomSheet.show('sheet1')">
                                         <div class="date01">
                                             <span class="txt01">13</span>
+                                        </div>
+                                        <div class="date_schedule02">
+                                            <span class="dia_num01">09</span>
                                         </div>
                                     </button>
                                 </td>
@@ -283,28 +287,29 @@
                                     </button>
                                 </td>
                                 <td class="date_default">
-                                    <button class="calendar_date">
+                                    <button class="calendar_date" onclick="BottomSheet.show('sheet1')">
                                         <div class="date01">
                                             <span class="txt01">18</span>
+                                        </div>
+                                        <div class="date_schedule02">
+                                            <span class="dia_num01">02</span>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td class="date_default">
+                                    <button class="calendar_date">
+                                        <div class="date01">
+                                            <span class="txt01">19</span>
                                         </div>
                                     </button>
                                 </td>
                                 <td class="date_default">
                                     <button class="calendar_date" onclick="BottomSheet.show('sheet1')">
                                         <div class="date01">
-                                            <span class="txt01">19</span>
-                                        </div>
-                                        <div class="date_schedule">
-                                            <span class="dia_num">02</span>
-                                            <span class="start_time">15:20</span>
-                                            <span class="start_time">17:12</span>
-                                        </div>
-                                    </button>
-                                </td>
-                                <td class="date_default">
-                                    <button class="calendar_date">
-                                        <div class="date01">
                                             <span class="txt01">20</span>
+                                        </div>
+                                        <div class="date_schedule02">
+                                            <span class="dia_num02">10</span>
                                         </div>
                                     </button>
                                 </td>
@@ -367,14 +372,9 @@
                                     </button>
                                 </td>
                                 <td class="date_default">
-                                    <button class="calendar_date" onclick="BottomSheet.show('sheet1')">
+                                    <button class="calendar_date">
                                         <div class="date01">
                                             <span class="txt01">29</span>
-                                        </div>
-                                        <div class="date_schedule">
-                                            <span class="dia_num">02</span>
-                                            <span class="start_time">15:20</span>
-                                            <span class="start_time">17:12</span>
                                         </div>
                                     </button>
                                 </td>
@@ -385,10 +385,9 @@
                                         <div class="date01">
                                             <span class="txt01">30</span>
                                         </div>
-                                        <div class="date_schedule">
-                                            <span class="dia_num">02</span>
-                                            <span class="start_time">15:20</span>
-                                            <span class="start_time">17:12</span>
+                                        <div class="date_schedule02">
+                                            <span class="dia_num01">02</span>
+                                            <span class="dia_num02">12</span>
                                         </div>
                                     </button>
                                 </td>
@@ -442,33 +441,71 @@
         </div>
     <div>
 
-    <!-- 월 스케줄 상세 -->
+    <!-- 스케줄 비교하기 -->
     <div class="dim" data-sheet='sheet1'>
-        <div class="sheet bh30">
+        <div class="sheet bh55">
             <div class="left_box">
                 <div class="area_tit01">
-                    <span class="txt01">2026년 1월 8일</span>
+                    <span class="txt01">스케줄 비교하기</span>
                     <button type="button" class="btn_close" onclick="BottomSheet.hide('sheet1');">
                         <label class="blind">닫기</label>
                     </button>
                 </div>
             </div>
             <div class="right_box">
-                <div class="bs_tbl_box01">
-                    <ul class="tbl_list">
-                        <li>
-                            <span class="tit01">DIA</span>
-                            <span class="txt01">10</span>
-                        </li>
-                        <li>
-                            <span class="tit01">1사업</span>
-                            <span class="txt01">07:54 ~ 12:07</span>
-                        </li>
-                        <li>
-                            <span class="tit01">2사업</span>
-                            <span class="txt01">14:04 ~ 17:15</span>
-                        </li>
-                    </ul>
+                <div class="schedule_compare">
+                    <div class="compare_box">
+                        <div class="tit_box01">
+                            <div class="left_box">
+                                <span class="tit01">김교통님</span>
+                            </div>
+                            <div class="right_box">
+                                <span class="txt01">2026년 1월 7일</span>
+                            </div>
+                        </div>
+                        <div class="compare_cont_box01">
+                            <ul class="tbl_list">
+                                <li>
+                                    <span class="tit01">DIA</span>
+                                    <span class="txt01">10</span>
+                                </li>
+                                <li>
+                                    <span class="tit01">1사업</span>
+                                    <span class="txt01">07:54 ~ 12:07</span>
+                                </li>
+                                <li>
+                                    <span class="tit01">2사업</span>
+                                    <span class="txt01">14:04 ~ 17:15</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="compare_box">
+                        <div class="tit_box01">
+                            <div class="left_box">
+                                <span class="tit01">이교통님</span>
+                            </div>
+                            <div class="right_box">
+                                <span class="txt01">2026년 1월 7일</span>
+                            </div>
+                        </div>
+                        <div class="compare_cont_box02">
+                            <ul class="tbl_list">
+                                <li>
+                                    <span class="tit01">DIA</span>
+                                    <span class="txt01">12</span>
+                                </li>
+                                <li>
+                                    <span class="tit01">1사업</span>
+                                    <span class="txt01">12: 08 ~ 14:03</span>
+                                </li>
+                                <li>
+                                    <span class="tit01">2사업</span>
+                                    <span class="txt01">17:16 ~ 20:35</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
