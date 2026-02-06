@@ -32,6 +32,7 @@ body {
 .mt5 { margin-top: 5px; }
 .mt6 { margin-top: 6px; }
 .mt10 {margin-top: 10px;}
+.mt11 {margin-top: 11px;}
 .mt12 {margin-top: 12px;}
 .mt16 {margin-top: 16px;}
 .mt18 {margin-top: 18px;}
@@ -821,6 +822,9 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 }
 .sheet.act.bh10 {
     height: 10%;
+}
+.sheet.act.bh30 {
+    height: 30%;
 }
 .sheet.act.bh32 {
     height: 32%;

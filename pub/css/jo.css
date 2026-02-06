@@ -22,6 +22,7 @@
     border: 1px solid transparent;
     width: calc(100% - 24px);
     font-size: 18rem;
+    color: #B5B7BA;
 }
 .select_box .inp_line:focus {
     border: 1px solid transparent;
