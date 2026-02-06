@@ -201,6 +201,29 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 }
 
 
+.btn_approver03 {
+    width: 100%;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #162C8F;
+    border-radius: 8px;
+    background-color: #fff;
+    flex-shrink: 0;
+}
+.btn_approver03 > .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 17rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #162C8F;
+}
+
+
 
 
 .f_group01 {

@@ -458,14 +458,14 @@ textarea.txta01 {
     gap: 4px 0;
     margin-top: 4px;
 }
-.caution02 .area_tit01 li {
+.caution02 .area_tit01 > li {
     width: 100%;
     display: block;
 }
-.caution02 .area_tit01 li + li {
+.caution02 .area_tit01 > li + li {
     margin-top: 7px;
 }
-.caution02 .area_tit01 li .txt02 {
+.caution02 .area_tit01 > li .txt02 {
     width: 100%;
     display: inline-block;
 
@@ -478,7 +478,7 @@ textarea.txta01 {
     position: relative;
 }
 
-.caution02 .area_tit01 li .txt02::before {
+.caution02 .area_tit01 > li .txt02::before {
     content: '';
     position: absolute;
     top: 1px;
@@ -490,9 +490,45 @@ textarea.txta01 {
     color: #73757E;
 }
 
-.caution02 .area_tit01 li .txt02.n01::before {content: '1.';}
-.caution02 .area_tit01 li .txt02.n02::before {content: '2.';}
-.caution02 .area_tit01 li .txt02.n03::before {content: '3.';}
+.caution02 .area_tit01 > li .txt02.n01::before {content: '1.';}
+.caution02 .area_tit01 > li .txt02.n02::before {content: '2.';}
+.caution02 .area_tit01 > li .txt02.n03::before {content: '3.';}
+
+.caution02 .area_tit01 .depth01 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 34px;
+}
+.caution02 .area_tit01 .depth01 > li {
+    width: 100%;
+    display: block;
+}
+.caution02 .area_tit01 .depth01 li > .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #73757E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .approver {
     width: 100%;
@@ -1279,6 +1315,72 @@ textarea.txta01 {
 }
 
 
+
+
+/* 아코디언 */
+.accordion {
+    width: 100%;
+}
+.accordion > .acc-item {
+    width: 100%;
+    display: block;
+}
+.accordion > .acc-item + .acc-item {
+    margin-top: 10px;
+}
+.acc-header {
+    position: relative;
+    cursor: pointer;
+
+    padding: 18px 20px;
+    border-bottom: 1px solid #8597A880;
+}
+
+.acc-header::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+
+    width: 24px;
+    height: 24px;
+    background-color: red;
+}
+.acc-header::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    transition: transform 0.3s;
+    background: url('../img/ico_arr_down.svg') no-repeat center/100%;
+    width: 24px;
+    height: 24px;
+}
+.acc-header.active::after {
+    content: '';
+    background-image: url('../img/ico_arr_up.svg');
+}
+.acc-header .txt01 {
+    width: 100%;
+    display: block;
+    
+    font-size: 18rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #070F16;
+    padding-left: 34px;
+}
+
+
+
+.acc-content {
+    display: none;
+    background: #fff;
+    padding: 20px;
+}
+/* //아코디언 */
 
 
 
