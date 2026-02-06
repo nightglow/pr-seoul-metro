@@ -132,6 +132,51 @@ textarea.txta01 {
 }
 
 
+.area_summation01 {
+    width: 100%;
+    display: block;
+    background-color: #F5F8FA80;
+    border-radius: 10px;
+    padding: 16px 20px;
+}
+.area_summation01 > .summation01 {
+    width: 100%;
+}
+.area_summation01 > .summation01 tr {
+    width: 100%;
+}
+.area_summation01 > .summation01 tr + tr td {
+    padding-top: 10px;
+}
+.area_summation01 > .summation01 tr td > .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #2C333B;
+}
+.area_summation01 > .summation01 tr td > .txt02 {
+    width: 100%;
+    display: block;
+
+    font-size: 17rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #070F16;
+    text-align: right;
+}
+.area_summation01 > .summation01 tr td > .txt03 {
+    width: 100%;
+    display: block;
+
+    font-size: 17rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #1F5EFF;
+    text-align: right;
+}
 
 
 
@@ -1345,7 +1390,6 @@ textarea.txta01 {
 
     width: 24px;
     height: 24px;
-    background-color: red;
 }
 .acc-header::after {
     content: '';
@@ -1369,9 +1413,44 @@ textarea.txta01 {
     font-size: 18rem;
     font-weight: 600;
     line-height: 1.2;
+    color: #73757E;
+    padding-left: 34px;
+}
+.acc-header.active .txt01 {
+    width: 100%;
+    display: block;
+    
+    font-size: 18rem;
+    font-weight: 600;
+    line-height: 1.2;
     color: #070F16;
     padding-left: 34px;
 }
+
+.acc-header .ico {
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.acc-header .ico.work_01 {background-image: url('../img/ico_working_d_01.svg');}
+.acc-header.active .ico.work_01 {background-image: url('../img/ico_working_f_01.svg');}
+
+.acc-header .ico.work_02 {background-image: url('../img/ico_working_d_02.svg');}
+.acc-header.active .ico.work_02 {background-image: url('../img/ico_working_f_02.svg');}
+
+.acc-header .ico.work_03 {background-image: url('../img/ico_working_d_03.svg');}
+.acc-header.active .ico.work_03 {background-image: url('../img/ico_working_f_03.svg');}
+
+.acc-header .ico.work_04 {background-image: url('../img/ico_working_d_04.svg');}
+.acc-header.active .ico.work_04 {background-image: url('../img/ico_working_f_04.svg');}
 
 
 
@@ -1499,8 +1578,59 @@ textarea.txta01 {
 }
 
 
+.comm_pd20 {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 100px;
+}
 
 
+
+/* 라디오 커스텀 */
+.cm_area {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 0;
+    cursor: pointer;
+}
+.cm_area input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+.cm_label {
+    display: inline-block;
+    margin-left: 8px;
+    
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 13px;
+    color: #131313;
+    
+    word-wrap: break-word;
+    white-space: wrap;
+}
+
+.cm_mark {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.cm_mark.cm_check {background-image: url('../img/ico_ckb_off.svg');}
+.cm_area input:checked ~ .cm_mark.cm_check {background-image: url('../img/ico_ckb_on.svg');}
+
+.cm_mark.cm_radio {background-image: url('../img/ico_rdo_off.svg');}
+.cm_area input:checked ~ .cm_mark.cm_radio {background-image: url('../img/ico_rdo_on.svg');}
+
+/* //라디오 커스텀 */
 
 
 

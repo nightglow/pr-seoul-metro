@@ -161,6 +161,8 @@ input {
 	border: 0;
 	padding: 0;
 	margin: 0;
+	font-family: inherit;
+	background-color: transparent;
 }
 
 input[type='password'],

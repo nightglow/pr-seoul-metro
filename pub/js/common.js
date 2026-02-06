@@ -33,7 +33,6 @@ $(function () {
 
 
     
-
     TabManager.init();
 
 
@@ -102,39 +101,45 @@ const Tab = {
 // ----------------
 
 const TabManager = {
-        init() {
-            this.tabLinks = document.querySelectorAll('.tab_nav a');
-            this.tabContents = document.querySelectorAll('[id^="tab"]');
-            this.initTabs();
-            this.bindEvents();
-        },
+    init() {
+        this.tabLinks = document.querySelectorAll('.tab_nav a');
+        this.tabContents = document.querySelectorAll('[id^="tab"]');
 
-        initTabs() {
-            this.tabContents.forEach(content => {
-                content.style.display = content.id === 'tab1' ? 'block' : 'none';
+        if (this.tabLinks.length === 0) return;
+
+        this.initTabs();
+        this.bindEvents();
+    },
+
+    initTabs() {
+        this.tabContents.forEach(content => {
+            content.style.display = content.id === 'tab1' ? 'block' : 'none';
+        });
+    },
+
+    bindEvents() {
+        this.tabLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.showTab(link);
             });
-        },
+        });
+    },
 
-        bindEvents() {
-            this.tabLinks.forEach(link => {
-                link.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    this.showTab(link);
-                });
-            });
-        },
+    showTab(link) {
 
-        showTab(link) {
-            const targetId = link.getAttribute('href');
+        if (!link) return;
+        
+        const targetId = link.getAttribute('href');
 
-            this.tabLinks.forEach(l => l.classList.remove('act'));
-            link.classList.add('act');
+        this.tabLinks.forEach(l => l.classList.remove('act'));
+        link.classList.add('act');
 
-            this.tabContents.forEach(content => {
-                content.style.display = content.id === targetId.substring(1) ? 'block' : 'none';
-            });
-        }
-    };
+        this.tabContents.forEach(content => {
+            content.style.display = content.id === targetId.substring(1) ? 'block' : 'none';
+        });
+    }
+};
 
 
 
