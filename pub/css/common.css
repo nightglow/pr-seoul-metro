@@ -225,6 +225,30 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 }
 
 
+.btn_approver04 {
+    width: 100%;
+    max-width: 82px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #1F5EFF;
+    border-radius: 8px;
+    background-color: #fff;
+    flex-shrink: 0;
+}
+.btn_approver04 > .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 15rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #1F5EFF;
+}
+
+
 
 
 .f_group01 {
@@ -596,6 +620,9 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     border-radius: 8px;
     background-color: #fff;
     flex-shrink: 0;
+}
+.btn_plus.active {
+    background-image: url('../img/ico_minus.svg');
 }
 
 /* //button */
@@ -1163,6 +1190,7 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     right: 0;
     z-index: 10;
 }
+
 /* // layout */
 
 
@@ -1604,6 +1632,16 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     gap: 0 8px;
     padding-top: 24px;
 }
+
+.area_footer03 {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 0 8px;
+}
+
+
 
 /* list style */
 .dot_list01 {

@@ -35,11 +35,11 @@
                     <fieldset class="tab-group radio" role="radiogroup">
                         <legend class="blind">휴복직 구분</legend>
                         <label class="tab-item">
-                            <input type="radio" name="q01" value="answer1" checked>
+                            <input type="radio" name="q01" value="answer1" >
                             <span class="tab-btn">휴직</span>
                         </label>
                         <label class="tab-item">
-                            <input type="radio" name="q01" value="answer2">
+                            <input type="radio" name="q01" value="answer2" checked>
                             <span class="tab-btn">복직</span>
                         </label>
                     </fieldset>
@@ -48,16 +48,16 @@
 
             <ul class="area_restore02 mt20">
                 <li>
-                    <div class="f_group04">
+                    <div class="f_group04 disabled"><!-- disabled 클래스 추가-->
                         <label class="area_tit01">
                             <div class="left_box02">
                                 <span class="txt01">휴가유형</span>
-                                <span class="txt02">*</span>
+                                <!-- <span class="txt02">*</span> -->
                             </div>
                             <div class="right_box02 mt12">
                                 <div class="common_inp05"><!-- active -->
                                     <input type="text" class="inp_pw" placeholder="휴가구분을 선택하세요." name="0"
-                                        value="육아휴직" />
+                                        value="사상휴직" disabled/>
                                     <span class="ico_arr">
                                         <i class="blind">선택표시</i>
                                     </span>
@@ -67,92 +67,37 @@
                     </div>
                 </li>
                 <li>
-                    <div class="people">
-                        <div class="left_box">
-                            <div class="area_tit01">
-                                <span class="txt01">가족정보</span>
-                                <span class="txt02">*</span>
+                    <div class="f_group06 disabled"><!-- disabled 클래스 추가 -->
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">휴직기간</span>
+                                <!-- <span class="txt02">*</span> -->
                             </div>
-                        </div>
-                        <div class="right_box mt10">
-                            <ul class="people_list">
-                                <li>
-                                    <div class="people_item disabled"><!-- 비 활성화시 disabled 추가 -->
-                                        <div class="left_box">
-                                            <select class="people_btn_select" name="" disabled>
-                                                <option value="" selected>본인</option>
-                                                <option value="">배우자</option>
-                                                <option value="">자녀</option>
-                                            </select>
-                                            <input type="text" class="people_cal" disabled  value="1985-01-01">
-                                            <button type="button" class="btn_calendar">
-                                                <i class="blind">달력</i>
-                                            </button>
-                                        </div>
-                                        <div class="right">
-                                            <button class="btn_plus">
-                                                <i class="blind">추가</i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="people_item"><!-- 비활성화 시 disabled 추가 -->
-                                        <div class="left_box">
-                                            <select class="people_btn_select" name="">
-                                                <option value="">본인</option>
-                                                <option value="" selected>배우자</option>
-                                                <option value="">자녀</option>
-                                            </select>
-                                            <input type="text" class="people_cal" value="1985-01-01">
-                                            <button type="button" class="btn_calendar">
-                                                <i class="blind">달력</i>
-                                            </button>
-                                        </div>
-                                        <div class="right">
-                                            <button class="btn_plus active"><!-- active 삭제 버튼 -->
-                                                <i class="blind">추가</i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="people_item"><!-- 비활성화 시 disabled 추가 -->
-                                        <div class="left_box">
-                                            <select class="people_btn_select" name="">
-                                                <option value="">본인</option>
-                                                <option value="">배우자</option>
-                                                <option value="" selected>자녀</option>
-                                            </select>
-                                            <input type="text" class="people_cal" value="1985-01-01">
-                                            <button type="button" class="btn_calendar">
-                                                <i class="blind">달력</i>
-                                            </button>
-                                        </div>
-                                        <div class="right">
-                                            <button class="btn_plus active"><!-- active 삭제 버튼 -->
-                                                <i class="blind">추가</i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                            <div class="right_box02 mt12">
+                                <div class="common_inp07">
+                                    <input type="text" class="inp_start" name="0" value="2026-01-01"
+                                        disabled />
+                                    <span class="inp_txt01">~</span>
+                                    <input type="text" class="inp_end" name="0" value="2026-01-01"
+                                        disabled />
+                                    <button type="button" class="btn_calendar" disabled>
+                                        <i class="blind">달력</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </label>
                     </div>
-                    <button type="button" class="btn_secondary mt10">
-                        <span class="txt">가족정보 저장</span>
-                    </button>
                 </li>
                 <li>
                     <div class="f_group04">
                         <label class="area_tit01">
                             <div class="left_box02">
-                                <span class="txt01">휴직사유</span>
+                                <span class="txt01">복직유형</span>
                                 <span class="txt02">*</span>
                             </div>
                             <div class="right_box02 mt12">
                                 <div class="common_inp05"><!-- active -->
-                                    <input type="text" class="inp_pw" placeholder="근무사유를 입력하세요." name="0"
+                                    <input type="text" class="inp_pw" placeholder="복직유형을 선택하세요." name="0"
                                         value="" />
                                     <span class="ico_arr">
                                         <i class="blind">선택표시</i>
@@ -163,18 +108,15 @@
                     </div>
                 </li>
                 <li>
-                    <div class="f_group06">
+                    <div class="f_group08">
                         <label class="area_tit01">
                             <div class="left_box02">
-                                <span class="txt01">휴직기간</span>
+                                <span class="txt01">복직희망일</span>
                                 <span class="txt02">*</span>
                             </div>
                             <div class="right_box02 mt12">
-                                <div class="common_inp07">
+                                <div class="common_inp09">
                                     <input type="text" class="inp_start" name="0" value="2026-01-01"
-                                        disabled />
-                                    <span class="inp_txt01">~</span>
-                                    <input type="text" class="inp_end" name="0" value="2026-01-01"
                                         disabled />
                                     <button type="button" class="btn_calendar">
                                         <i class="blind">달력</i>
@@ -185,15 +127,15 @@
                     </div>
                 </li>
                 <li>
-                    <div class="f_group05">
+                    <div class="f_group14"><!-- disabled -->
                         <label class="area_tit01">
                             <div class="left_box02">
-                                <span class="txt01">휴직차수</span>
+                                <span class="txt01">복직신청사유</span>
+                                <span class="txt02">*</span>
                             </div>
                             <div class="right_box02 mt12">
-                                <div class="common_inp06"><!-- active -->
-                                    <input type="text" class="inp_txt" name="0" value="30" />
-                                    <span class="ico_txt">일</span>
+                                <div class="txta02">
+                                    <textarea name="" id="" placeholder="복직신청 사유를 입력하세요."></textarea>
                                 </div>
                             </div>
                         </label>
@@ -348,7 +290,7 @@
             <div class="area_footer02">
                 <div class="f_group01">
                     <button type="button" class="btn_primary">
-                        <span class="txt">휴직신청</span>
+                        <span class="txt">복직신청</span>
                     </button>
                 </div>
             </div>
