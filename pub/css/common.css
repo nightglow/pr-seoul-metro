@@ -581,6 +581,23 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     background-image: url('../img/ico_fav_on.svg');
 }
 
+.btn_plus {
+    width: 40px;
+    height: 40px;
+    /* padding: 10px; */
+    display: flex;
+    align-content: center;
+
+    border: 1px solid #8597A880;
+    background-image: url('../img/ico_plus.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 24px;
+    border-radius: 8px;
+    background-color: #fff;
+    flex-shrink: 0;
+}
+
 /* //button */
 
 
@@ -615,6 +632,7 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     line-height: 1.4;
     color: #FFF;
 }
+
 
 .f_group07 {
     width: 100%;
