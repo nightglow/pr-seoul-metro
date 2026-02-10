@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>서울교통공사 인사관리</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header"></div>
+
+        <div class="contents">
+            <div class="comm_pdd_no">
+                <ul class="area_summation">
+                    <li>
+                        <div class="area_tit01">
+                            <span class="txt01">급여년월</span>
+                            <!-- <span class="txt02">*</span> -->
+                        </div>
+                        <!-- 날짜 -->
+                        <ul class="area_date mt6">
+                            <li>
+                                <select name="" id="" class="btn_select_date">
+                                    <option value="">2021년</option>
+                                    <option value="">2022년</option>
+                                    <option value="">2023년</option>
+                                    <option value="">2024년</option>
+                                    <option value="">2025년</option>
+                                    <option value="" selected>2026년</option>
+                                </select>
+                            </li>
+                            <li>
+                                <select name="" id="" class="btn_select_date">
+                                    <option value="">1월</option>
+                                    <option value="">2월</option>
+                                    <option value="">3월</option>
+                                    <option value="">4월</option>
+                                    <option value="">5월</option>
+                                    <option value="">6월</option>
+                                    <option value="">7월</option>
+                                    <option value="">8월</option>
+                                    <option value="">9월</option>
+                                    <option value="">10월</option>
+                                    <option value="">11월</option>
+                                    <option value="">12월</option>
+                                </select>
+                            </li>
+                        </ul>
+                        <!-- 직급 -->
+                        <div class="area_contents01 mt20">
+                            <table class="summation">
+                                <caption class="blind">직급</caption>
+                                <colgroup>
+                                    <col style="width: 40%;">
+                                    <col style="width: 60%;">   
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="txt01">직급</span></td>
+                                        <td><span class="txt03">1급</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="txt01">호봉</span></td>
+                                        <td><span class="txt03">10호봉</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="txt01">지급일자</span></td>
+                                        <td>
+                                            <span class="txt02">YYYY.MM.DD</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- 차감지급액 -->
+                        <div class="area_contents03 mt10">
+                            <table class="summation04">
+                                <caption class="blind">차감지급액</caption>
+                                <colgroup>
+                                    <col style="width: 35%;">
+                                    <col style="width: 65%;">   
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="txt01">기본임금</span></td>
+                                        <td><span class="txt02">9,900,000,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="txt01">통상임금</span></td>
+                                        <td><span class="txt02">9,900,000,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="txt01">지급총액</span></td>
+                                        <td><span class="txt02">9,900,000,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="txt01">공재총액</span></td>
+                                        <td><span class="txt02">9,900,000,000</span></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td><span class="txt01">차감지급액</span></td>
+                                        <td><span class="txt03">9,900,000,000</span></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="divider">
+                <i class="blind">구분선</i>
+            </div>
+
+            <div class="tab_wrap01">
+                <div class="swiper tab_swiper01">
+                    <ul class="swiper-wrapper tab_nav">
+                        <li class="swiper-slide"><a href="#tab1" class="act"><span class="tit01">지급</span></a></li>
+                        <li class="swiper-slide"><a href="#tab2"><span class="tit01">공제</span></a></li>
+                    </ul>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            
+            <div id="tab1">
+                <div class="tab_content03">
+                    <div class="area_contents04">
+                        <table class="summation05">
+                            <caption class="blind">지급 금액</caption>
+                            <colgroup>
+                                <col style="width: 35%;">
+                                <col style="width: 65%;">   
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td><span class="txt01">기본금</span></td>
+                                    <td><span class="txt02">9,900,000,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt01">기술수당</span></td>
+                                    <td><span class="txt02">9,900,000,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt01">장기근속수당</span></td>
+                                    <td><span class="txt02">9,900,000,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt01">업무보전 수당</span></td>
+                                    <td><span class="txt02">9,900,000,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt01">급식보조비</span></td>
+                                    <td><span class="txt02">9,900,000,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt01">가족수당</span></td>
+                                    <td><span class="txt02">9,900,000,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt01">직급보조비</span></td>
+                                    <td><span class="txt02">9,900,000,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt01">상여수당</span></td>
+                                    <td><span class="txt02">9,900,000,000</span></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td><span class="txt01">지급총액</span></td>
+                                    <td><span class="txt03">9,900,000,000</span></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab2">
+                <div class="tab_content03">
+                    <div class="area_contents04">
+                        <table class="summation05">
+                            <caption class="blind">공재 금액</caption>
+                            <colgroup>
+                                <col style="width: 35%;">
+                                <col style="width: 65%;">   
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td><span class="txt01">소득세</span></td>
+                                    <td><span class="txt02">9,900,000,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt01">지방소득세</span></td>
+                                    <td><span class="txt02">9,900,000,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt01">건강보험</span></td>
+                                    <td><span class="txt02">9,900,000,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt01">국민연금</span></td>
+                                    <td><span class="txt02">9,900,000,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt01">노인장기요양보험</span></td>
+                                    <td><span class="txt02">9,900,000,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt01">고용보험</span></td>
+                                    <td><span class="txt02">9,900,000,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt01">직원돕기기금(나눔회)</span></td>
+                                    <td><span class="txt02">9,900,000,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt01">연금저축보험</span></td>
+                                    <td><span class="txt02">9,900,000,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt01">노조회비</span></td>
+                                    <td><span class="txt02">9,900,000,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt01">동호회비/자생단체회비</span></td>
+                                    <td><span class="txt02">9,900,000,000</span></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td><span class="txt01">지급총액</span></td>
+                                    <td><span class="txt03">9,900,000,000</span></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- <div class="footer">
+            <div class="area_footer03">
+                <div class="f_group01">
+                    <button type="button" class="btn_primary">
+                        <span class="txt">신청취소</span>
+                    </button>
+                </div>
+            </div>
+        </div> -->
+    <div>
+</body>
+
+</html>

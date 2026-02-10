@@ -29,8 +29,8 @@ body {
 
 
 .mt4 {margin-top: 4px;}
-.mt5 { margin-top: 5px; }
-.mt6 { margin-top: 6px; }
+.mt5 { margin-top: 5px;}
+.mt6 { margin-top: 6px;}
 .mt10 {margin-top: 10px;}
 .mt11 {margin-top: 11px;}
 .mt12 {margin-top: 12px;}
@@ -1791,6 +1791,11 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     flex: 0 0 calc(50% - 6px);
     width: 50%;
 }
+.tab-group.radio.three .tab-item {
+    flex: 0 0 calc( (100% / 3) - 8px);
+    width: calc(100% / 3);
+}
+
 .tab-group.radio02 {
     flex-wrap: wrap;
 }
