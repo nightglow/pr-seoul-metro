@@ -364,6 +364,24 @@
         </div>
     </div>
 
+    <!-- 260210 스크립트 추가 -->
+    <script>
+        $(function () {
+            const $group = $('.f_group04');
+            const $input = $group.find('input');
+
+            $('input[name="entrant"]').on('change', function () {
+                if ($(this).val() === 'outisder') {
+                    $group.removeClass('disabled');
+                    $input.prop('disabled', false);
+                } else {
+                    $group.addClass('disabled');
+                    $input.prop('disabled', true);
+                }
+            });
+        });
+    </script>
+    <!-- //260210 스크립트 추가 -->
 </body>
 
 </html>
