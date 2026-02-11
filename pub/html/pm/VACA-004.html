@@ -92,24 +92,21 @@
                                     </label>
                                 </div>
                             </li>
+                            <!-- 마크업수정 260210 -->
                             <li>
-                                <div class="f_group04">
-                                    <label class="area_tit01">
-                                        <div class="left_box02">
-                                            <span class="txt01">휴가사유</span>
-                                            <span class="txt02">*</span>
-                                        </div>
-                                        <div class="right_box02 mt12">
-                                            <div class="common_inp05"><!-- active -->
-                                                <input type="text" class="inp_pw" placeholder="휴가사유를 입력하세요." name="0" />
-                                                <span class="ico_arr">
-                                                    <i class="blind">선택표시</i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </label>
+                                <div class="common_tit01">
+                                    <div class="left_box01">
+                                        <span class="txt01">휴가사유</span>
+                                        <span class="txt02">*</span>
+                                    </div>
+                                </div>
+                                <div class="area_contents02">
+                                    <div class="txta01">
+                                        <textarea name="" id="" placeholder="휴가 사유를 입력하세요."></textarea>
+                                    </div>
                                 </div>
                             </li>
+                            <!-- 마크업수정 -->
                             <li>
                                 <div class="f_group06">
                                     <label class="area_tit01">
@@ -213,12 +210,32 @@
                                 </div>
                             </li>
                         </ul>
+                        <!-- 260211 마크업 변경 -->
                         <div class="approver mt18">
                             <div class="left_box01">
                                 <span class="txt01">결제자</span>
                                 <span class="txt02">*</span>
                             </div>
                             <div class="right_box01">
+                                <!-- 결제선 -->
+                                <ul class="area_approver mt10">
+                                    <li>
+                                        <button type="button" class="btn_approver active"><!-- active 활성화 -->
+                                            <span class="txt01">결재선 초기화</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn_approver"><!-- active 활성화 -->
+                                            <span class="txt01">결재자 지정</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn_approver"><!-- active 활성화 -->
+                                            <span class="txt01">결재선 불러오기</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <!-- 결재선 리스트 -->
                                 <ul class="area_approver01 mt10">
                                     <li>
                                         <div class="apro_user">
@@ -231,14 +248,15 @@
                                             <div class="right_box">
                                                 <div class="area_tit01">
                                                     <div class="box_info01">
-                                                        <span class="txt01">스마트개발팀</span> 
+                                                        <span class="txt01">스마트개발팀</span>
                                                         <span class="line"><i class="blind">라인</i></span>
                                                         <span class="txt02">차장</span>
                                                     </div>
                                                     <span class="txt03">20102939</span>
                                                 </div>
                                                 <div class="area_contents01">
-                                                    <button type="button" class="btn_approver01 active"><!-- active 활성화 -->
+                                                    <button type="button"
+                                                        class="btn_approver01 active"><!-- active 활성화 -->
                                                         <span class="txt01">요청</span>
                                                     </button>
                                                 </div>
@@ -256,7 +274,7 @@
                                             <div class="right_box">
                                                 <div class="area_tit01">
                                                     <div class="box_info01">
-                                                        <span class="txt01">영업본부 영업지원처</span> 
+                                                        <span class="txt01">영업본부 영업지원처</span>
                                                         <span class="line"><i class="blind">라인</i></span>
                                                         <span class="txt02">차장</span>
                                                     </div>
@@ -282,7 +300,7 @@
                                             <div class="right_box">
                                                 <div class="area_tit01">
                                                     <div class="box_info01">
-                                                        <span class="txt01">영업본부</span> 
+                                                        <span class="txt01">영업본부</span>
                                                         <span class="line"><i class="blind">라인</i></span>
                                                         <span class="txt02">부장</span>
                                                     </div>
@@ -300,8 +318,8 @@
                                 </ul>
                             </div>
                         </div>
+                        <!-- //260211 마크업 변경 -->
                     </div>
-
                 </div>
             </div>
 

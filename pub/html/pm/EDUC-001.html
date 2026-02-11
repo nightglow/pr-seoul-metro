@@ -17,80 +17,138 @@
     <script src="../../js/common.js"></script>
 </head>
 
-<body class="lock"><!-- 내용안에 게시글이 있을 경우 클래스 추가 해주세요.-->
+<body>
     <div class="container">
         <div id="header"></div>
         <div class="contents">
-            <div class="board_contain">
-                <div class="board_title mt20">
-                    <ul class="area_vacation">
-                        <li>
-                            <div class="f_group06">
-                                <label class="area_tit01">
-                                    <div class="left_box02">
-                                        <span class="txt01">교육기간</span>
-                                        <!-- <span class="txt02">*</span> -->   
+            <div class="comm_pdd_no">
+                <ul class="area_vacation">
+                    <li>
+                        <div class="f_group06">
+                            <label class="area_tit01">
+                                <div class="left_box02">
+                                    <span class="txt01">교육기간</span>
+                                    <!-- <span class="txt02">*</span> -->   
+                                </div>
+                                <div class="right_box02 mt12">
+                                    <div class="common_inp07">
+                                        <input type="text" class="inp_start" name="0" value="2026-01-01"
+                                            disabled />
+                                        <span class="inp_txt01">~</span>
+                                        <input type="text" class="inp_end" name="0" value="2026-01-01"
+                                            disabled />
+                                        <button type="button" class="btn_calendar">
+                                            <i class="blind">달력</i>
+                                        </button>
                                     </div>
-                                    <div class="right_box02 mt12">
-                                        <div class="common_inp07">
-                                            <input type="text" class="inp_start" name="0" value="2026-01-01"
-                                                disabled />
-                                            <span class="inp_txt01">~</span>
-                                            <input type="text" class="inp_end" name="0" value="2026-01-01"
-                                                disabled />
-                                            <button type="button" class="btn_calendar">
-                                                <i class="blind">달력</i>
-                                            </button>
-                                        </div>
+                                </div>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="area_restore03 mt10">
+                    <div class="common_tit01">
+                        <div class="left_box01">
+                            <span class="txt01">상태</span>
+                            <span class="txt02">*</span>
+                        </div>
+                    </div>
+                    <div class="tab_btn_wrap">
+                        <fieldset class="tab-group radio" role="radiogroup">
+                            <legend class="blind">상태</legend>
+                            <label class="tab-item">
+                                <input type="radio" name="q01" value="answer1" checked>
+                                <span class="tab-btn">작성중</span>
+                            </label>
+                            <label class="tab-item">
+                                <input type="radio" name="q01" value="answer2">
+                                <span class="tab-btn">미 작성</span>
+                            </label>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="btn_group01 mt12">
+                    <button type="button" class="btn_secondary">
+                        <span class="txt">조회</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="divider">
+                <i class="blind">구분선</i>
+            </div>
+
+            <div class="comm_pd20 mt12">
+                <div class="board_header">
+                    <span class="txt01">검사결과</span>
+                    <span class="txt02">총<span class="txt03">3</span>건</span>
+                </div>
+                <fieldset role="radiogroup" class="mt10">
+                <legend class="blind">답변 선택</legend>
+                    <ul class="rdo_group_01">
+                        <li>
+                            <div class="f_group12">
+                                <label class="cm_area">
+                                    <input type="radio" checked="checked" name="r2" id="rad1_1">
+                                    <span class="cm_mark cm_radio">
+                                        <i class="blind">아이콘</i>
+                                    </span>
+                                    <div class="area_summation03">
+                                        <table class="summation03">
+                                            <caption class="blind">지원근무일자</caption>
+                                            <colgroup>
+                                                <col style="width: 30%;">
+                                                <col style="width: 70%;">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <td><span class="txt01">과정명</span></td>
+                                                    <td><span class="txt02">소방안전(화재) 교육</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="txt01">환급여부</span></td>
+                                                    <td>
+                                                        <span class="txt02">예</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="txt01">차수명</span></td>
+                                                    <td><span class="txt02">3회차(3회/7회)</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="txt01">교육기간</span></td>
+                                                    <td>
+                                                        <span class="txt02"><span class="txt04">2026-01-29</span>부터</span>
+                                                        <span class="txt02"><span class="txt04">2026-01-29</span>부터</span>
+                                                        <span class="txt02">(22일)</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="txt01">작성일</span></td>
+                                                    <td>
+                                                        <span class="txt02"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="txt01">상태</span></td>
+                                                    <td>
+                                                        <span class="txt02">정상</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </label>
                             </div>
                         </li>
-                    </ul>
-
-                    <div class="area_restore03 mt10">
-                        <div class="common_tit01">
-                            <div class="left_box01">
-                                <span class="txt01">상태</span>
-                                <span class="txt02">*</span>
-                            </div>
-                            <div class="right_box01"></div>
-                        </div>
-                        <div class="tab_btn_wrap">
-                            <fieldset class="tab-group radio" role="radiogroup">
-                                <legend class="blind">상태</legend>
-                                <label class="tab-item">
-                                    <input type="radio" name="q01" value="answer1" checked>
-                                    <span class="tab-btn">작성중</span>
-                                </label>
-                                <label class="tab-item">
-                                    <input type="radio" name="q01" value="answer2">
-                                    <span class="tab-btn">미 작성</span>
-                                </label>
-                            </fieldset>
-                        </div>
-                    </div>
-
-                    <div class="btn_group01 mt12">
-                        <button type="button" class="btn_secondary">
-                            <span class="txt">조회</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="divider">
-                    <i class="blind">구분선</i>
-                </div>
-
-                <div class="board_header mt12">
-                    <span class="txt01">검사결과</span>
-                    <span class="txt02">총<span class="txt03">3</span>건</span>
-                </div>
-
-                <div class="board_contents">
-                    <div class="board_list mt12">
-                        <div class="list-box noline">
-                            <ul>
-                                <li>
+                        <li>
+                            <div class="f_group12">
+                                <label class="cm_area">
+                                    <input type="radio" checked="checked" name="r2" id="rad1_2">
+                                    <span class="cm_mark cm_radio">
+                                        <i class="blind">아이콘</i>
+                                    </span>
                                     <div class="area_summation03">
                                         <table class="summation03">
                                             <caption class="blind">지원근무일자</caption>
@@ -136,65 +194,18 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                </li>
-                                <li>
-                                    <div class="area_summation03">
-                                        <table class="summation03">
-                                            <caption class="blind">소방안전(화재) 교육</caption>
-                                            <colgroup>
-                                                <col style="width: 30%;">
-                                                <col style="width: 70%;">
-                                            </colgroup>
-                                            <tbody>
-                                                <tr>
-                                                    <td><span class="txt01">과정명</span></td>
-                                                    <td><span class="txt02">의사소통 역량강화 교육</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="txt01">환급여부</span></td>
-                                                    <td>
-                                                        <span class="txt02">예</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="txt01">차수명</span></td>
-                                                    <td><span class="txt02">2회차(2회/3회)</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="txt01">교육기간</span></td>
-                                                    <td>
-                                                        <span class="txt02"><span class="txt04">2026-01-29</span>부터</span>
-                                                        <span class="txt02"><span class="txt04">2026-01-29</span>부터</span>
-                                                        <span class="txt02">(2일)</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="txt01">작성일</span></td>
-                                                    <td>
-                                                        <span class="txt02">2026-01-29</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="txt01">상태</span></td>
-                                                    <td>
-                                                        <span class="txt02">정상</span>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </fieldset>
             </div>
         </div>
+
         <div class="footer">
             <div class="area_footer03">
                 <div class="f_group01">
-                    <button type="button" class="btn_primary" disabled>
+                    <button type="button" class="btn_primary">
                         <span class="txt">작성</span>
                     </button>
                 </div>

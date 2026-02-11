@@ -33,7 +33,8 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
-            <!-- // 마크업 수정 -->
+            <!-- //마크업 수정 -->
+
             <div id="tab1">
                 <div class="tab_content01">
                     <div class="left_box mt25">
@@ -48,7 +49,7 @@
                                         <div class="right_box02 mt12">
                                             <div class="common_inp05"><!-- active -->
                                                 <input type="text" class="inp_pw" placeholder="휴가구분을 선택하세요." name="0"
-                                                    value="일반휴가" />
+                                                    value="장기재직휴가" />
                                                 <span class="ico_arr">
                                                     <i class="blind">선택표시</i>
                                                 </span>
@@ -67,7 +68,7 @@
                                         <div class="right_box02 mt12">
                                             <div class="common_inp05"><!-- active -->
                                                 <input type="text" class="inp_pw" placeholder="휴가유형을 선택하세요." name="0"
-                                                    value="가연차휴가" />
+                                                    value="장기재직휴가 10년 이상" />
                                                 <span class="ico_arr">
                                                     <i class="blind">선택표시</i>
                                                 </span>
@@ -75,23 +76,6 @@
                                         </div>
                                     </label>
                                 </div>
-                                <!-- 가연차 동의 -->
-                                <div class="area_annual mt12 active"><!-- active 활성화상태 -->
-                                    <div class="common_tit01">
-                                        <div class="left_box01">
-                                            <span class="txt01">가연차동의</span>
-                                            <span class="txt02">*</span>
-                                        </div>
-                                    </div>
-                                    <div class="box_annual mt2">
-                                        <label class="rdo_item">
-                                            <input type="radio" name="period01" checked>
-                                            <span>가연차 동의</span>
-                                        </label>
-                                        <span class="txt01">※ 가연차휴가 신청 전 동의 필요</span>
-                                    </div>
-                                </div>
-                                <!-- // 가연차 동의 -->
                             </li>
                             <li>
                                 <div class="f_group05">
@@ -185,6 +169,30 @@
                                 </div>
                             </li>
                         </ul>
+                        <ul class="caution01 mt12">
+                            <li>
+                                <span class="txt01">
+                                    휴가기간의 휴가시작일이 변경될 경우 휴가유형을 다시 불러옵니다.<br>
+                                    (ex. 2022년 1월1일이 시작기간일 경우 2022년 사용가능 휴무쿼터를 가지고 옵니다.)
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="caution02 mt12">
+                            <h3><span class="txt01">주의사항</span></h3>
+                            <ol class="area_tit01">
+                                <li>
+                                    <span class="txt02 n01">공가사유에 대한 증빙서류 제출 안내</span>
+                                </li>
+                                <li>
+                                    <span class="txt02 n02">증빙서류 사전 첨부 불가한 경우 사후첨부 가능</span>
+                                </li>
+                                <li>
+                                    <span class="txt02 n03">건강검진 공가의 경우 사유란에만 간략하게 건강검진 표기</span>
+                                </li>
+                            </ol>
+                        </div>
+
+                        <!-- 260211 마크업 변경 -->
                         <div class="approver mt18">
                             <div class="left_box01">
                                 <span class="txt01">결제자</span>
@@ -292,7 +300,9 @@
                                 </ul>
                             </div>
                         </div>
+                        <!-- //260211 마크업 변경 -->
                     </div>
+
                 </div>
             </div>
 
@@ -309,7 +319,7 @@
                 </div>
             </div>
         </div>
-        <div>
+    <div>
 </body>
 
 <script>
