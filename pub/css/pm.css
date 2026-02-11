@@ -553,6 +553,9 @@
 .caution01 {
     width: 100%;
     display: block;
+    padding: 16px 20px;
+    border-radius: 10px;
+    background-color: #F4F6FA;
 }
 .caution01 li {
     width: 100%;
@@ -562,14 +565,14 @@
     width: 100%;
     display: inline-block;
 
-    font-size: 14rem;
+    font-size: 15rem;
     font-weight: 400;
     line-height: 1.4;
-    color: #73757E;
-    padding-left: 21px;
+    color: #2C333B;
+    /* padding-left: 21px; */
     position: relative;
 }
-.caution01 > li .txt01::before {
+/* .caution01 > li .txt01::before {
     content: '';
     position: absolute;
     top: 2px;
@@ -578,7 +581,7 @@
     background: url('../img/ico_alert_07.svg') no-repeat center/100%;
     width: 16px;
     height: 16px;
-}
+} */
 
 .caution02 {
     width: 100%;
