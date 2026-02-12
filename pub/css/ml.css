@@ -874,26 +874,26 @@
 
 
 /* 간편인증 등록 */
-.popup_wrap .right_box .area_tit01 {
+.popup_wrap > .right_box .area_tit01 {
     width: 100%;
     min-height: 200px;
     display: block;
     margin-top: 16px;
 }
-.popup_wrap .right_box .area_tit01 .box_tit01 {
+.popup_wrap > .right_box .area_tit01 .box_tit01 {
     width: 100%;
     min-height: 200px;
     display: flex;
     flex-direction: column;
 }
-.popup_wrap .right_box .area_tit01 .box_tit01 li {
+.popup_wrap > .right_box .area_tit01 .box_tit01 li {
     width: 100%;
     display: block;
 }
-.popup_wrap .right_box .area_tit01 .box_tit01 li +li {
+.popup_wrap > .right_box .area_tit01 .box_tit01 li + li {
     margin-top: 20px;
 }
-.popup_wrap .right_box .area_tit01 .box_tit01 li .txt01 {
+.popup_wrap > .right_box .area_tit01 .box_tit01 li .txt01 {
     width: 100%;
     display: block;
 
@@ -903,7 +903,7 @@
     line-height: 1.4;
     color: #2C333B;
 }
-.popup_wrap .right_box .area_tit01 .box_tit01 li .txt02 {
+.popup_wrap > .right_box .area_tit01 .box_tit01 li .txt02 {
     width: 100%;
     display: block;
 
@@ -913,6 +913,55 @@
     line-height: 1.4;
     color: #2C333B;
 }
+
+
+
+.popup_wrap > .right_box .area_tit01 .box_tit02 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 26px;
+    border-radius: 10px;
+    background-color: #EDF5FF;
+}
+.popup_wrap > .right_box.no_height .area_tit01 .box_tit01 {
+    min-height: initial;
+}
+.popup_wrap > .right_box .area_tit01 .box_tit02 > .txt01 {
+    width: max-content;
+    display: inline-block;
+
+    font-size: 18rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #070F16;
+}
+.popup_wrap > .right_box .area_tit01 .box_tit02 > .txt01 .txt02 {
+    width: max-content;
+    display: inline-block;
+
+    font-size: 18rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #1F5EFF;
+}
+
+.popup_wrap > .right_box .area_tit01 .box_tit03 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.popup_wrap > .right_box .area_tit01 .box_tit03 > .txt01 {
+    width: max-content;
+    display: inline-block;
+
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #2C333B;
+}
+
 /* //간편인증 등록 */
 
 
