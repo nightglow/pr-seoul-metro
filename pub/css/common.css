@@ -1285,18 +1285,23 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     border-radius: 16px;
     background-color: #fff;
 }
-.alert_wrap .left_box {
+.alert_wrap > .left_box {
     width: 100%;
     display: block;
     /* min-height: 172px; */
 }
-.alert_wrap .left_box .area_tit01 {
+.alert_wrap > .left_box .area_tit01 {
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 0 4px;
 }
-.alert_wrap .left_box .area_content01 {
+.alert_wrap > .left_box .area_tit01 > img {
+    width: 72px;
+    height: 72px;
+}
+
+.alert_wrap > .left_box .area_content01 {
     width: 100%;
     /* min-height: 52px; */
     display: flex;
@@ -1423,7 +1428,7 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     display: block;
     background-color: #fff;
 }
-.full_popup_wrap .left_box {
+.full_popup_wrap > .left_box {
     width: 100%;
     height: 52px;
     display: flex;
@@ -1432,11 +1437,11 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     background-color: #fff;
     position: relative;
 }
-.full_popup_wrap .left_box .area_tit01 {
+.full_popup_wrap > .left_box .area_tit01 {
     width: 100%;
     display: block;
 }
-.full_popup_wrap .left_box .area_tit01 .txt01{
+.full_popup_wrap > .left_box .area_tit01 .txt01{
     width: 100%;
     display: block;
 
@@ -1446,13 +1451,13 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     line-height: 1.4;
     color: #070F16D1;
 }
-.full_popup_wrap .left_box .area_content01 {
+.full_popup_wrap > .left_box .area_content01 {
     width: max-content;
     display: block;
     position: absolute;
     right: 16px;
 }
-.full_popup_wrap .right_box {
+.full_popup_wrap > .right_box {
     width: 100%;
     display: block;
 }
@@ -1643,7 +1648,15 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     gap: 0 8px;
 }
 
+.area_footer04 {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 0 8px;
 
+    padding: 10px 20px;
+}
 
 /* list style */
 .dot_list01 {
@@ -2028,6 +2041,38 @@ select {
 .cm_area input:checked ~ .cm_mark.cm_radio {background-image: url('../img/ico_rdo_on.svg');}
 
 /* //라디오, 체크박스 */
+
+/* 라디오, 체크박스 라벨없음 */
+.cm_area01 {
+    width: max-content;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 0;
+    cursor: pointer;
+}
+.cm_area01 input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+.cm_mark01 {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.cm_mark01.cm_check {background-image: url('../img/ico_ckb_off.svg');}
+.cm_area01 input:checked ~ .cm_mark01.cm_check {background-image: url('../img/ico_ckb_on.svg');}
+
+.cm_mark01.cm_radio {background-image: url('../img/ico_rdo_off.svg');}
+.cm_area01 input:checked ~ .cm_mark01.cm_radio {background-image: url('../img/ico_rdo_on.svg');}
+
+/* //라디오, 체크박스 라벨없음 */
 
 
 
