@@ -1737,6 +1737,10 @@
     margin-top: 12px;
 }
 
+.comm_list01 li:last-child {
+    border-bottom: 0;
+}
+
 
 
 

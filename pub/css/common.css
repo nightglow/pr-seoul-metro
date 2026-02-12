@@ -117,9 +117,6 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     line-height: 1.4;
 }
 
-
-
-
 .btn_approver {
     width: 100%;
     display: flex;
@@ -178,8 +175,6 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 }
 
 
-
-
 .btn_approver02 {
     width: 100%;
     max-width: 63px;
@@ -203,7 +198,6 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     color: #1F5EFF;
 }
 
-
 .btn_approver03 {
     width: 100%;
     min-height: 48px;
@@ -225,7 +219,6 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     line-height: 1.4;
     color: #162C8F;
 }
-
 
 .btn_approver04 {
     width: 100%;
@@ -775,9 +768,6 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 /* // 첨부파일 */
 
 
-
-
-
 /* input */
 .common_inp01 {width: 100%;display: block;position: relative;}
 .common_inp01::before {content: '';width: 20px;height: 20px;position: absolute;top: 50%;left: 20px;transform: translateY(-50%);background: url('../img/ico_id_d.svg') no-repeat center /100%;}
@@ -869,9 +859,6 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 .common_inp04 > input[type='password']:focus  {
     border: 1px solid transparent;
 }
-
-
-
 
 
 
@@ -2075,6 +2062,39 @@ select {
 /* //라디오, 체크박스 라벨없음 */
 
 
+.btn_more {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #B5B5B5;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.btn_more .txt01 {
+    width: max-content;
+    display: block;
+    padding: 6px 0;
+    
+    font-size: 15rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #2C333B;
+    position: relative;
+}
+.btn_more .txt01::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    background: url('../img/ico_arr_bottom.svg') no-repeat center/100%;
+}
 
 
 
