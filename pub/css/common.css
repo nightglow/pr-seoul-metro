@@ -2177,8 +2177,32 @@ select {
 }
 
 
+.no_data01 {
+    width: max-content;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.no_data01.active {
+    display: flex;
+}
+.no_data01::before {
+    content: '';
+    width: 72px;
+    height: 72px;
+    background: url('../img/ico_alert_10.svg') no-repeat center/100%;
 
+}
+.no_data01 > .txt01 {
+    width: max-content;
+    display: block;
 
+    font-size: 20rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #73757E;
+}
 
 
 

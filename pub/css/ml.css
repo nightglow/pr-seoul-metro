@@ -1111,16 +1111,18 @@
     width: 100%;
     display: flex;
     justify-content: center;
-
 }
 
 
 .group_msg {
     width: max-content;
 
-    display: grid;
+    display: none;
     grid-template-columns: repeat(1, 320px);
     gap: 12px 16px;
+}
+.group_msg.active {
+    display: grid;
 }
 .group_msg  li {
     border-bottom: 1px solid #E6EAED;
