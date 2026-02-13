@@ -1777,18 +1777,7 @@
 }
 
 
-.comm_pd20 {
-    width: calc(100% - 40px);
-    margin: 0 auto;
-    display: block;
-    padding-bottom: 80px;
-}
 
-.comm_pdd_no {
-    width: calc(100% - 40px);
-    margin: 0 auto;
-    display: block;
-}
 
 /* EDUC-001 */
 .comm_list01 {
@@ -3100,14 +3089,6 @@
 .common_inp17 > input:disabled {
     background-color: #E6E6E680;
 }
-
-
-.comm_check01 {
-    width: 100%;
-    display: block;
-    padding-left: 20px;
-}
-
 
 
 

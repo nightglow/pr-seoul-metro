@@ -40,8 +40,9 @@ body {
 .mt18 {margin-top: 18px;}
 .mt20 {margin-top: 20px;}
 .mt25 {margin-top: 25px;}
-.mt40 { margin-top: 40px;}
+.mt40 {margin-top: 40px;}
 .mt70 {margin-top: 70px;}
+.mt103 {margin-top: 103px;}
 
 
 .lock {
@@ -274,6 +275,42 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     color: #fff;
     line-height: 1;
 }
+
+
+.btn_login_office {
+    width: 100%;
+    max-width: 260px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow:0 0px 10px 0px #2C466858;
+    background: url('../img/btn_login.svg') no-repeat center/100%;
+    position: relative;
+}
+.btn_login_office > .ico::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: url("../img/ico_arr_login.svg") no-repeat center/100%;
+    width: 24px;
+    height: 24px;
+}
+.btn_login_office > .txt01 {
+    width: 100%;
+    display: block;
+    font-size: 17rem;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1;
+    padding-top: 2px;
+}
+
+
+
 .btn_findpw {
     width: max-content;
     position: relative;
@@ -772,7 +809,17 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 .common_inp01 {width: 100%;display: block;position: relative;}
 .common_inp01::before {content: '';width: 20px;height: 20px;position: absolute;top: 50%;left: 20px;transform: translateY(-50%);background: url('../img/ico_id_d.svg') no-repeat center /100%;}
 .common_inp01:has(.inp_id:focus)::before  {background-image: url('../img/ico_id_on.svg');}
-.common_inp01 > .inp_id {width: 100%;height: 48px;min-width: 260px;display: block;padding: 20px 26px 20px 48px;border-radius: 100px;font-size: 16rem;font-weight: 400;}
+.common_inp01 > .inp_id {
+    width: 100%;
+    height: 48px;
+    min-width: 260px;
+    display: block;
+    padding: 20px 26px 20px 48px;
+    border-radius: 100px;
+    font-size: 16rem;
+    font-weight: 400;
+    background-color: #fff;
+}
 
 .common_inp02 {width: 100%;display: block;position: relative;}
 .common_inp02::before {
@@ -783,7 +830,17 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     background: url('../img/ico_pw_d.svg') no-repeat center /100%;
 }
 .common_inp02:has(.inp_pw:focus)::before  {background-image: url('../img/ico_pw_on.svg');}
-.common_inp02 > .inp_pw {width: 100%;height: 48px;min-width: 260px;display: block;padding: 20px 52px 20px 48px;border-radius: 100px;font-size: 16rem;font-weight: 400;}
+.common_inp02 > .inp_pw {
+    width: 100%;
+    height: 48px;
+    min-width: 260px;
+    display: block;
+    padding: 20px 52px 20px 48px;
+    border-radius: 100px;
+    font-size: 16rem;
+    font-weight: 400;
+    background-color: #fff;
+}
 .common_inp02 .btn_pw {
     width: 24px;
     height: 24px;
@@ -896,6 +953,9 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 }
 .sheet.act.bh10 {
     height: 10%;
+}
+.sheet.act.bh28 {
+    height: 28%;
 }
 .sheet.act.bh30 {
     height: 30%;
@@ -2097,6 +2157,23 @@ select {
 }
 
 
+.comm_pd20 {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 80px;
+}
+.comm_pdd_no {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    display: block;
+}
+
+.comm_check01 {
+    width: 100%;
+    display: block;
+    padding-left: 20px;
+}
 
 
 
