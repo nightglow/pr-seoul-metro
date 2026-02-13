@@ -1293,8 +1293,7 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     display:flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.2);
-
+    box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.2); 
 }
 .app_bar li  {
     width: 100%;

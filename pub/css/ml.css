@@ -64,12 +64,43 @@
 /* //접근권한 설정 */
 
 
+
+.myapp02 {
+    width: 100% ;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0 20px;
+}
+.myapp02 > .left_box {
+    width: 100%;
+    display: block;
+    padding: 10px 20px 20px 20px;
+}
+.myapp02 > .left_box .area_tit01 {
+    width: 100%;
+    display: block;
+
+    font-size: 20rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #2C333B;
+}
+.myapp02 > .right_box {
+    width: 100%;
+    display: block;
+    overflow-y: auto;
+}
 /* 드래그 앤 드롭 */
 .app_menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
     /* padding: 16px; */
+
+    padding: 26px 20px 180px 20px;
+    background-color: #EBF0F5;
 }
 .app_item {
     width: 100%;
@@ -114,6 +145,13 @@
 .app_item>.ico.app08::before {content: '';width: 36px;height: 36px;background: url('../img/ico_app08.svg') no-repeat center/100%;}
 .app_item>.ico.app09::before {content: '';width: 36px;height: 36px;background: url('../img/ico_app09.svg') no-repeat center/100%;}
 .app_item>.ico.app10::before {content: '';width: 36px;height: 36px;background: url('../img/ico_app10.svg') no-repeat center/100%;}
+.app_item>.ico.app11::before {content: '';width: 36px;height: 36px;background: url('../img/ico_app11.svg') no-repeat center/100%;}
+.app_item>.ico.app12::before {content: '';width: 36px;height: 36px;background: url('../img/ico_app12.svg') no-repeat center/100%;}
+.app_item>.ico.app13::before {content: '';width: 36px;height: 36px;background: url('../img/ico_app13.svg') no-repeat center/100%;}
+.app_item>.ico.app14::before {content: '';width: 36px;height: 36px;background: url('../img/ico_app14.svg') no-repeat center/100%;}
+.app_item>.ico.app15::before {content: '';width: 36px;height: 36px;background: url('../img/ico_app15.svg') no-repeat center/100%;}
+.app_item>.ico.app16::before {content: '';width: 36px;height: 36px;background: url('../img/ico_app16.svg') no-repeat center/100%;}
+.app_item>.ico.app17::before {content: '';width: 36px;height: 36px;background: url('../img/ico_app17.svg') no-repeat center/100%;}
 /* //드래그 앤 드롭 */
 
 
@@ -405,42 +443,7 @@
     display: block;
 }
 
-.myapp02 {
-    width: 100% ;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0 20px;
 
-    padding-top:12px;
-    padding-bottom: 30px;
-}
-.myapp02 .left_box {
-    width: 100%;
-    display: block;
-    padding: 10px 20px 20px 20px;
-}
-.myapp02 .left_box .area_tit01 {
-    width: 100%;
-    display: block;
-
-    font-size: 20rem;
-    font-weight: 700;
-    line-height: 1.4;
-    color: #2C333B;
-}
-
-.myapp02 .right_box {
-    width: 100%;
-    /* height: 100%; */
-    height: 100vh;
-    display: block;
-    background-color: #EBF0F5;
-    padding: 26px 20px;
-    min-height: 500px;
-}
 
 /* 개인정보 수집 */
 .area_terms {
