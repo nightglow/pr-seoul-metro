@@ -969,6 +969,9 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 .sheet.act.bh40 {
     height: 40%;
 }
+.sheet.act.bh45 {
+    height: 45%;
+}
 .sheet.act.bh50 {
     height: 50%;
 }
