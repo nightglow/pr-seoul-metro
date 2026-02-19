@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>서울교통공사 인사관리</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header"></div>
+
+        <div class="contents">
+            <div class="area_card">
+                <div class="left_box">
+                    <button type="button" class="btn_rotate">
+                        <i class="blind">회전버튼</i>
+                    </button>
+                </div>
+                <div class="right_box">
+                    <div class="card mt110 active"><!-- active: rotate시 -->
+                        <span class="logo">
+                            <i class="blind">서울교통공사</i>
+                        </span>
+                        <ul class="user">
+                            <li>
+                                <span class="txt01">김교통</span>
+                            </li>
+                            <li>
+                                <div class="member01">
+                                    <span class="txt02">영업본부 영업지원처</span>
+                                    <span class="line"><i class="blind">라인</i></span>
+                                    <span class="txt02">과장</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="txt03 m5">04806 서울특별시 성동구 천호대로 346</span>
+                            </li>
+                            <li>
+                                <div class="member02">
+                                    <div class="box_card01">
+                                        <span class="txt04">T 02-6311-0123</span>
+                                        <span class="txt04">F 02-6311-0000</span>
+                                    </div>
+                                    <span class="txt05">M 010-1234-5678</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="txt03">E kyotong@seoul.metro.co.kr</span>
+                            </li>
+                            <li>
+                                <span class="txt03">www.seoulmetro.co.kr</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <ul class="app_bar">
+                <li>
+                    <button type="button" class="btn_nav_home">
+                        <span class="ico"><i class="blind">홈</i></span>
+                        <span class="txt01">홈</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn_nav_fac active"><!-- 선택시 : active 클리스추가-->
+                        <span class="ico"><i class="blind">즐겨찾기</i></span>
+                        <span class="txt01">즐겨찾기</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn_nav_store">
+                        <span class="ico"><i class="blind">앱스토어</i></span>
+                        <span class="txt01">앱스토어</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn_nav_setting">
+                        <span class="ico"><i class="blind">설정</i></span>
+                        <span class="txt01">설정</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <!-- 앱 접근권한 설정 -->
+        <div>
+</body>
+
+<script>
+    document.querySelector('.btn_rotate').addEventListener('click', function () {
+        this.classList.toggle('active');
+        document.querySelector('.card').classList.toggle('active');
+    });
+</script>
+
+</html>
