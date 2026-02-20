@@ -168,6 +168,10 @@
     align-items: center;
     gap: 20px;
 }
+.app_block_box img {
+    width: 72px;
+    height: 72px;
+}
 .app_block_box .text_box {
     width: 100%;
     display: inline-flex;
@@ -508,6 +512,10 @@
     align-items: center;
     gap: 20px;
     padding: 64px 0;
+}
+.no_data img {
+    width: 72px;
+    height: 72px;
 }
 .no_data .txt01 {
     color: #73757E;
