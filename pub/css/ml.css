@@ -1699,6 +1699,7 @@
 }
 .area_event01 > .txt01 {
     width: max-content;
+    max-width: 320px;
     display: inline-block;
 
     font-size: 20rem;
@@ -1706,6 +1707,9 @@
     line-height: 1.5;
     color: #070F16;
     text-align: center;
+
+    word-break: break-all;
+
 }
 .area_event01 > .txt01 .txt02 {
     width: max-content;
@@ -1833,7 +1837,7 @@
     width: 100%;
     display: block;
 
-    font-size: 15rem;
+    font-size: 17rem;
     font-weight: 400;
     line-height: 1.2;
     color: #070F16;
@@ -1842,7 +1846,7 @@
     width: max-content;
     display: block;
 
-    font-size: 15rem;
+    font-size: 17rem;
     font-weight: 400;
     line-height: 1.2;
     color: #070F16;
@@ -2339,8 +2343,13 @@
         grid-template-columns: repeat(2, 320px);
     }
 
+
+
     .area_event01 > .box_event01 {
         align-items: normal;
+    }
+    .area_event01 > .txt01 {
+        max-width: initial;
     }
     .area_event01 > .txt01 .txt02 {
         display: inline-block;
