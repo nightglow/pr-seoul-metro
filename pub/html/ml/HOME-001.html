@@ -17,44 +17,87 @@
     <script src="../../js/common.js"></script>
 </head>
 
-<body>
+<body class="bg">
     <div class="container">
         <!-- header -->
-        <div id="header"></div>
+        <!-- <div id="header"></div> -->
 
         <!-- contents -->
         <div class="contents">
             
-            <div class="user"></div>
-
-            <div class="banner">
-                <div class="swiper banner-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="banner_item">
-                                <div class="banner_img">
-                                    <img src="../../img/banner01.png" alt="">
-                                </div>
-                            </div>
+            <div class="area_main">
+                <div class="user">
+                    <div class="area_info">
+                        <div class="left_box">
+                            <span class="icon"><i class="blind">아이콘</i></span>
+                            <ul class="box_info">
+                                <li><span class="txt01">김교통</span></li>
+                                <li><span class="txt02">님</span></li>
+                                <li><span class="txt03">안녕하세요</span></li>
+                            </ul>
+                            
                         </div>
-                        <div class="swiper-slide">
-                            <div class="banner_item">
-                                <div class="banner_img">
-                                    <img src="../../img/banner02.png" alt="">
-                                </div>
+                        <div class="right_box">
+                            <div class="area_tit01">
+                                <button type="button" class="btn_logout01">
+                                    <i class="blind">로그아웃</i>
+                                </button>
+                                <button type="button" class="btn_noti active"><!-- active : 알림 포인트 -->
+                                    <i class="blind">알림</i>
+                                </button>
+                                <label class="swith_label type02">
+                                    <input type="checkbox" class="swith_check" />
+                                    <span>큰글</span>
+                                </label>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="banner_item">
-                                <div class="banner_img">
-                                    <img src="../../img/banner03.png" alt="">
-                                </div>
+                            <div class="area_content01 mt20">
+                                <button type="button" class="btn_n_card">
+                                    <span class="txt01">명함</span>
+                                </button>
+                                <button type="button" class="btn_history">
+                                    <span class="txt01">접속기록</span>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
+                </div>
+                
+                <div class="banner">
+                    <div class="swiper banner-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="message01 type01">
+                                    <div class="msg_tit01">
+                                        <span class="txt01">디자인 시안 설문조사 이벤트</span>
+                                        <span class="txt02">더 편리하고 새로워진 모바일오피스를 만나보세요.</span>
+                                    </div>
+                                    <img class="msg_img" src="../../img/ico_banner_01.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="message01 type02">
+                                    <div class="msg_tit01">
+                                        <span class="txt01">점검안내</span>
+                                        <span class="txt02">더 편리하고 새로워진 모바일오피스를 만나보세요.</span>
+                                    </div>
+                                    <img class="msg_img" src="../../img/ico_banner_02.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="message01 type03">
+                                    <div class="msg_tit01">
+                                        <span class="txt01">인사관리</span>
+                                        <span class="txt02">더 편리하고 새로워진 모바일오피스를 만나보세요.</span>
+                                    </div>
+                                    <img class="msg_img" src="../../img/ico_banner_03.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
             </div>
+
             <!-- 나의 앱 -->
             <div class="myapp01">
                 <div class="left_box">
@@ -62,13 +105,13 @@
                         <span class="txt01">나의 앱</span>
                     </div>
                     <div class="area_content01">
-                        <button type="button" onclick="location.href ='HOME_002.html'">
+                        <button type="button" onclick="location.href ='HOME-002.html'">
                             <span class="txt01">편집</span>
                         </button>
                     </div>
                 </div>
                 <div class="right_box">
-                    <div class="app_menu">
+                    <div class="app_menu01">
                         <div class="app_item">
                             <div class="ico app01">
                                 <i class="blind">인사관리 앱</i>
@@ -102,7 +145,7 @@
                         <div class="app_item">
                             <div class="ico app06">
                                 <i class="blind">교육관리 앱</i>
-                            </div>
+                            </div> 
                             <span class="txt01">교육관리</span>
                         </div>
                         <div class="app_item">
@@ -128,6 +171,48 @@
                                 <i class="blind">이지스 앱</i>
                             </div>
                             <span class="txt01">이지스</span>
+                        </div>
+                        <div class="app_item">
+                            <div class="ico app11">
+                                <i class="blind">참여마당 앱</i>
+                            </div>
+                            <span class="txt01">참여마당</span>
+                        </div>
+                        <div class="app_item">
+                            <div class="ico app12">
+                                <i class="blind">그룹웨어 앱</i>
+                            </div>
+                            <span class="txt01">그룹웨어</span>
+                        </div>
+                        <div class="app_item">
+                            <div class="ico app13">
+                                <i class="blind">매일 앱</i>
+                            </div>
+                            <span class="txt01">매일</span>
+                        </div>
+                        <div class="app_item">
+                            <div class="ico app14">
+                                <i class="blind">Seoul Metro FMC 앱</i>
+                            </div>
+                            <span class="txt01">Seoul Metro FMC</span>
+                        </div>
+                        <div class="app_item">
+                            <div class="ico app15">
+                                <i class="blind">오피스톡 4.0 앱</i>
+                            </div>
+                            <span class="txt01">오피스톡 4.0</span>
+                        </div>
+                        <div class="app_item">
+                            <div class="ico app16">
+                                <i class="blind">화상회의 앱</i>
+                            </div>
+                            <span class="txt01">화상회의</span>
+                        </div>
+                        <div class="app_item">
+                            <div class="ico app17">
+                                <i class="blind">터널비상방송 앱</i>
+                            </div>
+                            <span class="txt01">터널비상방송</span>
                         </div>
                     </div>
                 </div>
@@ -166,5 +251,19 @@
     <div>
 </body>
 
+<script>
+    // 배너
+    const b1annerSwiper = new Swiper('.banner-swiper', {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        }
+    });
+</script>
 
 </html>

@@ -5,21 +5,7 @@ $(function () {
 
     // Tab.init();
     DragDrop.init('#drag_drop');
-
     password.init();
-
-    // 배너
-    const b1annerSwiper = new Swiper('.banner-swiper', {
-        loop: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-        }
-    });
 
     // tab
     const tabSwiper = new Swiper('.tab_swiper01', {
@@ -31,11 +17,7 @@ $(function () {
         }
     });
 
-
-
     TabManager.init();
-
-
 
 });
 
@@ -143,9 +125,6 @@ const TabManager = {
 
 
 
-
-
-// 
 const Alert = {
     get: (id) => document.querySelector(`[data-alert="${id}"]`),
     open(id) { this.get(id)?.classList.add('active'); },
@@ -559,6 +538,3 @@ $(document).ready(function () {
         $subMenu.stop(true, true).slideToggle(200);
     });
 });
-
-
-
