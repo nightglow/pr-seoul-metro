@@ -71,17 +71,17 @@
                         <ul class="sch_section">
                             <li>
                                 <div class="sch_tit01">
-                                    <span class="tit01">서비스명</span>
+                                    <label for="sch_service" class="tit01">서비스명</label>
                                 </div>
                                 <div class="sch_area">
-                                    <select name="" id="" class="sel_box01 w100p">
+                                    <select name="sch_service" id="sch_service" class="sel_box01 w100p">
                                         <option value="0">전체</option>
                                     </select>
                                 </div>
                             </li>
                             <li>
                                 <div class="sch_tit01">
-                                    <span class="tit01">조회기간</span>
+                                    <label for="sel_period" class="tit01">조회기간</label>
                                 </div>
                                 <div class="sch_area">
                                     <select name="sel_period" id="sel_period" class="sel_box01">
@@ -89,11 +89,13 @@
                                         <option value="2">조회일</option>
                                     </select>
                                     <div class="inquiry_month">
+                                        <label for="sel_year" class="blind">조회 연도</label>
                                         <select name="sel_year" id="sel_year" class="sel_box01">
                                             <option value="1">2026</option>
                                             <option value="2">2025</option>
                                         </select>
                                         <span class="txt01">년</span>
+                                        <label for="sel_month" class="blind">조회 월</label>
                                         <select name="sel_month" id="sel_month" class="sel_box01">
                                             <option value="1">01</option>
                                             <option value="2">02</option>
@@ -102,11 +104,13 @@
                                     </div>
                                     <div class="inquiry_date">
                                         <div class="date_inp_field">
-                                            <input type="date" class="inp_date" name="date_start">
+                                            <label for="date_start" class="blind">시작일</label>
+                                            <input type="date" class="inp_date" name="date_start" id="date_start">
                                         </div>
                                         <span>~</span>
                                         <div class="date_inp_field">
-                                            <input type="date" class="inp_date" name="date_end">
+                                            <label for="date_end" class="blind">종료일</label>
+                                        <input type="date" class="inp_date" name="date_end" id="date_end">
                                         </div>
                                     </div>
                                 </div>

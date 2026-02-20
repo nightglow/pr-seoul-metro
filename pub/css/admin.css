@@ -34,6 +34,7 @@ body.popup_open{
 .mt40 { margin-top: 40px; }
 
 .ml10 { margin-left: 10px; }
+.ml56 { margin-left: 56px; }
 
 /* padding */
 .pd0 { padding: 0; }
@@ -66,32 +67,32 @@ body.popup_open{
 
 /* scroll bar */
 /* 스크롤바 전체 */
-::-webkit-scrollbar {
+.whole_wrap ::-webkit-scrollbar {
     width: 20px;   /* 세로 스크롤바 두께 */
     height: 20px;  /* 가로 스크롤바 두께 */
 }
 
 /* 스크롤바 트랙(배경) */
-::-webkit-scrollbar-track {
+.whole_wrap ::-webkit-scrollbar-track {
     background: #F6F7F9;
 }
 
 /* 스크롤바 핸들(움직이는 바) */
-::-webkit-scrollbar-thumb {
+.whole_wrap ::-webkit-scrollbar-thumb {
     background: #CECECE;
     border-radius: 999px;
     border: 6px solid transparent;
     background-clip: content-box;
 }
 
-::-webkit-scrollbar-thumb:hover {
+.whole_wrap ::-webkit-scrollbar-thumb:hover {
     background: #9e9e9e;
     border: 6px solid transparent;
     background-clip: content-box;
 }
 
 /* (선택) 코너 - 가로/세로 스크롤 만나는 지점 */
-::-webkit-scrollbar-corner {
+.whole_wrap ::-webkit-scrollbar-corner {
     background: transparent;
 }
 
@@ -273,6 +274,7 @@ input[type=text].inp_txt01::placeholder {
 input[type=text].inp_txt01:read-only, 
 input[type=text].inp_txt01:disabled {
     background: rgba(230, 230, 230, 0.50);
+    color: #B5B7BA;
 }
 
 /* textarea */
@@ -1128,7 +1130,7 @@ footer ul li ~ li::before {
     border-top: 1px solid #808D9B;
 }
 .tbl_fixed01 .tbl_row {
-    min-width: 1000px;
+    min-width: 4000px;
 }
 .tbl_fixed01 .tbl_row td {
     padding: 12px 25px;
@@ -1148,7 +1150,7 @@ footer ul li ~ li::before {
 .tbl_fixed01 .tbl_row td:nth-child(1) {
     position: sticky;
     left: 0;
-    min-width: 70px;
+    min-width: 56px;
     background: #fff;
     z-index: 3;
     border-right: 0;
@@ -1157,8 +1159,8 @@ footer ul li ~ li::before {
 .tbl_fixed01 .tbl_row th:nth-child(2),
 .tbl_fixed01 .tbl_row td:nth-child(2) {
     position: sticky;
-    left: 70px;
-    min-width: 130px;
+    left: 57px;
+    min-width: 140px;
     background: #fff;
     z-index: 3;
     border-right: 0;
@@ -1167,8 +1169,8 @@ footer ul li ~ li::before {
 .tbl_fixed01 .tbl_row th:nth-child(3),
 .tbl_fixed01 .tbl_row td:nth-child(3) {
     position: sticky;
-    left: 200px;
-    min-width: 130px;
+    left: 197px;
+    min-width: 140px;
     background: #fff;
     z-index: 3;
     border-right: 0;
@@ -1208,7 +1210,14 @@ footer ul li ~ li::before {
 }
 .cont_flex_col .right_box {
     width: 50%;
-} 
+}
+.cont_flex_col:has(.tree_list_box) .left_box {
+    width: 500px;
+}
+.cont_flex_col:has(.tree_list_box) .right_box {
+    width: calc(100% - 500px);
+}
+
 
 /* popup */
 .popup_dim{
@@ -1313,29 +1322,14 @@ footer ul li ~ li::before {
 } */
 .popup_wrap .right_box .popup_cont .tree_list_box {
     min-width: 320px;
+    width: 100%;
     border: 1px solid rgba(130, 149, 167, 0.20);
     max-height: 350px;
     overflow-y: auto;
     padding: 20px;
 }
-.tree_list_box::-webkit-scrollbar {
-    width: 20px;
-    height: 20px;
-}
-.tree_list_box::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-/* 실제 스크롤바(thumb) */
-.tree_list_box::-webkit-scrollbar-thumb {
-    background-color: #CECECE;
-    border-radius: 999px;
-    border: 6px solid transparent;
-    background-clip: content-box;
-}
-.tree_list_box::-webkit-scrollbar-thumb:hover {
-    background-color: #c0c0c0;
-    border: 6px solid transparent;
-    background-clip: content-box;
+.popup_wrap .right_box .popup_cont:has(.tbl_box01) .tree_list_box {
+    width: 320px;
 }
 
 .popup_wrap .right_box .popup_cont .tree_list_box + .tbl_box01 {
@@ -1856,4 +1850,35 @@ footer ul li ~ li::before {
     height: 28px;
     border-radius: 0 8px 8px 0;
     background: linear-gradient(90deg, #59B7F2 0%, #3681E4 50%, #124AD7 100%);
+}
+
+.tree_list_box {
+    display: flex;
+    align-items: flex-start;
+    width: 500px;
+    height: 690px;
+    max-height: 690px;
+    border: 1px solid rgba(133, 151, 168, 0.50);
+    background: #FFF;
+    overflow: auto;
+    padding: 20px;
+}
+.tree_list_box::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+}
+.tree_list_box::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+/* 실제 스크롤바(thumb) */
+.tree_list_box::-webkit-scrollbar-thumb {
+    background-color: #CECECE;
+    border-radius: 999px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+.tree_list_box::-webkit-scrollbar-thumb:hover {
+    background-color: #c0c0c0;
+    border: 6px solid transparent;
+    background-clip: content-box;
 }

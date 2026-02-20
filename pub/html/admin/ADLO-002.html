@@ -56,21 +56,21 @@
                         <ul class="sch_section">
                             <li>
                                 <div class="sch_tit01">
-                                    <span class="tit01">검색조건</span>
+                                    <label for="sch_condi" class="tit01">검색조건</label>
                                 </div>
                                 <div class="sch_area">
-                                    <select name="" id="" class="sel_box01">
+                                    <select name="sch_condi" id="sch_condi" class="sel_box01">
                                         <option value="0">전체</option>
                                         <option value="1">제목</option>
                                         <option value="2">내용</option>
                                         <option value="3">제목+내용</option>
                                     </select>
-                                    <input type="text" name="" id="" class="sch_txt" value="">
+                                    <input type="text" name="sch_condi_txt" id="sch_condi_txt" class="sch_txt" value="">
                                 </div>
                             </li>
                             <li>
                                 <div class="sch_tit01">
-                                    <span class="tit01">소속</span>
+                                    <label for="deptOpenBtn" class="tit01">소속</label>
                                 </div>
                                 <div class="sch_area">
                                     <div class="sch_inp_wrap">
@@ -84,10 +84,10 @@
                             </li>
                             <li>
                                 <div class="sch_tit01">
-                                    <span class="tit01">통신사</span>
+                                    <label for="sch_telecom" class="tit01">통신사</label>
                                 </div>
                                 <div class="sch_area">
-                                    <select name="" id="" class="sel_box01 w100p">
+                                    <select name="sch_telecom" id="sch_telecom" class="sel_box01 w100p">
                                         <option value="0">전체</option>
                                         <option value="1">SKT</option>
                                         <option value="2">LGU+</option>
@@ -97,10 +97,10 @@
                             </li>
                             <li>
                                 <div class="sch_tit01">
-                                    <span class="tit01">휴대폰 모델</span>
+                                    <label for="sch_model" class="tit01">휴대폰 모델</label>
                                 </div>
                                 <div class="sch_area">
-                                    <select name="" id="" class="sel_box01 w100p">
+                                    <select name="sch_model" id="sch_model" class="sel_box01 w100p">
                                         <option value="0">전체</option>
                                         <option value="1">갤럭시 폴드7 5G</option>
                                         <option value="2">갤럭시 S25 울트라</option>
@@ -109,15 +109,17 @@
                             </li>
                             <li>
                                 <div class="sch_tit01">
-                                    <span class="tit01">조회기간</span>
+                                    <label for="date_start" class="tit01">조회기간</label>
                                 </div>
                                 <div class="sch_area">
                                     <div class="date_inp_field">
-                                        <input type="date" class="inp_date" name="date_start">
+                                        <label for="date_start" class="blind">시작일</label>
+                                        <input type="date" class="inp_date" name="date_start" id="date_start">
                                     </div>
                                     <span>~</span>
                                     <div class="date_inp_field">
-                                        <input type="date" class="inp_date" name="date_end">
+                                        <label for="date_end" class="blind">종료일</label>
+                                        <input type="date" class="inp_date" name="date_end" id="date_end">
                                     </div>
                                 </div>
                             </li>

@@ -56,23 +56,25 @@
                         <ul class="sch_section">
                             <li>
                                 <div class="sch_tit01">
-                                    <span class="tit01">사번</span>
+                                    <label for="sch_num" class="tit01">사번</label>
                                 </div>
                                 <div class="sch_area">
-                                    <input type="text" name="" id="" class="sch_txt" value="">
+                                    <input type="text" name="sch_num" id="sch_num" class="sch_txt" value="">
                                 </div>
                             </li>
                             <li>
                                 <div class="sch_tit01">
-                                    <span class="tit01">조회기간</span>
+                                    <label for="date_start" class="tit01">조회기간</label>
                                 </div>
                                 <div class="sch_area">
                                     <div class="date_inp_field">
-                                        <input type="date" class="inp_date" name="date_start">
+                                        <label for="date_start" class="blind">시작일</label>
+                                        <input type="date" class="inp_date" name="date_start" id="date_start">
                                     </div>
                                     <span>~</span>
                                     <div class="date_inp_field">
-                                        <input type="date" class="inp_date" name="date_end">
+                                        <label for="date_end" class="blind">종료일</label>
+                                        <input type="date" class="inp_date" name="date_end" id="date_end">
                                     </div>
                                 </div>
                             </li>
