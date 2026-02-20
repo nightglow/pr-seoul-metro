@@ -659,6 +659,9 @@
 .popup_wrap .right_box .area_tit01 .box_tit01 li .img01 {
     display: block;
     text-align: center;
+    width: 72px;
+    height: 72px;
+    margin: 0 auto;
 }
 .popup_wrap .right_box .area_tit01:has(.img01),
 .popup_wrap .right_box .area_tit01:has(.img01) .box_tit01 {
@@ -959,6 +962,9 @@
 .chk_card_group.screening {
     grid-template-columns: repeat(1, 1fr);
 }
+.chk_card_group.screening .card {
+    max-width: 100%;
+}
 
 /* 진출입 QR코드 체크 */
 .full_popup_wrap:has(.qr_wrap) {
@@ -1023,6 +1029,10 @@
 .qr_wrap .qr_btn_box {
     width: 100%;
     padding: 0 16px 18px;
+}
+
+.select_diagnosis_list {
+    padding-bottom: 80px;
 }
 
 @media (min-width: 749px) {
