@@ -173,6 +173,39 @@
             </tbody>
         </table>
     </div>
+    <!-- 관리시스템 -->
+    <div class="wrap">
+        <h3>관리시스템</h3>
+        <table>
+            <caption>관리시스템</caption>
+            <colgroup>
+                <col class="lv01">
+                <col class="lv02">
+                <col class="lv03">
+                <col class="lv04">
+                <col class="lv05">
+                <col class="lv06">
+                <col class="lv07">
+                <col class="lv08">
+                <col class="lv09">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">Depth 01</th>
+                    <th scope="col">Depth 02</th>
+                    <th scope="col">Depth 03</th>
+                    <th scope="col">Depth 04</th>
+                    <th scope="col">경로</th>
+                    <th scope="col">파일명</th>
+                    <th scope="col">타입</th>
+                    <th scope="col">상태</th>
+                    <th scope="col">Issue/Memo</th>
+                </tr>
+            </thead>
+            <tbody id='admin'>
+            </tbody>
+        </table>
+    </div>
 </body>
 
 <script>
@@ -603,6 +636,94 @@
             dep01: '', dep02: '', dep03: '소속선택', dep04: '', memo: '' },
     ]
 
+    // 관리시스템
+    const data_admin = [
+        { path: '/admin', f_name: 'ADLO-001.html', type: 'page', state:'완료',
+            dep01: '로그인', dep02: '', dep03: '', dep04: '', memo: '' },
+        
+        // 사용자접속이력------------------------------------------------------------------------------------------------------------
+        { path: '/admin', f_name: 'ADLO-002.html', type: 'page', state:'완료',
+            dep01: '사용자접속이력', dep02: '모바일오피스 접속이력', dep03: '', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADLO-003.html', type: 'pop', state:'완료',
+            dep01: '', dep02: '', dep03: '접속자현황 그래프 팝업', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADLO-004.html', type: 'page', state:'완료',
+            dep01: '', dep02: '사용자별 접속로그이력', dep03: '', dep04: '', memo: '' },
+
+        // 운전관리(승무지킴이)------------------------------------------------------------------------------------------------------------
+        { path: '/admin', f_name: 'ADDR-001.html', type: 'page', state:'완료',
+            dep01: '운전관리(승무지킴이)', dep02: '실시간모니터링 정보', dep03: '', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADDR-002.html', type: 'pop', state:'완료',
+            dep01: '', dep02: '', dep03: '휴대전화 기능제한', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADDR-003.html', type: 'page', state:'완료',
+            dep01: '', dep02: '사업소별 모니터링', dep03: '', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADDR-004.html', type: 'page', state:'완료',
+            dep01: '', dep02: '기간별 접속이력조회', dep03: '', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADDR-005.html', type: 'page', state:'완료',
+            dep01: '', dep02: '비상연락망 관리', dep03: '', dep04: '', memo: '' },
+
+        // 메시지관리------------------------------------------------------------------------------------------------------------
+        { path: '/admin', f_name: 'ADME-001.html', type: 'page', state:'완료',
+            dep01: '메시지관리', dep02: '수신자 그룹관리', dep03: '', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADME-002.html', type: 'pop', state:'완료',
+            dep01: '', dep02: '', dep03: '직급 추가', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADME-003.html', type: 'pop', state:'완료',
+            dep01: '', dep02: '', dep03: '직위 추가', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADME-004.html', type: 'pop', state:'완료',
+            dep01: '', dep02: '', dep03: '부서 추가', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADME-005.html', type: 'pop', state:'완료',
+            dep01: '', dep02: '', dep03: '사원 추가', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADME-006.html', type: 'page', state:'완료',
+            dep01: '', dep02: '메시지(알림) 발송관리', dep03: '', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADME-007.html', type: 'pop', state:'완료',
+            dep01: '', dep02: '', dep03: '그룹선택', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADME-008.html', type: 'page', state:'완료',
+            dep01: '', dep02: '메시지(알림) 발송이력', dep03: '', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADME-009.html', type: 'page', state:'완료',
+            dep01: '', dep02: '', dep03: '메시지(알림) 발송이력 상세', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADME-010.html', type: 'page', state:'완료',
+            dep01: '', dep02: '미접속 사용자 메시지 발송', dep03: '', dep04: '', memo: '' },
+
+        // 통계------------------------------------------------------------------------------------------------------------
+        { path: '/admin', f_name: 'ADST-001.html', type: 'page', state:'완료',
+            dep01: '통계', dep02: '기간별 모바일오피스 사용자 통계', dep03: '시간대별', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADST-001_01.html', type: 'page', state:'완료',
+            dep01: '', dep02: '', dep03: '일별', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADST-001_02.html', type: 'page', state:'완료',
+            dep01: '', dep02: '', dep03: '요일별', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADST-002.html', type: 'page', state:'작업중',
+            dep01: '', dep02: '사용자 월별 모바일오피스 사용자 통계', dep03: '', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADST-003.html', type: 'page', state:'작업중',
+            dep01: '', dep02: '시스템별 일별 접속 통계', dep03: '', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADST-004.html', type: 'page', state:'작업중',
+            dep01: '', dep02: '시스템별 접속 누계', dep03: '', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADST-005.html', type: 'page', state:'작업중',
+            dep01: '', dep02: '시스템별 부서별 접속 누계', dep03: '', dep04: '', memo: '' },
+
+        // 시스템관리------------------------------------------------------------------------------------------------------------
+        { path: '/admin', f_name: 'ADSY-001.html', type: 'page', state:'작업중',
+            dep01: '시스템관리', dep02: '공통코드 관리', dep03: '', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADSY-002.html', type: 'pop', state:'작업중',
+            dep01: '', dep02: '', dep03: '그룹코드 등록', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADSY-003.html', type: 'pop', state:'작업중',
+            dep01: '', dep02: '', dep03: '그룹코드 목록', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADSY-004.html', type: 'page', state:'작업중',
+            dep01: '', dep02: '관리자 계정 관리', dep03: '', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADSY-005.html', type: 'page', state:'작업중',
+            dep01: '', dep02: '', dep03: '관리자 계정 등록 및 수정', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADSY-006.html', type: 'page', state:'작업중',
+            dep01: '', dep02: '사용자 관리', dep03: '', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADSY-007.html', type: 'page', state:'작업중',
+            dep01: '', dep02: '권한 관리', dep03: '', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADSY-008.html', type: 'page', state:'작업중',
+            dep01: '', dep02: '', dep03: '권한 관리 상세 및 수정', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADSY-009.html', type: 'pop', state:'작업중',
+            dep01: '', dep02: '', dep03: '권한 사용자 목록', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADSY-010.html', type: 'page', state:'작업중',
+            dep01: '', dep02: '', dep03: '권한 관리 등록', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADSY-011.html', type: 'page', state:'작업중',
+            dep01: '', dep02: '메뉴 관리', dep03: '', dep04: '', memo: '' },
+    ]
+
 
 
     // 통합로그인
@@ -674,6 +795,21 @@
             <td>${el.dep04}</td>
             <td class='tac'>${el.path}</td>
             <td><a href='../pub/html/ts/${el.f_name}'> ${el.f_name}</a></td>
+            <td >${el.type}</td>
+            <td class='tac'>${el.state}</td>
+            <td>${el.memo}</td>
+        </tr>
+    `).join('');
+
+    // 관리시스템
+    document.getElementById('admin').innerHTML = data_admin.map(el => `
+        <tr>
+            <td>${el.dep01}</td>
+            <td>${el.dep02}</td>
+            <td>${el.dep03}</td>
+            <td>${el.dep04}</td>
+            <td class='tac'>${el.path}</td>
+            <td><a href='../pub/html/admin/${el.f_name}'> ${el.f_name}</a></td>
             <td >${el.type}</td>
             <td class='tac'>${el.state}</td>
             <td>${el.memo}</td>

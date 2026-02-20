@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>서울교통공사 모바일오피스</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" /> 	
+
+    <link rel="stylesheet" type="text/css" href="../../css/admin.css">
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/admin.js"></script>
+</head>
+<body>
+    <div class="whole_wrap">
+        <header id="header"></header>
+        <div class="container">
+            <aside class="lnb_wrap">
+                <div class="lnb_top">
+                    <span class="lnb_tit">시스템</span>
+                </div>
+                <div class="lnb_btm">
+                    <ul class="lnb_1depth_list">
+                        <li class="lnb_1depth act">
+                            <a href="javascript:;" class="lnb_item act">
+                                <span class="txt01">기간별 모바일오피스 사용자 통계</span>
+                            </a>
+                        </li>
+                        <li class="lnb_1depth">
+                            <a href="javascript:;" class="lnb_item">
+                                <span class="txt01">사용자 월별 모바일오피스 사용자 통계</span>
+                            </a>
+                        </li>
+                        <li class="lnb_1depth">
+                            <a href="javascript:;" class="lnb_item">
+                                <span class="txt01">시스템 일별 접속 통계</span>
+                            </a>
+                        </li>
+                        <li class="lnb_1depth">
+                            <a href="javascript:;" class="lnb_item">
+                                <span class="txt01">시스템별 접속 누계</span>
+                            </a>
+                        </li>
+                        <li class="lnb_1depth">
+                            <a href="javascript:;" class="lnb_item">
+                                <span class="txt01">시스템 부서별 접속 누계</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div> 
+            </aside>
+            <main class="content">
+                <nav class="breadcrumb_box">
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="javascript:;" class="btn_home">
+                                <span class="blind">홈</span>
+                            </a>
+                        </li>
+                        <li>통계</li>
+                        <li class="present">기간별 모바일오피스 사용자통계</li>
+                    </ul>
+                </nav>
+                <div class="cont_tit">
+                    <span class="tit01">기간별 모바일오피스 사용자통계</span>
+                </div>
+                <div class="cont_wrap">
+                    <div class="sch_box01">
+                        <ul class="sch_section">
+                            <li>
+                                <div class="sch_tit01">
+                                    <span class="tit01">서비스명</span>
+                                </div>
+                                <div class="sch_area">
+                                    <select name="" id="" class="sel_box01 w100p">
+                                        <option value="0">전체</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sch_tit01">
+                                    <span class="tit01">조회기간</span>
+                                </div>
+                                <div class="sch_area">
+                                    <select name="sel_period" id="sel_period" class="sel_box01">
+                                        <option value="1">조회월</option>
+                                        <option value="2">조회일</option>
+                                    </select>
+                                    <div class="inquiry_month">
+                                        <select name="sel_year" id="sel_year" class="sel_box01">
+                                            <option value="1">2026</option>
+                                            <option value="2">2025</option>
+                                        </select>
+                                        <span class="txt01">년</span>
+                                        <select name="sel_month" id="sel_month" class="sel_box01">
+                                            <option value="1">01</option>
+                                            <option value="2">02</option>
+                                        </select>
+                                        <span class="txt01">월</span>
+                                    </div>
+                                    <div class="inquiry_date">
+                                        <div class="date_inp_field">
+                                            <input type="date" class="inp_date" name="date_start">
+                                        </div>
+                                        <span>~</span>
+                                        <div class="date_inp_field">
+                                            <input type="date" class="inp_date" name="date_end">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sch_tit01">
+                                    <span class="tit01">조회구분</span>
+                                </div>
+                                <div class="sch_area">
+                                    <div class="rdo_group">
+                                        <label class="rdo_item">
+                                            <input type="radio" name="radio">
+                                            <span>시간대별</span>
+                                        </label>
+                                        <label class="rdo_item">
+                                            <input type="radio" name="radio" checked>
+                                            <span>일별</span>
+                                        </label>
+                                        <label class="rdo_item">
+                                            <input type="radio" name="radio">
+                                            <span>요일별</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="sch_btn">
+                            <button type="button" class="btn_ss btn_secondary">
+                                <span class="txt01">조회</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="tbl_tit01 mt20">
+                        <div class="left_box">
+                            
+                        </div>
+                        <div class="right_box">
+                            <div class="btn_box_right01">
+                                <button type="button" class="btn_ss btn_line">
+                                    <span class="ico_filedown"></span>
+                                    <span class="txt01">엑셀다운로드</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tbl_box01 mt10">
+                        <table class="tbl_row">
+                            <colgroup>
+                                <col width="240px">
+                                <col width="240px">
+                                <col width="*">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="row_th01" scope="col">
+                                        <div class="tit_box01">
+                                            <span class="tit01">구분</span>
+                                        </div>
+                                    </th>
+                                    <th class="row_th01" scope="col">
+                                        <div class="tit_box01">
+                                            <span class="tit01">접속수</span>
+                                        </div>
+                                    </th>
+                                    <th class="row_th01" scope="col">
+                                        <div class="tit_box01">
+                                            <span class="tit01">그래프</span>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">01</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">14,502</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 30%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">02</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">14.999</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 32%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">03</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">15,123</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 40%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">04</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">16,775</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 45%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">05</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">14,502</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 37%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">06</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">14.999</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 32%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">07</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">15,123</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 40%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">08</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">16,775</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 46%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">09</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">14,502</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 36%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">10</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">50,301</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 80%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">11</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">36,811</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 60%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">12</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">55,550</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 69%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">13</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">16,811</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 30%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">14</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">40,001</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 60%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">15</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">36,811</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 60%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">16</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">36,811</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 60%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">17</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">36,811</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 60%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">18</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">36,811</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 60%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">19</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">36,811</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 60%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">20</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">36,811</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 60%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">21</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">36,811</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 60%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">22</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">36,811</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 60%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">23</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">36,811</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 60%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">24</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">1,012</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 10%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">25</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">1,012</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 10%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">26</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">1,012</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 10%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">27</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">1,012</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 10%;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">28</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">0</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 0;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">29</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">0</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 0;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">30</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">0</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 0;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">31</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">0</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="progress_box">
+                                            <em class="bar" style="width: 0;">
+                                                <i class="blind">바 그래프</i>
+                                            </em>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <ul>
+                <li>04806 서울특별시 성동구 천호대로 346</li>
+                <li>대표전화 1577-2234</li>
+                <li>Copyright©2022 SeoulMetro INC. All right reserved.</li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
