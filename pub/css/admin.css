@@ -33,6 +33,8 @@ body.popup_open{
 .mt30 { margin-top: 30px; }
 .mt40 { margin-top: 40px; }
 
+.ml10 { margin-left: 10px; }
+
 /* padding */
 .pd0 { padding: 0; }
 
@@ -1092,6 +1094,20 @@ footer ul li ~ li::before {
     align-items: center;
     padding: 5.5px 20px;
 }
+.tbl_row .row_td01 .txt_box02 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 12px 20px;
+}
+.tbl_row .row_td01 .txt_box02 .txt01 {
+    color: #4B5058;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: normal;
+}
 
 .tbl_box01 {
     border-top: 1px solid #808D9B;
@@ -1220,15 +1236,19 @@ footer ul li ~ li::before {
 }
 .popup_wrap.popup_sm {
     min-width: 400px;
+    width: 400px;
 }
 .popup_wrap.popup_md {
     min-width: 600px;
+    width: 600px;
 }
 .popup_wrap.popup_lg {
     min-width: 1000px;
+    width: 1000px;
 }
 .popup_wrap.popup_xlg {
     min-width: 1400px;
+    width: 1400px;
 }
 .popup_wrap > .left_box {
     width: 100%;
@@ -1306,6 +1326,13 @@ footer ul li ~ li::before {
     border-radius: 0 0 16px 16px;
     border: 1px solid rgba(130, 149, 167, 0.20);
     border-top: 0;
+}
+
+.popup_wrap .tbl_tit01 .right_box {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0;
 }
 /* //popup */
 
