@@ -2171,11 +2171,20 @@ select {
     display: block;
     padding-bottom: 80px;
 }
+.comm_pd80 {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 80px;
+}
+
 .comm_pdd_no {
     width: calc(100% - 40px);
     margin: 0 auto;
     display: block;
 }
+
+
 
 .comm_check01 {
     width: 100%;
