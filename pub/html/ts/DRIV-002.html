@@ -16,59 +16,46 @@
     <script src="../../js/common.js"></script>
 </head>
 <body>
-    <div class="container">
-        <!-- header -->
-        <div id="header"></div>
+    <button type="button" class="btn_primary" onclick="Fullpopup.open('full01')">
+        <span class="txt">실행 차단</span>
+    </button>
 
-        <!-- all menu -->
-        <div class="all_menu" id="all_menu" style="transform: translateX(100%); x: 100px;">
-            <div class="all_menu_top">
-                <div class="all_menu_user">김교통<span> 님</span></div>
-                <div class="all_menu_btn">
-                    <label class="swith_label type02">
-                        <input type="checkbox" class="swith_check" />
-                        <span>큰글</span>
-                    </label>
-                    <button type="button" class="btn_close type02 all_menu_close">
-                        <label class="blind">닫기</label>
+    <!-- 260223 페이지 마크업 전체 수정 -->
+    <div class="full_popup_dim" data-full="full01">
+        <div class="full_popup_wrap">
+            <div class="left_box">
+                <div class="area_tit01">
+                    <span class="txt01">실행 차단</span>
+                </div>
+                <div class="area_content01">
+                    <button class="btn_close" onclick="Fullpopup.close('full01')">
+                        <i class="blind">닫기</i>
                     </button>
                 </div>
             </div>
-            <div class="all_menu_cont">
-                <ul class="all_menu_1depth">
-                    <li>
-                        <a href="javascript:;" class="item">사용자정보</a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" class="item">월 스케줄 확인</a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" class="item">직원 스케줄 확인</a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" class="item">교대근무자 현황</a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" class="item">비상 전화번호</a>
-                    </li>
-                </ul>
+            <div class="right_box">
+                <div class="full_end mt70">
+                    <div class="app_block_box">
+                        <img src="../../img/ico_alert_08.svg" alt="">
+                        <div class="text_box">
+                            <span class="tit01">YouTube</span>
+                            <span class="txt01">
+                                YouTube 는 화이트 리스트에<br>등록되지 않은 앱입니다.<br>화이트 리스트 등록 후 이용 가능합니다.
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <!-- contents -->
-        <div class="contents">
-            <div class="app_block_box">
-                <img src="../../img/ico_alert_08.svg" alt="">
-                <div class="text_box">
-                    <span class="tit01">YouTube</span>
-                    <span class="txt01">
-                        YouTube 는 화이트 리스트에<br>등록되지 않은 앱입니다.<br>화이트 리스트 등록 후 이용 가능합니다.
-                    </span>
+            <div class="footer">
+                <div class="area_footer04">
+                    <button type="button" class="btn_primary">
+                        <span class="txt">확인</span>
+                    </button>
                 </div>
             </div>
         </div>
-    </div><!-- 260220 수정-->
-
+    </div>
+    <!-- //260223 페이지 마크업 전체 수정 -->
 </body>
 
 </html>
