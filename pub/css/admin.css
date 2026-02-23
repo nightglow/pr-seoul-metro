@@ -294,9 +294,10 @@ input[type=text].inp_txt01:disabled {
 
 /* button */
 .btn_lg {
+    min-width: 85px;
     width: auto;
     height: 40px;
-    padding: 0 30px;
+    padding: 0 10px;
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
@@ -314,7 +315,7 @@ input[type=text].inp_txt01:disabled {
     min-width: 60px;
     width: auto;
     height: 30px;
-    padding: 0 9px;
+    padding: 0 4px;
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
@@ -1166,7 +1167,7 @@ footer ul li ~ li::before {
 .tbl_fixed01 .tbl_row th:nth-child(2),
 .tbl_fixed01 .tbl_row td:nth-child(2) {
     position: sticky;
-    left: 57px;
+    left: 58px;
     min-width: 140px;
     background: #fff;
     z-index: 3;
@@ -1176,7 +1177,7 @@ footer ul li ~ li::before {
 .tbl_fixed01 .tbl_row th:nth-child(3),
 .tbl_fixed01 .tbl_row td:nth-child(3) {
     position: sticky;
-    left: 197px;
+    left: 198px;
     min-width: 140px;
     background: #fff;
     z-index: 3;
@@ -1846,11 +1847,14 @@ footer ul li ~ li::before {
     gap: 4px;
 }
 .sch_box01 .sch_section .sch_area .inquiry_date .date_inp_field {
-    width: 125px;
+    width: 130px;
+}
+.sch_box01 .sch_section .sch_area .inquiry_date .date_inp_field .inp_date {
+    border: 1px solid rgba(133, 151, 168, 0.50);
 }
 .progress_box {
     position: relative;
-    width: 1390px;
+    width: 1150px;
     height: 28px;
 }
 .progress_box .bar {
