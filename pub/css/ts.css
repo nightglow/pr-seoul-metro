@@ -62,18 +62,27 @@
 }
 .schedule_list_box .schedule_list {
     margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
-.schedule_list_box .schedule_list li ~ li {
+/* .schedule_list_box .schedule_list li ~ li {
     border-top: 1px solid rgba(133, 151, 168, 0.50);
     margin-top: 12px;
     margin-bottom: 12px;
     padding-top: 12px;
+} */
+.schedule_list_box .schedule_list li {
+    border-radius: 8px;
+    border: 1px solid  rgba(133, 151, 168, 0.50);
+    background: #FFF;
+    padding: 14px 20px;
 }
 .schedule_list_box .schedule_list li .schedule_box {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 0 8px;
-    padding: 12px 0;
 }
 .schedule_list_box .schedule_list li .schedule_box .schedule_txt {
     display: flex;
@@ -143,6 +152,19 @@
 .schedule_tag.unconnect .tag_txt {
     color: #E90404;
 }
+
+.schedule_list_box .schedule_list li.on {
+    border-color: #1F5EFF;
+    background: rgba(242, 246, 255, 0.70);
+}
+.schedule_list_box .schedule_list li.on .schedule_box .schedule_txt > .tit01 {
+    color: #1F5EFF;
+}
+.schedule_list_box .schedule_list li.on .schedule_box .schedule_tag {
+    background-color: #fff;
+}
+
+
 .schedule_closed {
     width: 100%;
     display: flex;
