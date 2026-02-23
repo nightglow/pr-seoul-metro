@@ -99,7 +99,7 @@ body.popup_open{
 /* rdo */
 .rdo_group {
     display: flex;
-    gap: 8px;
+    gap: 20px;
 }
 .rdo_item {
     display: inline-flex;
@@ -695,6 +695,10 @@ footer ul li ~ li::before {
     background-position: center center;
     transition: transform 0.3s ease;
 }
+
+.lnb_1depth_list .lnb_1depth.act {
+    background-color: #1F5EFF;
+}
 .lnb_1depth_list .lnb_1depth > .lnb_item.act .txt01 {
     font-weight: 700;
 }
@@ -958,7 +962,7 @@ footer ul li ~ li::before {
 .tbl_col .col_th01 .tit_box01 .tit01 {
     color: #2C333B;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     line-height: normal;
 }
@@ -967,6 +971,9 @@ footer ul li ~ li::before {
     padding: 5.5px 20px;
     vertical-align: middle;
 }
+.tbl_col .col_td01:has(.txt_box01) {
+    padding: 12px 15px;
+}
 .tbl_col .col_td01 .txt_box01 {
     display: flex;
     flex-direction: column;
@@ -974,13 +981,13 @@ footer ul li ~ li::before {
 }
 .tbl_col .col_td01 .txt_box01 .txt01 {
     color: #4B5058;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     line-height: normal;
 }
 .tbl_col .col_td01 .txt_box01 .file01 {
     color: #4B5058;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     line-height: normal;
     text-decoration-line: underline;
@@ -1025,7 +1032,7 @@ footer ul li ~ li::before {
 .tbl_row .row_th01 .tit_box01 .tit01 {
     color: #2C333B;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     line-height: normal;
 }
@@ -1053,7 +1060,7 @@ footer ul li ~ li::before {
 }
 .tbl_tit01 .left_box .tit02 {
     color: #73757E;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 1.2;
 }
@@ -1080,12 +1087,12 @@ footer ul li ~ li::before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 12px 20px;
+    padding: 12px 15px;
 }
 .tbl_row .row_td01 .txt_box01 .txt01 {
     color: #4B5058;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     line-height: normal;
 }
@@ -1097,19 +1104,19 @@ footer ul li ~ li::before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5.5px 20px;
+    padding: 5.5px 15px;
 }
 .tbl_row .row_td01 .txt_box02 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 12px 20px;
+    padding: 12px 15px;
 }
 .tbl_row .row_td01 .txt_box02 .txt01 {
     color: #4B5058;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     line-height: normal;
 }
@@ -1479,19 +1486,19 @@ footer ul li ~ li::before {
 .inp_calendar_box{
     display:flex;
     align-items:center;
-    gap:12px;
+    /* gap:12px; */
+    border: 1px solid rgba(133, 151, 168, 0.50) !important;
 }
 
 /* 날짜 input */
 .date_inp_field{
     position:relative;
-    width: 151px;
+    width: 141px;
 }
 .inp_date {
     width: 100%;
     height: 30px;
     padding: 0 6px 0 12px;
-    border: 1px solid rgba(133, 151, 168, 0.50) !important;
     background: #fff;
     font-size: 13px;
     font-weight: 500;
@@ -1523,12 +1530,14 @@ footer ul li ~ li::before {
 .inp_time{
     height:30px;
     padding:0 14px;
-    border: 1px solid rgba(133, 151, 168, 0.50) !important;
     text-align:center;
     font-size:13px;
     font-weight: 500;
     color:#2C333B;
     background: #fff;
+}
+.inp_time::-webkit-calendar-picker-indicator {
+    cursor: pointer;
 }
 
 .sch_inp_wrap {
@@ -1599,6 +1608,7 @@ footer ul li ~ li::before {
     width: 14px;
     height: 14px;
     border-radius: 14px;
+    margin: 0 auto;
 }
 .monitoring_ico.legend01 {
     background: radial-gradient(70.83% 70.83% at 37.5% 33.33%, #9BA9F2 0%, #4279F1 50%, #024DF1 100%);
@@ -1881,4 +1891,12 @@ footer ul li ~ li::before {
     background-color: #c0c0c0;
     border: 6px solid transparent;
     background-clip: content-box;
+}
+
+/* 권한 목록 */
+.tbl_row .row_td01 .txt_box02.auth_2depth {
+    margin-left: 56px;
+}
+.tbl_row .row_td01 .txt_box02.auth_3depth {
+    margin-left: 112px;
 }
