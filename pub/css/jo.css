@@ -323,7 +323,8 @@
     font-size: 15rem;
     font-weight: 400;
     line-height: 1.4;
-    min-width: 35px;
+    /* min-width: 35px; */
+    min-width: 40px;
 }
 .motorcar_route_box .motorcar_route .route_dot {
     width: 26px;
@@ -751,7 +752,8 @@
     font-weight: 400;
     line-height: 1.4;
     display: block;
-    width: 118px;
+    /* width: 118px; */
+    width: 145px;
     height: 75px;
 }
 .select_diagnosis .sel_item .txt_box02 {
@@ -772,8 +774,10 @@
     font-weight: 400;
     line-height: 1.4;
     display: block;
-    width: 118px;
+    /* width: 118px; */
+    width: 145px;
     height: 75px;
+    
 }
 .select_diagnosis .sel_item button {
     width: calc(100% - 40px);
