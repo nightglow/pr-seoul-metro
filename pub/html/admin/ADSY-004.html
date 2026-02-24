@@ -19,37 +19,37 @@
         <div class="container">
             <aside class="lnb_wrap">
                 <div class="lnb_top">
-                    <span class="lnb_tit">통계</span>
+                    <span class="lnb_tit">시스템관리</span>
                 </div>
                 <div class="lnb_btm">
                     <ul class="lnb_1depth_list">
+                        <li class="lnb_1depth">
+                            <a href="javascript:;" class="lnb_item">
+                                <span class="txt01">공통코드 관리</span>
+                            </a>
+                        </li>
                         <li class="lnb_1depth act">
                             <a href="javascript:;" class="lnb_item act">
-                                <span class="txt01">기간별 모바일오피스 사용자 통계</span>
+                                <span class="txt01">관리자 계정 관리</span>
                             </a>
                         </li>
                         <li class="lnb_1depth">
                             <a href="javascript:;" class="lnb_item">
-                                <span class="txt01">사용자 월별 모바일오피스 사용자 통계</span>
+                                <span class="txt01">사용자 관리</span>
                             </a>
                         </li>
                         <li class="lnb_1depth">
                             <a href="javascript:;" class="lnb_item">
-                                <span class="txt01">시스템 일별 접속 통계</span>
+                                <span class="txt01">권한 관리</span>
                             </a>
                         </li>
                         <li class="lnb_1depth">
                             <a href="javascript:;" class="lnb_item">
-                                <span class="txt01">시스템별 접속 누계</span>
-                            </a>
-                        </li>
-                        <li class="lnb_1depth">
-                            <a href="javascript:;" class="lnb_item">
-                                <span class="txt01">시스템 부서별 접속 누계</span>
+                                <span class="txt01">메뉴 관리</span>
                             </a>
                         </li>
                     </ul>
-                </div> 
+                </div>
             </aside>
             <main class="content">
                 <nav class="breadcrumb_box">
@@ -59,81 +59,49 @@
                                 <span class="blind">홈</span>
                             </a>
                         </li>
-                        <li>통계</li>
-                        <li class="present">기간별 모바일오피스 사용자통계</li>
+                        <li>시스템관리</li>
+                        <li class="present">관리자 계정 관리</li>
                     </ul>
                 </nav>
                 <div class="cont_tit">
-                    <span class="tit01">기간별 모바일오피스 사용자통계</span>
+                    <span class="tit01">관리자 계정 관리</span>
                 </div>
                 <div class="cont_wrap">
                     <div class="sch_box01">
                         <ul class="sch_section">
                             <li>
                                 <div class="sch_tit01">
-                                    <label for="sch_service" class="tit01">서비스명</label>
-                                </div>
-                                <div class="sch_area">
-                                    <select name="sch_service" id="sch_service" class="sel_box01 w100p">
-                                        <option value="0">전체</option>
-                                    </select>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="sch_tit01">
-                                    <label for="sel_period" class="tit01">조회기간</label>
-                                </div>
-                                <div class="sch_area">
-                                    <select name="sel_period" id="sel_period" class="sel_box01">
-                                        <option value="1">조회월</option>
-                                        <option value="2">조회일</option>
-                                    </select>
-                                    <div class="inquiry_month">
-                                        <label for="sel_year" class="blind">조회 연도</label>
-                                        <select name="sel_year" id="sel_year" class="sel_box01">
-                                            <option value="1">2026</option>
-                                            <option value="2">2025</option>
-                                        </select>
-                                        <span class="txt01">년</span>
-                                        <label for="sel_month" class="blind">조회 월</label>
-                                        <select name="sel_month" id="sel_month" class="sel_box01">
-                                            <option value="1">01</option>
-                                            <option value="2">02</option>
-                                        </select>
-                                        <span class="txt01">월</span>
-                                    </div>
-                                    <div class="inquiry_date">
-                                        <div class="date_inp_field">
-                                            <label for="date_start" class="blind">시작일</label>
-                                            <input type="date" class="inp_date" name="date_start" id="date_start">
-                                        </div>
-                                        <span>~</span>
-                                        <div class="date_inp_field">
-                                            <label for="date_end" class="blind">종료일</label>
-                                        <input type="date" class="inp_date" name="date_end" id="date_end">
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="sch_tit01">
                                     <span class="tit01">조회구분</span>
                                 </div>
                                 <div class="sch_area">
-                                    <div class="rdo_group">
-                                        <label class="rdo_item">
-                                            <input type="radio" name="radio" checked>
-                                            <span>시간대별</span>
-                                        </label>
-                                        <label class="rdo_item">
-                                            <input type="radio" name="radio">
-                                            <span>일별</span>
-                                        </label>
-                                        <label class="rdo_item">
-                                            <input type="radio" name="radio">
-                                            <span>요일별</span>
-                                        </label>
-                                    </div>
+                                    <select name="" id="" class="sel_box01">
+                                        <option value="0">전체</option>
+                                        <option value="1">사번</option>
+                                        <option value="2">관리자명</option>
+                                    </select>
+                                    <input type="text" name="" id="" class="sch_txt" value="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sch_tit01">
+                                    <span class="tit01">권한그룹</span>
+                                </div>
+                                <div class="sch_area">
+                                    <select name="" id="" class="sel_box01 w100p">
+                                        <option value="0">관리자 권한 그룹</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sch_tit01">
+                                    <span class="tit01">사용여부</span>
+                                </div>
+                                <div class="sch_area">
+                                    <select name="" id="" class="sel_box01 w100p">
+                                        <option value="0">전체</option>
+                                        <option value="1">사용</option>
+                                        <option value="2">미사용</option>
+                                    </select>
                                 </div>
                             </li>
                         </ul>
@@ -143,42 +111,64 @@
                             </button>
                         </div>
                     </div>
-                    
                     <div class="tbl_tit01 mt20">
                         <div class="left_box">
-                            
+                            <span class="tit02">조회결과 <span class="hit_count">총<span>10</span>건</span></span>
                         </div>
-                        <div class="right_box">
-                            <div class="btn_box_right01">
-                                <button type="button" class="btn_ss btn_line">
-                                    <span class="ico_filedown"></span>
-                                    <span class="txt01">엑셀다운로드</span>
-                                </button>
-                            </div>
-                        </div>
+                        <div class="right_box"></div>
                     </div>
-                    <div class="tbl_box02 mt10">
+                    <div class="tbl_box01 mt10">
                         <table class="tbl_row">
                             <colgroup>
-                                <col width="240px">
+                                <col width="180px">
                                 <col width="240px">
                                 <col width="*">
+                                <col width="120px">
+                                <col width="170px">
+                                <col width="170px">
+                                <col width="170px">
+                                <col width="170px">
                             </colgroup>
                             <thead>
                                 <tr>
                                     <th class="row_th01" scope="col">
                                         <div class="tit_box01">
-                                            <span class="tit01">구분</span>
+                                            <span class="tit01">사번</span>
                                         </div>
                                     </th>
                                     <th class="row_th01" scope="col">
                                         <div class="tit_box01">
-                                            <span class="tit01">접속수</span>
+                                            <span class="tit01">사용자명</span>
                                         </div>
                                     </th>
                                     <th class="row_th01" scope="col">
                                         <div class="tit_box01">
-                                            <span class="tit01">그래프</span>
+                                            <span class="tit01">권한 그룹명</span>
+                                        </div>
+                                    </th>
+                                    <th class="row_th01" scope="col">
+                                        <div class="tit_box01">
+                                            <span class="tit01">사용여부</span>
+                                        </div>
+                                    </th>
+                                    <th class="row_th01" scope="col">
+                                        <div class="tit_box01">
+                                            <span class="tit01">등록자</span>
+                                        </div>
+                                    </th>
+                                    <th class="row_th01" scope="col">
+                                        <div class="tit_box01">
+                                            <span class="tit01">등록일</span>
+                                        </div>
+                                    </th>
+                                    <th class="row_th01" scope="col">
+                                        <div class="tit_box01">
+                                            <span class="tit01">수정자</span>
+                                        </div>
+                                    </th>
+                                    <th class="row_th01" scope="col">
+                                        <div class="tit_box01">
+                                            <span class="tit01">수정일</span>
                                         </div>
                                     </th>
                                 </tr>
@@ -187,472 +177,424 @@
                                 <tr>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">00:00~00:59</span>
+                                            <span class="txt01">99887766</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">1,200</span>
+                                            <a href="#" class="txt01">관리자001</a>
                                         </div>
                                     </td>
                                     <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 10%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
+                                        <div class="txt_box01 ai_l">
+                                            <span class="txt01">관리자(운영001)</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">Y</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">김교통</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">2026.02.20</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">박장화</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">2026.02.23</span>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">01:00~01:59</span>
+                                            <span class="txt01">88776655</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">509</span>
+                                            <a href="#" class="txt01">관리자002</a>
                                         </div>
                                     </td>
                                     <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 5%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
+                                        <div class="txt_box01 ai_l">
+                                            <span class="txt01">관리자(운영002)</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">Y</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">김교통</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">2026.02.20</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01"></span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01"></span>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">02:00~02:59</span>
+                                            <span class="txt01">77665544</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">209</span>
+                                            <a href="#" class="txt01">관리자003</a>
                                         </div>
                                     </td>
                                     <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 2%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
+                                        <div class="txt_box01 ai_l">
+                                            <span class="txt01">관리자(운영003)</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">N</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">김교통</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">2026.02.20</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01"></span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01"></span>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">03:00~03:59</span>
+                                            <span class="txt01">66554433</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">102</span>
+                                            <a href="#" class="txt01">관리자004</a>
                                         </div>
                                     </td>
                                     <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 1%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
+                                        <div class="txt_box01 ai_l">
+                                            <span class="txt01">관리자(운영004)</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">Y</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">김교통</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">2026.02.20</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01"></span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01"></span>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">04:00~04:59</span>
+                                            <span class="txt01">55443322</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">210</span>
+                                            <a href="#" class="txt01">관리자005</a>
                                         </div>
                                     </td>
                                     <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 2.1%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
+                                        <div class="txt_box01 ai_l">
+                                            <span class="txt01">관리자(운영005)</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">N</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">김교통</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">2026.02.20</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01"></span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01"></span>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">05:00~05:59</span>
+                                            <span class="txt01">44332211</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">839</span>
+                                            <a href="#" class="txt01">관리자006</a>
                                         </div>
                                     </td>
                                     <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 8%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
+                                        <div class="txt_box01 ai_l">
+                                            <span class="txt01">관리자(운영006)</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">Y</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">김교통</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">2026.02.20</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01"></span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01"></span>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">06:00~06:59</span>
+                                            <span class="txt01">33221100</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">1,860</span>
+                                            <a href="#" class="txt01">관리자007</a>
                                         </div>
                                     </td>
                                     <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 18%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
+                                        <div class="txt_box01 ai_l">
+                                            <span class="txt01">관리자(운영007)</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">Y</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">김교통</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">2026.02.20</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01"></span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01"></span>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">07:00~07:59</span>
+                                            <span class="txt01">22110099</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">21,500</span>
+                                            <a href="#" class="txt01">관리자008</a>
                                         </div>
                                     </td>
                                     <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 40%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
+                                        <div class="txt_box01 ai_l">
+                                            <span class="txt01">관리자(운영008)</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">Y</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">김교통</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">2026.02.20</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01"></span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01"></span>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">08:00~08:59</span>
+                                            <span class="txt01">11009988</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">47,580</span>
+                                            <a href="#" class="txt01">관리자009</a>
                                         </div>
                                     </td>
                                     <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 70%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">09:00~09:59</span>
+                                        <div class="txt_box01 ai_l">
+                                            <span class="txt01">관리자(운영009)</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">50,301</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 80%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">10:00~10:59</span>
+                                            <span class="txt01">Y</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">36,811</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 60%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">11:00~11:59</span>
+                                            <span class="txt01">김교통</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">55,550</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 69%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">12:00~12:59</span>
+                                            <span class="txt01">2026.02.20</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">16,811</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 30%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">13:00~13:59</span>
+                                            <span class="txt01"></span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
                                         <div class="txt_box01">
-                                            <span class="txt01">40,001</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 60%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">14:00~14:59</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">36,811</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 60%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">15:00~15:59</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">36,811</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 60%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">16:00~16:59</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">36,811</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 60%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">17:00~17:59</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">36,811</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 60%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">18:00~18:59</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">36,811</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 60%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">19:00~19:59</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">36,811</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 60%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">20:00~20:59</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">36,811</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 60%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">21:00~21:59</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">36,811</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 60%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">22:00~22:59</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">36,811</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 60%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">23:00~23:59</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">1,012</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="progress_box">
-                                            <em class="bar" style="width: 10%;">
-                                                <i class="blind">바 그래프</i>
-                                            </em>
+                                            <span class="txt01"></span>
                                         </div>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                    <div class="btn_box_right01 mt20">
+                        <button type="button" class="btn_lg btn_primary">
+                            <span class="txt01">신규 등록</span>
+                        </button>
+                    </div>
+                    <div class="pagination mt20">
+                        <!-- 처음 -->
+                        <button type="button" class="btn_first">
+                            <span class="blind">처음</span>
+                        </button>
+                        <!-- 이전 -->
+                        <button type="button" class="btn_prev">
+                            <span class="blind">이전</span>
+                        </button>
+                        <ul class="pagination_list">
+                            <!-- 페이지 번호 -->
+                            <li class="pagination_item"><a href="javascript:;">1</a></li>
+                            <li class="pagination_item"><a href="javascript:;">2</a></li>
+                            <li class="pagination_item active">
+                                <span aria-current="page">3</span>
+                            </li>
+                            <li class="pagination_item"><a href="javascript:;">4</a></li>
+                            <li class="pagination_item"><a href="javascript:;">5</a></li>
+                            <li class="pagination_item"><a href="javascript:;">6</a></li>
+                            <li class="pagination_item"><a href="javascript:;">7</a></li>
+                            <li class="pagination_item"><a href="javascript:;">8</a></li>
+                            <li class="pagination_item"><a href="javascript:;">10</a></li>
+                        </ul>
+                        <!-- 처음 -->
+                        <button type="button" class="btn_next">
+                            <span class="blind">다음</span>
+                        </button>
+                        <!-- 이전 -->
+                        <button type="button" class="btn_last">
+                            <span class="blind">마지막</span>
+                        </button>
+                    </div>
                 </div>
-            </main>
+            </div>
         </div>
-        <footer>
-            <ul>
-                <li>04806 서울특별시 성동구 천호대로 346</li>
-                <li>대표전화 1577-2234</li>
-                <li>Copyright©2022 SeoulMetro INC. All right reserved.</li>
-            </ul>
-        </footer>
     </div>
 </body>
 </html>

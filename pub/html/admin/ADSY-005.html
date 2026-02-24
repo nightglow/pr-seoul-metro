@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>서울교통공사 모바일오피스</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" /> 	
+
+    <link rel="stylesheet" type="text/css" href="../../css/admin.css">
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <script src="../../js/admin.js"></script>
+</head>
+<body>
+    <div class="whole_wrap">
+        <header id="header"></header>
+        <div class="container">
+            <aside class="lnb_wrap">
+                <div class="lnb_top">
+                    <span class="lnb_tit">시스템관리</span>
+                </div>
+                <div class="lnb_btm">
+                    <ul class="lnb_1depth_list">
+                        <li class="lnb_1depth">
+                            <a href="javascript:;" class="lnb_item">
+                                <span class="txt01">공통코드 관리</span>
+                            </a>
+                        </li>
+                        <li class="lnb_1depth act">
+                            <a href="javascript:;" class="lnb_item act">
+                                <span class="txt01">관리자 계정 관리</span>
+                            </a>
+                        </li>
+                        <li class="lnb_1depth">
+                            <a href="javascript:;" class="lnb_item">
+                                <span class="txt01">사용자 관리</span>
+                            </a>
+                        </li>
+                        <li class="lnb_1depth">
+                            <a href="javascript:;" class="lnb_item">
+                                <span class="txt01">권한 관리</span>
+                            </a>
+                        </li>
+                        <li class="lnb_1depth">
+                            <a href="javascript:;" class="lnb_item">
+                                <span class="txt01">메뉴 관리</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <main class="content">
+                <nav class="breadcrumb_box">
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="javascript:;" class="btn_home">
+                                <span class="blind">홈</span>
+                            </a>
+                        </li>
+                        <li>시스템관리</li>
+                        <li class="present">관리자 계정 관리</li>
+                    </ul>
+                </nav>
+                <div class="cont_tit">
+                    <span class="tit01">관리자 계정 등록</span>
+                </div>
+                <div class="cont_wrap">
+                    <div class="tbl_box01"> 
+                        <table class="tbl_col">
+                            <colgroup>
+                                <col width="149px">
+                                <col width="*">
+                                <col width="149px">
+                                <col width="*">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th class="col_th01" scope="row">
+                                        <div class="tit_box01">
+                                            <span class="tit01">등록구분</span>
+                                        </div>
+                                    </th>
+                                    <td class="col_td01" colspan="3">
+                                        <select name="" id="" class="sel_box01 w317">
+                                            <option value="0">선택</option>
+                                            <option value="1">사번</option>
+                                            <option value="2">사원명</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="col_th01" scope="row">
+                                        <div class="tit_box01">
+                                            <span class="tit01">사번</span>
+                                        </div>
+                                    </th>
+                                    <td class="col_td01">
+                                        <div class="sch_inp_wrap">
+                                            <input type="text" class="dept_inp" id="deptInput" placeholder="사번 입력" aria-label="사번 검색" readonly>
+                                            <button type="button" class="btn_search" id="deptOpenBtn" aria-haspopup="dialog" aria-controls="deptPopup" onclick="Popup.open('popup01')">
+                                                <span class="ico_sch"></span>
+                                                <span class="blind">찾기</span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <th class="col_th01" scope="row">
+                                        <div class="tit_box01">
+                                            <span class="tit01">성명</span>
+                                        </div>
+                                    </th>
+                                    <td class="col_td01">
+                                        <input type="text" name="inp_name" id="inp_name" class="inp_txt01" value="" readonly>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="col_th01" scope="row">
+                                        <div class="tit_box01">
+                                            <span class="tit01">이메일</span>
+                                        </div>
+                                    </th>
+                                    <td class="col_td01">
+                                        <input type="text" name="inp_email" id="inp_email" class="inp_txt01" value="" readonly>
+                                    </td>
+                                    <th class="col_th01" scope="row">
+                                        <div class="tit_box01">
+                                            <span class="tit01">연락처</span>
+                                        </div>
+                                    </th>
+                                    <td class="col_td01">
+                                        <input type="text" name="inp_call" id="inp_call" class="inp_txt01" value="" readonly>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="col_th01" scope="row">
+                                        <div class="tit_box01">
+                                            <span class="tit01">생년월일</span>
+                                        </div>
+                                    </th>
+                                    <td class="col_td01">
+                                        <input type="text" name="inp_birth" id="inp_birth" class="inp_txt01" value="" readonly>
+                                    </td>
+                                    <th class="col_th01" scope="row">
+                                        <div class="tit_box01">
+                                            <span class="tit01">소속부서</span>
+                                        </div>
+                                    </th>
+                                    <td class="col_td01">
+                                        <input type="text" name="inp_part" id="inp_part" class="inp_txt01" value="" readonly>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="col_th01" scope="row">
+                                        <div class="tit_box01">
+                                            <span class="tit01">사용여부</span>
+                                        </div>
+                                    </th>
+                                    <td class="col_td01" colspan="3">
+                                        <div class="rdo_group">
+                                            <label class="rdo_item">
+                                                <input type="radio" name="radio">
+                                                <span>사용</span>
+                                            </label>
+                                            <label class="rdo_item">
+                                                <input type="radio" name="radio">
+                                                <span>미사용</span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="btn_box_right01 mt20">
+                        <button type="button" class="btn_lg btn_line">
+                            <span class="txt01">목록</span>
+                        </button>
+                        <button type="button" class="btn_lg btn_primary">
+                            <span class="txt01">등록</span>
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <ul>
+                <li>04806 서울특별시 성동구 천호대로 346</li>
+                <li>대표전화 1577-2234</li>
+                <li>Copyright©2022 SeoulMetro INC. All right reserved.</li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- 사용자 조회 -->
+    <div class="popup_dim" data-popup="popup01">
+        <div class="popup_wrap popup_lg">
+            <div class="left_box">
+                <div class="area_tit01">
+                    <span class="txt01">사용자 조회</span>
+                </div>
+                <div class="area_content01">
+                    <button class="btn_close" onclick="Popup.close('popup01')">
+                        <i class="blind">닫기</i>
+                    </button>
+                </div>
+            </div>
+            <div class="right_box">
+                <div class="popup_cont d_f f_row mt10">
+                    <div class="tree_list_box">
+                        <span style="display: block; height: 400px;">tree list 출력되는 영역</span>
+                    </div>
+                    <div class="tbl_box01">
+                        <table class="tbl_row">
+                            <colgroup>
+                                <col width="53px">
+                                <col width="160px">
+                                <col width="120px">
+                                <col width="*">
+                                <col width="120px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="row_th01" scope="col">
+                                        <label class="chk_item jc_c">
+                                            <input type="checkbox" name="check">
+                                            <span class="chk_box" aria-hidden="true"></span>
+                                        </label>
+                                    </th>
+                                    <th class="row_th01" scope="col">
+                                        <div class="tit_box01">
+                                            <span class="tit01">사번</span>
+                                        </div>
+                                    </th>
+                                    <th class="row_th01" scope="col">
+                                        <div class="tit_box01">
+                                            <span class="tit01">성명</span>
+                                        </div>
+                                    </th>
+                                    <th class="row_th01" scope="col">
+                                        <div class="tit_box01">
+                                            <span class="tit01">직위</span>
+                                        </div>
+                                    </th>
+                                    <th class="row_th01" scope="col">
+                                        <div class="tit_box01">
+                                            <span class="tit01">직급</span>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="row_td01">
+                                        <label class="chk_item jc_c">
+                                            <input type="checkbox" name="check">
+                                            <span class="chk_box" aria-hidden="true"></span>
+                                        </label>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">789875462</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">김교통</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">처장</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">2급</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <label class="chk_item jc_c">
+                                            <input type="checkbox" name="check">
+                                            <span class="chk_box" aria-hidden="true"></span>
+                                        </label>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">789875462</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">김교통</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">처장</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">2급</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <label class="chk_item jc_c">
+                                            <input type="checkbox" name="check">
+                                            <span class="chk_box" aria-hidden="true"></span>
+                                        </label>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">789875462</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">김교통</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">처장</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">2급</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <label class="chk_item jc_c">
+                                            <input type="checkbox" name="check">
+                                            <span class="chk_box" aria-hidden="true"></span>
+                                        </label>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">789875462</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">김교통</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">처장</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">2급</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <label class="chk_item jc_c">
+                                            <input type="checkbox" name="check">
+                                            <span class="chk_box" aria-hidden="true"></span>
+                                        </label>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">789875462</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">김교통</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">처장</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">2급</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <label class="chk_item jc_c">
+                                            <input type="checkbox" name="check">
+                                            <span class="chk_box" aria-hidden="true"></span>
+                                        </label>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">789875462</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">김교통</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">처장</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">2급</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <label class="chk_item jc_c">
+                                            <input type="checkbox" name="check">
+                                            <span class="chk_box" aria-hidden="true"></span>
+                                        </label>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">789875462</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">김교통</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">처장</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">2급</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row_td01">
+                                        <label class="chk_item jc_c">
+                                            <input type="checkbox" name="check">
+                                            <span class="chk_box" aria-hidden="true"></span>
+                                        </label>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">789875462</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">김교통</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">처장</span>
+                                        </div>
+                                    </td>
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">2급</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_btm_center01">
+                <button type="button" class="btn_lg btn_tertiary" onclick="Popup.close('popup01')">
+                    <span class="txt01">닫기</span>
+                </button>
+                <button type="button" class="btn_lg btn_primary">
+                    <span class="txt01">선택</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
