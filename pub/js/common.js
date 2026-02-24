@@ -30,28 +30,55 @@ $(function () {
 
 
 // Bottom Sheet
+// const BottomSheet = {
+//     getElements(id) {
+//         const dim = document.querySelector(`.dim[data-sheet="${id}"]`);
+//         return dim ? { dim, sheet: dim.querySelector('.sheet') } : null;
+//     },
+
+//     toggle(id, isShow) {
+//         const el = this.getElements(id);
+//         if (!el?.sheet) return;
+
+//         if (isShow) {
+//             el.dim.classList.add('act');
+//             setTimeout(() => el.sheet.classList.add('act'), 100);
+//         } else {
+//             el.sheet.classList.remove('act');
+//             setTimeout(() => el.dim.classList.remove('act'), 100);
+//         }
+//     },
+
+//     show(id) { this.toggle(id, true); },
+//     hide(id) { this.toggle(id, false); }
+// };
+
+
 const BottomSheet = {
-    getElements(id) {
+    show(id) {
         const dim = document.querySelector(`.dim[data-sheet="${id}"]`);
-        return dim ? { dim, sheet: dim.querySelector('.sheet') } : null;
+        const sheet = dim.querySelector('.sheet');
+        sheet.style.transform = 'translateY(100%)';
+        sheet.style.transition = 'none';
+        dim.style.zIndex = 100;
+        setTimeout(() => {
+            sheet.style.transform = '';
+            sheet.style.transition = '';
+            dim.classList.add('act');
+            sheet.classList.add('act');
+        }, 10);
     },
-
-    toggle(id, isShow) {
-        const el = this.getElements(id);
-        if (!el?.sheet) return;
-
-        if (isShow) {
-            el.dim.classList.add('act');
-            setTimeout(() => el.sheet.classList.add('act'), 100);
-        } else {
-            el.sheet.classList.remove('act');
-            setTimeout(() => el.dim.classList.remove('act'), 100);
-        }
-    },
-
-    show(id) { this.toggle(id, true); },
-    hide(id) { this.toggle(id, false); }
+    hide(id) {
+        const dim = document.querySelector(`.dim[data-sheet="${id}"]`);
+        const sheet = dim.querySelector('.sheet');
+        dim.classList.remove('act');
+        sheet.classList.remove('act');
+        dim.addEventListener('transitionend', () => {
+            dim.style.zIndex = '';
+        }, { once: true });
+    }
 };
+
 
 
 // tab 삭제 예정 ----

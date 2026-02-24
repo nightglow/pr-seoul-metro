@@ -941,10 +941,11 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     background-color: rgba(0, 0, 0, 0.56);
 }
 .dim.act {
-    transition: opacity 0.2s ease-in;
     opacity: 1;
     z-index: 100;
+    transition: opacity 0.2s ease-in;
 }
+
 .sheet {
     position: fixed;
     bottom: 0;
