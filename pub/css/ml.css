@@ -2008,7 +2008,8 @@
 
 .card.active {
     transform: rotate(90deg);
-    max-width: 400px;
+    /* max-width: 400px; */
+    max-width: 360px;
     height: 230px;
     transition: transform 0.3s ease;
 }
@@ -2046,7 +2047,7 @@
     padding: 0 20px;
     position: absolute;
     bottom: 0;
-    margin-bottom: 120px;
+    margin-bottom: 90px;
 }
 .area_mail > .txt01 {
     width: 100%;
@@ -2418,5 +2419,9 @@
 
     .setting {
         padding-bottom: 100px;
+    }
+
+    .card.mt110 {
+        margin-top: 50px;
     }
 }

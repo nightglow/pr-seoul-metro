@@ -2223,8 +2223,18 @@ select {
     color: #73757E;
 }
 
+.btn_top {
+    width: 48px;
+    height: 48px;
+    display: block;
 
+    background: url('../img/ico_top.svg') no-repeat center/100%;
+    z-index: 10000;
 
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+}
 
 
 
