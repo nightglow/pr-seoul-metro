@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>서울교통공사 인사관리</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header"></div>
+
+        <div class="contents">
+            <div class="report_sch_wrap">
+                <ul class="area_vacation">
+                    <li>
+                        <div class="f_group04"><!-- error, sucess 클래스 추가-->
+                            <label class="area_tit01">
+                                <div class="left_box02">
+                                    <span class="txt01">영업소 구분</span>
+                                    <!-- <span class="txt02">*</span> -->
+                                </div>
+                                <div class="right_box02 mt12">
+                                    <div class="common_inp05"><!-- active -->
+                                        <input type="text" class="inp_pw" placeholder="영업소를 선택하세요." name="0"
+                                            value="신대방영업사업소" />
+                                        <span class="ico_arr">
+                                            <i class="blind">선택표시</i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </label>
+                            <span class="reply">택스트를 입력하세요.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f_group04"><!-- error, sucess 클래스 추가-->
+                            <label class="area_tit01">
+                                <div class="left_box02">
+                                    <span class="txt01">역 구분</span>
+                                    <!-- <span class="txt02">*</span> -->
+                                </div>
+                                <div class="right_box02 mt12">
+                                    <div class="common_inp05"><!-- active -->
+                                        <input type="text" class="inp_pw" placeholder="역을 선택하세요." name="0"
+                                            value="강남역" />
+                                        <span class="ico_arr">
+                                            <i class="blind">선택표시</i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </label>
+                            <span class="reply">택스트를 입력하세요.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f_group04"><!-- error, sucess 클래스 추가-->
+                            <label class="area_tit01">
+                                <div class="left_box02">
+                                    <span class="txt01">지연보고 여부</span>
+                                    <!-- <span class="txt02">*</span> -->
+                                </div>
+                                <div class="right_box02 mt12">
+                                    <div class="common_inp05"><!-- active -->
+                                        <input type="text" class="inp_pw" placeholder="지연보고 여부를 선택하세요." name="0"
+                                            value="모두" />
+                                        <span class="ico_arr">
+                                            <i class="blind">선택표시</i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </label>
+                            <span class="reply">택스트를 입력하세요.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f_group06"><!-- error, sucess 클래스 추가-->
+                            <label class="area_tit01">
+                                <div class="left_box02">
+                                    <span class="txt01">보고기간</span>
+                                    <!-- <span class="txt02">*</span> -->
+                                </div>
+                                <div class="right_box02 mt12">
+                                    <div class="common_inp07">
+                                        <input type="text" class="inp_start" name="0" value="2026-01-01"
+                                            disabled />
+                                        <span class="inp_txt01">~</span>
+                                        <input type="text" class="inp_end" name="0" value="2026-01-01"
+                                            disabled />
+                                        <button type="button" class="btn_calendar">
+                                            <i class="blind">달력</i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </label>
+                            <span class="reply">택스트를 입력하세요.</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btn_group01 mt12">
+                    <button type="button" class="btn_secondary">
+                        <span class="txt">조회</span>
+                    </button>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="report_list_wrap">
+                <div class="report_tbl_box">
+                    <div class="report_tbl_tit">
+                        <div class="left_box">
+                            <div class="tit_box01">
+                                <span class="tit01">2026-02-25</span>
+                            </div>
+                        </div>
+                        <div class="right_box">
+                            <button type="button" class="btn_reportEdit">
+                                <span class="txt01">수정보고</span>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="report_tbl">
+                        <li>
+                            <div class="report_cont_box"><!-- 지연시 class에 report_rate 추가 -->
+                                <span class="report_time">04:20</span>
+                                <span class="report_name">김교통</span>
+                                <span class="report_stat01">1차 보고</span>
+                                <span class="report_stat02">정상</span>
+                                <span class="report_type">전산</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="report_cont_box"><!-- 지연시 class에 report_rate 추가 -->
+                                <span class="report_time">04:48</span>
+                                <span class="report_name">김교통</span>
+                                <span class="report_stat01">2차 보고</span>
+                                <span class="report_stat02">정상</span>
+                                <span class="report_type">전산</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="report_tbl_box">
+                    <div class="report_tbl_tit">
+                        <div class="left_box">
+                            <div class="tit_box01">
+                                <span class="tit01">2026-02-24</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="report_tbl">
+                        <li>
+                            <div class="report_cont_box"><!-- 지연시 class에 report_rate 추가 -->
+                                <span class="report_time">04:20</span>
+                                <span class="report_name">박장화</span>
+                                <span class="report_stat01">1차 보고</span>
+                                <span class="report_stat02">정상</span>
+                                <span class="report_type">전산</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="report_cont_box report_rate"><!-- 지연시 class에 report_rate 추가 -->
+                                <span class="report_time">04:35</span>
+                                <span class="report_name">박장화</span>
+                                <span class="report_stat01">2차 보고</span>
+                                <span class="report_stat02">지연</span>
+                                <span class="report_type">전산</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="report_cont_box"><!-- 지연시 class에 report_rate 추가 -->
+                                <span class="report_time">05:10</span>
+                                <span class="report_name">박장화</span>
+                                <span class="report_stat01">수정</span>
+                                <span class="report_stat02">수정</span>
+                                <span class="report_type">전산</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="report_tbl_box">
+                    <div class="report_tbl_tit">
+                        <div class="left_box">
+                            <div class="tit_box01">
+                                <span class="tit01">2026-02-23</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="report_tbl">
+                        <li>
+                            <div class="report_cont_box"><!-- 지연시 class에 report_rate 추가 -->
+                                <span class="report_time">04:10</span>
+                                <span class="report_name">김교통</span>
+                                <span class="report_stat01">1차 보고</span>
+                                <span class="report_stat02">정상</span>
+                                <span class="report_type">전산</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="report_cont_box"><!-- 지연시 class에 report_rate 추가 -->
+                                <span class="report_time">04:20</span>
+                                <span class="report_name">김교통</span>
+                                <span class="report_stat01">2차 보고</span>
+                                <span class="report_stat02">수정</span>
+                                <span class="report_type">전산</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="report_tbl_box">
+                    <div class="report_tbl_tit">
+                        <div class="left_box">
+                            <div class="tit_box01">
+                                <span class="tit01">2026-02-22</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="report_tbl">
+                        <li>
+                            <div class="report_cont_box"><!-- 지연시 class에 report_rate 추가 -->
+                                <span class="report_time">04:10</span>
+                                <span class="report_name">김교통</span>
+                                <span class="report_stat01">1차 보고</span>
+                                <span class="report_stat02">정상</span>
+                                <span class="report_type">전산</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="report_cont_box"><!-- 지연시 class에 report_rate 추가 -->
+                                <span class="report_time">04:20</span>
+                                <span class="report_name">김교통</span>
+                                <span class="report_stat01">2차 보고</span>
+                                <span class="report_stat02">수정</span>
+                                <span class="report_type">전산</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="report_tbl_box">
+                    <div class="report_tbl_tit">
+                        <div class="left_box">
+                            <div class="tit_box01">
+                                <span class="tit01">2026-02-21</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="report_tbl">
+                        <li>
+                            <div class="report_cont_box"><!-- 지연시 class에 report_rate 추가 -->
+                                <span class="report_time">04:10</span>
+                                <span class="report_name">김교통</span>
+                                <span class="report_stat01">1차 보고</span>
+                                <span class="report_stat02">정상</span>
+                                <span class="report_type">전산</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="report_cont_box"><!-- 지연시 class에 report_rate 추가 -->
+                                <span class="report_time">04:20</span>
+                                <span class="report_name">김교통</span>
+                                <span class="report_stat01">2차 보고</span>
+                                <span class="report_stat02">수정</span>
+                                <span class="report_type">전산</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="btn_more_view">
+                    <span class="txt01">더보기</span>
+                    <span class="ico_arr01"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn_top">
+        <i class="blind">위로이동</i>
+    </button>
+    
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>서울교통공사 인사관리</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header"></div>
+
+        <div class="contents">
+            <div class="busi_report_wrap">
+                <ul class="report_list">
+                    <li>
+                        <div class="report_time_box">
+                            <span class="report_date">2026년 02월 25일</span>
+                            <span class="report_time">04:20:23</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="report_sel_area">
+                            <div class="f_group04"><!-- error, sucess 클래스 추가-->
+                                <label class="area_tit01">
+                                    <div class="left_box02">
+                                        <span class="txt01">소속 역사</span>
+                                        <!-- <span class="txt02">*</span> -->
+                                    </div>
+                                    <div class="right_box02 mt12">
+                                        <div class="common_inp05"><!-- active -->
+                                            <input type="text" class="inp_pw" placeholder="소속 역사를 선택하세요." name="0"
+                                                value="장한평역" />
+                                            <span class="ico_arr">
+                                                <i class="blind">선택표시</i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <span class="reply">택스트를 입력하세요.</span>
+                            </div>
+                            <div class="f_group04"><!-- error, sucess 클래스 추가-->
+                                <label class="area_tit01">
+                                    <div class="left_box02">
+                                        <span class="txt01">보고 일자</span>
+                                        <!-- <span class="txt02">*</span> -->
+                                    </div>
+                                    <div class="right_box02 mt12">
+                                        <div class="common_inp05"><!-- active -->
+                                            <input type="text" class="inp_pw" placeholder="보고 일자를 선택하세요." name="0"
+                                                value="2026-02-25" />
+                                            <span class="ico_arr">
+                                                <i class="blind">선택표시</i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <span class="reply">택스트를 입력하세요.</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="report_insp_box">
+                            <div class="chklist_tit01">
+                                <span class="tit01">점검항목</span>
+                            </div>
+                            <div class="chklist_txt01">
+                                <span class="txt01">09:00~09:30까지 열차운행 준비상태 이상유무 보고</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="report_chklist_box">
+                            <ol class="report_chklist">
+                                <li>
+                                    <div class="f_group25">
+                                        <div class="item_chk">
+                                            <label class="chk_select" for="chk04">
+                                                <input type="checkbox" id="chk04" checked>
+                                                <span class="ico_check"></span>
+
+                                                <div class="box_info01">
+                                                    <div class="area_tit01">
+                                                        <span class="txt_01">영업장소 점등 여부</span>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="f_group25">
+                                        <div class="item_chk">
+                                            <label class="chk_select" for="chk05">
+                                                <input type="checkbox" id="chk05" checked>
+                                                <span class="ico_check"></span>
+
+                                                <div class="box_info01">
+                                                    <div class="area_tit01">
+                                                        <span class="txt_01">셔터 개방</span>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="f_group25">
+                                        <div class="item_chk">
+                                            <label class="chk_select" for="chk06">
+                                                <input type="checkbox" id="chk06" checked>
+                                                <span class="ico_check"></span>
+
+                                                <div class="box_info01">
+                                                    <div class="area_tit01">
+                                                        <span class="txt_01">근무자 배치 여부</span>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="f_group25">
+                                        <div class="item_chk">
+                                            <label class="chk_select" for="chk07">
+                                                <input type="checkbox" id="chk07" checked>
+                                                <span class="ico_check"></span>
+
+                                                <div class="box_info01">
+                                                    <div class="area_tit01">
+                                                        <span class="txt_01">시설물 파손 및 누수 여부</span>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="f_group25">
+                                        <div class="item_chk">
+                                            <label class="chk_select" for="chk08">
+                                                <input type="checkbox" id="chk08" checked>
+                                                <span class="ico_check"></span>
+
+                                                <div class="box_info01">
+                                                    <div class="area_tit01">
+                                                        <span class="txt_01">임대 시설물 이상유무확인</span>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box_info01">
+                                        <div class="area_tit01">
+                                            <span class="txt_01">기타 영업에 필요한 사항</span>
+                                        </div>
+                                    </div>
+                                    <div class="area_contents01">
+                                        <div class="txta01">
+                                            <textarea name="" id="" placeholder="내용을 입력하세요"></textarea>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="area_footer02">
+                <div class="f_group01">
+                    <button type="button" class="btn_primary">
+                        <span class="txt">영업준비보고(2단계)</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn_top">
+        <i class="blind">위로이동</i>
+    </button>
+    
+</body>
+
+</html>

@@ -1,0 +1,388 @@
+/* 영업준비보고 */
+.busi_report_wrap {
+    width: calc(100% - 40px);
+    margin: 20px auto 0;
+    padding-bottom: 80px;
+}
+.report_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+}
+.report_time_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
+    border-radius: 8px;
+    background: rgba(235, 240, 245, 0.70);
+}
+.report_time_box .report_date {
+    color: #070F16;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 140%;
+}
+.report_time_box .report_time {
+    color: #4B5058;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.report_sel_area {
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0;
+}
+.report_insp_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px 0;
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 10px;
+    background: #F4F6FA;
+}
+.chklist_tit01 {
+    flex: 1 0 0;
+}
+.report_insp_box .chklist_tit01 .tit01 {
+    color:#2C333B;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.report_insp_box .chklist_txt01 {
+    flex: 1 0 0;
+}
+.report_insp_box .chklist_txt01 .txt01 {
+    color: #73757E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.35;
+    word-break: keep-all;
+}
+
+/* 체크리스트 체크박스 */
+.report_chklist {
+    counter-reset: num;
+    font-size: 17rem;
+}
+.report_chklist li {
+    counter-increment: num;
+    padding: 16px 0 16px 22px;
+    border-top: 1px solid rgba(130, 149, 167, 0.20);
+    position: relative;
+}
+.report_chklist > li::before{
+    position: absolute;
+    content: counter(num) ".";
+    top: 18px;
+    left: 0;
+    font-size: 17rem;
+    color: rgba(2, 12, 21, 0.82);
+}
+
+.f_group25 {
+    width: 100%;
+    display: block;
+}
+.f_group25 .item_chk {
+    width: 100%;
+}
+.f_group25 .item_chk .chk_select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    cursor: pointer;
+    position: relative;
+}
+.f_group25 .item_chk .chk_select input {
+    position: absolute;
+    opacity: 0;
+}
+.f_group25 .item_chk .chk_select .ico_check {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../img/ico_check_off.svg);
+    
+}
+.f_group25 .item_chk .chk_select input:checked + .ico_check {
+    background-image: url(../img/ico_check_on.svg);
+}
+.f_group25 .item_chk .chk_select .txt01 {
+    color: rgba(2, 12, 21, 0.82);
+    font-size: 17rem;
+    font-weight: 400;
+    margin-left: 12px;
+}
+
+.f_group25 .item_chk .chk_select > .box_info01 {
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.f_group25 .item_chk .chk_select > .box_info01 .area_tit01 {
+    width: 100%;
+    display: block;
+}
+.f_group25 .item_chk .chk_select > .box_info01 .area_tit01 .txt_01{
+    width: 100%;
+    display: block;
+    font-size: 17rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: rgba(2, 12, 21, 0.82);
+    word-break: keep-all;
+}
+
+.box_info01 .area_tit01 {
+    width: 100%;
+    display: block;
+}
+.box_info01 .area_tit01 .txt_01{
+    width: 100%;
+    display: block;
+    font-size: 17rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: rgba(2, 12, 21, 0.82);
+    word-break: keep-all;
+}
+.box_info01 + .area_contents01 {
+    position: relative;
+    width: calc(100% + 20px);
+    left: -20px;
+    margin-top: 18px;
+}
+
+.report_chklist_box > .box_info01 .area_tit01 {
+    width: 100%;
+    display: block;
+}
+.report_chklist_box > .box_info01 .area_tit01 .txt_01{
+    width: 100%;
+    display: block;
+    font-size: 17rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: rgba(2, 12, 21, 0.82);
+    word-break: keep-all;
+}
+.report_chklist_box > .box_info01 + .area_contents01 {
+    position: relative;
+    width: 100%;
+    left: 0;
+    margin-top: 18px;
+}
+
+/* 이력조회 */
+.report_sch_wrap {
+    width: calc(100% - 40px);
+    margin: 20px auto;
+}
+
+.report_list_wrap {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    padding-bottom: 20px;
+}
+.report_tbl_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px 0;
+}
+.report_tbl_box .report_tbl_tit {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: stretch;
+}
+.report_tbl_box .tit_box01 .tit01 {
+    color: #253B95;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.btn_reportEdit {
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #1F5EFF;
+    border-radius: 8px;
+    background-color: #fff;
+    flex-shrink: 0;
+    padding: 9.5px 15px;
+}
+.btn_reportEdit > .txt01 {
+    width: 100%;
+    display: block;
+    font-size: 15rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #1F5EFF;
+}
+
+.report_tbl {
+    border-top: 1px solid #73757E;
+    width: 100%;
+}
+.report_tbl li {
+    border-bottom: 1px solid rgba(130, 149, 167, 0.20);
+}
+
+.report_cont_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+}
+.report_cont_box span {
+    display: block;
+    padding: 12px;
+    color: #070F16;
+    text-align: center;
+    font-size: 17rem;
+    font-weight: 400;
+    line-height: 1.4;
+    word-break: keep-all;
+}
+.report_cont_box span.report_time {
+    width: 70px;
+}
+.report_cont_box span.report_name {
+    width: 85px;
+}
+.report_cont_box span.report_stat01,
+.report_cont_box span.report_stat02,
+.report_cont_box span.report_type {
+    width: 55px;
+}
+.report_cont_box.report_rate span {
+    color: #EE444A;
+}
+
+/* 홍보물 조회 */
+.promo_list_wrap {
+    width: calc(100% - 40px);
+    margin: 20px auto;
+    padding-bottom: 20px;
+}
+.promo_list li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(133, 151, 168, 0.50);
+}
+.promo_list li:first-child {
+    padding-top: 0;
+}
+.promo_post {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 8px;
+}
+.post_thumbnail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 110px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #E6EAED;
+}
+.post_thumbnail img {
+    width: 100%;
+}
+.post_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 23px 0;
+}
+.post_cont .tit01 {
+    color: #2C333B;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.post_cont .date01 {
+    color: #73757E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.board_detail_wrap {
+    width: 100%;
+    padding-bottom: 70px;
+}
+.detail_tit_box {
+    border-bottom: 1px solid #C5C5C5;
+    padding: 20px 20px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px 0;
+}
+.detail_tit_box .tit01 {
+    color: #2C333B;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.4; /* 25.2px */
+}
+.detail_tit_box .date_area01 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0 14px;
+}
+.detail_tit_box .date_area01 .txt01 {
+    color: #73757E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.4; /* 19.6px */
+}
+.detail_tit_box .date_area01 .date01 {
+    color: #2C333B;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.4; /* 22.4px */
+}
+
+.detail_cont_box {
+    padding: 16px 20px 37px;
+}
+.detail_cont_box .cont_area {
+    width: 100%;
+}
+
+@media (min-width: 749px) {
+    .report_cont_box span.report_time,
+    .report_cont_box span.report_name,
+    .report_cont_box span.report_stat01,
+    .report_cont_box span.report_stat02,
+    .report_cont_box span.report_type {
+        width: 100%;
+    }
+}
