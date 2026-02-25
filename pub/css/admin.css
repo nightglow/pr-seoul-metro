@@ -1483,6 +1483,18 @@ footer ul li ~ li::before {
     background-repeat: no-repeat;
     background-position: center center;
 }
+.attach_down {
+    width: 24px;
+    height: 24px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    background-image: url(../img/ico_download.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 18px 18px;
+}
 
 /* datepicker, time input */
 .inp_calendar_box{
