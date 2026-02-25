@@ -208,7 +208,7 @@
         <div class="footer">
             <div class="area_footer02">
                 <div class="f_group01">
-                    <button type="button" class="btn_primary">
+                    <button type="button" class="btn_primary"  onclick="Fullpopup.open('full01')"><!-- 260225 이벤트 추가 -->
                         <span class="txt">취소신청</span>
                     </button>
                 </div>
@@ -220,6 +220,46 @@
         <i class="blind">위로이동</i>
     </button>
     
+
+    <!-- 260225  마크업 추가 -->
+    <!-- 휴가취소신청 완료 -->
+    <div class="full_popup_dim" data-full="full01">
+        <div class="full_popup_wrap">
+            <div class="left_box">
+                <div class="area_tit01">
+                    <span class="txt01">휴가취소 신청완료</span>
+                </div>
+                <div class="area_content01">
+                    <button class="btn_close" onclick="Fullpopup.close('full01')">
+                        <i class="blind">닫기</i>
+                    </button>
+                </div>
+            </div>
+            <div class="right_box">
+                <div class="full_end mt70">
+                    <ul class="area_receipt">
+                        <li>
+                            <span class="img_logo">
+                                <img src="../../img/ico_alert_03.svg" alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="txt01">휴가 취소 신청 접수가<br>완료되었습니다.</span>
+                        </li>
+                        <li>
+                            <div class="leave">
+                                <span class="txt01">촉진연차</span>
+                                <span class="txt02">2026.01.19 ~ 2026.01.20</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 휴가취소신청 완료 -->
+    <!-- //260225  마크업 추가 -->
+
 </body>
 
 <script>

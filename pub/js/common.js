@@ -82,38 +82,38 @@ const BottomSheet = {
 
 
 // tab 삭제 예정 ----
-const Tab = {
-    contents: null,
-    nav: null,
+// const Tab = {
+//     contents: null,
+//     nav: null,
 
-    init: function () {
-        this.nav = document.querySelector('.tab_nav');
-        if (!this.nav) return;
+//     init: function () {
+//         this.nav = document.querySelector('.tab_nav');
+//         if (!this.nav) return;
 
-        this.contents = document.querySelectorAll('div[id^="tab"]');
-        this.bindEvents();
-        this.showTab(this.nav.querySelector('a'));
-    },
+//         this.contents = document.querySelectorAll('div[id^="tab"]');
+//         this.bindEvents();
+//         this.showTab(this.nav.querySelector('a'));
+//     },
 
-    showTab: function (link) {
-        [...this.contents].map(div => div.style.display = 'none');
-        this.nav.querySelector('.act')?.classList.remove('act');
+//     showTab: function (link) {
+//         [...this.contents].map(div => div.style.display = 'none');
+//         this.nav.querySelector('.act')?.classList.remove('act');
 
-        const target = document.querySelector(link.hash);
-        if (target) target.style.display = 'block';
-        link.classList.add('act');
-    },
+//         const target = document.querySelector(link.hash);
+//         if (target) target.style.display = 'block';
+//         link.classList.add('act');
+//     },
 
-    bindEvents: function () {
-        this.nav.addEventListener('click', (e) => {
-            const link = e.target.closest('a');
-            if (link) {
-                e.preventDefault();
-                this.showTab(link);
-            }
-        });
-    }
-};
+//     bindEvents: function () {
+//         this.nav.addEventListener('click', (e) => {
+//             const link = e.target.closest('a');
+//             if (link) {
+//                 e.preventDefault();
+//                 this.showTab(link);
+//             }
+//         });
+//     }
+// };
 // ----------------
 
 const TabManager = {
@@ -161,21 +161,38 @@ const TabManager = {
 
 const Alert = {
     get: (id) => document.querySelector(`[data-alert="${id}"]`),
-    open(id) { this.get(id)?.classList.add('active'); },
-    close(id) { this.get(id)?.classList.remove('active'); }
+    open(id) { 
+        this.get(id)?.classList.add('active');
+        document.body.classList.add('lock');
+    },
+    close(id) { 
+        this.get(id)?.classList.remove('active');
+        document.body.classList.remove('lock');
+    }
 };
-
 
 const Popup = {
     get: (id) => document.querySelector(`[data-popup="${id}"]`),
-    open(id) { this.get(id)?.classList.add('active'); },
-    close(id) { this.get(id)?.classList.remove('active'); }
+    open(id) { 
+        this.get(id)?.classList.add('active');
+        document.body.classList.add('lock');
+    },
+    close(id) {
+        this.get(id)?.classList.remove('active');
+        document.body.classList.remove('lock');
+    }
 };
 
 const Fullpopup = {
     get: (id) => document.querySelector(`[data-full="${id}"]`),
-    open(id) { this.get(id)?.classList.add('active'); },
-    close(id) { this.get(id)?.classList.remove('active'); }
+    open(id) { 
+        this.get(id)?.classList.add('active');
+        document.body.classList.add('lock');
+    },
+    close(id) { 
+        this.get(id)?.classList.remove('active');
+        document.body.classList.remove('lock');
+    }
 };
 
 // 드래그엔 드롭
