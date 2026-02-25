@@ -173,6 +173,39 @@
             </tbody>
         </table>
     </div>
+    <!-- 영업관리 -->
+    <div class="wrap">
+        <h3>영업관리</h3>
+        <table>
+            <caption>영업관리</caption>
+            <colgroup>
+                <col class="lv01">
+                <col class="lv02">
+                <col class="lv03">
+                <col class="lv04">
+                <col class="lv05">
+                <col class="lv06">
+                <col class="lv07">
+                <col class="lv08">
+                <col class="lv09">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">Depth 01</th>
+                    <th scope="col">Depth 02</th>
+                    <th scope="col">Depth 03</th>
+                    <th scope="col">Depth 04</th>
+                    <th scope="col">경로</th>
+                    <th scope="col">파일명</th>
+                    <th scope="col">타입</th>
+                    <th scope="col">상태</th>
+                    <th scope="col">Issue/Memo</th>
+                </tr>
+            </thead>
+            <tbody id='bs'>
+            </tbody>
+        </table>
+    </div>
     <!-- 관리시스템 -->
     <div class="wrap">
         <h3>관리시스템</h3>
@@ -648,6 +681,40 @@
             dep01: '', dep02: '', dep03: '소속선택', dep04: '', memo: '' },
     ]
 
+    // 영업관리
+    const data_bs = [
+        { path: '/bs', f_name: 'ATTE-002.html', type: 'popup', state:'완료',
+            dep01: '전체매뉴', dep02: '', dep03: '', dep04: '', memo: '' },
+        
+        // 영업준비보고 ---------------------------------------------------------------------------------------------------------
+        { path: '/bs', f_name: 'BUSI-001.html', type: 'page', state:'완료',
+            dep01: '영업준비보고(1~4호선)', dep02: '', dep03: '', dep04: '', memo: '' },
+        { path: '/bs', f_name: 'BUSI-001_1.html', type: 'popup', state:'완료',
+            dep01: '', dep02: '알림', dep03: '', dep04: '', memo: '영업준비보고 대상 아님' },
+        { path: '/bs', f_name: 'BUSI-001_2.html', type: 'popup', state:'완료',
+            dep01: '', dep02: '알림', dep03: '', dep04: '', memo: '영업준비보고 완료' },
+        { path: '/bs', f_name: 'BUSI-002.html', type: 'page', state:'완료',
+            dep01: '영업준비보고(5~8호선) 1단계', dep02: '', dep03: '', dep04: '', memo: '' },
+        { path: '/bs', f_name: 'BUSI-002_1.html', type: 'page', state:'완료',
+            dep01: '', dep02: '알림', dep03: '', dep04: '', memo: '1단계 영업준비보고 완료' },
+        { path: '/bs', f_name: 'BUSI-003.html', type: 'page', state:'완료',
+            dep01: '영업준비보고(5~8호선) 2단계', dep02: '', dep03: '', dep04: '', memo: '' },
+        
+        // 영업준비보고 이력조회 ---------------------------------------------------------------------------------------------------------
+        { path: '/bs', f_name: 'BUSI-004.html', type: 'page', state:'작업중',
+            dep01: '영업준비보고 이력조회(1~4호선)', dep02: '', dep03: '', dep04: '', memo: '' },
+        { path: '/bs', f_name: 'BUSI-004_1.html', type: 'page', state:'작업중',
+            dep01: '영업준비보고 이력조회(5~8호선)', dep02: '', dep03: '', dep04: '', memo: '' },
+        { path: '/bs', f_name: 'BUSI-005.html', type: 'page', state:'작업중',
+            dep01: '', dep02: '수정보고', dep03: '', dep04: '', memo: '' },
+
+        // 게시판 홍보물 조회 ---------------------------------------------------------------------------------------------------------
+        { path: '/bs', f_name: 'BUSI-006.html', type: 'page', state:'작업중',
+            dep01: '게시판 홍보물 조회', dep02: '', dep03: '', dep04: '', memo: '' },
+        { path: '/bs', f_name: 'BUSI-007.html', type: 'page', state:'작업중',
+            dep01: '', dep02: '상세보기', dep03: '', dep04: '', memo: '' },
+    ]
+
     // 관리시스템
     const data_admin = [
         { path: '/admin', f_name: 'ADLO-001.html', type: 'page', state:'완료',
@@ -670,8 +737,8 @@
             dep01: '', dep02: '사업소별 모니터링', dep03: '', dep04: '', memo: '' },
         { path: '/admin', f_name: 'ADDR-004.html', type: 'page', state:'완료',
             dep01: '', dep02: '기간별 접속이력조회', dep03: '', dep04: '', memo: '' },
-        { path: '/admin', f_name: 'ADDR-005.html', type: 'page', state:'완료',
-            dep01: '', dep02: '비상연락망 관리', dep03: '', dep04: '', memo: '' },
+        { path: '/admin', f_name: 'ADDR-005.html', type: 'page', state:'수정',
+            dep01: '', dep02: '비상연락망 관리', dep03: '', dep04: '', memo: '260225 텍스트 수정' },
 
         // 메시지관리------------------------------------------------------------------------------------------------------------
         { path: '/admin', f_name: 'ADME-001.html', type: 'page', state:'완료',
@@ -807,6 +874,21 @@
             <td>${el.dep04}</td>
             <td class='tac'>${el.path}</td>
             <td><a href='../pub/html/ts/${el.f_name}'> ${el.f_name}</a></td>
+            <td >${el.type}</td>
+            <td class='tac'>${el.state}</td>
+            <td>${el.memo}</td>
+        </tr>
+    `).join('');
+
+    // 영업관리
+    document.getElementById('bs').innerHTML = data_bs.map(el => `
+        <tr>
+            <td>${el.dep01}</td>
+            <td>${el.dep02}</td>
+            <td>${el.dep03}</td>
+            <td>${el.dep04}</td>
+            <td class='tac'>${el.path}</td>
+            <td><a href='../pub/html/bs/${el.f_name}'> ${el.f_name}</a></td>
             <td >${el.type}</td>
             <td class='tac'>${el.state}</td>
             <td>${el.memo}</td>
