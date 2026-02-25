@@ -1484,7 +1484,7 @@ body.bg {
 
 /* full popup */
 .full_popup_dim {
-    position: absolute;
+    position: fixed;
     inset: 0;
     z-index: 1000;
     display: none;
@@ -2201,9 +2201,13 @@ select {
     margin: 0 auto;
     display: block;
 }
-.comm_pdd_no.mt10 {
+.comm_pdd_no.mt10{
     margin-top: 10px;
 }
+.comm_pd20.mt10 {
+    margin-top: 10px;
+}
+
 
 
 .comm_check01 {

@@ -73,3 +73,92 @@ tbody tr:last-child td {
 .tac {
     text-align: center;
 }
+
+
+.area_ly {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.area_ly > .left_box {
+    width: 200px;
+    display: block;
+    position: fixed;
+}
+.area_ly > .left_box .box_ly {
+    width: 100%;
+    display: block;
+    padding: 0 10px;
+    margin-top: 40px;
+}
+.area_ly > .left_box .box_ly li {
+    width: 100%;
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #8597A880;
+}
+.area_ly > .left_box .box_ly li a {
+    width: 100%;
+    display: block;
+
+    font-size: 16rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #2C333B;
+
+    padding: 10px 20px;
+}
+.area_ly > .left_box .box_ly li::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: url('../pub/img/ico_arr_left03.svg')no-repeat center/100%;
+}
+
+
+.area_ly > .right_box {
+    width: 100%;
+    display: block;
+    margin-left: 200px;
+}
+
+.area_ly > .right_box .group {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border: 1px solid #8597A880;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+
+.area_ly > .right_box .group > .f_group01 button,
+.area_ly > .right_box .group > button {
+    margin-top: 10px;
+}
+
+.area_ly > .right_box .group h2 {
+    width: 100%;
+    display: block;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #2C333B;
+
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+
+    border-bottom: none;
+    background-image: radial-gradient(circle, red 1px, transparent 1px);
+    background-size: 6px 1px;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    padding-bottom: 10px;
+}
+

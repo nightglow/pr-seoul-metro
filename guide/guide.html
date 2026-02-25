@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>서울교통공사 인사관리</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="./guide.css">
+    <link rel="stylesheet" type="text/css" href="../pub/css/common.css">
+
+    <script src="../pub/js/jquery-3.5.1.min.js"></script>
+    <script src="../pub/js/swiper-bundle.min.js"></script>
+    <script src="../pub/js/common.js"></script>
+</head>
+<body>
+    <div class="area_ly">
+        <div class="left_box">
+            <ul class="box_ly">
+                <li><a href="#head">HEADER</a></li>
+                <li><a href="#button">BUTTON</a></li>
+                <li><a href="#tap">TAP</a></li>
+                <li><a href="#f_group">F_GROUP</a></li>
+                <li><a href="#radio">RADIO</a></li>
+                <li><a href="#checkbox">CHECKBOX</a></li>
+            </ul>
+        </div>
+        <div class="right_box">
+
+            <!-- button -->
+            <div id="button" class="mt40">
+                <div class="group">
+                    <h2>button type1</h2>
+
+                    <button type="button" class="btn_primary">
+                        <span class="txt">Primary</span>
+                    </button>
+                    <button type="button" class="btn_secondary">
+                        <span class="txt">Secondary</span>
+                    </button>
+                    <button type="button" class="btn_tertiary">
+                        <span class="txt">tertiary</span>
+                    </button>
+                </div>
+
+                <div class="group">
+                    <h2>button type2</h2>
+                    <div class="f_group01">
+                        <button type="button" class="btn_primary">
+                            <span class="txt">Primary</span>
+                        </button>
+                    </div>
+                    <div class="f_group01">
+                        <button type="button" class="btn_secondary">
+                            <span class="txt">Secondary</span>
+                        </button>
+                    </div>
+                    <div class="f_group01">
+                        <button type="button" class="btn_tertiary">
+                            <span class="txt">tertiary</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>button type3</h2>
+                    <button type="button" class="btn_approver active"><!-- active 활성화 -->
+                        <span class="txt01">결재선 초기화</span>
+                    </button>
+
+                    <button type="button" class="btn_approver01 active"><!-- active 활성화 -->
+                        <span class="txt01">요청</span>
+                    </button>
+
+                    <button type="button" class="btn_approver02" style="max-width: initial;"><!-- 스타일은 삭제 -->
+                        <span class="txt01">border #1F5EFF</span>
+                    </button>
+
+                    <button type="button" class="btn_approver03">
+                        <span class="txt01">border #162C8F</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- tap -->
+            <div id="tap" class="mt40">
+                <div class="group">
+                    <h2>tap</h2>
+                    <div class="tab_wrap01">
+                        <div class="swiper tab_swiper01">
+                            <ul class="swiper-wrapper tab_nav">
+                                <li class="swiper-slide"><a href="#tab1" class="act"><span class="tit01">스트레스</span></a></li>
+                                <li class="swiper-slide"><a href="#tab2"><span class="tit01">외상 후 스트레스 장애</span></a></li>
+                                <li class="swiper-slide"><a href="#tab3"><span class="tit01">우울증상</span></a></li>
+                                <li class="swiper-slide"><a href="#tab4"><span class="tit01">공황장애</span></a></li>
+                                <li class="swiper-slide"><a href="#tab5"><span class="tit01">음주문제</span></a></li>
+                                <li class="swiper-slide"><a href="#tab6"><span class="tit01">수면문제</span></a></li>
+                                <li class="swiper-slide"><a href="#tab7"><span class="tit01">상태불안척도</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- f_group -->
+            <div id="f_group" class="mt40">
+                <div class="group">
+                    <h2>f_group01</h2>
+                    <div class="f_group01">
+                        <button type="button" class="btn_primary" disabled>
+                            <span class="txt">다음 검사하기</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group02</h2>
+                    <div class="f_group02">
+                        <label class="area_tit01">
+                            <div class="right_box02">
+                                <div class="common_inp03">
+                                    <input type="password" class="inp_pw" placeholder="기존 비밀번호를 입력하세요." name="0"/>
+                                    <button type="button" class="btn_pw">
+                                        <i class="blind">패스워드보기</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group03</h2>
+                    <div class="f_group03 active"><!-- active 시간표시 활성화 -->
+                        <div class="area_tit01">
+                            <div class="left_box03">
+                                <span class="txt01">코드입력</span>
+                                <!-- <span class="txt02">*</span> -->
+                            </div>
+                            <div class="right_box03">
+                                <div class="common_inp04">
+                                    <label class="blind">코드</label>
+                                    <input type="password" class="inp_pw" placeholder=" 코드를 입력하세요." name="0"/>
+                                    <button type="button" class="btn_secondary">
+                                        <span class="txt">재전송</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="time">02:32초 남았습니다.</span>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group04</h2>
+                    <div class="f_group04"><!-- 에러 발생시 class: error, 성공시 class : success 추가 -->
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">감독자/사번</span>
+                                <!-- <span class="txt02">*</span> -->
+                            </div>
+                            <div class="right_box02 mt10">
+                                <div class="input_box">
+                                    <input type="text" class="inp_name" placeholder="" value="김흥부" name="s_name">
+                                    <span class="div_bar">/</span>
+                                    <input type="text" class="inp_num" placeholder="" value="123459876" name="s_num">
+                                </div>
+                            </div>
+                        </label>
+                        <span class="f_message">메시지 표시 영역</span>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group05</h2>
+                    <div class="f_group05"><!-- error, sucess 클래스 추가-->
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">일수</span>
+                            </div>
+                            <div class="right_box02 mt12">
+                                <div class="common_inp06"><!-- active -->
+                                    <input type="text" class="inp_txt" name="0" value="200" />
+                                    <span class="ico_txt">일</span>
+                                </div>
+                            </div>
+                        </label>
+                        <span class="reply">택스트를 입력하세요.</span>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group06</h2>
+                    <div class="f_group06"><!-- error, sucess 클래스 추가-->
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">교육기간</span>
+                                <!-- <span class="txt02">*</span> -->   
+                            </div>
+                            <div class="right_box02 mt12">
+                                <div class="common_inp07">
+                                    <input type="text" class="inp_start" name="0" value="2026-01-01"
+                                        disabled />
+                                    <span class="inp_txt01">~</span>
+                                    <input type="text" class="inp_end" name="0" value="2026-01-01"
+                                        disabled />
+                                    <button type="button" class="btn_calendar">
+                                        <i class="blind">달력</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </label>
+                        <span class="reply">택스트를 입력하세요.</span>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group07</h2>
+                    <div class="f_group07"><!-- error, sucess 클래스 추가-->
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">첨부파일</span>
+                                <!-- <span class="txt02">*</span> -->
+                            </div>
+                            <div class="right_box02 mt12">
+                                <div class="common_inp08">
+                                    <input type="text" class="inp_file" name="0" placeholder="10MB이하 파일"
+                                        value="file_name.jpg, file_name_01.jpg" disabled />
+                                    <button type="button" class="btn_files">
+                                        <span class="txt01">파일찾기</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </label>
+                        <span class="reply">택스트를 입력하세요.</span>
+                        <div class="area_contens01">
+                            <ul>
+                                <li>
+                                    <div class="file_list">
+                                        <span class="txt01">file_name_name_name_name</span>
+                                        <button class="btn_close_file">
+                                            <span class="blind">닫기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="file_list">
+                                        <span class="txt01">file_name_name_name_name_name_name_name</span>
+                                        <button class="btn_close_file">
+                                            <span class="blind">닫기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group08</h2>
+                    <div class="f_group08"><!-- error, sucess 클래스 추가-->
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">사용일</span>
+                                <span class="txt02">*</span>
+                            </div>
+                            <div class="right_box02 mt12">
+                                <div class="common_inp09">
+                                    <input type="text" class="inp_start" name="0" value="2026-01-01"
+                                        disabled />
+                                    <button type="button" class="btn_calendar">
+                                        <i class="blind">달력</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </label>
+                        <span class="reply">택스트를 입력하세요.</span>
+                        <ul class="radio_group01 mt12">
+                            <li>
+                                <label class="rdo_item">
+                                    <input type="radio" name="period" checked="">
+                                    <span>오전</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="rdo_item">
+                                    <input type="radio" name="period" checked="">
+                                    <span>오후</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="rdo_item">
+                                    <input type="radio" name="period" checked="">
+                                    <span>오전반반</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="rdo_item">
+                                    <input type="radio" name="period" checked="">
+                                    <span>오후반반</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group09</h2>
+                    <div class="f_group09">
+                        <div class="item_rdo">
+                            <label class="rdo_select" for="rdo01_1">
+                                <input type="radio" name="rdo01" id="rdo01_1">
+                                <span class="ico_check"></span>
+                                <div class="box_info02">
+                                    <div class="area_tit02">
+                                        <span class="txt_01">김교통</span>
+                                    </div>
+                                    <div class="area_content02">
+                                        <span class="txt_02">영업본부 영업지원처</span>
+                                        <span class="line"><i class="blind">라인</i></span>
+                                        <span class="txt_03">차장</span>
+                                        <span class="line"><i class="blind">라인</i></span>
+                                        <span class="txt_03">20102939</span>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group10</h2>
+                    <div class="f_group10"><!-- error, sucess 클래스 추가-->
+                        <label class="area_tit01">
+                            <!-- <div class="left_box02">
+                                <span class="txt01">휴가기간</span>
+                                <span class="txt02">*</span>
+                            </div> -->
+                            <div class="right_box02">
+                                <div class="common_inp10">
+                                    <input type="text" class="inp_cal" name="0" value="2026-01-01" disabled />
+                                    <button type="button" class="btn_calendar">
+                                        <i class="blind">달력</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </label>
+                        <span class="reply">택스트를 입력하세요.</span>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group11</h2>
+                    <div class="f_group11 error"><!-- error, sucess 클래스 추가-->
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">시간</span>
+                                <span class="txt02">*</span>
+                            </div>
+                            <div class="right_box02 mt12">
+                                <div class="common_inp11">
+                                    <input type="text" class="inp_start" name="0" 
+                                        placeholder="00시 00분"  value="" disabled />
+                                    <button type="button" class="btn_arr_down">
+                                        <i class="blind">선택</i>
+                                    </button>
+                                    <input type="text" class="inp_end" name="0"
+                                        placeholder="00시 00분" value="" disabled />
+                                    <button type="button" class="btn_arr_down">
+                                        <i class="blind">선택</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </label>
+                        <span class="reply">택스트를 입력하세요.</span>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group12</h2>
+                    <div class="f_group12">
+                        <label class="cm_area">
+                            <input type="radio" checked="checked" name="r2" id="rad1_1">
+                            <span class="cm_mark cm_radio">
+                                <i class="blind">아이콘</i>
+                            </span>
+                            <div class="area_summation02">
+                                <table class="summation02">
+                                    <caption class="blind">지원근무일자</caption>
+                                    <colgroup>
+                                        <col style="width: 50%;">
+                                        <col style="width: 50%;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td><span class="txt01">지원근무일자</span></td>
+                                            <td><span class="txt02">2026-01-01</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="txt01">근무일정</span></td>
+                                            <td>
+                                                <span class="txt02">[공통]4조2교대</span>
+                                                <span class="txt02">(역무차량기지)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="txt01">일일일정</span></td>
+                                            <td><span class="txt02">2026-01-15</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="txt01">변경 후 지원근무일</span></td>
+                                            <td>
+                                                <span class="txt02">4조2교대</span>
+                                                <span class="txt02">(지원)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="txt01">지원근무유형</span></td>
+                                            <td>
+                                                <span class="txt03">휴무</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group13</h2>
+                    <div class="f_group13 error"><!-- error, sucess 클래스 추가-->
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">당직유형</span>
+                                <span class="txt02">*</span>
+                            </div>
+                            <div class="right_box02 mt12">
+                                <div class="common_inp12"><!-- active-->
+                                    <input type="text" class="inp_pw" placeholder="당직근무 유형을 선택하세요." name="0"
+                                        value="" />
+                                    <span class="ico_arr">
+                                        <i class="blind">선택표시</i>
+                                    </span>
+                                </div>
+                            </div>
+                        </label>
+                        <span class="reply">택스트를 입력하세요.</span>
+                        <label class="cm_area">
+                            <input type="checkbox" name="c1" id="ck1_1">
+                            <span class="cm_mark cm_check">
+                                <i class="blind">아이콘</i>
+                            </span>
+                            <span class="cm_label">당직취소</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group14</h2>
+                    <div class="f_group14"><!-- disabled --><!-- error, sucess 클래스 추가-->
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">변경사유</span>
+                                <span class="txt02">*</span>
+                            </div>
+                            <div class="right_box02 mt12">
+                                <div class="txta02">
+                                    <textarea name="" id="" placeholder="취소신청 사유를 입력하세요."></textarea>
+                                </div>
+                            </div>
+                        </label>
+                        <span class="reply">택스트를 입력하세요.</span>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group15</h2>
+                    <div class="f_group15 disabled"><!-- 비활성화 : disabled --><!-- error, sucess 클래스 추가-->
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">교육과정명</span>
+                                <!-- <span class="txt02">*</span> -->
+                            </div>
+                            <div class="right_box02 mt12">
+                                <div class="common_inp13">
+                                    <input type="text" class="inp_pw" placeholder="교육과정명을 입력하세요." 
+                                    value="소방안전(화재)교육" name="0" disabled/>
+                                </div>
+                            </div>
+                        </label>
+                        <span class="reply">택스트를 입력하세요.</span>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group16</h2>
+                    <div class="f_group16"><!-- error, sucess 클래스 추가-->
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">바지(허리)</span>
+                                <span class="txt02">*</span>
+                            </div>
+                            <div class="right_box02 mt12">
+                                <div class="common_inp14"><!-- active -->
+                                    <input type="text" class="inp_pw" placeholder="바지(허리)" name="0" value="" />
+                                    <span class="txt01">inch</span>
+                                    <span class="ico_arr">
+                                        <i class="blind">선택표시</i>
+                                    </span>
+                                </div>
+                            </div>
+                        </label>
+                        <span class="reply">택스트를 입력하세요.</span>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group17</h2>
+                    <div class="f_group17"><!-- error, sucess 클래스 추가-->
+                        <div class="area_tit01">
+                            <div class="common_inp15"><!-- active -->
+                                <label class="blind">제목</label>
+                                <input type="text" class="inp_pw" placeholder="제목을 입력해 주세요(30자 이내)" name="0"
+                                    value="" />
+                                <span class="ico_arr">
+                                    <i class="blind">선택표시</i>
+                                </span>
+                            </div>
+                        </div>
+                        <span class="reply">택스트를 입력하세요.</span>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group18</h2>
+                    <div class="f_group18"><!-- error, sucess 클래스 추가-->
+                        <div class="area_time01">
+                            <div class="common_tit01">
+                                <div class="left_box01">
+                                    <span class="txt01">시간</span>
+                                    <span class="txt02">*</span>
+                                </div>
+                            </div>
+                            <div class="common_inp16">
+                                <label class="blind">시작</label>
+                                <input type="text" class="inp_start" name="0" value="12:00" disabled/>
+                                <span class="line">~</span>
+                                <label class="blind">종료</label>
+                                <input type="text" class="inp_end" name="0" value="18:00" disabled/>
+                            </div>
+                        </div>
+                        <span class="reply">택스트를 입력하세요.</span>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group19</h2>
+                    <div class="f_group19">
+                        <select name="" id="">
+                            <option value="0">자녀선택</option>
+                        </select>
+                        <div class="common_inp17">
+                            <label class="blind">선택</label>
+                            <input type="text" class="inp_comm" name="0" value="" placeholder="자녀이름"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group20</h2>
+                    <div class="f_group20">
+                        <div class="common_inp18">
+                            <label class="blind">성</label>
+                            <input type="text" class="inp_comm" name="0" value="" placeholder="성"/>
+                            <label class="blind">이름</label>
+                            <input type="text" class="inp_comm" name="0" value="" placeholder="이름"/>
+                        </div>
+                        <span class="reply">택스트를 입력하세요.</span>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group21</h2>
+                    <div class="f_group21"><!-- error, sucess 클래스 추가-->
+                        <label class="area_tit01">
+                            <div class="left_box02">
+                                <span class="txt01">주민등록번호</span>
+                                <span class="txt02">*</span>
+                            </div>
+                            <div class="right_box02 mt12">
+                                <div class="common_inp19">
+                                    <input type="text" class="inp_date" name="0" value="" placeholder="YYYYMMDD"/>
+                                    <span class="inp_txt01">-</span>
+                                    <input type="password" class="inp_num" name="0" value="" maxlength="1"/>
+                                    <span class="inp_txt02">******</span>
+                                </div>
+                            </div>
+                        </label>
+                        <span class="reply">택스트를 입력하세요.</span>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group22</h2>
+                    <div class="f_group22"><!-- error, sucess 클래스 추가-->
+                        <label class="cm_area">
+                            <input type="checkbox" name="c1" id="ck1_1">
+                            <span class="cm_mark cm_check">
+                                <i class="blind">아이콘</i>
+                            </span>
+                            <span class="cm_label">2025 연말정산반영</span>
+                        </label>
+                        <span class="reply">택스트를 입력하세요.</span>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group23</h2>
+                    <div class="f_group23">
+                        <label class="cm_area01">
+                            <label class="blind">년월일</label>
+                            <input type="checkbox" name="c1" id="ck1_1">
+                            <span class="cm_mark01 cm_check">
+                                <i class="blind">아이콘</i>
+                            </span>
+                        </label>
+                        <div class="common_inp20">
+                            <input type="text" class="inp_day" name="0" value="" placeholder="YYYY-MM-DD" disabled/>
+                            <button type="button" class="btn_calendar">
+                                <i class="blind">달력</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>f_group24</h2>
+                    <div class="f_group24">
+                        <select name="" class="btn_year">
+                            <option value="" selected>년</option>
+                            <option value="">2024</option>
+                            <option value="">2025</option>
+                            <option value="">2026</option>
+                        </select>
+                        <select name="" class="btn_month">
+                            <option value="" selected>월</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- header -->
+            <div id="head">
+                <div class="group">
+                    <h2>header</h2>
+                    <div class="h_wrap">
+                        <span class="title">타이틀</span>
+                        <ul class="gnb">
+                            <li>
+                                <ul class="gnb_nav">
+                                    <li>
+                                        <button type="button" class="btn_back">
+                                            <i class="blind">뒤로</i>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn_home">
+                                            <i class="blind">홈</i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="gnb_set">
+                                    <li>
+                                        <label class="btn_fav">
+                                            <input type="checkbox" checked name="ck1" id="ck1_f1">
+                                            <span class="cm_fav cm_check">
+                                                <i class="blind">즐겨찾기</i>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn_setting">
+                                            <i class="blind">설정</i>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn_hamburger">
+                                            <i class="blind">전체메뉴</i>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn_close">
+                                            <i class="blind">닫기</i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- radio -->
+            <div id="radio">
+                <div class="group">
+                    <h2>radio type1</h2>
+                    <fieldset class="tab-group radio" role="radiogroup">
+                        <legend class="blind">답변 선택</legend>
+                        <label class="tab-item">
+                            <input type="radio" name="q01" value="answer1">
+                            <span class="tab-btn">전혀 없다</span>
+                        </label>
+                        <label class="tab-item">
+                            <input type="radio" name="q01" value="answer2">
+                            <span class="tab-btn">드물게 있다</span>
+                        </label>
+                        <label class="tab-item">
+                            <input type="radio" name="q01" value="answer3" checked>
+                            <span class="tab-btn">가끔 있다</span>
+                        </label>
+                        <label class="tab-item">
+                            <input type="radio" name="q01" value="answer4">
+                            <span class="tab-btn">자주 있다</span>
+                        </label>
+                        <label class="tab-item">
+                            <input type="radio" name="q01" value="answer5">
+                            <span class="tab-btn">많이 있다</span>
+                        </label>
+                    </fieldset>
+                </div>
+
+                <div class="group">
+                    <h2>radio type2</h2>
+                    <label class="cm_area">
+                        <input type="radio" checked="checked" name="r2" id="rad1_2">
+                        <span class="cm_mark cm_radio">
+                            <i class="blind">아이콘</i>
+                        </span>
+                        <span class="cm_label">라벨입니다</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- checkbox -->
+            <div id="checkbox" class="mt40">
+                <div class="group">
+                    <h2>checkbox type1</h2>
+                    <label class="cm_area01">
+                        <input type="checkbox" name="c1" id="ck1_1">
+                        <span class="cm_mark01 cm_check">
+                            <i class="blind">아이콘</i>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

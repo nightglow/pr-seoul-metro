@@ -2021,7 +2021,8 @@
 .f_group13 .cm_area {
     width: 100%;
     margin-top: 10px;
-    margin-left: 16px;
+    /* margin-left: 16px; */
+    padding-left: 16px;
 }
 .f_group13 .cm_area .cm_label {
     width: 100%;
