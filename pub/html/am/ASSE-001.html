@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>서울교통공사</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="header"></div>
+
+        <div class="contents">
+
+            <div class="comm_b80">
+
+                <div class="area_common01">
+                    <ul class="common_content01">
+                        <!-- 사업영역 -->
+                        <li>
+                            <div class="common_tit01">
+                                <div class="left_box01">
+                                    <span class="txt01">사업영역</span>
+                                    <!-- <span class="txt02">*</span> -->
+                                </div>
+                            </div>
+                            <fieldset class="tab-group radio" role="radiogroup">
+                                <legend class="blind">상태</legend>
+                                <label class="tab-item">
+                                    <input type="radio" name="q01" value="answer1" checked>
+                                    <span class="tab-btn">1000</span>
+                                </label>
+                                <label class="tab-item">
+                                    <input type="radio" name="q01" value="answer2">
+                                    <span class="tab-btn">9000</span>
+                                </label>
+                            </fieldset>
+                        </li>
+                        <!-- 플랜트 -->
+                        <li>
+                            <div class="a_group01"><!-- error, sucess 클래스 추가-->
+                                <label class="area_tit01">
+                                    <div class="left_box">
+                                        <span class="txt01">플랜트</span>
+                                        <!-- <span class="txt02">*</span> -->
+                                    </div>
+                                    <div class="right_box mt6">
+                                        <div class="com_inp01">
+                                            <input type="text" class="inp_comm" placeholder="플랜트를 선택하세요" name="0"
+                                                value="" disabled/>
+                                            <span class="ico_arr">
+                                                <i class="blind">선택표시</i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <span class="reply">택스트를 입력하세요.</span>
+                            </div>
+                        </li>
+                        <!-- 예산관리센터 -->
+                        <li>
+                            <div class="a_group01"><!-- error, sucess 클래스 추가-->
+                                <label class="area_tit01">
+                                    <div class="left_box">
+                                        <span class="txt01">예산관리센터</span>
+                                    </div>
+                                    <div class="right_box mt6">
+                                        <div class="com_inp01">
+                                            <input type="text" class="inp_comm" placeholder="예산관리센터를 선택하세요" name="0"
+                                                value="" disabled/>
+                                            <span class="ico_arr">
+                                                <i class="blind">선택표시</i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <span class="reply">택스트를 입력하세요.</span>
+                            </div>
+                        </li>
+                        <!-- 코스트센터 -->
+                        <li>
+                            <div class="a_group01"><!-- error, sucess 클래스 추가-->
+                                <label class="area_tit01">
+                                    <div class="left_box">
+                                        <span class="txt01">코스트센터</span>
+                                    </div>
+                                    <div class="right_box mt6">
+                                        <div class="com_inp02"><!-- 클래스변경 -->
+                                            <input type="text" class="inp_comm" placeholder="코스트센터를 검색하세요" name="0"
+                                                value="" disabled />
+                                            <span class="ico_arr">
+                                                <i class="blind">선택표시</i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <span class="reply">택스트를 입력하세요.</span>
+                            </div>
+                        </li>
+                        <!-- 자산클래스 -->
+                        <li>
+                            <div class="a_group01"><!-- error, sucess 클래스 추가-->
+                                <label class="area_tit01">
+                                    <div class="left_box">
+                                        <span class="txt01">자산클래스</span>
+                                        <span class="txt02">*</span>
+                                    </div>
+                                    <div class="right_box mt6">
+                                        <div class="com_inp01">
+                                            <input type="text" class="inp_comm" placeholder="기계장치" name="0"
+                                                value="" disabled/>
+                                            <span class="ico_arr">
+                                                <i class="blind">선택표시</i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <span class="reply">택스트를 입력하세요.</span>
+                            </div>
+                        </li>
+                        <!-- 자산번호 -->
+                        <li>
+                            <div class="a_group01"><!-- error, sucess 클래스 추가-->
+                                <label class="area_tit01">
+                                    <div class="left_box">
+                                        <span class="txt01">자산 번호</span>
+                                    </div>
+                                    <div class="right_box mt6">
+                                        <div class="com_inp03"><!-- 클래스 변경 -->
+                                            <input type="text" class="inp_comm" placeholder="자산번호 10자리를 입력하세요." name="0"
+                                                value="" disabled />
+                                        </div>
+                                    </div>
+                                </label>
+                                <span class="reply">택스트를 입력하세요.</span>
+                            </div>
+                        </li>
+                        <!-- 자산하위번호 -->
+                        <li>
+                            <div class="a_group01"><!-- error, sucess 클래스 추가-->
+                                <label class="area_tit01">
+                                    <div class="left_box">
+                                        <span class="txt01">자산 하위 번호</span>
+                                    </div>
+                                    <div class="right_box mt6">
+                                        <div class="com_inp03"><!-- 클래스 변경 -->
+                                            <input type="text" class="inp_comm" placeholder="자산마스터 하위번호를 입력하세요." name="0"
+                                                value="" disabled />
+                                        </div>
+                                    </div>
+                                </label>
+                                <span class="reply">택스트를 입력하세요.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 자산내역 -->
+                <div class="area_common01 mt12">
+                    <ul class="common_content01">
+                        <li>
+                            <div class="common_tit01">
+                                <div class="left_box01">
+                                    <span class="txt01">자산내역</span>
+                                </div>
+                            </div>
+                            <div class="txta01">
+                                <textarea name="" id="" placeholder="자산 내역을 입력하세요."></textarea>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 버튼 -->
+                <div class="btn_group_center">
+                    <button type="button" class="btn_quaternary">
+                        <span class="txt01">QR로 자산 조회</span>
+                    </button>
+                    <button type="button" class="btn_secondary">
+                        <span class="txt">조회</span>
+                    </button>
+                </div>
+
+                <!-- 리스트 -->
+                <div class="board_header">
+                    <span class="txt01">조회결과</span>
+                    <span class="txt02">총<span class="txt03">32</span>건</span>
+                </div>
+                <div class="board_list">
+                    <div class="acquisition_tit mt10">
+                        <span class="acq_item01">취득자산</span>
+                        <span class="acq_item02">취득전자산</span>
+                        <span class="acq_item03">비활성자산</span>
+                        <span class="acq_item04">보류자산</span>
+                    </div>
+
+                    <ul class="board_box01 mt10">
+                        <li>
+                            <div class="area_acquisition">
+                                <div class="left_box">
+                                    <span class="acq_item01">131300000001-0</span>
+                                </div>
+                                <div class="right_box">
+                                    <span class="txt01">
+                                        드릴링머시인, 직립 드릴링머시인, 직립 드릴링머시인, 직립
+                                    </span>
+                                    <span class="ico">
+                                        <i class="blind">이동</i>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="area_acquisition">
+                                <div class="left_box">
+                                    <span class="acq_item02">131300000001-0</span>
+                                </div>
+                                <div class="right_box">
+                                    <span class="txt01">시험기, 제동</span>
+                                    <span class="ico">
+                                        <i class="blind">이동</i>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="area_acquisition">
+                                <div class="left_box">
+                                    <span class="acq_item03">131300000001-0</span>
+                                </div>
+                                <div class="right_box">
+                                    <span class="txt01">드릴링머시인, 직립 드릴링머시인, 직립 드릴링머시인, 직립</span>
+                                    <span class="ico">
+                                        <i class="blind">이동</i>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="area_acquisition">
+                                <div class="left_box">
+                                    <span class="acq_item04">131300000001-0</span>
+                                </div>
+                                <div class="right_box">
+                                    <span class="txt01">정반, 보통</span>
+                                    <span class="ico">
+                                        <i class="blind">이동</i>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn_all mt20">
+                        <span class="txt01">전체보기</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- <div class="footer">
+            <div class="area_footer04">
+                <div class="f_group01">
+                    <button type="button" class="btn_primary">
+                        <span class="txt">휴가신청</span>
+                    </button>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <button class="btn_top">
+        <i class="blind">위로이동</i>
+    </button>
+    
+</body>
+
+</html>

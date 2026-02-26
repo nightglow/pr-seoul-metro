@@ -15,6 +15,8 @@
 @import url(ts.css);
 /* 영업관리 */
 @import url(bs.css);
+/* 자산관리 */
+@import url(am.css);
 
 
 
@@ -86,6 +88,23 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 .btn_tertiary:hover > .txt {color: #2C333B;}
 .btn_tertiary:disabled {background-color: #E6EAED;}
 .btn_tertiary:disabled > .txt {color: #383C4C80;}
+
+.btn_quaternary {
+    width: 100%;
+    height: 48px;
+    display: flex;align-items: center;justify-content: center;
+    background-color: #ffffff;border-radius: 10px;
+    border: 1px solid #1F5EFF;
+}
+.btn_quaternary > .txt {width: 100%;display: block;font-size: 17rem;font-weight: 600;color: #2C333B;line-height: 1.4;}
+.btn_quaternary:hover {background-color: #f9f9f9;}
+.btn_quaternary:hover > .txt {color: #2C333B;}
+.btn_quaternary:disabled {background-color: #E6EAED;}
+.btn_quaternary:disabled > .txt {color: #383C4C80;}
+
+
+
+
 
 .btn_lineblue {
     display: inline-flex;
@@ -263,6 +282,7 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 .f_group01 .btn_primary {border-radius: 0;}
 .f_group01 .btn_secondary {border-radius: 0;}
 .f_group01 .btn_tertiary {border-radius: 0;}
+.f_group01 .btn_quaternary {border-radius: 0;}
 
 
 
@@ -2188,6 +2208,32 @@ select {
 }
 
 
+
+/*  */
+.btn_all {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #B5B5B5;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.btn_all .txt01 {
+    width: max-content;
+    display: block;
+    padding: 6px 0;
+    
+    font-size: 15rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #2C333B;
+    position: relative;
+}
+
+
 .comm_pd20 {
     width: calc(100% - 40px);
     margin: 0 auto;
@@ -2215,6 +2261,15 @@ select {
 }
 .comm_pd20.mt20 {
     margin-top: 20px;
+}
+
+.comm_b80 {
+    width: calc(100% - 40px);
+    min-height: 100%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 80px;
 }
 
 
@@ -2272,6 +2327,56 @@ select {
     max-width: 320px;
     margin: 0 auto;
 }
+
+
+.board_header {
+    width:  100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #73757E;
+}
+.board_header .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 18rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #070F16;
+}
+.board_header .txt02 {
+    width: max-content;
+    display: inline-block;
+    
+    font-size: 15rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #2C333B;
+    flex-shrink: 0;
+}
+.board_header .txt03 {
+    width: max-content;
+    display: inline-block;
+    
+    font-size: 15rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #1F5EFF;
+    flex-shrink: 0;
+    padding-left: 4px;
+}
+
+
+.board_list {
+    width: 100%;
+    display: block;
+}
+
+
 
 
 @media (min-width: 749px) {

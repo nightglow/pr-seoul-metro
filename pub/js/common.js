@@ -20,11 +20,14 @@ $(function () {
     TabManager.init();
 
     // 큰글씨
-    document.querySelector('.btn_top').addEventListener('click', function() {
-        const html = document.documentElement;
-        const current = html.style.fontSize;
-        html.style.fontSize = current === '6.875%' ? '6.25%' : '6.875%';
-    });
+    const btnTop = document.querySelector('.btn_top');
+    if( btnTop) {
+        btnTop.addEventListener('click', function() {
+            const html = document.documentElement;
+            const current = html.style.fontSize;
+            html.style.fontSize = current === '6.875%' ? '6.25%' : '6.875%';
+        });
+    };
 
 });
 
