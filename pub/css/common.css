@@ -2209,8 +2209,12 @@ select {
 .comm_pdd_no.mt10{
     margin-top: 10px;
 }
+
 .comm_pd20.mt10 {
     margin-top: 10px;
+}
+.comm_pd20.mt20 {
+    margin-top: 20px;
 }
 
 
@@ -2264,8 +2268,19 @@ select {
 
 
 
+.set_alarm > .btn_more {
+    max-width: 320px;
+    margin: 0 auto;
+}
 
 
+@media (min-width: 749px) {
+
+    .set_alarm > .btn_more {
+        max-width: 656px;
+    }
+
+}
 
 
 
