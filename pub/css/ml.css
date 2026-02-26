@@ -234,6 +234,7 @@
     width: 100%;
     display: block;
 }
+
 .banner-swiper {
     width: 100%;
     /* width: calc(100% - 40px); */
@@ -2263,12 +2264,12 @@
 
 .area_main > .banner {
     width: 100%;
-    display: block;
+    display: none;
 }
 
-
-
-
+.area_main > .banner.active {
+    display: block;
+}
 
 
 
@@ -2302,6 +2303,7 @@
 .message01.type16 {background-color: #7EE3E3;}
 .message01.type17 {background-color: #CBF8A9;}
 .message01.type18 {background-color: #BDC6FF;}
+.message01.type19 {background-color: #9CCFFF;}
 
 .message01 .msg_tit01 {
     width: 100%;
@@ -2343,6 +2345,57 @@
 
 
 
+
+/* banner type2 */
+.message02 {
+    width: 100%;
+    height: 90px;
+    display: flex;
+
+    border-radius: 20px;
+    padding-left: 25px;
+    position: relative;
+    flex-shrink: 0;
+}
+.message02.type01 {background-color: #9CCFFF;}
+
+.message02 .msg_tit01 {
+    width: 100%;
+    max-width: 223px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0;
+
+    position: absolute;
+    top:50%;
+    left: 25px;
+    transform: translateY(-50%);
+}
+.message02 .msg_tit01 .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1;
+    color: #191B1D;
+}
+.message02 .msg_tit01 .txt02 {
+    width: 100%;
+    display: block;
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1;
+    color: #4D4D4D;
+}
+.message02 .msg_img {
+    display: block;
+    margin-left: auto;
+    /* margin-right: 14px; */
+    margin-right: 0px;
+}
+/* //banner type2 */
 
 
 
@@ -2433,11 +2486,29 @@
         margin-right: 14px;
         margin-top: auto;
     }
-    
 
-    /* .setting {
-        padding-bottom: 100px;
-    } */
+
+    .message02 {
+        height: 180px;
+    }
+
+    .message02 .msg_tit01 {
+        position: absolute;
+        top: 30px;
+        left: 25px;
+        transform: initial;
+    }
+    .message02 .msg_img {
+        display: block;
+        width: 120px;
+        height: 120px;
+        margin-left: auto;
+        margin-right: 14px;
+        margin-top: auto;
+    }
+    .message02 .msg_tit01 .txt02 {
+        line-height: 1.4;
+    }
 
     .card.mt110 {
         margin-top: 50px;
