@@ -1178,7 +1178,6 @@
     justify-content: center;
     flex-direction: column;
 }
-
 .tab_content .left_box {
     width: 100%;
     display: block;
@@ -2289,7 +2288,7 @@
 .message01.type02 {background-color: #BDC6FF;}
 .message01.type03 {background-color: #9CCFFF;}
 .message01.type04 {background-color: #F9F3AF;}
-.message01.type05 {background-color: #9CCFFF ;}
+.message01.type05 {background-color: #9CCFFF;}
 .message01.type06 {background-color: #F9F3AF;}
 .message01.type07 {background-color: #CBF8A9;}
 .message01.type08 {background-color: #F9F3AF;}
