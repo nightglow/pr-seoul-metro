@@ -1311,6 +1311,13 @@ footer ul li ~ li::before {
     display: flex;
     align-items: center;
 }
+.popup_wrap .popup_cont_wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+}
 .popup_wrap .right_box {
     width: 100%;
     

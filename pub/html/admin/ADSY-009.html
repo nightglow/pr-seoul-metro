@@ -18,7 +18,7 @@
         <span class="txt01">권한 사용자 목록</span>
     </button>
 
-    <div class="popup_dim" data-popup="popup01">
+    <div class="popup_dim active" data-popup="popup01">
         <div class="popup_wrap popup_md">
             <div class="left_box">
                 <div class="area_tit01">
@@ -30,135 +30,139 @@
                     </button>
                 </div>
             </div>
-            <div class="right_box">
-                <div class="popup_cont">
-                    <div class="tbl_box01 mt10">
-                        <table class="tbl_col">
-                            <colgroup>
-                                <col width="99px">
-                                <col width="*">
-                                <col width="99px">
-                                <col width="*">
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <th class="col_th01" scope="row">
-                                        <div class="tit_box01">
-                                            <span class="tit01">권한 부서명</span>
-                                        </div>
-                                    </th>
-                                    <td class="col_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">시스템관리자</span>
-                                        </div>
-                                    </td>
-                                    <th class="col_th01" scope="row">
-                                        <div class="tit_box01">
-                                            <span class="tit01">권한구분</span>
-                                        </div>
-                                    </th>
-                                    <td class="col_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">관리자 권한</span>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="tbl_box01 mt30">
-                        <table class="tbl_row">
-                            <colgroup>
-                                <col width="*">
-                                <col width="200px">
-                                <col width="200px">
-                                <col width="200px">
-                                <col width="200px">
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th class="row_th01" scope="col">
-                                        <div class="tit_box01">
-                                            <label class="chk_item">
-                                                <input type="checkbox" name="check">
-                                                <span class="chk_box" aria-hidden="true"></span>
-                                            </label>
-                                        </div>
-                                    </th>
-                                    <th class="row_th01" scope="col">
-                                        <div class="tit_box01">
-                                            <span class="tit01">사번</span>
-                                        </div>
-                                    </th>
-                                    <th class="row_th01" scope="col">
-                                        <div class="tit_box01">
-                                            <span class="tit01">성명</span>
-                                        </div>
-                                    </th>
-                                    <th class="row_th01" scope="col">
-                                        <div class="tit_box01">
-                                            <span class="tit01">직급</span>
-                                        </div>
-                                    </th>
-                                    <th class="row_th01" scope="col">
-                                        <div class="tit_box01">
-                                            <span class="tit01">직위</span>
-                                        </div>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <label class="chk_item">
-                                                <input type="checkbox" name="check">
-                                                <span class="chk_box" aria-hidden="true"></span>
-                                            </label>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">9898764</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">김교통</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">5급</span>
-                                        </div>
-                                    </td>
-                                    <td class="row_td01">
-                                        <div class="txt_box01">
-                                            <span class="txt01">과장</span>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="btn_box_left01 mt10">
-                        <button type="button" class="btn_ss btn_tertiary">
-                            <span class="txt01">삭제</span>
-                        </button>
+            <!-- 260226 팝업 구조 수정 -->
+            <div class="popup_cont_wrap">
+                <div class="right_box">
+                    <div class="popup_cont">
+                        <div class="tbl_box01 mt10">
+                            <table class="tbl_col">
+                                <colgroup>
+                                    <col width="99px">
+                                    <col width="*">
+                                    <col width="99px">
+                                    <col width="*">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th class="col_th01" scope="row">
+                                            <div class="tit_box01">
+                                                <span class="tit01">권한 부서명</span>
+                                            </div>
+                                        </th>
+                                        <td class="col_td01">
+                                            <div class="txt_box01">
+                                                <span class="txt01">시스템관리자</span>
+                                            </div>
+                                        </td>
+                                        <th class="col_th01" scope="row">
+                                            <div class="tit_box01">
+                                                <span class="tit01">권한구분</span>
+                                            </div>
+                                        </th>
+                                        <td class="col_td01">
+                                            <div class="txt_box01">
+                                                <span class="txt01">관리자 권한</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tbl_box01 mt30">
+                            <table class="tbl_row">
+                                <colgroup>
+                                    <col width="*">
+                                    <col width="200px">
+                                    <col width="200px">
+                                    <col width="200px">
+                                    <col width="200px">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="row_th01" scope="col">
+                                            <div class="tit_box01">
+                                                <label class="chk_item">
+                                                    <input type="checkbox" name="check">
+                                                    <span class="chk_box" aria-hidden="true"></span>
+                                                </label>
+                                            </div>
+                                        </th>
+                                        <th class="row_th01" scope="col">
+                                            <div class="tit_box01">
+                                                <span class="tit01">사번</span>
+                                            </div>
+                                        </th>
+                                        <th class="row_th01" scope="col">
+                                            <div class="tit_box01">
+                                                <span class="tit01">성명</span>
+                                            </div>
+                                        </th>
+                                        <th class="row_th01" scope="col">
+                                            <div class="tit_box01">
+                                                <span class="tit01">직급</span>
+                                            </div>
+                                        </th>
+                                        <th class="row_th01" scope="col">
+                                            <div class="tit_box01">
+                                                <span class="tit01">직위</span>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="row_td01">
+                                            <div class="txt_box01">
+                                                <label class="chk_item">
+                                                    <input type="checkbox" name="check">
+                                                    <span class="chk_box" aria-hidden="true"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="row_td01">
+                                            <div class="txt_box01">
+                                                <span class="txt01">9898764</span>
+                                            </div>
+                                        </td>
+                                        <td class="row_td01">
+                                            <div class="txt_box01">
+                                                <span class="txt01">김교통</span>
+                                            </div>
+                                        </td>
+                                        <td class="row_td01">
+                                            <div class="txt_box01">
+                                                <span class="txt01">5급</span>
+                                            </div>
+                                        </td>
+                                        <td class="row_td01">
+                                            <div class="txt_box01">
+                                                <span class="txt01">과장</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="btn_box_left01 mt10">
+                            <button type="button" class="btn_ss btn_tertiary">
+                                <span class="txt01">삭제</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
+                <div class="popup_btm_center01">
+                    <button type="button" class="btn_lg btn_tertiary" onclick="Popup.close('popup01')">
+                        <span class="txt01">닫기</span>
+                    </button>
+                    <button type="button" class="btn_lg btn_secondary">
+                        <span class="txt01">사용자 추가</span>
+                    </button>
+                    <button type="button" class="btn_lg btn_primary">
+                        <span class="txt01">등록</span>
+                    </button>
+                </div>
             </div>
-            <div class="popup_btm_center01">
-                <button type="button" class="btn_lg btn_tertiary" onclick="Popup.close('popup01')">
-                    <span class="txt01">닫기</span>
-                </button>
-                <button type="button" class="btn_lg btn_secondary">
-                    <span class="txt01">사용자 추가</span>
-                </button>
-                <button type="button" class="btn_lg btn_primary">
-                    <span class="txt01">등록</span>
-                </button>
-            </div>
+            <!-- //260226 팝업 구조 수정 -->
         </div>
     </div>
 

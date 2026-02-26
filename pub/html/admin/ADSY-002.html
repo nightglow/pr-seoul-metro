@@ -18,7 +18,7 @@
         <span class="txt01">그룹코드 등록</span>
     </button>
 
-    <div class="popup_dim" data-popup="popup01">
+    <div class="popup_dim active" data-popup="popup01">
         <div class="popup_wrap popup_md">
             <div class="left_box">
                 <div class="area_tit01">
@@ -30,77 +30,81 @@
                     </button>
                 </div>
             </div>
-            <div class="right_box">
-                <div class="popup_cont">
-                    <div class="tbl_box01 mt10">
-                        <table class="tbl_col">
-                            <colgroup>
-                                <col width="99px">
-                                <col width="*">
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <th class="col_th01" scope="row">
-                                        <div class="tit_box01">
-                                            <span class="tit01">그룹코드</span>
-                                        </div>
-                                    </th>
-                                    <td class="col_td01">
-                                        <input type="text" class="inp_txt01" name="inp_code" id="inp_code" value="" placeholder="">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th class="col_th01" scope="row">
-                                        <div class="tit_box01">
-                                            <span class="tit01">그룹코드명</span>
-                                        </div>
-                                    </th>
-                                    <td class="col_td01">
-                                        <input type="text" class="inp_txt01" name="inp_codename" id="inp_codename" value="" placeholder="">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th class="col_th01" scope="row">
-                                        <div class="tit_box01">
-                                            <span class="tit01">설명</span>
-                                        </div>
-                                    </th>
-                                    <td class="col_td01">
-                                        <textarea class="tarea01" name="cont_tarea" id="tarea01" placeholder=""></textarea>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th class="col_th01" scope="row">
-                                        <div class="tit_box01">
-                                            <span class="tit01">사용여부</span>
-                                        </div>
-                                    </th>
-                                    <td class="col_td01">
-                                        <div class="rdo_group">
-                                            <label class="rdo_item">
-                                                <input type="radio" name="radio">
-                                                <span>사용</span>
-                                            </label>
-                                            <label class="rdo_item">
-                                                <input type="radio" name="radio">
-                                                <span>미사용</span>
-                                            </label>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+            <!-- 260226 팝업 구조 수정 -->
+            <div class="popup_cont_wrap">
+                <div class="right_box">
+                    <div class="popup_cont">
+                        <div class="tbl_box01 mt10">
+                            <table class="tbl_col">
+                                <colgroup>
+                                    <col width="99px">
+                                    <col width="*">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th class="col_th01" scope="row">
+                                            <div class="tit_box01">
+                                                <span class="tit01">그룹코드</span>
+                                            </div>
+                                        </th>
+                                        <td class="col_td01">
+                                            <input type="text" class="inp_txt01" name="inp_code" id="inp_code" value="" placeholder="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="col_th01" scope="row">
+                                            <div class="tit_box01">
+                                                <span class="tit01">그룹코드명</span>
+                                            </div>
+                                        </th>
+                                        <td class="col_td01">
+                                            <input type="text" class="inp_txt01" name="inp_codename" id="inp_codename" value="" placeholder="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="col_th01" scope="row">
+                                            <div class="tit_box01">
+                                                <span class="tit01">설명</span>
+                                            </div>
+                                        </th>
+                                        <td class="col_td01">
+                                            <textarea class="tarea01" name="cont_tarea" id="tarea01" placeholder=""></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="col_th01" scope="row">
+                                            <div class="tit_box01">
+                                                <span class="tit01">사용여부</span>
+                                            </div>
+                                        </th>
+                                        <td class="col_td01">
+                                            <div class="rdo_group">
+                                                <label class="rdo_item">
+                                                    <input type="radio" name="radio">
+                                                    <span>사용</span>
+                                                </label>
+                                                <label class="rdo_item">
+                                                    <input type="radio" name="radio">
+                                                    <span>미사용</span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
+                <div class="popup_btm_center01">
+                    <button type="button" class="btn_lg btn_tertiary" onclick="Popup.close('popup01')">
+                        <span class="txt01">닫기</span>
+                    </button>
+                    <button type="button" class="btn_lg btn_primary">
+                        <span class="txt01">등록</span>
+                    </button>
+                </div>
             </div>
-            <div class="popup_btm_center01">
-                <button type="button" class="btn_lg btn_tertiary" onclick="Popup.close('popup01')">
-                    <span class="txt01">닫기</span>
-                </button>
-                <button type="button" class="btn_lg btn_primary">
-                    <span class="txt01">등록</span>
-                </button>
-            </div>
+            <!-- //260226 팝업 구조 수정 -->
         </div>
     </div>
 
