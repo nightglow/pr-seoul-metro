@@ -206,6 +206,39 @@
             </tbody>
         </table>
     </div>
+    <!-- 자산관리 -->
+    <div class="wrap">
+        <h3>자산관리</h3>
+        <table>
+            <caption>자산관리</caption>
+            <colgroup>
+                <col class="lv01">
+                <col class="lv02">
+                <col class="lv03">
+                <col class="lv04">
+                <col class="lv05">
+                <col class="lv06">
+                <col class="lv07">
+                <col class="lv08">
+                <col class="lv09">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">Depth 01</th>
+                    <th scope="col">Depth 02</th>
+                    <th scope="col">Depth 03</th>
+                    <th scope="col">Depth 04</th>
+                    <th scope="col">경로</th>
+                    <th scope="col">파일명</th>
+                    <th scope="col">타입</th>
+                    <th scope="col">상태</th>
+                    <th scope="col">Issue/Memo</th>
+                </tr>
+            </thead>
+            <tbody id='am'>
+            </tbody>
+        </table>
+    </div>
     <!-- 관리시스템 -->
     <div class="wrap">
         <h3>관리시스템</h3>
@@ -715,6 +748,16 @@
             dep01: '', dep02: '상세보기', dep03: '', dep04: '', memo: '' },
     ]
 
+    // 자산관리
+    const data_am = [
+        { path: '/bs', f_name: 'ATTE-006.html', type: 'popup', state:'완료',
+            dep01: '전체매뉴', dep02: '', dep03: '', dep04: '', memo: '' },
+        
+        // 자산마스터 조회 ---------------------------------------------------------------------------------------------------------
+        { path: '/bs', f_name: 'ASSE-001.html', type: 'page', state:'진행중',
+            dep01: '자산관리', dep02: '자산마스터 조회', dep03: '', dep04: '', memo: '' },
+    ]
+
     // 관리시스템
     const data_admin = [
         { path: '/admin', f_name: 'ADLO-001.html', type: 'page', state:'완료',
@@ -889,6 +932,21 @@
             <td>${el.dep04}</td>
             <td class='tac'>${el.path}</td>
             <td><a href='../pub/html/bs/${el.f_name}'> ${el.f_name}</a></td>
+            <td >${el.type}</td>
+            <td class='tac'>${el.state}</td>
+            <td>${el.memo}</td>
+        </tr>
+    `).join('');
+
+    // 자산관리
+    document.getElementById('am').innerHTML = data_am.map(el => `
+        <tr>
+            <td>${el.dep01}</td>
+            <td>${el.dep02}</td>
+            <td>${el.dep03}</td>
+            <td>${el.dep04}</td>
+            <td class='tac'>${el.path}</td>
+            <td><a href='../pub/html/am/${el.f_name}'> ${el.f_name}</a></td>
             <td >${el.type}</td>
             <td class='tac'>${el.state}</td>
             <td>${el.memo}</td>
