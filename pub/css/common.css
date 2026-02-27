@@ -24,8 +24,6 @@
 html {
     height: 100%;
     font-size: 6.25%;
-    /* font-size: 6.875%; */
-    /* font-size: 9.375%; */
 }
 
 body {
@@ -1486,12 +1484,14 @@ body.bg {
     justify-content: flex-start;
 }
 .popup_wrap .left_box .area_tit01 .txt01 {
-    width: max-content;
+    width: 100%;
     display: block;
     font-size:  20rem;
     font-weight: 700;
     line-height: 1.4;
     color: #2C333B;
+
+    word-break: break-all;
 }
 .popup_wrap .left_box .area_content01 {
     width: max-content;
@@ -1756,6 +1756,16 @@ body.bg {
     padding: 10px 20px;
 }
 
+.area_footer_pop {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 0 8px;
+    padding-top: 16px;
+}
+
+
 /* list style */
 .dot_list01 {
     display: flex;
@@ -1835,6 +1845,72 @@ body.bg {
 .rdo_select:has(input:checked) {
     background-color: #EBF0F5;
 }
+
+
+.item_list {
+    width: 100%;
+    display: block;
+}
+
+.item_list01 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.item_list01 > li + li {
+    border-top: 1px solid #E6EAED;
+}
+.item_list01 > li:last-child {
+    border-bottom: 1px solid #E6EAED;
+}
+
+
+.item_rdo01 {
+    width: 100%;
+}
+.item_rdo01 > .rdo_select {
+    padding: 16px 12px 16px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    cursor: pointer;
+
+    position: relative;
+}
+.item_rdo01 > .rdo_select input {
+    position: absolute;
+    opacity: 0;
+}
+.item_rdo01 > .rdo_select .ico_check {
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    background: url(../img/ico_check_off.svg) no-repeat center/100%;
+}
+.item_rdo01 > .rdo_select input:checked + .ico_check {
+    background-image: url(../img/ico_check_on.svg);
+}
+.item_rdo01 > .rdo_select .txt01 {
+    color: rgba(2, 12, 21, 0.82);
+    font-size: 17rem;
+    font-weight: 400;
+    margin-right: 16px;
+}
+.item_rdo01 > .rdo_select:has(input:checked) {
+    background-color: #EBF0F5;
+}
+
+
+
+
+
+
 
 /* 바텀시트 트리리스트 */
 .tree_list_box {
@@ -2263,12 +2339,16 @@ select {
     margin-top: 20px;
 }
 
-.comm_b80 {
+.comm_80de.mt10{
+    margin-top: 10px;
+}
+
+
+.comm_80de {
     width: calc(100% - 40px);
     min-height: 100%;
     display: block;
     margin: 0 auto;
-    padding-top: 10px;
     padding-bottom: 80px;
 }
 

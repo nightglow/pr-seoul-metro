@@ -81,6 +81,8 @@
                 <li><a href="#f_group">F_GROUP</a></li>
                 <li><a href="#radio">RADIO</a></li>
                 <li><a href="#checkbox">CHECKBOX</a></li>
+                <li><a href="#inventory">INVENTORY</a></li>
+                <li><a href="#list">LIST</a></li>
             </ul>
         </div>
         <div class="right_box">
@@ -868,7 +870,8 @@
                 </div>
             </div>
 
-            <div class="list" class="mt40">
+            <!-- inventory -->
+            <div id="inventory" class="mt40">
                 <div class="group">
                     <h2>list type</h2>
                     <div class="caution02">
@@ -896,6 +899,68 @@
                             </li>
                         </ol>
                     </div>
+                </div>
+            </div>
+
+            <!-- 검색결과 -->
+            <div id="list" class="mt40">
+                <div class="group">
+                    <h2>list type : 검색</h2>
+                    <div class="pick_search01">
+                        <label class="blind">이름</label>
+                        <input type="text" class="inp_srch" placeholder="코스트 센터명을  입력하세요" />
+                        <button type="button" class="btn_secondary">
+                            <span class="txt">검색</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>list type : 검색결과 > 라디오 왼쪽</h2>
+                    <ul class="item_list01">
+                        <li>
+                            <div class="item_rdo">
+                                <label class="rdo_select" for="rdo01_1">
+                                    <input type="radio" name="rdo01" id="rdo01_1" checked>
+                                    <span class="ico_check"></span>
+                                    <span class="txt01">서울교통공사(0)</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_rdo">
+                                <label class="rdo_select" for="rdo01_2">
+                                    <input type="radio" name="rdo01" id="rdo01_2">
+                                    <span class="ico_check"></span>
+                                    <span class="txt01">홍보실(10005)</span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="group">
+                    <h2>list type : 검색결과 > 라디오 오른쪽 </h2>
+                    <ul class="item_list01">
+                        <li>
+                            <div class="item_rdo01"><!-- 클래스 다름 -->
+                                <label class="rdo_select" for="rdo02_1">
+                                    <input type="radio" name="rdo02" id="rdo02_1" checked>
+                                    <span class="ico_check"></span>
+                                    <span class="txt01">서울교통공사(0)</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_rdo01"><!-- 클래스 다름 -->
+                                <label class="rdo_select" for="rdo02_2">
+                                    <input type="radio" name="rdo02" id="rdo02_2">
+                                    <span class="ico_check"></span>
+                                    <span class="txt01">홍보실(10005)</span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
 

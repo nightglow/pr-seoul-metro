@@ -721,31 +721,31 @@
         
         // 영업준비보고 ---------------------------------------------------------------------------------------------------------
         { path: '/bs', f_name: 'BUSI-001.html', type: 'page', state:'완료',
-            dep01: '영업준비보고(1~4호선)', dep02: '', dep03: '', dep04: '', memo: '' },
+            dep01: '', dep02: '영업준비보고(1~4호선)', dep03: '', dep04: '', memo: '' },
         { path: '/bs', f_name: 'BUSI-001_1.html', type: 'popup', state:'완료',
-            dep01: '', dep02: '알림', dep03: '', dep04: '', memo: '영업준비보고 대상 아님' },
+            dep01: '', dep02: '', dep03: '알림', dep04: '', memo: '영업준비보고 대상 아님' },
         { path: '/bs', f_name: 'BUSI-001_2.html', type: 'popup', state:'완료',
-            dep01: '', dep02: '알림', dep03: '', dep04: '', memo: '영업준비보고 완료' },
+            dep01: '', dep02: '', dep03: '알림', dep04: '', memo: '영업준비보고 완료' },
         { path: '/bs', f_name: 'BUSI-002.html', type: 'page', state:'완료',
-            dep01: '영업준비보고(5~8호선) 1단계', dep02: '', dep03: '', dep04: '', memo: '' },
+            dep01: '', dep02: '영업준비보고(5~8호선) 1단계', dep03: '', dep04: '', memo: '' },
         { path: '/bs', f_name: 'BUSI-002_1.html', type: 'page', state:'완료',
-            dep01: '', dep02: '알림', dep03: '', dep04: '', memo: '1단계 영업준비보고 완료' },
+            dep01: '', dep02: '', dep03: '알림', dep04: '', memo: '1단계 영업준비보고 완료' },
         { path: '/bs', f_name: 'BUSI-003.html', type: 'page', state:'완료',
-            dep01: '영업준비보고(5~8호선) 2단계', dep02: '', dep03: '', dep04: '', memo: '' },
+            dep01: '', dep02: '영업준비보고(5~8호선) 2단계', dep03: '', dep04: '', memo: '' },
         
         // 영업준비보고 이력조회 ---------------------------------------------------------------------------------------------------------
         { path: '/bs', f_name: 'BUSI-004.html', type: 'page', state:'완료',
-            dep01: '영업준비보고 이력조회(1~4호선)', dep02: '', dep03: '', dep04: '', memo: '' },
+            dep01: '', dep02: '영업준비보고 이력조회(1~4호선)', dep03: '', dep04: '', memo: '' },
         { path: '/bs', f_name: 'BUSI-004_1.html', type: 'page', state:'완료',
-            dep01: '영업준비보고 이력조회(5~8호선)', dep02: '', dep03: '', dep04: '', memo: '' },
+            dep01: '', dep02: '영업준비보고 이력조회(5~8호선)', dep03: '', dep04: '', memo: '' },
         { path: '/bs', f_name: 'BUSI-005.html', type: 'page', state:'완료',
             dep01: '', dep02: '수정보고', dep03: '', dep04: '', memo: '' },
 
         // 게시판 홍보물 조회 ---------------------------------------------------------------------------------------------------------
         { path: '/bs', f_name: 'BUSI-006.html', type: 'page', state:'완료',
-            dep01: '게시판 홍보물 조회', dep02: '', dep03: '', dep04: '', memo: '' },
+            dep01: '', dep02: '게시판 홍보물 조회', dep03: '', dep04: '', memo: '' },
         { path: '/bs', f_name: 'BUSI-007.html', type: 'page', state:'완료',
-            dep01: '', dep02: '상세보기', dep03: '', dep04: '', memo: '' },
+            dep01: '', dep02: '', dep03: '상세보기', dep04: '', memo: '' },
     ]
 
     // 자산관리
@@ -754,8 +754,22 @@
             dep01: '전체매뉴', dep02: '', dep03: '', dep04: '', memo: '' },
         
         // 자산마스터 조회 ---------------------------------------------------------------------------------------------------------
-        { path: '/am', f_name: 'ASSE-001.html', type: 'page', state:'진행중',
-            dep01: '자산관리', dep02: '자산마스터 조회', dep03: '', dep04: '', memo: '' },
+        { path: '/am', f_name: 'ASSE-001.html', type: 'page', state:'완료',
+            dep01: '', dep02: '자산마스터 조회', dep03: '', dep04: '', memo: '' },
+        { path: '/am', f_name: 'ASSE-001_1.html', type: 'bottom sheet', state:'완료',
+            dep01: '', dep02: '', dep03: '알림', dep04: '', memo: '플랜트선택' },
+        { path: '/am', f_name: 'ASSE-001_2.html', type: 'bottom sheet', state:'완료',
+            dep01: '', dep02: '', dep03: '알림', dep04: '', memo: '예산관리선택' },
+        { path: '/am', f_name: 'ASSE-001_3.html', type: 'bottom sheet', state:'완료',
+            dep01: '', dep02: '', dep03: '알림', dep04: '', memo: '코스트 센터 선택' },
+        { path: '/am', f_name: 'ASSE-002.html', type: 'page', state:'완료',
+            dep01: '', dep02: '', dep03: '자산상세내역', dep04: '', memo: '' },
+        { path: '/am', f_name: 'ASSE-003.html', type: 'page', state:'완료',
+            dep01: '', dep02: '', dep03: 'QR코드 촬영', dep04: '', memo: '' },
+        { path: '/am', f_name: 'ASSE-004.html', type: 'popup', state:'완료',
+            dep01: '', dep02: '', dep03: 'QR코드 인식결과', dep04: '', memo: '' },
+        { path: '/am', f_name: 'ASSE-005.html', type: 'popup', state:'완료',
+            dep01: '', dep02: '', dep03: 'QR코드 인식 결과 에러', dep04: '', memo: '' },
     ]
 
     // 관리시스템

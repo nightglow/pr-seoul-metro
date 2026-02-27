@@ -372,6 +372,215 @@
     margin-left: auto;
 }
 
+
+.pick_search01 {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+
+    padding-bottom: 12px;
+    border-bottom: 1px solid #73757E;
+}
+
+.pick_search01 .inp_srch {
+    width: 100%;
+    height: 48px;
+    display: block;
+
+    border: 1px solid #8597A880;
+    border-radius: 8px;
+    padding: 13px 20px 13px 22px;
+}
+.pick_search01 input.inp_srch {
+    width: 100%;
+    display: block;
+    font-size: 18rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.pick_search01 .btn_secondary {
+    max-width: 90px;
+}
+
+
+
+
+
+.area_table01 {
+    width: 100%;
+    display: block;
+    padding: 16px 20px;
+    background-color: #EDF5FF;
+    border-radius: 10px;
+}
+.area_table02 {
+    width: 100%;
+    display: block;
+    padding: 16px 20px;
+    background-color: #F5F8FA80;
+    border-radius: 10px;
+}
+
+
+.box_table01 {
+    width: 100%;
+}
+.box_table01 tr {
+    width: 100%;
+}
+.box_table01 tr + tr td {
+    padding-top: 10px;
+}
+.box_table01 tr td > .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #070F16;
+}
+.box_table01 tr td > .txt02 {
+    width: 100%;
+    display: block;
+
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #070F16;
+    text-align: right;
+}
+.box_table01 tr td > .txt03 {
+    width: 100%;
+    display: block;
+
+    font-size: 17rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #070F16;
+    text-align: right;
+}
+
+
+.box_table02 {
+    width: 100%;
+}
+.box_table02 tr {
+    width: 100%;
+}
+.box_table02 tr + tr td {
+    padding-top: 10px;
+}
+.box_table02 tr td > .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #2C333B;
+}
+.box_table02 tr td > .txt02 {
+    width: 100%;
+    display: block;
+
+    font-size: 17rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #070F16;
+    text-align: right;
+}
+
+
+.area_pop_table01 {
+    width: 100%;
+    display: block;
+    padding: 0 10px;
+}
+
+
+.box_table03 {
+    width: 100%;
+}
+.box_table03 tr {
+    width: 100%;
+}
+.box_table03 tr td {
+    padding-top: 12px;
+    border-bottom: 1px solid #E6E6E680;
+    padding-bottom: 8px;
+}
+.box_table03 tr td > .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #2C333B;
+}
+.box_table03 tr td > .txt02 {
+    width: 100%;
+    display: block;
+
+    font-size: 17rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #070F16;
+    text-align: right;
+}
+
+
+
+
+.product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.product li {
+    width: 100%;
+    display: block;
+}
+.product li > .txt01 {
+    width: 100%;
+    display: block;
+
+    text-align: right;
+    font-size:  17rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #070F16;
+}
+.product li > .txt01 a {
+    width: 100%;
+    display: inline;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #070F16;
+}
+
+
+
+.area_footer_pop > .btn_tertiary {
+    width: 40%;
+}
+.area_footer_pop > .btn_primary {
+    width: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 749px) {
 
     .area_acquisition > .right_box .txt01 {
