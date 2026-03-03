@@ -772,7 +772,6 @@
     font-weight: 500;
     line-height: 1.4;
     color: #2C333B;
-    /* border: 1px solid red; */
 }
 
 .box_table04 > tbody  tr {
@@ -781,9 +780,9 @@
 .box_table04 > tbody tr td {
     border-bottom: 1px solid #E6E6E680;
     padding-bottom: 8px;
-     padding: 11px 24px;
-     text-align: center;
-     vertical-align: middle;
+    padding: 11px 24px;
+    text-align: center;
+    vertical-align: middle;
 }
 .box_table04 > tbody tr td > .txt02 {
     width: 100%;
@@ -795,7 +794,6 @@
     color: #2C333B;
     text-align: left;
 }
-
 .box_table04 > tbody tr td > .txt03 {
     width: 100%;
     display: inline-block;
@@ -807,6 +805,72 @@
 }
 
 
+
+/*  */
+.box_table051 {
+    width: 100%;
+    min-height: 92px;
+    table-layout: fixed;
+}
+.box_table05 > thead {
+    width: 100%;
+}
+.box_table05 > thead tr {
+    border-top: 2px solid #73757E;
+    border-bottom: 1px solid #8597A880;
+}
+.box_table05 > thead tr th {
+    width: 100%;
+    vertical-align: middle;
+    background-color: #E6E6E680;
+}
+.box_table05 > thead tr th .txt01 {
+    width: 100%;
+    display: block;
+    padding: 11px 0;
+
+    font-size: 15rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #2C333B;
+}
+.box_table05 > tbody  tr {
+    width: 100%;
+}
+.box_table05 > tbody  tr.nodata {
+    justify-content: center;
+}
+
+.box_table05 > tbody tr td {
+    border-bottom: 1px solid #E6E6E680;
+    padding-bottom: 8px;
+    padding: 11px 24px;
+    text-align: center;
+    vertical-align: middle;
+}
+.box_table05 > tbody tr td > .txt02 {
+    width: 100%;
+    display: inline-block;
+
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #2C333B;
+    text-align: left;
+}
+.box_table05 > tbody tr td > .txt03 {
+    width: 100%;
+    display: inline-block;
+
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #2C333B;
+}
+
+.nodata > td .no_data01 {
+    width: initial;
+}
 
 .product {
     width: 100%;
