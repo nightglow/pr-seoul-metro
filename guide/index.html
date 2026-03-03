@@ -207,7 +207,7 @@
         </table>
     </div>
     <!-- 자산관리 -->
-    <!-- <div class="wrap">
+    <div class="wrap">
         <h3>자산관리</h3>
         <table>
             <caption>자산관리</caption>
@@ -238,7 +238,7 @@
             <tbody id='am'>
             </tbody>
         </table>
-    </div> -->
+    </div>
     <!-- 관리시스템 -->
     <div class="wrap">
         <h3>관리시스템</h3>
@@ -955,19 +955,19 @@
     `).join('');
 
     // 자산관리
-    // document.getElementById('am').innerHTML = data_am.map(el => `
-    //     <tr>
-    //         <td>${el.dep01}</td>
-    //         <td>${el.dep02}</td>
-    //         <td>${el.dep03}</td>
-    //         <td>${el.dep04}</td>
-    //         <td class='tac'>${el.path}</td>
-    //         <td><a href='../pub/html/am/${el.f_name}'> ${el.f_name}</a></td>
-    //         <td >${el.type}</td>
-    //         <td class='tac'>${el.state}</td>
-    //         <td>${el.memo}</td>
-    //     </tr>
-    // `).join('');
+    document.getElementById('am').innerHTML = data_am.map(el => `
+        <tr>
+            <td>${el.dep01}</td>
+            <td>${el.dep02}</td>
+            <td>${el.dep03}</td>
+            <td>${el.dep04}</td>
+            <td class='tac'>${el.path}</td>
+            <td><a href='../pub/html/am/${el.f_name}'> ${el.f_name}</a></td>
+            <td >${el.type}</td>
+            <td class='tac'>${el.state}</td>
+            <td>${el.memo}</td>
+        </tr>
+    `).join('');
 
     // 관리시스템
     document.getElementById('admin').innerHTML = data_admin.map(el => `
