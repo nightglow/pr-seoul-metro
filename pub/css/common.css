@@ -1532,6 +1532,9 @@ body.bg {
     display: block;
     background-color: #fff;
 }
+.full_popup_wrap.scl {
+    overflow-y: auto;
+}
 .full_popup_wrap > .left_box {
     width: 100%;
     height: 52px;
@@ -1564,6 +1567,7 @@ body.bg {
 .full_popup_wrap > .right_box {
     width: 100%;
     display: block;
+
 }
 /* //full popup */
 

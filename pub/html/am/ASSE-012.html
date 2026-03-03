@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>서울교통공사</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+
+<body>
+    <button type="button" class="btn_primary" onclick="Fullpopup.open('full01')">
+        <span class="txt">창고재고실사 QR코드인식</span>
+    </button>
+
+    <div class="full_popup_dim" data-full="full01">
+        <div class="full_popup_wrap scl">
+            <div class="left_box">
+                <div class="area_tit01">
+                    <span class="txt01">창고재고실사 QR코드인식</span>
+                </div>
+                <div class="area_content01">
+                    <button class="btn_close" onclick="Fullpopup.close('full01')">
+                        <i class="blind">닫기</i>
+                    </button>
+                </div>
+            </div>
+            <div class="right_box">
+                <div class="comm_80de pt10">
+                    <div class="area_table01">
+                        <table class="box_table01">
+                            <caption class="blind">신청내용</caption>
+                            <colgroup>
+                                <col style="width: 35%;">
+                                <col style="width: 65%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td><span class="txt01">플랜트</span></td>
+                                    <td><span class="txt02">1000, 본사</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt01">저장위치</span></td>
+                                    <td><span class="txt02">4001, 차량정비처창고</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt01">자재번호</span></td>
+                                    <td><span class="txt02">184809</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt01">자재내역</span></td>
+                                    <td><span class="txt02">클램프-스텐 1/2인치 배관용</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt01">단위</span></td>
+                                    <td><span class="txt02">EA</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="area_table04 mt10">
+                        <table class="box_table05">
+                            <caption class="blind">정수세부내역 조회결과</caption>
+                            <colgroup>
+                                <col style="width: 40%;">
+                                <col style="width: 30%;">
+                                <col style="width: 30%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th><span class="txt01">항목</span></th>
+                                    <th><span class="txt01">장부수량</span></th>
+                                    <th><span class="txt01">실사수량</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="txt02">신품</span></td>
+                                    <td><span class="txt03">0.000</span></td>
+                                    <td class="box_inp">
+                                        <input type="number" name="" id="1" class="inp01" value="100">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt02">중고품</span></td>
+                                    <td><span class="txt03">0.000</span></td>
+                                    <td class="box_inp">
+                                        <input type="number" name="" id="" class="inp01" value="100">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt02">(예)신품</span></td>
+                                    <td><span class="txt03">0.000</span></td>
+                                    <td class="box_inp">
+                                        <input type="number" name="" id="" class="inp01" value="100">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt02">(예)중고품</span></td>
+                                    <td><span class="txt03">0.000</span></td>
+                                    <td class="box_inp">
+                                        <input type="number" name="" id="" class="inp01" value="100">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt02">(수탁)신품</span></td>
+                                    <td><span class="txt03">0.000</span></td>
+                                    <td class="box_inp">
+                                        <input type="number" name="" id="" class="inp01" value="100">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt02">(수탁)중고</span></td>
+                                    <td><span class="txt03">4.000</span></td>
+                                    <td class="box_inp">
+                                        <input type="number" name="" id="" class="inp01" value="100">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="txt02">요정비품</span></td>
+                                    <td><span class="txt03">0.000</span></td>
+                                    <td class="box_inp">
+                                        <input type="number" name="" id="" class="inp01" value="100">
+                                    </td>
+                                </tr>
+                                <tr class="nodata"> <!-- 결과없음  -->
+                                    <td colspan="5">
+                                        <div class="no_data01 active">
+                                            <span class="txt01">결과없음</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="area_footer04">
+                    <button type="button" class="btn_quaternary">
+                        <span class="txt">QR코드 인증 계속
+</span>
+                    </button>
+                    <button type="button" class="btn_secondary">
+                        <span class="txt">확인</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn_top">
+        <i class="blind">위로이동</i>
+    </button>
+    
+</body>
+
+</html>
