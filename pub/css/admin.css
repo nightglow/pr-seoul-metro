@@ -868,7 +868,7 @@ footer ul li ~ li::before {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 22px 49px;
+    gap: 20px 49px;
 }
 .tbl_gallery ul li {
     width: calc(100% / 4 - 37px);
@@ -936,7 +936,7 @@ footer ul li ~ li::before {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 22px 22px;
-    top: 0;
+    top: -2px;
     left: 0;
 }
 

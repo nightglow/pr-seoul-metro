@@ -15,14 +15,14 @@
 </head>
 <body>
     <button type="button" class="btn_lg btn_primary w100p" onclick="Popup.open('popup01')">
-        <span class="txt01">그룹코드 등록</span>
+        <span class="txt01">코드 등록</span>
     </button>
 
     <div class="popup_dim" data-popup="popup01">
         <div class="popup_wrap popup_md">
             <div class="left_box">
                 <div class="area_tit01">
-                    <span class="txt01">그룹코드 등록</span>
+                    <span class="txt01">코드 등록</span>
                 </div>
                 <div class="area_content01">
                     <button class="btn_close" onclick="Popup.close('popup01')">
@@ -43,9 +43,21 @@
                                 <tbody>
                                     <tr>
                                         <th class="col_th01" scope="row">
-                                            <div class="tit_box01">
+                                            <label class="tit_box01">
                                                 <span class="tit01">그룹코드</span>
+                                            </label>
+                                        </th>
+                                        <td class="col_td01">
+                                            <div class="txt_box01">
+                                                <span class="txt01">AF001</span>
                                             </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="col_th01" scope="row">
+                                            <label for="inp_code" class="tit_box01">
+                                                <span class="tit01">코드</span>
+                                            </label>
                                         </th>
                                         <td class="col_td01">
                                             <input type="text" class="inp_txt01" name="inp_code" id="inp_code" value="" placeholder="">
@@ -53,9 +65,9 @@
                                     </tr>
                                     <tr>
                                         <th class="col_th01" scope="row">
-                                            <div class="tit_box01">
-                                                <span class="tit01">그룹코드명</span>
-                                            </div>
+                                            <label for="inp_codename" class="tit_box01">
+                                                <span class="tit01">코드명</span>
+                                            </label>
                                         </th>
                                         <td class="col_td01">
                                             <input type="text" class="inp_txt01" name="inp_codename" id="inp_codename" value="" placeholder="">
@@ -63,12 +75,32 @@
                                     </tr>
                                     <tr>
                                         <th class="col_th01" scope="row">
-                                            <div class="tit_box01">
+                                            <label for="tarea01" class="tit_box01">
                                                 <span class="tit01">설명</span>
-                                            </div>
+                                            </label>
                                         </th>
                                         <td class="col_td01">
                                             <textarea class="tarea01" name="cont_tarea" id="tarea01" placeholder=""></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="col_th01" scope="row">
+                                            <label for="inp_turn" class="tit_box01">
+                                                <span class="tit01">순번</span>
+                                            </label>
+                                        </th>
+                                        <td class="col_td01">
+                                            <input type="text" class="inp_txt01" name="inp_turn" id="inp_turn" value="9" placeholder="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="col_th01" scope="row">
+                                            <label for="inp_topcode" class="tit_box01">
+                                                <span class="tit01">상위코드</span>
+                                            </label>
+                                        </th>
+                                        <td class="col_td01">
+                                            <input type="text" class="inp_txt01" name="inp_topcode" id="inp_topcode" value="" placeholder="">
                                         </td>
                                     </tr>
                                     <tr>
@@ -96,6 +128,9 @@
                     </div>
                 </div>
                 <div class="popup_btm_center01">
+                    <button type="button" class="btn_lg btn_line">
+                        <span class="txt01">코드목록</span>
+                    </button>
                     <button type="button" class="btn_lg btn_tertiary" onclick="Popup.close('popup01')">
                         <span class="txt01">닫기</span>
                     </button>
