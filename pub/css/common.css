@@ -2341,6 +2341,12 @@ select {
     margin: 0 auto;
     padding-bottom: 80px;
 }
+.comm_30de {
+    width: calc(100% - 40px);
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
 
 
 .comm_pdd_no.mt10{margin-top: 10px;}
@@ -2436,6 +2442,47 @@ select {
     flex-shrink: 0;
 }
 .board_header .txt03 {
+    width: max-content;
+    display: inline-block;
+    
+    font-size: 15rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #1F5EFF;
+    flex-shrink: 0;
+    padding-left: 4px;
+}
+
+
+.board_header01 {
+    width:  100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 13px;
+}
+.board_header01 .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 18rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #070F16;
+}
+.board_header01 .txt02 {
+    width: max-content;
+    display: inline-block;
+    
+    font-size: 15rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #2C333B;
+    flex-shrink: 0;
+}
+.board_header01 .txt03 {
     width: max-content;
     display: inline-block;
     
