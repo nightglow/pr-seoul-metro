@@ -94,7 +94,14 @@ html.menu_open, body.menu_open{ overflow:hidden; }
     background-color: #ffffff;border-radius: 10px;
     border: 1px solid #1F5EFF;
 }
-.btn_quaternary > .txt {width: 100%;display: block;font-size: 17rem;font-weight: 600;color: #2C333B;line-height: 1.4;}
+.btn_quaternary > .txt {
+    width: 100%;
+    display: block;
+    font-size: 17rem;
+    font-weight: 600;
+    color: #1F5EFF;
+    line-height: 1.4;
+}
 .btn_quaternary:hover {background-color: #f9f9f9;}
 .btn_quaternary:hover > .txt {color: #2C333B;}
 .btn_quaternary:disabled {background-color: #E6EAED;}
@@ -2340,6 +2347,7 @@ select {
 .comm_pd20.mt10 {margin-top: 10px;}
 .comm_pd20.mt20 {margin-top: 20px;}
 .comm_80de.mt10{margin-top: 10px;}
+.comm_80de.pt10{padding-top: 10px;}
 
 
 
