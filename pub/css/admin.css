@@ -371,10 +371,18 @@ input[type=text].inp_txt01:disabled {
     color: #fff;
 }
 .btn_lg:disabled {
-    background: var(--Color-E6EAED, #E6EAED);
+    background: #E6EAED;
     cursor: default;
 }
 .btn_lg:disabled .txt01 {
+    color: rgba(56, 60, 76, 0.50);
+}
+.btn_ss:disabled {
+    background: #E6EAED;
+    border-color: #E6EAED;
+    cursor: default;
+}
+.btn_ss:disabled .txt01 {
     color: rgba(56, 60, 76, 0.50);
 }
 
@@ -701,6 +709,9 @@ footer ul li ~ li::before {
 .lnb_1depth_list .lnb_1depth.act {
     background-color: #1F5EFF;
 }
+.lnb_1depth_list .lnb_1depth.act:has(.lnb_2depth_list) {
+    background-color: transparent;
+}
 .lnb_1depth_list .lnb_1depth > .lnb_item.act .txt01 {
     font-weight: 700;
 }
@@ -801,6 +812,13 @@ footer ul li ~ li::before {
     font-size: 24px;
     font-weight: 700;
     line-height: normal;
+}
+.cont_tit .tit01 + .point_txt {
+    color: #EE444A;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-left: 15px;
 }
 
 /* 검색박스 */
@@ -1030,6 +1048,10 @@ footer ul li ~ li::before {
     align-items: center;
     align-self: stretch;
     gap: 10px;
+}
+.tbl_row tbody .row_th01 {
+    border-top: 1px solid #F8F9FF;
+    border-right: 1px solid #F8F9FF;
 }
 .tbl_row .row_th01 .tit_box01 .tit01 {
     color: #2C333B;
@@ -1506,6 +1528,20 @@ footer ul li ~ li::before {
     /* gap:12px; */
     border: 1px solid rgba(133, 151, 168, 0.50) !important;
 }
+.inp_calendar_box .date_inp_field .inp_date {
+    border: 0;
+}
+.inp_calendar_box.disabled .inp_date:disabled {
+    background-color: rgba(230, 230, 230, 0.50);
+    color: #B5B7BA;
+}
+.inp_calendar_box.disabled .inp_date:disabled::after {
+    display: none;
+}
+.inp_calendar_box.disabled .inp_time:disabled {
+    background-color: rgba(230, 230, 230, 0.50);
+    color: #B5B7BA;
+}
 
 /* 날짜 input */
 .date_inp_field{
@@ -1523,6 +1559,7 @@ footer ul li ~ li::before {
     box-sizing: border-box;
     z-index: 1;
     position: relative;
+    border: 1px solid rgba(133, 151, 168, 0.50);
 }
 .inp_date::-webkit-calendar-picker-indicator {
     opacity: 0;
@@ -1856,7 +1893,7 @@ footer ul li ~ li::before {
     gap: 6px;
 }
 .inquiry_month > .sel_box01 {
-    width: 136px;
+    width: 106px;
 }
 .inquiry_date {
     display: flex;
@@ -1866,11 +1903,28 @@ footer ul li ~ li::before {
     gap: 6px;
 }
 .sch_box01 .sch_section .sch_area .inquiry_date .date_inp_field {
-    width: 136px;
+    width: 126px;
 }
 .sch_box01 .sch_section .sch_area .inquiry_date .date_inp_field .inp_date {
     border: 1px solid rgba(133, 151, 168, 0.50);
 }
+.sch_box01 .sch_section .sch_area .inquiry_date .date_inp_field .inp_date::after {
+    right: 6px;
+}
+.inquiry_year {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+.inquiry_year > .txt01  {
+    width: max-content;
+}
+.inquiry_year > .sel_box01 {
+    width: 106px;
+}
+
 .progress_box {
     position: relative;
     width: 1150px;
@@ -1922,4 +1976,57 @@ footer ul li ~ li::before {
 }
 .tbl_row .row_td01 .txt_box02.auth_3depth {
     margin-left: 112px;
+}
+
+/* 그래프 박스 */
+.graph_box01 {
+    width: 100%;
+    min-height: 418px;
+    border-radius: 5px;
+    border: 1px solid rgba(133, 151, 168, 0.50);
+    background: #FFF;
+    padding: 30px 36px 60px;
+}
+
+/* 대쉬보드 */
+.analysis_box_wrap {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.analysis_box {
+    width: 400px;
+    height: 155px;
+    border-radius: 12px;
+    border: 1px solid rgba(133, 151, 168, 0.50);
+    background: #FFF;
+    padding: 36px 40px 40px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.analysis_box .tit_box01 {
+    margin-bottom: 21px;
+}
+.analysis_box .tit_box01 .tit01 {
+    color: #2C333B;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.analysis_box .txt_box01 .txt01 {
+    color: #070F16;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.analysis_box .noti_txt01 {
+    position: absolute;
+    left: 40px;
+    bottom: 15px;
+    color: #73757E;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
 }

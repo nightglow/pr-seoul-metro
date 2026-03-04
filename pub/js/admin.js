@@ -303,16 +303,23 @@ $(function () {
     const $selPeriod    = $('#sel_period');
     const $inquiryMonth = $('.inquiry_month');
     const $inquiryDate  = $('.inquiry_date');
+    const $inquiryYear  = $('.inquiry_year');
 
     function togglePeriod() {
         const val = $selPeriod.val();   // "1" 또는 "2"
 
-        if (val === '1') {              // 조회월
+        if (val === 'selmonth') {              // 조회월
             $inquiryMonth.show();
             $inquiryDate.hide();
-        } else if (val === '2') {       // 조회일
+            $inquiryYear.hide();
+        } else if (val === 'seldate') {       // 조회일
             $inquiryMonth.hide();
             $inquiryDate.show();
+            $inquiryYear.hide();
+        } else if (val === 'selyear') {       // 조회연도
+            $inquiryYear.show();
+            $inquiryMonth.hide();
+            $inquiryDate.hide();
         }
     }
 

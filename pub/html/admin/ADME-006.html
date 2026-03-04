@@ -121,12 +121,13 @@
                                         </div>
                                     </th>
                                     <td class="col_td01">
-                                        <div class="rdo_group">
+                                        <!-- 260304 스크립트 추가로 인한 일부 클래스 수정 -->
+                                        <div class="rdo_group reserve_rdo">
                                             <label class="rdo_item">
                                                 <input type="radio" name="radio02" checked>
                                                 <span>즉시</span>
                                             </label>
-                                            <label class="rdo_item">
+                                            <label class="rdo_item" data-role="reserve">
                                                 <input type="radio" name="radio02">
                                                 <span>예약</span>
                                             </label>
@@ -143,6 +144,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <!-- 260304 스크립트 추가로 인한 일부 클래스 수정 -->
                                     </td>
                                 </tr>
                                 <tr>
@@ -218,8 +220,9 @@
                             <span class="tit01">메시지(알림) 수신자 그룹 지정</span>
                         </div>
                         <div class="right_box">
+                            <!-- 260304 스크립트 추가를 위한 일부 수정 -->
                             <div class="chk_group">
-                                <label class="chk_item">
+                                <label class="chk_item" data-role="all-user-noti">
                                     <input type="checkbox" name="check" checked>
                                     <span class="chk_box" aria-hidden="true"></span>
                                     <span>전체 사용자 대상 알림 전달</span>
@@ -236,6 +239,7 @@
                                     <span class="txt01">사원추가</span>
                                 </button>
                             </div>
+                            <!-- //260304 스크립트 추가를 위한 일부 수정 -->
                         </div>
                     </div>
                     <div class="tbl_box01 mt10">
@@ -866,5 +870,47 @@
         </div>
     </div>
 
+    <!-- 260304 스크립트 추가 -->
+    <script>
+        //발송구분
+        $(function () {
+            $('.reserve_rdo').each(function () {
+                const $group = $(this);
+                const $calendarBox = $group.find('.inp_calendar_box');
+
+                function toggleCalendarBox() {
+                const isReserve = $group.find('[data-role="reserve"] input[type="radio"]').prop('checked');
+                const isDisabled = !isReserve;
+
+                // input 비활성/활성
+                $calendarBox.find(':input').prop('disabled', isDisabled);
+
+                // 클래스 토글
+                $calendarBox.toggleClass('disabled', isDisabled);
+
+                // (선택) 즉시일 때 값 비우기
+                if (isDisabled) $calendarBox.find(':input').val('');
+                }
+
+                toggleCalendarBox();
+                $group.on('change', 'input[type="radio"][name="radio02"]', toggleCalendarBox);
+            });
+        });
+
+        //전체 사용자 대상 알림 전달
+        $(function () {
+            const $allUserLabel = $('label[data-role="all-user-noti"]');
+            const $checkbox = $allUserLabel.find('input[type="checkbox"]');
+            const $buttons = $('.tit_btn_box01 button');
+
+            function toggleButtons() {
+                $buttons.prop('disabled', !$checkbox.is(':checked'));
+            }
+
+            toggleButtons(); // 초기 반영
+            $checkbox.on('change', toggleButtons); // 변경 반영
+        });
+    </script>
+    <!-- //260304 스크립트 추가 -->
 </body>
 </html>

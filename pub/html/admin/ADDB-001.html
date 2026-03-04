@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>서울교통공사 모바일오피스</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" /> 	
+
+    <link rel="stylesheet" type="text/css" href="../../css/admin.css">
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/admin.js"></script>
+</head>
+<body>
+    <div class="whole_wrap">
+        <header id="header"></header>
+        <div class="container">
+            <aside class="lnb_wrap">
+                <div class="lnb_top">
+                    <span class="lnb_tit">사용자접속이력</span>
+                </div>
+                <div class="lnb_btm">
+                    <ul class="lnb_1depth_list">
+                        <li class="lnb_1depth act">
+                            <a href="javascript:;" class="lnb_item act">
+                                <span class="txt01">대시보드</span>
+                            </a>
+                        </li>
+                        <li class="lnb_1depth">
+                            <a href="javascript:;" class="lnb_item">
+                                <span class="txt01">모바일오피스 접속이력</span>
+                            </a>
+                        </li>
+                        <li class="lnb_1depth">
+                            <a href="javascript:;" class="lnb_item">
+                                <span class="txt01">사용자별 접속로그이력</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <main class="content">
+                <nav class="breadcrumb_box">
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="javascript:;" class="btn_home">
+                                <span class="blind">홈</span>
+                            </a>
+                        </li>
+                        <li>사용자접속이력</li>
+                        <li class="present">대시보드</li>
+                    </ul>
+                </nav>
+                <div class="cont_tit">
+                    <span class="tit01">대시보드</span>
+                </div>
+                <div class="cont_wrap">
+                    <div class="analysis_box_wrap">
+                        <div class="analysis_box">
+                            <div class="left_box">
+                                <div class="tit_box01">
+                                    <span class="tit01">현재 사용자 수(전날까지)</span>
+                                </div>
+                                <div class="txt_box01">
+                                    <span class="txt01">12,987</span>
+                                </div>
+                            </div>
+                            <div class="right_box">
+                                <div class="img_box01">
+                                    <img src="../../img/ico_dashboard01.svg" alt="현재 사용자수 아이콘">
+                                </div>
+                            </div>
+                            <span class="noti_txt01">※ 시작일은 2026년 1월 기준입니다.</span>
+                        </div>
+                        <div class="analysis_box">
+                            <div class="left_box">
+                                <div class="tit_box01">
+                                    <span class="tit01">전달 신규가입자수</span>
+                                </div>
+                                <div class="txt_box01">
+                                    <span class="txt01">42</span>
+                                </div>
+                            </div>
+                            <div class="right_box">
+                                <div class="img_box01">
+                                    <img src="../../img/ico_dashboard02.svg" alt="전달 신규가입자수 아이콘">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analysis_box">
+                            <div class="left_box">
+                                <div class="tit_box01">
+                                    <span class="tit01">전달사용자수</span>
+                                </div>
+                                <div class="txt_box01">
+                                    <span class="txt01">9,234</span>
+                                </div>
+                            </div>
+                            <div class="right_box">
+                                <div class="img_box01">
+                                    <img src="../../img/ico_dashboard03.svg" alt="전달사용자수 아이콘">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analysis_box">
+                            <div class="left_box">
+                                <div class="tit_box01">
+                                    <span class="tit01">누적사용자수</span>
+                                </div>
+                                <div class="txt_box01">
+                                    <span class="txt01">35,019</span>
+                                </div>
+                            </div>
+                            <div class="right_box">
+                                <div class="img_box01">
+                                    <img src="../../img/ico_dashboard04.svg" alt="누적사용자수 아이콘">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sch_box01 mt30">
+                        <ul class="sch_section">
+                            <li>
+                                <div class="sch_tit01">
+                                    <label for="sch_condi" class="tit01">조회조건</label>
+                                </div>
+                                <div class="sch_area">
+                                    <select name="sel_period" id="sel_period" class="sel_box01">
+                                        <option value="selyear">조회년</option>
+                                        <option value="selmonth" selected>조회월</option>
+                                        <option value="seldate">조회일</option>
+                                    </select>
+                                    <div class="inquiry_month">
+                                        <select name="sel_year" id="sel_year" class="sel_box01">
+                                            <option value="1">2026</option>
+                                            <option value="2">2025</option>
+                                        </select>
+                                        <span class="txt01">년</span>
+                                        <select name="sel_month" id="sel_month" class="sel_box01">
+                                            <option value="1">01</option>
+                                            <option value="2">02</option>
+                                        </select>
+                                        <span class="txt01">월</span>
+                                    </div>
+                                    <div class="inquiry_date">
+                                        <div class="date_inp_field">
+                                            <input type="date" class="inp_date" name="date_start">
+                                        </div>
+                                        <span>~</span>
+                                        <div class="date_inp_field">
+                                            <input type="date" class="inp_date" name="date_end">
+                                        </div>
+                                    </div>
+                                    <div class="inquiry_year">
+                                        <select name="sel_year" id="sel_year" class="sel_box01">
+                                            <option value="1">2026</option>
+                                            <option value="2">2025</option>
+                                        </select>
+                                        <span class="txt01">년 -</span>
+                                        <select name="sel_year" id="sel_year" class="sel_box01">
+                                            <option value="1">2026</option>
+                                            <option value="2">2025</option>
+                                        </select>
+                                        <span class="txt01">년</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="sch_btn">
+                            <button type="button" class="btn_ss btn_secondary">
+                                <span class="txt01">조회</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="graph_box01 mt30">
+                        <span style="display: block; font-size: 15px;">그래프 표시 영역</span>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <ul>
+                <li>04806 서울특별시 성동구 천호대로 346</li>
+                <li>대표전화 1577-2234</li>
+                <li>Copyright©2022 SeoulMetro INC. All right reserved.</li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

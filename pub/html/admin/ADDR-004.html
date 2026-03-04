@@ -35,8 +35,25 @@
                         </li>
                         <li class="lnb_1depth act">
                             <a href="javascript:;" class="lnb_item act">
-                                <span class="txt01">접속 이력 조회</span>
+                                <span class="txt01">기간별 접속이력조회</span>
                             </a>
+                        </li>
+                        <li class="lnb_1depth">
+                            <a href="#" class="lnb_item">
+                                <span class="txt01">앱 실적통계</span>
+                                <span class="ico_arrw"></span>
+                            </a>
+                            <ul class="lnb_2depth_list">
+                                <li class="lnb_2depth">
+                                    <a href="#" class="lnb_item">소속별 통신비 지원비율</a>
+                                </li>
+                                <li class="lnb_2depth">
+                                    <a href="#" class="lnb_item">소속별 앱 접속 현황</a>
+                                </li>
+                                <li class="lnb_2depth">
+                                    <a href="#" class="lnb_item">월별 앱 접속 현황</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="lnb_1depth">
                             <a href="javascript:;" class="lnb_item">
@@ -55,11 +72,11 @@
                             </a>
                         </li>
                         <li>운전관리(승무지킴이)</li>
-                        <li class="present">접속이력조회</li>
+                        <li class="present">기간별 접속이력조회</li><!-- 260304 텍스트 수정 -->
                     </ul>
                 </nav>
                 <div class="cont_tit">
-                    <span class="tit01">접속이력조회</span>
+                    <span class="tit01">기간별 접속이력조회</span><!-- 260304 텍스트 수정 -->
                 </div>
                 <div class="cont_wrap">
                     <div class="sch_box01">
@@ -157,16 +174,19 @@
                         </div>
                     </div>
                     <div class="tbl_box01 mt10">
+                        <!-- 260304 일부 항목 추가 -->
                         <table class="tbl_row">
                             <colgroup>
-                                <col width="53px">
+                                <col width="80px">
                                 <col width="*">
-                                <col width="221px">
-                                <col width="221px">
+                                <col width="200px">
+                                <col width="200px">
                                 <col width="99px">
+                                <col width="180px">
                                 <col width="221px">
-                                <col width="320px">
-                                <col width="130px">
+                                <col width="120px">
+                                <col width="120px">
+                                <col width="120px">
                                 <col width="120px">
                             </colgroup>
                             <thead>
@@ -209,6 +229,16 @@
                                     <th class="row_th01" scope="col">
                                         <div class="tit_box01">
                                             <span class="tit01">접속상태</span>
+                                        </div>
+                                    </th>
+                                    <th class="row_th01" scope="col">
+                                        <div class="tit_box01">
+                                            <span class="tit01">대상여부</span>
+                                        </div>
+                                    </th>
+                                    <th class="row_th01" scope="col">
+                                        <div class="tit_box01">
+                                            <span class="tit01">접속시간</span>
                                         </div>
                                     </th>
                                     <th class="row_th01" scope="col">
@@ -256,9 +286,22 @@
                                         </div>
                                     </td>
                                     <td class="row_td01">
-                                        <div class="monitoring_box legend01">
+                                        <!-- 260304 마크업 수정-->
+                                        <div class="monitoring_box">
                                             <span class="monitoring_ico legend01"></span>
-                                            <span class="txt01">접속완료</span>
+                                        </div>
+                                        <!-- //260304 마크업 수정-->
+                                    </td>
+                                    <!-- 260304 항목 추가 -->
+                                    <td class="row_td01">
+                                        <div class="monitoring_box">
+                                            <span class="monitoring_ico legend02"></span>
+                                        </div>
+                                    </td>
+                                    <!-- //260304 항목 추가 -->
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">106:10</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
@@ -304,9 +347,22 @@
                                         </div>
                                     </td>
                                     <td class="row_td01">
-                                        <div class="monitoring_box legend02">
+                                        <!-- 260304 마크업 수정-->
+                                        <div class="monitoring_box">
                                             <span class="monitoring_ico legend02"></span>
-                                            <span class="txt01">접속중</span>
+                                        </div>
+                                        <!-- //260304 마크업 수정-->
+                                    </td>
+                                    <!-- 260304 항목 추가 -->
+                                    <td class="row_td01">
+                                        <div class="monitoring_box">
+                                            <span class="monitoring_ico legend03"></span>
+                                        </div>
+                                    </td>
+                                    <!-- //260304 항목 추가 -->
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">106:10</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
@@ -352,9 +408,22 @@
                                         </div>
                                     </td>
                                     <td class="row_td01">
-                                        <div class="monitoring_box legend03">
+                                        <!-- 260304 마크업 수정-->
+                                        <div class="monitoring_box">
                                             <span class="monitoring_ico legend03"></span>
-                                            <span class="txt01">미접속</span>
+                                        </div>
+                                        <!-- //260304 마크업 수정-->
+                                    </td>
+                                    <!-- 260304 항목 추가 -->
+                                    <td class="row_td01">
+                                        <div class="monitoring_box">
+                                            <span class="monitoring_ico legend02"></span>
+                                        </div>
+                                    </td>
+                                    <!-- //260304 항목 추가 -->
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">106:10</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
@@ -400,9 +469,22 @@
                                         </div>
                                     </td>
                                     <td class="row_td01">
-                                        <div class="monitoring_box legend04">
+                                        <!-- 260304 마크업 수정-->
+                                        <div class="monitoring_box">
                                             <span class="monitoring_ico legend04"></span>
-                                            <span class="txt01">접속대기</span>
+                                        </div>
+                                        <!-- //260304 마크업 수정-->
+                                    </td>
+                                    <!-- 260304 항목 추가 -->
+                                    <td class="row_td01">
+                                        <div class="monitoring_box">
+                                            <span class="monitoring_ico legend03"></span>
+                                        </div>
+                                    </td>
+                                    <!-- //260304 항목 추가 -->
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">106:10</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
@@ -448,9 +530,22 @@
                                         </div>
                                     </td>
                                     <td class="row_td01">
-                                        <div class="monitoring_box legend05">
+                                        <!-- 260304 마크업 수정-->
+                                        <div class="monitoring_box">
                                             <span class="monitoring_ico legend05"></span>
-                                            <span class="txt01">정책적용중</span>
+                                        </div>
+                                        <!-- //260304 마크업 수정-->
+                                    </td>
+                                    <!-- 260304 항목 추가 -->
+                                    <td class="row_td01">
+                                        <div class="monitoring_box">
+                                            <span class="monitoring_ico legend02"></span>
+                                        </div>
+                                    </td>
+                                    <!-- //260304 항목 추가 -->
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">106:10</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
@@ -496,9 +591,22 @@
                                         </div>
                                     </td>
                                     <td class="row_td01">
-                                        <div class="monitoring_box legend02">
+                                        <!-- 260304 마크업 수정-->
+                                        <div class="monitoring_box">
                                             <span class="monitoring_ico legend02"></span>
-                                            <span class="txt01">접속중</span>
+                                        </div>
+                                        <!-- //260304 마크업 수정-->
+                                    </td>
+                                    <!-- 260304 항목 추가 -->
+                                    <td class="row_td01">
+                                        <div class="monitoring_box">
+                                            <span class="monitoring_ico legend03"></span>
+                                        </div>
+                                    </td>
+                                    <!-- //260304 항목 추가 -->
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">106:10</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
@@ -544,9 +652,22 @@
                                         </div>
                                     </td>
                                     <td class="row_td01">
-                                        <div class="monitoring_box legend02">
+                                        <!-- 260304 마크업 수정-->
+                                        <div class="monitoring_box">
                                             <span class="monitoring_ico legend02"></span>
-                                            <span class="txt01">접속중</span>
+                                        </div>
+                                        <!-- //260304 마크업 수정-->
+                                    </td>
+                                    <!-- 260304 항목 추가 -->
+                                    <td class="row_td01">
+                                        <div class="monitoring_box">
+                                            <span class="monitoring_ico legend03"></span>
+                                        </div>
+                                    </td>
+                                    <!-- //260304 항목 추가 -->
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">106:10</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
@@ -592,9 +713,22 @@
                                         </div>
                                     </td>
                                     <td class="row_td01">
-                                        <div class="monitoring_box legend02">
+                                        <!-- 260304 마크업 수정-->
+                                        <div class="monitoring_box">
                                             <span class="monitoring_ico legend02"></span>
-                                            <span class="txt01">접속중</span>
+                                        </div>
+                                        <!-- //260304 마크업 수정-->
+                                    </td>
+                                    <!-- 260304 항목 추가 -->
+                                    <td class="row_td01">
+                                        <div class="monitoring_box">
+                                            <span class="monitoring_ico legend03"></span>
+                                        </div>
+                                    </td>
+                                    <!-- //260304 항목 추가 -->
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">106:10</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
@@ -640,9 +774,22 @@
                                         </div>
                                     </td>
                                     <td class="row_td01">
-                                        <div class="monitoring_box legend02">
+                                        <!-- 260304 마크업 수정-->
+                                        <div class="monitoring_box">
                                             <span class="monitoring_ico legend02"></span>
-                                            <span class="txt01">접속중</span>
+                                        </div>
+                                        <!-- //260304 마크업 수정-->
+                                    </td>
+                                    <!-- 260304 항목 추가 -->
+                                    <td class="row_td01">
+                                        <div class="monitoring_box">
+                                            <span class="monitoring_ico legend03"></span>
+                                        </div>
+                                    </td>
+                                    <!-- //260304 항목 추가 -->
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">106:10</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
@@ -688,9 +835,22 @@
                                         </div>
                                     </td>
                                     <td class="row_td01">
-                                        <div class="monitoring_box legend02">
+                                        <!-- 260304 마크업 수정-->
+                                        <div class="monitoring_box">
                                             <span class="monitoring_ico legend02"></span>
-                                            <span class="txt01">접속중</span>
+                                        </div>
+                                        <!-- //260304 마크업 수정-->
+                                    </td>
+                                    <!-- 260304 항목 추가 -->
+                                    <td class="row_td01">
+                                        <div class="monitoring_box">
+                                            <span class="monitoring_ico legend03"></span>
+                                        </div>
+                                    </td>
+                                    <!-- //260304 항목 추가 -->
+                                    <td class="row_td01">
+                                        <div class="txt_box01">
+                                            <span class="txt01">106:10</span>
                                         </div>
                                     </td>
                                     <td class="row_td01">
@@ -701,6 +861,7 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <!-- //260304 일부 항목 추가 -->
                     </div>
                 </div>
             </main>
