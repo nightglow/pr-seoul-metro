@@ -2365,11 +2365,13 @@ select {
 
 
 .comm_pdd_no.mt10{margin-top: 10px;}
+.comm_pdd_no.mt20{margin-top: 20px;}
 .comm_pdd_no.pt10{padding-top: 10px;}
 
 .comm_pd20.mt10 {margin-top: 10px;}
 .comm_pd20.mt20 {margin-top: 20px;}
 
+.comm_30de.mt12 {margin-top: 12px;}
 .comm_30de.mt20 {margin-top: 20px;}
 
 .comm_80de.mt10{margin-top: 10px;}
