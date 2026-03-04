@@ -36,16 +36,16 @@ $(function () {
 
         // 2depth 없는 경우(원하면 act만 처리)
         // e.preventDefault(); // 링크 이동 막고 싶으면 주석 해제
-        $lnb.find(".lnb_1depth > .lnb_item").removeClass("act");
-        $item.addClass("act");
+        // $lnb.find(".lnb_1depth > .lnb_item").removeClass("act");
+        // $item.addClass("act");
     });
 
     // 2depth 클릭 시 act 처리(선택 표시용)
-    $lnb.on("click", ".lnb_2depth_list .lnb_item", function (e) {
-        // e.preventDefault(); // 필요하면 주석 해제
-        $lnb.find(".lnb_2depth_list .lnb_item").removeClass("act");
-        $(this).addClass("act");
-    });
+    // $lnb.on("click", ".lnb_2depth_list .lnb_item", function (e) {
+    //     // e.preventDefault(); // 필요하면 주석 해제
+    //     $lnb.find(".lnb_2depth_list .lnb_item").removeClass("act");
+    //     $(this).addClass("act");
+    // });
 });
 
 /* 팝업 */
