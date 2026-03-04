@@ -588,12 +588,6 @@
 }
 
 
-
-
-
-
-
-/*  */
 .pick_search02 {
     width: 100%;
     display: flex;
@@ -622,6 +616,27 @@
 }
 
 
+.pick_search03 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.pick_search03 .inp_srch {
+    width: 100%;
+    height: 48px;
+    display: block;
+
+    border: 1px solid #8597A880;
+    border-radius: 8px;
+    padding: 13px 20px 13px 22px;
+}
+.pick_search03 input.inp_srch {
+    width: 100%;
+}
+
+
 
 .area_table01 {
     width: 100%;
@@ -637,7 +652,6 @@
     background-color: #F5F8FA80;
     border-radius: 10px;
 }
-
 .area_table04 {
     width: 100%;
     display: block;
@@ -822,7 +836,6 @@ input.inp01 {
 
 
 
-/*  */
 .box_table05 {
     width: 100%;
     min-height: 92px;
@@ -883,16 +896,74 @@ input.inp01 {
     line-height: 1.4;
     color: #2C333B;
 }
-
-
 .box_table05 > tbody tr td.box_inp {
     padding: 11px 10px;
 }
-
-
 .nodata > td .no_data01 {
     width: initial;
 }
+
+
+
+
+.box_table06 {
+    width: 100%;
+}
+.box_table06 > tbody  tr {
+    width: 100%;
+}
+.box_table06 > tbody tr td {
+    border-bottom: 1px solid #E6E6E680;
+    padding-bottom: 8px;
+    padding: 16px 0px 11px 11px;
+    text-align: center;
+    vertical-align: top;
+}
+.box_table06 > tbody tr td > .txt01 {
+    width: 100%;
+    display: inline-block;
+
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #2C333B;
+    text-align: left;
+}
+.box_table06 > tbody tr td > .txt02 {
+    width: 100%;
+    display:inline-block;
+
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #070F16;
+    text-align: right;
+}
+.box_table06 > tbody tr td > .txt03 {
+    width: 100%;
+    display:inline-block;
+
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #73757E;
+    text-align: right;
+}
+.box_table06 > tbody tr td.img01{
+    width: 100%;
+    display: block;
+}
+.box_table06 > tbody tr td.img01 > img {
+    width: 188px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+}
+.box_table06 > tbody tr td.img01 > img + img {
+    padding-top: 5px;
+}
+
+
 
 .product {
     width: 100%;
