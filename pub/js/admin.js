@@ -249,6 +249,10 @@ $(function () {
         const newRowHtml = `
             <tr>
                 <td class="row_td01">
+                    <label class="chk_item jc_c">
+                        <input type="checkbox" name="check">
+                        <span class="chk_box" aria-hidden="true"></span>
+                    </label>
                 </td>
                 <td class="row_td01">
                     <div class="inp_box01">
