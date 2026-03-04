@@ -2257,6 +2257,17 @@ select {
 .cm_mark01.cm_radio {background-image: url('../img/ico_rdo_off.svg');}
 .cm_area01 input:checked ~ .cm_mark01.cm_radio {background-image: url('../img/ico_rdo_on.svg');}
 
+
+.cm_area01 > .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 15rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #2C333B;
+    padding-left: 8px;
+}
 /* //라디오, 체크박스 라벨없음 */
 
 
