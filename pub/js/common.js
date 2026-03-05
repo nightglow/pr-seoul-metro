@@ -22,10 +22,28 @@ $(function () {
     // 큰글씨
     const btnTop = document.querySelector('.btn_top');
     if( btnTop) {
+        // 클릭 시 글자 크기 토글
         btnTop.addEventListener('click', function() {
             const html = document.documentElement;
             const current = html.style.fontSize;
             html.style.fontSize = current === '6.875%' ? '6.25%' : '6.875%';
+
+            // 클릭 시 상단으로 이동
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // 처음에는 스크롤할 때까지 숨김
+        btnTop.style.display = 'none';
+
+        // 스크롤 중 버튼을 보이고, 스크롤이 멈춘 뒤 2초 후 숨김
+        let btnTopHideTimer;
+        document.addEventListener('scroll', function() {
+            // 스크롤 이벤트가 발생하면 항상 표시
+            btnTop.style.display = 'block';
+            clearTimeout(btnTopHideTimer);
+            btnTopHideTimer = setTimeout(() => {
+                btnTop.style.display = 'none';
+            }, 2000);
         });
     };
 
