@@ -762,6 +762,7 @@ footer ul li ~ li::before {
     width: calc(100% - 200px);
     padding: 15px 30px 50px;
 }
+
 .breadcrumb_box {
     margin-bottom: 20px;
 }
@@ -804,6 +805,7 @@ footer ul li ~ li::before {
     font-weight: 500;
     line-height: normal;
 }
+
 .cont_tit {
     margin-bottom: 23px;
 }
@@ -878,7 +880,8 @@ footer ul li ~ li::before {
 
 /* 갤러리형 게시판 */
 .tbl_gallery {
-    padding: 30px 0;
+    padding: 20px 0;
+    border-top: 1px solid #E8EDF0;
     border-bottom: 1px solid #E8EDF0;
 }
 .tbl_gallery ul {
@@ -1068,44 +1071,6 @@ footer ul li ~ li::before {
 .tbl_row .row_td01:last-child {
     border-right: 0;
 }
-
-.tbl_tit01 {
-    width: 100%;
-    height: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-.tbl_tit01 .left_box .tit01 {
-    color: #2C333B;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: normal;
-}
-.tbl_tit01 .left_box .tit02 {
-    color: #73757E;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.2;
-}
-.tbl_tit01 .left_box .tit02 .hit_count {
-    color: #2C333B;
-}
-.tbl_tit01 .left_box .tit02 .hit_count span {
-    color: #1F5EFF;
-}
-.tbl_tit01 .right_box {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 20px;
-}
-.tbl_tit01 .right_box .tit_btn_box01 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 0 9px;
-}
 .tbl_row .row_td01 .txt_box01 {
     display: flex;
     flex-direction: column;
@@ -1143,6 +1108,44 @@ footer ul li ~ li::before {
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
+}
+
+.tbl_tit01 {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.tbl_tit01 .left_box .tit01 {
+    color: #2C333B;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+}
+.tbl_tit01 .left_box .tit02 {
+    color: #73757E;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.tbl_tit01 .left_box .tit02 .hit_count {
+    color: #2C333B;
+}
+.tbl_tit01 .left_box .tit02 .hit_count span {
+    color: #1F5EFF;
+}
+.tbl_tit01 .right_box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+.tbl_tit01 .right_box .tit_btn_box01 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0 9px;
 }
 
 .tbl_box01 {
@@ -1884,7 +1887,7 @@ footer ul li ~ li::before {
     padding: 30px 0 40px 10px;
 }
 
-/* 통계 */
+/* 조회조건-검색기간 */
 .inquiry_month {
     display: flex;
     flex-direction: row;
@@ -1925,9 +1928,10 @@ footer ul li ~ li::before {
     width: 106px;
 }
 
+/* 통계-막대그래프 */
 .progress_box {
     position: relative;
-    width: 1150px;
+    width: 1140px;
     height: 28px;
 }
 .progress_box .bar {
@@ -1939,6 +1943,7 @@ footer ul li ~ li::before {
     background: linear-gradient(90deg, #59B7F2 0%, #3681E4 50%, #124AD7 100%);
 }
 
+/* 트리리스트 */
 .tree_list_box {
     display: flex;
     align-items: flex-start;
@@ -1957,7 +1962,6 @@ footer ul li ~ li::before {
 .tree_list_box::-webkit-scrollbar-track {
     background-color: transparent;
 }
-/* 실제 스크롤바(thumb) */
 .tree_list_box::-webkit-scrollbar-thumb {
     background-color: #CECECE;
     border-radius: 999px;
