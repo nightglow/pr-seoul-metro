@@ -438,6 +438,20 @@
     width: 100%;
     display: flex;
 }
+.f_group05 .cm_area {
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 16px;
+}
+.f_group05 .cm_area .cm_label {
+    width: 100%;
+    display: block;
+
+    font-size: 15rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #2C333B;
+}
 
 .common_inp06 {width: 100%;display: block;position: relative;}
 .common_inp06 > .inp_txt {
@@ -2027,6 +2041,7 @@
     line-height: 1.4;
 
     color: #fff;
+    z-index: 1;
     position: relative;
 }
 .examine > .left_box .num::before {
@@ -2880,6 +2895,11 @@
 .f_group19 > select {
     width: 100%;
     max-width: 132px;
+    min-height: 48px;
+    line-height: 1.2;
+    font-size: 16rem;
+    padding: 0px 8px 0px 8px;
+    background-position: right 6px center;
 }
 
 .common_inp17 {
@@ -3276,7 +3296,21 @@
 }
 
 
+.f_group26 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.f_group26 select.btn_child {
+    width: 100%;
+    display: block;
 
+    font-size: 15rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #070F1666;
+}
 
 
 

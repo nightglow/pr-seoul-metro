@@ -2522,7 +2522,12 @@ select {
     display: block;
 }
 
-
+.show_hide {
+    display: none;
+}
+.show_hide.active {
+    display: block;
+}
 
 
 @media (min-width: 749px) {

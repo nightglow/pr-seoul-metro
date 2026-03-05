@@ -25,12 +25,125 @@
             <div class="accordion">
                 <div class="acc-item mt10">
                     <div class="acc-header">
-                        <span class="ico work_01"><i class="blind">신규신청</i></span>
-                        <span class="txt01">신규신청</span>
+                        <span class="ico work_01"><i class="blind">당직 변경 신규신청</i></span>
+                        <span class="txt01">당직 변경 신규신청</span>
                     </div>
-                    <!-- 신규신청 내용 -->
                     <div class="acc-content">
-                        <ul class="area_vacation">
+                        <button type="button" class="btn_secondary">
+                            <span class="txt">신규신청</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="acc-item">
+                    <div class="acc-header">
+                        <span class="ico work_03"><i class="blind">변경요청 내역</i></span>
+                        <span class="txt01">변경요청 내역</span>
+                    </div>
+                    <div class="acc-content">
+                        <fieldset role="radiogroup">
+                            <legend class="blind">답변 선택</legend>
+                            <ul class="rdo_group_01">
+                                <li>
+                                    <div class="f_group12">
+                                        <label class="cm_area">
+                                            <input type="radio" checked="checked" name="r2" id="rad1_1">
+                                            <span class="cm_mark cm_radio">
+                                                <i class="blind">아이콘</i>
+                                            </span>
+                                            <div class="area_summation02">
+                                                <table class="summation02">
+                                                    <caption class="blind">지원근무일자</caption>
+                                                    <colgroup>
+                                                        <col style="width: 50%;">
+                                                        <col style="width: 50%;">
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><span class="txt01">지원근무일자</span></td>
+                                                            <td><span class="txt02">2026-01-01</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="txt01">근무일정</span></td>
+                                                            <td>
+                                                                <span class="txt02">[공통]4조2교대</span>
+                                                                <span class="txt02">(역무차량기지)</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="txt01">일일일정</span></td>
+                                                            <td><span class="txt02">2026-01-15</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="txt01">변경 후 지원근무일</span></td>
+                                                            <td>
+                                                                <span class="txt02">4조2교대</span>
+                                                                <span class="txt02">(지원)</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="txt01">지원근무유형</span></td>
+                                                            <td>
+                                                                <span class="txt03">휴무</span>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="f_group12">
+                                        <label class="cm_area">
+                                            <input type="radio" name="r2" id="rad1_2">
+                                            <span class="cm_mark cm_radio">
+                                                <i class="blind">아이콘</i>
+                                            </span>
+                                            <div class="area_summation02">
+                                                <table class="summation02">
+                                                    <caption class="blind">지원근무일자</caption>
+                                                    <colgroup>
+                                                        <col style="width: 50%;">
+                                                        <col style="width: 50%;">
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><span class="txt01">지원근무일자</span></td>
+                                                            <td><span class="txt02">2026-01-01</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="txt01">근무일정</span></td>
+                                                            <td>
+                                                                <span class="txt02">[공통]4조2교대</span>
+                                                                <span class="txt02">(역무차량기지)</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="txt01">일일일정</span></td>
+                                                            <td><span class="txt02">2026-01-15</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="txt01">변경 후 지원근무일</span></td>
+                                                            <td>
+                                                                <span class="txt02">4조2교대</span>
+                                                                <span class="txt02">(지원)</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="txt01">지원근무유형</span></td>
+                                                            <td>
+                                                                <span class="txt03">휴무</span>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <ul class="area_vacation mt10">
                             <li>
                                 <div class="f_group05"><!-- error, sucess 클래스 추가-->
                                     <label class="area_tit01">
@@ -81,10 +194,17 @@
                                         </div>
                                     </label>
                                     <span class="reply">택스트를 입력하세요.</span>
+                                    <label class="cm_area">
+                                        <input type="checkbox" name="c1" id="ck1_1">
+                                        <span class="cm_mark cm_check">
+                                            <i class="blind">아이콘</i>
+                                        </span>
+                                        <span class="cm_label">당직취소</span>
+                                    </label>
                                 </div>
                             </li>
                             <li>
-                                <div class="f_group13 error"><!-- error, sucess 클래스 추가-->
+                                <div class="f_group13"><!-- error, sucess 클래스 추가-->
                                     <label class="area_tit01">
                                         <div class="left_box02">
                                             <span class="txt01">당직유형</span>
@@ -101,13 +221,7 @@
                                         </div>
                                     </label>
                                     <span class="reply">택스트를 입력하세요.</span>
-                                    <label class="cm_area">
-                                        <input type="checkbox" name="c1" id="ck1_1">
-                                        <span class="cm_mark cm_check">
-                                            <i class="blind">아이콘</i>
-                                        </span>
-                                        <span class="cm_label">당직취소</span>
-                                    </label>
+                                    
                                 </div>
                             </li>
                             <li>
@@ -138,15 +252,17 @@
                         </ul>
                     </div>
                 </div>
-                <div class="acc-item">
-                    <div class="acc-header">
-                        <span class="ico work_04"><i class="blind">당직 변경정보</i></span>
-                        <span class="txt01">당직 변경정보</span>
-                    </div>
-                    <div class="acc-content bg_wh">
+            </div>
+            <div class="comm_pdd_no mt20">
+                    <div class="show_hide active"><!-- 활성화: active -->
+                        <div class="common_tit01 mt20">
+                            <div class="left_box01">
+                                <span class="txt01">당직 변경정보</span>
+                            </div>
+                        </div>
                         <div class="area_summation01">
                             <table class="summation01">
-                                <caption class="blind">지원근무 변경정보</caption>
+                                <caption class="blind">당직 변경정보</caption>
                                 <colgroup>
                                     <col style="width: 50%;">
                                     <col style="width: 50%;">
@@ -176,7 +292,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
+
             <div class="divider">
                 <i class="blind">구분선</i>
             </div>
@@ -297,7 +414,7 @@
             <div class="area_footer02">
                 <div class="f_group01">
                     <button type="button" class="btn_primary">
-                        <span class="txt">지원근무 변경 신청</span>
+                        <span class="txt">지원근무 변경(신규) 신청</span>
                     </button>
                 </div>
             </div>
