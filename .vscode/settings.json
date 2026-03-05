@@ -4,4 +4,5 @@
     "workbench.editorAssociations": {
         "*.svg": "default"
     },
+    "css.lint.vendorPrefix": "ignore"
 }
