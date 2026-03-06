@@ -203,6 +203,69 @@ $(function () {
     window.getAttachFiles = () => items.filter(x => x.kind === "file").map(x => x.file);
 });
 
+// 숫자 롤업 애니메이션
+$(function () {
+    const $numEls = $('.txt_num');
+    const targets = [];
+
+    $numEls.each(function () {
+        const text = $(this).text().trim().replace(/,/g, '');
+        const target = parseInt(text, 10);
+        if (!isNaN(target)) targets.push(target);
+    });
+
+    const minTarget = targets.length ? Math.min(...targets) : 0;
+    const maxTarget = targets.length ? Math.max(...targets) : 0;
+
+    $numEls.each(function () {
+        const $el = $(this);
+        const text = $el.text().trim().replace(/,/g, '');
+        const target = parseInt(text, 10);
+        if (isNaN(target)) return;
+
+        // 개별 duration 설정 가능
+        let duration = parseInt($el.data('duration'), 10);
+
+        // 자동 duration 계산
+        if (isNaN(duration)) {
+
+            const minDur = 1000;   // 최소 시간
+            const maxDur = 2200;  // 최대 시간
+            const targetRange = maxTarget - minTarget;
+
+            // 화면 내 상대값 기준으로 숫자가 클수록 duration 증가
+            if (targetRange <= 0) {
+                duration = minDur;
+            } else {
+                const ratio = (target - minTarget) / targetRange;
+                duration = Math.round(minDur + ratio * (maxDur - minDur));
+            }
+
+        }
+
+        const frameRate = parseInt($el.data('interval'), 10) || 20;
+        const steps = Math.ceil(duration / frameRate);
+        const stepValue = target / steps;
+
+        let current = 0;
+        let stepCount = 0;
+
+        const timer = setInterval(() => {
+
+            stepCount++;
+            current += stepValue;
+
+            if (stepCount >= steps) {
+                clearInterval(timer);
+                $el.text(target.toLocaleString());
+            } else {
+                $el.text(Math.floor(current).toLocaleString());
+            }
+
+        }, frameRate);
+    });
+});
+
 // 패스워드 보기/숨김
 const password = {
     init() {

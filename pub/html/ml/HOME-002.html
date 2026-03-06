@@ -1,25 +1,172 @@
-<!DOCTYPE html>
 <html lang="ko">
-
 <head>
-    <meta charset="utf-8">
-    <title>서울교통공사</title>
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+
+    <title>서울교통공사 모바일오피스</title>
     <link rel="stylesheet" type="text/css" href="../../css/common.css">
-
-    <script src="../../js/jquery-3.5.1.min.js"></script>
-    <script src="../../js/swiper-bundle.min.js"></script>
-    <script src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery/jquery-ui.js"></script>
+    <script type="text/javascript" src="../../js/jquery/jquery.cmmn.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/swiper-bundle.min.js"></script>
 </head>
+<body>
+    <div class="container">		
+        <header id="header" class="header sticky">
+            <div class="h_wrap">
+                <span class="title">나의 앱 편집</span>
+                <ul class="gnb">
+                    <li>
+                        <button type="button" class="btn_back" onclick="checkAppOrder()">
+                            <label class="blind">뒤로</label>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </header>
 
-<body class="lock"><!-- lock 클래스 추가 -->
-    <div class="container">
-        <div id="header"></div>
+        <style type="text/css">
+            .contents {
+                position: relative;
+                flex: 1;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+            }
+
+            body,
+            .container,
+            .myapp02 {
+                overflow: hidden;
+            }
+            
+            .container {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                width: 100%;
+            }
+
+            .right_box {
+                position: fixed;
+                left: 0;
+                bottom: 96px;
+                width: 100%;
+                height: calc(100% - 240px);    
+                background-color: #EBF0F5;
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+
+            .app_menu {
+                padding-bottom: 26px;
+            }
+
+            /* 롱프레스 시 브라우저 기본 메뉴(다운로드/공유/인쇄 등) 최대한 방지용 */
+            #drag_drop,
+            #drag_drop .item,
+            #drag_drop .item .ico,
+            #drag_drop .item .txt01 {
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            #drag_drop .item {
+                touch-action: pan-y;
+            }    
+            
+            .header {
+                flex-shrink: 0;
+            }
+            
+            
+            /* 드래그 중 스타일 */
+            .dragging {
+                z-index: 100;
+                transform: scale(1.08);
+                box-shadow: var(--shadow);
+                opacity: .95;
+                pointer-events: none;
+            }
+            .placeholder .ico{
+                border: 2px dashed #4a90d9;
+                /*outline: 2px dashed var(--accent);*/
+                /*outline-offset: -4px;*/
+                background: rgba(79,124,255,.08);
+            }
+
+            .item.longpress::after {
+                box-shadow: 0 0 0 3px rgba(79,124,255,.35) inset;
+            }
+        </style>
+
+        <script>
+            $(document).ready(function (){
+
+                let deleteAppItemList = [];
+
+                $('.app_item').each(function(){
+                    let $item = $(this);
+                    let type = $item.data('type');
+                    console.log(type);
+                    if(type ==='MENU'){
+                        return ;
+                    }
+                    if(type === 'APP') {
+                        if(isApp()){
+                            let pkgNm = $item.data('pkg');
+                            let objApp = M.apps.info(pkgNm);
+                            if(objApp.installed) {
+                                $item.show();
+                            }else{
+                                deleteAppItemList.push($(this).data("id"))
+                                $item.hide();
+                            }
+                        }else{
+                            $item.hide();
+                        }
+
+                    }
+                });
+
+                if(deleteAppItemList.length > 0 ){
+                    _ajaxCallPost("/ml/store/deleteAppOrder.do" ,deleteAppItemList,function(){
+                        console.log("순서 정리 완료")
+                    });
+                }
+
+                /* (갤럭시 폴드) 길게 눌렀을 때 시스템 컨텍스트 메뉴(다운로드/공유/인쇄 등) 노출 최소화 */
+                const $dragDrop = $('#drag_drop');
+                // 길게 눌렀을 때 뜨는 기본 contextmenu 차단
+                // $dragDrop.on('contextmenu', function(e) {
+                //     e.preventDefault();
+                //     return false;
+                // });
+                
+                // 아이콘/텍스트 영역에서의 롱프레스도 최대한 소비
+                // $dragDrop.on('touchstart', '.item, .item .ico, .item .txt01', function(e) {
+                //     // 멀티터치 제스처는 그대로 두고, 단일 터치만 막음
+                //     if (e.originalEvent && e.originalEvent.touches && e.originalEvent.touches.length === 1) {
+                //         e.preventDefault();
+                //     }
+                // });
+                
+                $dragDrop.on('mousedown', '.item, .item .ico, .item .txt01', function(e) {
+                    // 오른쪽 버튼/길게 누르기에서 나오는 메뉴 방지
+                    if (e.button === 2) {
+                        e.preventDefault();
+                        return false;
+                    }
+                });
+            });        
+        </script>
 
         <div class="contents">
             <!-- 나의 앱 -->
@@ -30,127 +177,352 @@
                     </div>
                 </div>
                 <div class="right_box">
-                    <div class="app_menu" id="drag_drop">
-                        <div class="app_item" draggable="true">
-                            <div class="ico app01">
-                                <i class="blind">인사관리 앱</i>
+                    <div class="app_menu" id="drag_drop">                           
+                        
+                        <div class="app_item item" data-id="JO" data-type="MENU" data-pkg="" style="display : ">    
+                            <div class="ico app05">
+                                <i class="blind">안전관리 앱</i>
                             </div>
-                            <span class="txt01">인사관리</span>
+                            <span class="txt01">안전관리</span>
                         </div>
-                        <div class="app_item" draggable="true">
-                            <div class="ico app02">
-                                <i class="blind">영업관리 앱</i>
-                            </div>
-                            <span class="txt01">영업관리</span>
-                        </div>
-                        <div class="app_item" draggable="true">
+                    
+                        <div class="app_item item" data-id="TS" data-type="MENU" data-pkg="" style="display : ">
                             <div class="ico app03">
                                 <i class="blind">운전관리 앱</i>
                             </div>
                             <span class="txt01">운전관리</span>
                         </div>
-                        <div class="app_item" draggable="true">
+                    
+                        <div class="app_item item" data-id="PM" data-type="MENU" data-pkg="" style="display : ">
+                            <div class="ico app01">
+                                <i class="blind">인사관리 앱</i>
+                            </div>
+                            <span class="txt01">인사관리</span>
+                        </div>
+                    
+                        <div class="app_item item" data-id="SM" data-type="MENU" data-pkg="" style="display : ">
+                            <div class="ico app02">
+                                <i class="blind">영업관리 앱</i>
+                            </div>
+                            <span class="txt01">영업관리</span>
+                        </div>
+                    
+                        <div class="app_item item" data-id="FM" data-type="MENU" data-pkg="" style="display : ">
                             <div class="ico app04">
                                 <i class="blind">기술관리 앱</i>
                             </div>
                             <span class="txt01">기술관리</span>
                         </div>
-                        <div class="app_item" draggable="true">
-                            <div class="ico app05">
-                                <i class="blind">안전환경 앱</i>
-                            </div>
-                            <span class="txt01">안전환경</span>
-                        </div>
-                        <div class="app_item" draggable="true">
-                            <div class="ico app06">
-                                <i class="blind">교육관리 앱</i>
-                            </div> 
-                            <span class="txt01">교육관리</span>
-                        </div>
-                        <div class="app_item" draggable="true">
+                    
+                        <div class="app_item item" data-id="AM" data-type="MENU" data-pkg="" style="display : ">
                             <div class="ico app07">
                                 <i class="blind">자산관리 앱</i>
                             </div>
                             <span class="txt01">자산관리</span>
                         </div>
-                        <div class="app_item" draggable="true">
+                    
+                        <div class="app_item item" data-id="JM" data-type="MENU" data-pkg="" style="display : ">
                             <div class="ico app08">
-                                <i class="blind">매뉴얼 앱</i>
+                                <i class="blind">메뉴얼 앱</i>
                             </div>
-                            <span class="txt01">매뉴얼</span>
+                            <span class="txt01">메뉴얼</span>
                         </div>
-                        <div class="app_item" draggable="true">
+                    
+                        <div class="app_item item" data-id="TM" data-type="MENU" data-pkg="" style="display : ">
+                            <div class="ico app06">
+                                <i class="blind">교육관리 앱</i>
+                            </div>
+                            <span class="txt01">교육관리</span>
+                        </div>
+                    
+                        <div class="app_item item" data-id="OV" data-type="MENU" data-pkg="" style="display : ">
                             <div class="ico app09">
                                 <i class="blind">사내방송 앱</i>
                             </div>
                             <span class="txt01">사내방송</span>
                         </div>
-                        <div class="app_item" draggable="true">
+                    
+                        <div class="app_item item" data-id="AF" data-type="MENU" data-pkg="" style="display : ">
                             <div class="ico app10">
                                 <i class="blind">이지스 앱</i>
                             </div>
                             <span class="txt01">이지스</span>
                         </div>
-                        <div class="app_item" draggable="true">
+                    
+                        <div class="app_item item" data-id="PC" data-type="MENU" data-pkg="" style="display : ">
                             <div class="ico app11">
                                 <i class="blind">참여마당 앱</i>
                             </div>
                             <span class="txt01">참여마당</span>
                         </div>
-                        <div class="app_item" draggable="true">
-                            <div class="ico app12">
+                    
+                        <div class="app_item item" data-id="GW_APP" data-type="APP" data-pkg="com.hs.mobile.gw" style="display : none">
+                            <div class="ico app41">
                                 <i class="blind">그룹웨어 앱</i>
                             </div>
                             <span class="txt01">그룹웨어</span>
                         </div>
-                        <div class="app_item" draggable="true">
-                            <div class="ico app13">
-                                <i class="blind">매일 앱</i>
+                    
+                        <div class="app_item item" data-id="ML_APP" data-type="APP" data-pkg="com.hs.mobile.gwmail" style="display : none">
+                            <div class="ico app21">
+                                <i class="blind">메일 앱</i>
                             </div>
-                            <span class="txt01">매일</span>
+                            <span class="txt01">메일</span>
                         </div>
-                        <div class="app_item" draggable="true">
-                            <div class="ico app14">
-                                <i class="blind">Seoul Metro FMC 앱</i>
+                    
+                        <div class="app_item item" data-id="FM_APP" data-type="APP" data-pkg="com.amc.ui" style="display : none">
+                            <div class="ico app61">
+                                <i class="blind">FMC (3급 이상용) 앱</i>
                             </div>
-                            <span class="txt01">Seoul Metro FMC</span>
+                            <span class="txt01">FMC (3급 이상용)</span>
                         </div>
-                        <div class="app_item" draggable="true">
-                            <div class="ico app15">
-                                <i class="blind">오피스톡 4.0 앱</i>
-                            </div>
-                            <span class="txt01">오피스톡 4.0</span>
-                        </div>
-                        <div class="app_item" draggable="true">
-                            <div class="ico app16">
+                    
+                        <div class="app_item item" data-id="VD_APP" data-type="APP" data-pkg="com.saeha.ezViewX.seoulmetro" style="display : none">
+                            <div class="ico app81">
                                 <i class="blind">화상회의 앱</i>
                             </div>
                             <span class="txt01">화상회의</span>
                         </div>
-                        <div class="app_item" draggable="true">
-                            <div class="ico app17">
+                    
+                        <div class="app_item item" data-id="TB_APP" data-type="APP" data-pkg="com.seoulmetro.metrophone" style="display : none">
+                            <div class="ico app102">
                                 <i class="blind">터널비상방송 앱</i>
                             </div>
                             <span class="txt01">터널비상방송</span>
                         </div>
+                    
+                        <div class="app_item item" data-id="OT_APP" data-type="APP" data-pkg="com.vcs.realmeet" style="display : none">
+                            <div class="ico app121">
+                                <i class="blind">오피스톡4.0 앱</i>
+                            </div>
+                            <span class="txt01">오피스톡4.0</span>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="footer">
-            <div class="area_footer04">
-                <button type="button" class="btn_primary">
+            <div class="area_footer">
+                <button type="button" class="btn_primary" onclick="saveAppOrder();">
                     <span class="txt">저장하기</span>
                 </button>
             </div>
         </div>
-    </div><!-- 260220 수정-->
+		<script>
+            // 모바일 친화적 드래그: pointer events + 길게 누르기(long-press)로 시작
+            const grid = document.getElementById('drag_drop');
+            const items = () => Array.from(grid.querySelectorAll('.item'));
 
-    <button class="btn_top">
-        <i class="blind">위로이동</i>
-    </button>
+            //window.addEventListener('dragstart', (e) => e.preventDefault());
+            // 각 아이템에 포인터/터치 이벤트 바인딩
 
+            grid.addEventListener('pointerdown', (e) => {
+                const el = e.target.closest('.item');
+                if (!el) return;
+                e.preventDefault(); // 기본 동작 방지
+                startLongPress(e, el);
+            });
+            grid.addEventListener('pointerup', (e) => {
+                const el = e.target.closest('.item');
+                if (!el) return;
+                cancelLongPress(el);
+            });
+            grid.addEventListener('pointerleave', (e) => {
+                const el = e.target.closest('.item');
+                if (!el) return;
+                cancelLongPress(el);
+            });
+
+            // 터치 이벤트 (iOS 사파리 대응)
+            grid.addEventListener('touchstart', (e) => {
+                const el = e.target.closest('.item');
+                if (!el) return;
+                if(e.touches.length > 1) return;
+                startLongPress(e.touches[0], el);
+            }, { passive: true });
+            grid.addEventListener('touchend', (e) => {
+                const el = e.target.closest('.item');
+                if (!el) return;
+                cancelLongPress(el);
+            });
+
+            let dragEl = null;
+            let placeholder = null;
+            let startX = 0, startY = 0;
+            let offsetX = 0, offsetY = 0;
+            let longPressTimer = null;
+            let scrollAnimId = null;
+            let lastY = 0;
+            let lastX = 0;
+            const LONG_PRESS_MS = 100; // 선택 감지 시간을 빠르게 설정
+
+            // 아이템 위치 기준으로 드롭 대상 찾기
+            function getSwapTarget(x, y) {
+                const list = items();
+                for (const el of list) {
+                    if (el === placeholder || el === dragEl) continue;
+                    const r = el.getBoundingClientRect();
+                    // 포인터가 아이템 가운데 근처면 그 자리로
+                    const cx = r.left + r.width / 2;
+                    const cy = r.top + r.height / 2;
+                    const dx = Math.abs(x - cx);
+                    const dy = Math.abs(y - cy);
+                    const hit = (dx < r.width * 0.6) && (dy < r.height * 0.6);
+                    if (hit) return el;
+                }
+                return null;
+			}
+
+			function startLongPress(e, el) {
+					clearTimeout(longPressTimer);
+					el.classList.add('longpress');
+					longPressTimer = setTimeout(() => {
+					beginDrag(e, el);
+                }, LONG_PRESS_MS);
+			}
+
+            function cancelLongPress(el) {
+                clearTimeout(longPressTimer);
+                el.classList.remove('longpress');
+			}
+
+			function beginDrag(e, el) {
+				cancelLongPress(el);
+
+				dragEl = el;
+				const r = el.getBoundingClientRect();
+				const container = document.querySelector('.right_box');
+				const containerRect = container.getBoundingClientRect();
+				
+				// 포인터 이벤트 좌표 사용
+				const clientX = e.clientX;
+				const clientY = e.clientY;
+				
+				startX = clientX;
+				startY = clientY;
+				lastX = startX;
+				lastY = startY;
+				
+				// offset 계산 (화면 기준)
+				offsetX = clientX - r.left;
+				offsetY = clientY - r.top;
+
+				// placeholder 생성: 원래 자리를 표시
+				placeholder = document.createElement('div');
+				let icon = document.createElement('div');
+				icon.className = 'ico';
+				placeholder.insertBefore(icon,null);
+				placeholder.className = 'item app_item placeholder';
+				placeholder.style.width = r.width + 'px';
+				placeholder.style.height = r.height + 'px';
+				grid.insertBefore(placeholder, el.nextSibling);
+
+                // 드래그 요소를 fixed 위치로 띄워서 뷰포트 어디서나 손가락 바로 아래에 있도록
+                el.style.position = 'fixed';
+                el.style.width = r.width + 'px';
+                el.style.height = r.height + 'px';
+                // 초기 위치는 현재 화면상의 위치
+                el.style.left = r.left + 'px';
+                el.style.top = r.top + 'px';
+				el.classList.add('dragging');
+
+				// 연속 스크롤 시작
+				function autoScroll() {
+					if (!dragEl) return;
+					const scrollContainer = document.querySelector('.right_box');
+					const rect = scrollContainer.getBoundingClientRect();
+					
+					// 스크롤 여유분에 따라 속도 조정
+					const scrollSpeed = 30; 
+					const scrollThreshold = 60; // 상/하단 60px 구간
+					
+					// 현재 스크롤 가능한 최대값
+					const maxScroll = scrollContainer.scrollHeight - scrollContainer.clientHeight;
+					
+					// 드래그 포인터가 컨테이너 상단 근처면 위로 스크롤
+					if (lastY - rect.top < scrollThreshold && scrollContainer.scrollTop > 0) {
+						scrollContainer.scrollTop = Math.max(0, scrollContainer.scrollTop - scrollSpeed);
+					} 
+					// 드래그 포인터가 컨테이너 하단 근처면 아래로 스크롤
+					else if (rect.bottom - lastY < scrollThreshold && scrollContainer.scrollTop < maxScroll) {
+						scrollContainer.scrollTop = Math.min(maxScroll, scrollContainer.scrollTop + scrollSpeed);
+					}
+					
+					scrollAnimId = requestAnimationFrame(autoScroll);
+				}
+				scrollAnimId = requestAnimationFrame(autoScroll);
+
+				// 이동 리스너
+                window.addEventListener('pointermove', onPointerMove, { passive: false });
+                window.addEventListener('pointerup', endDrag);
+                // 터치 이벤트 리스너 추가
+                window.addEventListener('touchmove', onPointerMove, { passive: false });
+                window.addEventListener('touchend', endDrag);
+			}
+
+			function onPointerMove(e) {
+				if (!dragEl) return;
+				
+				e.preventDefault(); // 드래그 중 스크롤 방지
+				let x = e.clientX || (e.touches && e.touches[0] ? e.touches[0].clientX : 0);
+				let y = e.clientY || (e.touches && e.touches[0] ? e.touches[0].clientY : 0);
+				
+                // 기록용 좌표 저장
+                lastX = x;
+                lastY = y;
+
+                // 뷰포트 기준으로 새 위치 계산 (fixed 요소)
+                const newLeft = x - offsetX;
+                const newTop = y - offsetY;
+                dragEl.style.left = newLeft + 'px';
+                dragEl.style.top = newTop + 'px';
+
+
+				// 스와프 대상 찾기 (화면 기준 좌표로 판단)
+				const target = getSwapTarget(x, y);
+				if (target && target !== placeholder) {
+                    const list = items();
+                    const targetIndex = list.indexOf(target);
+                    const placeholderIndex = list.indexOf(placeholder);
+                    if (targetIndex < placeholderIndex) {
+                        grid.insertBefore(placeholder, target);
+                    } else {
+                        grid.insertBefore(placeholder, target.nextSibling);
+                    }
+                }
+			}
+
+ 			function endDrag() {
+				if (!dragEl) return;
+				
+				// 스크롤 애니메이션 중단
+				if (scrollAnimId) {
+					cancelAnimationFrame(scrollAnimId);
+					scrollAnimId = null;
+				}
+				
+				// placeholder 자리로 복귀
+				grid.insertBefore(dragEl, placeholder);
+				dragEl.classList.remove('dragging');
+				dragEl.style.position = '';
+				dragEl.style.left = '';
+				dragEl.style.top = '';
+				dragEl.style.width = '';
+				dragEl.style.height = '';
+				dragEl = null;
+				placeholder?.remove();
+				placeholder = null;
+
+                window.removeEventListener('pointermove', onPointerMove);
+                window.removeEventListener('pointerup', endDrag);
+                // 터치 이벤트 리스너 제거
+                window.removeEventListener('touchmove', onPointerMove);
+                window.removeEventListener('touchend', endDrag);
+			}
+
+		</script>
+	</div>
+	
 </body>
-
 </html>
