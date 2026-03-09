@@ -364,6 +364,13 @@ input[type=text].inp_txt01:disabled {
 .btn_line .txt01 {
     color: #2C333B;
 }
+.btn_lineblue {
+    border: 1px solid #1F5EFF;
+    background: #FFF;
+}
+.btn_lineblue .txt01 {
+    color: #1F5EFF;
+}
 .btn_gray {
     background: #7E8388;
 }
