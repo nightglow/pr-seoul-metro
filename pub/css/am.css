@@ -224,6 +224,30 @@
     padding: 12px 0;
     border-bottom: 1px solid #E6EAED;
 }
+.board_box01 > li:last-child {
+    border-bottom: 0;
+}
+
+
+.board_box02 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.board_box02 > li {
+    width: 100%;
+    display: block;
+}
+.board_box02 > li + li {
+    padding: 12px 0;
+}
+
+.board_box02 > li:last-child {
+    border-bottom: 0;
+}
+
+
+
 
 
 .acq_item01 {
