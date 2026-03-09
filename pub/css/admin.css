@@ -1109,6 +1109,9 @@ footer ul li ~ li::before {
     font-weight: 500;
     line-height: normal;
 }
+.tbl_row tr.selected .row_td01 {
+    background-color: rgba(70, 154, 255, 0.11);
+}
 
 .tbl_tit01 {
     width: 100%;
