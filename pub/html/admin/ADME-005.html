@@ -18,7 +18,7 @@
         <span class="txt01">사원 추가</span>
     </button>
 
-    <div class="popup_dim" data-popup="popup01">
+    <div class="popup_dim active" data-popup="popup01">
         <div class="popup_wrap popup_lg">
             <div class="left_box">
                 <div class="area_tit01">
@@ -34,9 +34,13 @@
             <div class="popup_cont_wrap">
                 <div class="right_box">
                     <div class="popup_cont d_f f_row mt10">
-                        <!-- 260225 리스트 검색용 input 추가 -->
+                        <!-- 260310 부서명,사번 셀렉트박스 추가 / 260225 리스트 검색용 input 추가 -->
                         <div class="tree_list_wrap">
                             <div class="sch_inp_wrap">
+                                <select name="sch_condi" id="sch_condi" class="sel_box01">
+                                    <option value="dept_name">부서명</option>
+                                    <option value="user_num">사번</option>
+                                </select>
                                 <input type="text" class="dept_inp" id="deptInput" placeholder="부서명을 입력하세요" aria-label="" />
                                 <button type="button" class="btn_search" id="deptOpenBtn" aria-haspopup="dialog" aria-controls="deptPopup">
                                     <span class="ico_sch"></span>
@@ -47,7 +51,7 @@
                                 <span style="display: block; height: 400px;">tree list 출력되는 영역</span>
                             </div>
                         </div>
-                        <!-- //260225 리스트 검색용 input 추가 -->
+                        <!-- //260310 부서명,사번 셀렉트박스 추가 / 260225 리스트 검색용 input 추가 -->
                         <div class="tbl_box01">
                             <table class="tbl_row">
                                 <colgroup>
@@ -329,6 +333,29 @@
             <!-- //260226 팝업 구조 수정 -->
         </div>
     </div>
+
+    <!-- 260310 부서명/사번 선택에 따른 placeholder 변경 스크립트 추가 -->
+    <script>
+    $(function () {
+        function updatePlaceholder() {
+            const value = $('#sch_condi').val();
+            const $input = $('#deptInput');
+
+            if (value === 'dept_name') {
+                $input.attr('placeholder', '부서명을 입력하세요');
+            } else if (value === 'user_num') {
+                $input.attr('placeholder', '사번을 입력하세요');
+            }
+        }
+
+        // 셀렉트 변경 시 실행
+        $('#sch_condi').on('change', updatePlaceholder);
+
+        // 최초 로딩 시 현재 선택값 기준으로 1회 실행
+        updatePlaceholder();
+    });
+    </script>
+    <!-- //260310 부서명/사번 선택에 따른 placeholder 변경 스크립트 추가 -->
 
 </body>
 </html>

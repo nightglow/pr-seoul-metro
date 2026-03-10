@@ -1611,6 +1611,8 @@ footer ul li ~ li::before {
     width: 100%;
     max-width: 1320px;
     position: relative;
+    display: flex;
+    gap: 6px;
 }
 .dept_inp {
     width: 100%;
