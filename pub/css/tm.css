@@ -335,6 +335,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    
 }
 .com_inp05 > .box_left > .inp_comm {
     width: 100%;
@@ -346,17 +347,29 @@
     line-height: 1.2;
     color: #2C333B;
     margin-left: 22px;
-    text-align: center;
 }
-.com_inp05 .ico_time {
+.com_inp05 > .box_left::before {
+    content: '';
     width: 22px;
     height: 22px;
+
     position: absolute;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
     background: url('../img/ico_time.svg') no-repeat center / 100%;
     cursor: pointer;
+}
+.com_inp05 > .line {
+    width: max-content;
+    height: 22px;
+    display: block;
+
+    font-size: 17rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #2C333B;
+    text-align: center;
 }
 .com_inp05 > input::placeholder {
     width: max-content;
@@ -373,7 +386,7 @@
 }
 
 
-/*  */
+
 .com_inp06 > .box_left {
     width: 100%;
     display: flex;
