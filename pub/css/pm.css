@@ -938,6 +938,7 @@
     font-size: 18rem;
     font-weight: 500;
     line-height: 1.2;
+    padding-left: 8px;
 }
 .common_inp09 > input[type='text'].inp_start {
     border: 1px solid transparent;
