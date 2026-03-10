@@ -357,6 +357,15 @@ input[type=text].inp_txt01:disabled {
 .btn_tertiary .txt01 {
     color: #2C333B;
 }
+.btn_ss.btn_tertiary {
+    background: #7E8388;
+}
+.btn_ss.btn_tertiary:hover {
+    background: #7E8388;
+}
+.btn_ss.btn_tertiary .txt01 {
+    color: #FFF;
+}
 .btn_line {
     border: 1px solid rgba(133, 151, 168, 0.50);
     background: #FFF;
