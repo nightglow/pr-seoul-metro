@@ -112,6 +112,36 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 .btn_quaternary:disabled > .txt {color: #383C4C80;}
 
 
+.btn_quinary {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #B5B5B5;
+}
+.btn_quinary > .txt {
+    width: 100%;
+    display: block;
+    font-size: 17rem;
+    font-weight: 600;
+    color: #2C333B;
+    line-height: 1.4;
+}
+.btn_quinary:hover {
+    border: 1px solid #B5B5B5;
+    background-color: #F5F5F5;
+}
+.btn_quinary:hover > .txt {color: #2C333B;}
+.btn_quinary:disabled {
+    border: 1px solid #B5B5B599;
+    background-color: #73757E33;
+}
+.btn_quinary:disabled > .txt {color: #383C4C80;}
+
+
 
 
 
@@ -292,6 +322,7 @@ html.menu_open, body.menu_open{ overflow:hidden; }
 .f_group01 .btn_secondary {border-radius: 0;}
 .f_group01 .btn_tertiary {border-radius: 0;}
 .f_group01 .btn_quaternary {border-radius: 0;}
+.f_group01 .btn_quinary {border-radius: 0;}
 
 
 
