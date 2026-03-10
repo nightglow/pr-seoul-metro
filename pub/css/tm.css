@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+
+.result_contnet03 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 8px;
+}
+.result_contnet03 > .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 18rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #2C333B;
+}
+.result_contnet03 > .info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap
+}
+.result_contnet03 > .info > li {
+    width: max-content;
+    display: block;
+}
+.result_contnet03 > .info .txt02 {
+    width: max-content;
+    display: inline-block;
+
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #2C333B;
+    
+    word-break: break-all;
+}
+.result_contnet03 > .info .txt03 {
+    width: max-content;
+    display: inline-block;
+
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #2C333B;
+    
+    word-break: break-all;
+}
+.result_contnet03 > .info .txt04 {
+    width: max-content;
+    display: inline-block;
+
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #1F5EFF;
+    
+    word-break: break-all;
+}
+.result_contnet03 > .info .line {
+    width: 1px;
+    height :8px;
+    display: block;
+    background-color: #8597A880;
+}
+
+
+.board_box03 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.board_box03 > li {
+    width: 100%;
+    display: block;
+    padding: 12px 0;
+    border-bottom: 1px solid #E6EAED;
+}
+
+.ico_profile {
+    width: 67px;
+    height: 67px;
+    display: block;
+}
+.area_profile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.area_profile > .left_box {
+    width: 100%;
+    max-height: 100px;
+    display: block;
+}
+.area_profile > .left_box > .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 15rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #4B5058;
+}
+.area_profile > .left_box > .txt02 {
+    width: 100%;
+    display: inline-block;
+
+    font-size: 25rem;
+    font-weight: 500;
+    line-height: 1;
+    color: #2C333B;
+    margin-top: 6px;
+
+    word-break: break-all;
+    /* overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis; */
+}
+.area_profile > .left_box > .txt02 .txt03  {
+    width: max-content;
+    display: inline-block;
+
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #2C333B;
+    flex-shrink: 0;
+}
+
+
+.area_profile > .right_box {
+    width: 100%;
+    display: block;
+    margin-top: auto;
+}
+
+.btn_attend {
+    width: 100%;
+    max-width: 110px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #162C8E;
+    border-radius: 999px;
+    padding: 0 14px;
+
+    margin-left: auto;
+}
+.btn_attend > .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 15rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #fff;
+    padding-left: 26px;
+    position: relative;
+}
+
+.btn_attend > .txt01::before {
+    content: '';
+    display: block;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: url('../img/ico_attend.svg') no-repeat center/100%;
+    width: 17px;
+    height: 17px;
+}
+
+
+.area_tit03 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    
+}
+.area_tit03 > img {
+    width: 72px;
+    height: 72px;
+    display: block;
+}
+.box_tit04 {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #EDF5FF;
+    padding: 20px 4px;
+}
+.box_tit04 > .box_content04 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box_tit04 > .box_content04 > li {
+    width: 100%;
+    display: block;
+}
+.box_tit04 > .box_content04 > li .txt01 {
+    width: 100%;
+    display: inline-block;
+
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #2C333B;
+    text-align: center;
+}
+.box_tit04 > .box_content04 > li .txt02 {
+    width: 100%;
+    display: inline-block;
+
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #2C333B;
+    text-align: center;
+}
+.box_tit04 > .txt03 {
+    width: 100%;
+    display: inline-block;
+
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #73757E;
+    text-align: center;
+    margin-top: 6px;
+}
+.area_tit03 > .txt04 {
+    width: 100%;
+    display: inline-block;
+
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #2C333B;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 749px) {
+
+}
