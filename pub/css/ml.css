@@ -1669,6 +1669,15 @@
     background: url('../img/ico_app17.svg')no-repeat center/100%;
     width: 36px;height: 36px;
 }
+.box_app_store > .left_box .item18 {
+    width: 100%;display: block;position: relative;padding-left: 44px;
+    font-size: 17rem;font-weight: 500;line-height: 1;color: #2B3942;
+}
+.box_app_store > .left_box .item18::before {
+    content: '';position: absolute;top: 50%;left: 0;transform: translateY(-50%);
+    background: url('../img/ico_app18.svg')no-repeat center/100%;
+    width: 36px;height: 36px;
+}
 
 
 .btn_update {
