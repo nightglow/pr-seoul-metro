@@ -8,8 +8,6 @@
 }
 
 
-/* f_group28 */
-
 
 
 .f_group28 {
@@ -126,7 +124,7 @@
     width: 24px;
     height: 24px;
     display: block;
-    background: url(../img/ico_download01.svg)no-repeat center/100%;
+    background: url('../img/ico_download01.svg')no-repeat center/100%;
 }
 
 
