@@ -305,6 +305,39 @@
             </tbody>
         </table>
     </div>
+    <!-- 이지스 -->
+    <div class="wrap">
+        <h3>이지스</h3>
+        <table>
+            <caption>이지스</caption>
+            <colgroup>
+                <col class="lv01">
+                <col class="lv02">
+                <col class="lv03">
+                <col class="lv04">
+                <col class="lv05">
+                <col class="lv06">
+                <col class="lv07">
+                <col class="lv08">
+                <col class="lv09">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">Depth 01</th>
+                    <th scope="col">Depth 02</th>
+                    <th scope="col">Depth 03</th>
+                    <th scope="col">Depth 04</th>
+                    <th scope="col">경로</th>
+                    <th scope="col">파일명</th>
+                    <th scope="col">타입</th>
+                    <th scope="col">상태</th>
+                    <th scope="col">Issue/Memo</th>
+                </tr>
+            </thead>
+            <tbody id='af'>
+            </tbody>
+        </table>
+    </div>
 
     <!-- 관리시스템 -->
     <div class="wrap">
@@ -896,6 +929,7 @@
         { path: '/jm', f_name: 'MANU-005.html', type: 'page', state:'완료',
             dep01: '', dep02: '업무매뉴얼 상세', dep03: '', dep04: '', memo: '' },
     ]
+    
     // 교육관리
     const data_tm = [
         { path: '/tm', f_name: 'ATTE-009.html', type: 'page', state:'완료',
@@ -914,6 +948,12 @@
             dep01: '', dep02: '교육출(회의)정보관리', dep03: '', dep04: '', memo: '' },
         { path: '/tm', f_name: 'EDUC-005.html', type: 'popup', state:'완료',
             dep01: '', dep02: '교육출(회의)정보등록', dep03: '', dep04: '', memo: '' },
+    ]
+
+    // 이지스
+    const data_af = [
+        { path: '/tm', f_name: 'EASY-005.html', type: 'page', state:'진행중',
+            dep01: '', dep02: '', dep03: '신고현황상세', dep04: '', memo: '' },
     ]
 
     // 관리시스템
@@ -1152,6 +1192,22 @@
             <td>${el.memo}</td>
         </tr>
     `).join('');
+
+    // 이지스
+    document.getElementById('af').innerHTML = data_af.map(el => `
+        <tr>
+            <td>${el.dep01}</td>
+            <td>${el.dep02}</td>
+            <td>${el.dep03}</td>
+            <td>${el.dep04}</td>
+            <td class='tac'>${el.path}</td>
+            <td><a href='../pub/html/af/${el.f_name}'> ${el.f_name}</a></td>
+            <td >${el.type}</td>
+            <td class='tac'>${el.state}</td>
+            <td>${el.memo}</td>
+        </tr>
+    `).join('');
+
 
     // 관리시스템
     document.getElementById('admin').innerHTML = data_admin.map(el => `

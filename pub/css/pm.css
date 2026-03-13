@@ -376,12 +376,8 @@
 .common_inp05.active .ico_arr {
     background-image: url('../img/ico_arr_bottom.svg');
 }
-.common_inp05 > input[type='text'],
-.common_inp05 > input[type='password'] {
-    border: 1px solid transparent;
-}
-.common_inp05 > input[type='text'],
-.common_inp05 > input[type='password']:focus  {
+.common_inp05 > input,
+.common_inp05 > input:focus  {
     border: 1px solid transparent;
 }
 
