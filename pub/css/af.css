@@ -86,6 +86,53 @@
 }
 
 
+
+.f_group29 {
+    width: 100%;
+    display: block;
+}
+.f_group29 > .area_contens02 {
+    width: 100%;
+    display: block;
+    background-color: #EFF4F8;
+    border-radius: 6px;
+    padding: 16px 20px;
+}
+.f_group29 > .area_contens02 > .box_constents02 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.file_list01 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.file_list01 > .txt01 {
+    width: 100%;
+    display: inline-block;
+
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #2C333B;
+
+    word-break: break-all;
+}
+.btn_download {
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url(../img/ico_download01.svg)no-repeat center/100%;
+}
+
+
+
+
+
 @media (min-width: 749px) {
 
 }

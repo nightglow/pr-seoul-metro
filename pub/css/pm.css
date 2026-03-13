@@ -2388,6 +2388,7 @@
     text-align: center;
     padding: 12px 0;
     border-bottom: 1px solid #8295A733;
+    vertical-align: middle;
 }
 .approval_result > table tbody tr td > .txt01 {
     width: max-content;
@@ -2398,6 +2399,23 @@
     line-height: 1.4;
     color: #070F16;
 }
+
+.approval_result > table tbody tr td > .txt02 {
+    width: 100%;
+    display: inline-block;
+
+    font-size: 17rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #070F16;
+    word-break: keep-all;
+}
+
+
+
+
+
+
 
 
 .area_date {
