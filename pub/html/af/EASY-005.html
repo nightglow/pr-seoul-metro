@@ -123,7 +123,7 @@
                         </div>
                         <div class="area_contents02">
                             <div class="txta01">
-                                <textarea name="" id="" placeholder="신고내용을 입력하세요."></textarea>
+                                <textarea name="" id="x01" placeholder="신고내용을 입력하세요."></textarea>
                             </div>
                         </div>
                     </li>
@@ -282,7 +282,7 @@
                         <span class="txt01">협조 부서 지정</span>
                     </div>
                 </div>
-                <div class="area_wealth">
+                <div class="area_wealth01">
                     <ul class="common_content01">
                         <li>
                             <div class="a_group01"><!-- error, sucess 클래스 추가-->
@@ -374,6 +374,10 @@
         $('.acc-header').on('click', function () {
             $(this).next('.acc-content').slideToggle();
             $(this).toggleClass('active');
+
+            const $txt = $(this).find('.txt01');
+            $txt.text($txt.text() === '이미지 열기' ? '이미지 닫기' : '이미지 열기');
+
         });
     });
 </script>
