@@ -127,6 +127,105 @@
     background: url('../img/ico_download01.svg')no-repeat center/100%;
 }
 
+.area_img01 {
+    width: 100%;
+    display: block;
+}
+
+.box_img01 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box_img01 > li {
+    width: 100%;
+    display: block;
+}
+.box_img01 > li img {
+    width: 280px;
+    height: 188px;
+    display: block;
+}
+.box_img01 > li .f_name01 {
+    width: 100%;
+    display: inline-block;
+
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #73757E;
+    margin-top: 6px;
+
+    word-break: break-all;
+}
+
+
+
+/* 아코디언 */
+.accordion01 {
+    width: 100%;
+}
+.accordion01 > .acc-item01 {
+    width: 100%;
+    display: block;
+}
+.accordion01 > .acc-item01 + .acc-item01 {
+    margin-top: 10px;
+}
+.accordion01 > .acc-item01 > .acc-header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px solid #8597A880;
+    padding: 6px 20px
+}
+.accordion01 > .acc-item01 > .acc-header::after {
+    content: none;
+}
+.accordion01 > .acc-item01 > .acc-header::before {
+    content: none;
+}
+.accordion01 > .acc-item01 > .acc-header .txt01 {
+    width: max-content;
+    display: inline-block;
+    
+    font-size: 16rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #73757E;
+    text-align: center;
+    padding: 0;
+}
+.accordion01 > .acc-item01 > .acc-header .txt01::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s;
+    background: url('../img/ico_arr_down.svg') no-repeat center/100%;
+    width: 24px;
+    height: 24px;
+    margin-left: 6px;
+}
+.accordion01 > .acc-item01 > .acc-header.active .txt01::after {
+    content: '';
+    background-image: url('../img/ico_arr_up.svg');
+}
+
+
+.accordion01 > .acc-item01 > .acc-header.active .txt01 {
+    color: #070F16;
+}
+
+.accordion01 > .acc-item01 > .acc-content {
+    display: none;
+    padding: 0;
+    background: initial;
+}
+/* //아코디언 */
 
 
 
