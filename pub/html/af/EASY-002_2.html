@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>서울교통공사</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+
+<body>
+    
+    <button type="button" class="btn_primary" onclick="BottomSheet.show('sheet2')">
+        <span class="txt">조치상태</span>
+    </button>
+
+    <!-- 조치상태 -->
+    <div class="dim" data-sheet='sheet2'>
+        <div class="sheet bh50">
+            <div class="left_box">
+                <div class="area_tit01">
+                    <span class="txt01">조치상태</span>
+                    <button type="button" class="btn_close" onclick="BottomSheet.hide('sheet2');">
+                        <label class="blind">닫기</label>
+                    </button>
+                </div>
+            </div>
+            <div class="right_box">
+                <div class="comm_pd80">
+                    <ul class="item_list">
+                        <li>
+                            <div class="item_rdo">
+                                <label class="rdo_select" for="rdo01_1">
+                                    <input type="radio" name="rdo01" id="rdo01_1" checked>
+                                    <span class="ico_check"></span>
+                                    <span class="txt01">전체</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_rdo">
+                                <label class="rdo_select" for="rdo01_2">
+                                    <input type="radio" name="rdo01" id="rdo01_2">
+                                    <span class="ico_check"></span>
+                                    <span class="txt01">접수대기</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_rdo">
+                                <label class="rdo_select" for="rdo01_3">
+                                    <input type="radio" name="rdo01" id="rdo01_3">
+                                    <span class="ico_check"></span>
+                                    <span class="txt01">처리부서지정</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_rdo">
+                                <label class="rdo_select" for="rdo01_4">
+                                    <input type="radio" name="rdo01" id="rdo01_4">
+                                    <span class="ico_check"></span>
+                                    <span class="txt01">부서접수대기</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_rdo">
+                                <label class="rdo_select" for="rdo01_5">
+                                    <input type="radio" name="rdo01" id="rdo01_5">
+                                    <span class="ico_check"></span>
+                                    <span class="txt01">담당자접수</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_rdo">
+                                <label class="rdo_select" for="rdo01_6">
+                                    <input type="radio" name="rdo01" id="rdo01_6">
+                                    <span class="ico_check"></span>
+                                    <span class="txt01">조치결과등록</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_rdo">
+                                <label class="rdo_select" for="rdo01_7">
+                                    <input type="radio" name="rdo01" id="rdo01_7">
+                                    <span class="ico_check"></span>
+                                    <span class="txt01">임시조치완료</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_rdo">
+                                <label class="rdo_select" for="rdo01_8">
+                                    <input type="radio" name="rdo01" id="rdo01_8">
+                                    <span class="ico_check"></span>
+                                    <span class="txt01">조치완료</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_rdo">
+                                <label class="rdo_select" for="rdo01_9">
+                                    <input type="radio" name="rdo01" id="rdo01_9">
+                                    <span class="ico_check"></span>
+                                    <span class="txt01">신고취하</span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <div class="area_footer04">
+                        <button type="button" class="btn_primary">
+                            <span class="txt">선택하기</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <button class="btn_top">
+        <i class="blind">위로이동</i>
+    </button> -->
+
+</body>
+
+</html>

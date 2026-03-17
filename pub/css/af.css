@@ -163,7 +163,6 @@
 
 
 
-/* 아코디언 */
 .accordion01 {
     width: 100%;
 }
@@ -225,9 +224,59 @@
     padding: 0;
     background: initial;
 }
-/* //아코디언 */
 
 
+
+.f_group30 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.f_group30 > .area_contens03 {
+    width: 100%;
+    display: block;
+
+    padding: 7px 18px;
+    background-color:  #F5F8FA80;
+    border-radius: 6px;
+}
+.f_group30 > .area_contens03 > ul {
+    width: 100%;
+    display: block;
+}
+.f_group30 > .area_contens03 > ul li + li {
+    margin-top: 12px;
+}
+.f_group30 > .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 15rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #070F16D1;
+    position: relative;
+    padding-left: 24px;
+    padding-top: 1px;
+}
+.f_group30 > .txt01::before {
+    content: '';
+    position: absolute;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: url('../img/ico_alert_06.svg') no-repeat center/100%;
+}
+
+
+.btn_align01 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
 
 @media (min-width: 749px) {

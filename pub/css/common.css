@@ -105,6 +105,10 @@ html.menu_open {
     background-color: #ffffff;border-radius: 10px;
     border: 1px solid #1F5EFF;
 }
+.btn_quaternary.file{
+    border: 2px solid #1F5EFF;
+}
+
 .btn_quaternary > .txt {
     width: 100%;
     display: block;
@@ -2417,6 +2421,7 @@ select {
 .comm_30de.mt20 {margin-top: 20px;}
 
 .comm_80de.mt10{margin-top: 10px;}
+.comm_80de.mt20{margin-top: 20px;}
 .comm_80de.pt10{padding-top: 10px;}
 
 
