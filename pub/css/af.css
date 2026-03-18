@@ -160,6 +160,22 @@
 
     word-break: break-all;
 }
+.box_img01 > li .cover {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.box_img01 > li .cover::before {
+    content: '';
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('../img/ico_playler.svg') no-repeat center/100%;
+}
 
 
 
@@ -281,4 +297,8 @@
 
 @media (min-width: 749px) {
 
+    .box_img01 > li img {
+        width: 100%;
+        height: auto;
+    }
 }
