@@ -1793,6 +1793,10 @@
 .area_summation03 > .summation03 tr {
     width: 100%;
 }
+.area_summation03 > .summation03 tr td {
+    width: 100%;
+    vertical-align: top;
+}
 .area_summation03 > .summation03 tr + tr td {
     padding-top: 10px;
 }

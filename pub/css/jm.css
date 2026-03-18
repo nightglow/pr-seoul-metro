@@ -317,6 +317,23 @@
     -webkit-line-clamp: 2;
     text-overflow: ellipsis;
 }
+.result_tit04 > .txt03 {
+    width: 100%;
+    flex-basis: 40%;
+    display: block;
+
+    font-size: 17rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #1F5EFF;
+    text-align: right;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
 
 
 
