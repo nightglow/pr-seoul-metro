@@ -38,6 +38,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #020C15B8;
+    word-break: break-all;
 }
 .f_group27 > .area_tit01 .left_box02 .txt02 {
     width: 100%;
@@ -47,6 +48,7 @@
     font-weight: 400;
     line-height: 1.2;
     color: #FF5930;
+    word-break: break-all;
 }
 .f_group27 > .area_tit01 .right_box02 {
     width: 100%;
@@ -275,9 +277,9 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     text-overflow: ellipsis;
+    word-break: break-all;
 }
 
-/*  */
 .result_tit04 {
     width: 100%;
     display: flex;
@@ -382,6 +384,7 @@
     font-weight: 400;
     line-height: 1.4;
     color: #070F16D1;
+    word-break: break-all;
 }
 
 

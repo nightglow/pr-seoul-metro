@@ -25,56 +25,6 @@
         <div class="contents">
             <div class="common_tit04">
                 <div class="left_box01">
-                    <span class="txt01">신고자 정보</span>
-                </div>
-            </div>
-            <div class="area_wealth01">
-                <ul class="common_content01">
-                    <!-- 신고자 정보 -->
-                    <li>
-                        <div class="f_group04"><!-- disabled 클래스 추가--><!-- error, sucess 클래스 추가-->
-                            <label class="area_tit01">
-                                <div class="left_box02">
-                                    <span class="txt01">신고자명</span>
-                                    <span class="txt02">*</span>
-                                </div>
-                                <div class="right_box02 mt12">
-                                    <div class="common_inp05"><!-- active -->
-                                        <input type="text" class="inp_pw" placeholder="교육명을 입력하세요." name="0" 
-                                        value="박놀부" disabled />
-                                    </div>
-                                </div>
-                            </label>
-                            <span class="reply">택스트를 입력하세요.</span>
-                        </div>
-                    </li>
-                    <!-- 소속 -->
-                    <li>
-                        <div class="f_group28"><!-- disabled 클래스 추가--><!-- error, sucess 클래스 추가-->
-                            <label class="area_tit01">
-                                <div class="left_box02">
-                                    <span class="txt01">소속</span>
-                                    <span class="txt02">*</span>
-                                </div>
-                                <div class="right_box02 mt12">
-                                    <div class="common_inp23"><!-- active -->
-                                        <input type="text" class="com_inp07" placeholder="소속 입력하세요." name="0" 
-                                        value="차량본부 군자차량사업소 정비팀 정비2" disabled />
-                                    </div>
-                                </div>
-                            </label>
-                            <span class="reply">택스트를 입력하세요.</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="divider03">
-                <i class="blind">구분선</i>
-            </div>
-
-            <div class="common_tit04">
-                <div class="left_box01">
                     <span class="txt01">신고내역</span>
                 </div>
             </div>
@@ -282,153 +232,185 @@
                 <i class="blind">구분선</i>
             </div>
 
+            
+            <div class="common_tit04">
+                <div class="left_box01">
+                    <span class="txt01">협조 부서 지정</span>
+                </div>
+            </div>
+            <div class="area_wealth01">
+                <ul class="common_content01">
+                    <li>
+                        <div class="a_group01"><!-- error, sucess 클래스 추가-->
+                            <label class="area_tit01">
+                                <div class="left_box">
+                                    <span class="txt01">협소 본부1</span>
+                                </div>
+                                <div class="right_box mt6">
+                                    <div class="com_inp01">
+                                        <input type="text" class="inp_comm" placeholder="본부를 선택하세요." name="0"
+                                            value="" disabled/>
+                                        <span class="ico_arr">
+                                            <i class="blind">선택표시</i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </label>
+                            <span class="reply">택스트를 입력하세요.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="a_group01"><!-- error, sucess 클래스 추가-->
+                            <label class="area_tit01">
+                                <div class="left_box">
+                                    <span class="txt01">협소 사업소1</span>
+                                </div>
+                                <div class="right_box mt6">
+                                    <div class="com_inp01">
+                                        <input type="text" class="inp_comm" placeholder="협소 사업소를 선택하세요." name="0"
+                                            value="" disabled/>
+                                        <span class="ico_arr">
+                                            <i class="blind">선택표시</i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </label>
+                            <span class="reply">택스트를 입력하세요.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="a_group01"><!-- error, sucess 클래스 추가-->
+                            <label class="area_tit01">
+                                <div class="left_box">
+                                    <span class="txt01">협소 관리소1</span>
+                                </div>
+                                <div class="right_box mt6">
+                                    <div class="com_inp01">
+                                        <input type="text" class="inp_comm" placeholder="협소 관리소를 선택하세요." name="0"
+                                            value="" disabled/>
+                                        <span class="ico_arr">
+                                            <i class="blind">선택표시</i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </label>
+                            <span class="reply">택스트를 입력하세요.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <button type="button" class="btn_senary">
+                            <span class="txt">협조 부서 추가</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn_secondary">
+                            <span class="txt">접수 처리</span>
+                        </button>
+                    </li>
+                </ul>
+                <!-- 협조 부서 추가 >>  협조 부서 삭제 -->
+                <ul class="common_content01 mt12"><!-- 반복시 mt12 넣어 주세요 -->
+                    <li>
+                        <div class="a_group01"><!-- error, sucess 클래스 추가-->
+                            <label class="area_tit01">
+                                <div class="left_box">
+                                    <span class="txt01">협소 본부2</span>
+                                </div>
+                                <div class="right_box mt6">
+                                    <div class="com_inp01">
+                                        <input type="text" class="inp_comm" placeholder="본부를 선택하세요." name="0"
+                                            value="" disabled/>
+                                        <span class="ico_arr">
+                                            <i class="blind">선택표시</i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </label>
+                            <span class="reply">택스트를 입력하세요.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="a_group01"><!-- error, sucess 클래스 추가-->
+                            <label class="area_tit01">
+                                <div class="left_box">
+                                    <span class="txt01">협소 사업소2</span>
+                                </div>
+                                <div class="right_box mt6">
+                                    <div class="com_inp01">
+                                        <input type="text" class="inp_comm" placeholder="협소 사업소를 선택하세요." name="0"
+                                            value="" disabled/>
+                                        <span class="ico_arr">
+                                            <i class="blind">선택표시</i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </label>
+                            <span class="reply">택스트를 입력하세요.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="a_group01"><!-- error, sucess 클래스 추가-->
+                            <label class="area_tit01">
+                                <div class="left_box">
+                                    <span class="txt01">협소 관리소2</span>
+                                </div>
+                                <div class="right_box mt6">
+                                    <div class="com_inp01">
+                                        <input type="text" class="inp_comm" placeholder="협소 관리소를 선택하세요." name="0"
+                                            value="" disabled/>
+                                        <span class="ico_arr">
+                                            <i class="blind">선택표시</i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </label>
+                            <span class="reply">택스트를 입력하세요.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <button type="button" class="btn_quinary" >
+                            <span class="txt">협조 부서 삭제</span>
+                        </button>
+                    </li>
+                </ul>
+                <!-- //협조 부서 추가 >>  협조 부서 삭제 -->
+            </div>
+            
+            <div class="divider03">
+                <i class="blind">구분선</i>
+            </div>
+            
             <div class="comm_pd80">
                 <div class="common_tit04">
                     <div class="left_box01">
-                        <span class="txt01">협조 부서 지정</span>
+                        <span class="txt01">반려 요청</span>
                     </div>
                 </div>
                 <div class="area_wealth01">
                     <ul class="common_content01">
                         <li>
-                            <div class="a_group01"><!-- error, sucess 클래스 추가-->
-                                <label class="area_tit01">
-                                    <div class="left_box">
-                                        <span class="txt01">협소 본부1</span>
-                                    </div>
-                                    <div class="right_box mt6">
-                                        <div class="com_inp01">
-                                            <input type="text" class="inp_comm" placeholder="본부를 선택하세요." name="0"
-                                                value="" disabled/>
-                                            <span class="ico_arr">
-                                                <i class="blind">선택표시</i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </label>
-                                <span class="reply">택스트를 입력하세요.</span>
+                            <div class="common_tit01">
+                                <div class="left_box01">
+                                    <span class="txt01">반려 사유</span>
+                                    <span class="txt02">*</span>
+                                </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="a_group01"><!-- error, sucess 클래스 추가-->
-                                <label class="area_tit01">
-                                    <div class="left_box">
-                                        <span class="txt01">협소 사업소1</span>
-                                    </div>
-                                    <div class="right_box mt6">
-                                        <div class="com_inp01">
-                                            <input type="text" class="inp_comm" placeholder="협소 사업소를 선택하세요." name="0"
-                                                value="" disabled/>
-                                            <span class="ico_arr">
-                                                <i class="blind">선택표시</i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </label>
-                                <span class="reply">택스트를 입력하세요.</span>
+                            <div class="area_contents02">
+                                <div class="txta01">
+                                    <textarea name="" id="x02" placeholder="반려사유를 입력하세요."></textarea>
+                                </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="a_group01"><!-- error, sucess 클래스 추가-->
-                                <label class="area_tit01">
-                                    <div class="left_box">
-                                        <span class="txt01">협소 관리소1</span>
-                                    </div>
-                                    <div class="right_box mt6">
-                                        <div class="com_inp01">
-                                            <input type="text" class="inp_comm" placeholder="협소 관리소를 선택하세요." name="0"
-                                                value="" disabled/>
-                                            <span class="ico_arr">
-                                                <i class="blind">선택표시</i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </label>
-                                <span class="reply">택스트를 입력하세요.</span>
-                            </div>
-                        </li>
-                        <li>
-                            <button type="button" class="btn_senary">
-                                <span class="txt">협조 부서 추가</span>
-                            </button>
                         </li>
                     </ul>
-                    <!-- 협조 부서 추가 >>  협조 부서 삭제 -->
-                    <ul class="common_content01 mt12"><!-- 반복시 mt12 넣어 주세요 -->
-                        <li>
-                            <div class="a_group01"><!-- error, sucess 클래스 추가-->
-                                <label class="area_tit01">
-                                    <div class="left_box">
-                                        <span class="txt01">협소 본부2</span>
-                                    </div>
-                                    <div class="right_box mt6">
-                                        <div class="com_inp01">
-                                            <input type="text" class="inp_comm" placeholder="본부를 선택하세요." name="0"
-                                                value="" disabled/>
-                                            <span class="ico_arr">
-                                                <i class="blind">선택표시</i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </label>
-                                <span class="reply">택스트를 입력하세요.</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="a_group01"><!-- error, sucess 클래스 추가-->
-                                <label class="area_tit01">
-                                    <div class="left_box">
-                                        <span class="txt01">협소 사업소2</span>
-                                    </div>
-                                    <div class="right_box mt6">
-                                        <div class="com_inp01">
-                                            <input type="text" class="inp_comm" placeholder="협소 사업소를 선택하세요." name="0"
-                                                value="" disabled/>
-                                            <span class="ico_arr">
-                                                <i class="blind">선택표시</i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </label>
-                                <span class="reply">택스트를 입력하세요.</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="a_group01"><!-- error, sucess 클래스 추가-->
-                                <label class="area_tit01">
-                                    <div class="left_box">
-                                        <span class="txt01">협소 관리소2</span>
-                                    </div>
-                                    <div class="right_box mt6">
-                                        <div class="com_inp01">
-                                            <input type="text" class="inp_comm" placeholder="협소 관리소를 선택하세요." name="0"
-                                                value="" disabled/>
-                                            <span class="ico_arr">
-                                                <i class="blind">선택표시</i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </label>
-                                <span class="reply">택스트를 입력하세요.</span>
-                            </div>
-                        </li>
-                        <li>
-                            <button type="button" class="btn_quinary" >
-                                <span class="txt">협조 부서 삭제</span>
-                            </button>
-                        </li>
-                    </ul>
-                    <!-- //협조 부서 추가 >>  협조 부서 삭제 -->
                 </div>
             </div>
-            
         </div>
 
         <div class="footer">
             <div class="area_footer02">
                 <div class="f_group01">
                     <button type="button" class="btn_primary">
-                        <span class="txt">부서지정</span>
+                        <span class="txt">반려 요청</span>
                     </button>
                 </div>
             </div>

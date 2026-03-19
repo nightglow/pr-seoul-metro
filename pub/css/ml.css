@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-
-/* setting */
 .setting {
     width: 100%;
     display: flex;
@@ -17,10 +15,7 @@
     width: 100%;
     display: block;
 }
-/* //setting */
 
-
-/* 접근권한 설정 */
 .area_access {
     width: 100%;
     display: block;
@@ -38,8 +33,6 @@
     padding: 16px 20px;
     position: relative;
 }
-
-
 .access > .ico_acc01 {width: 100%;display: block;font-size: 17rem;font-weight: 400;line-height: 1;color: #020C15D1;padding-left: 40px;}
 .access > .ico_acc01::before {content: '';position: absolute;top : 50%;left: 20px;transform: translateY(-50%);width: 28px;height: 28px;background: url('../img/ico_setting_d_07.svg') no-repeat center/100%;}
 .access > .ico_acc01.active::before {background-image: url('../img/ico_setting_on_07.svg');}
@@ -71,8 +64,6 @@
 .access > .ico_acc09 {width: 100%;display: block;font-size: 17rem;font-weight: 400;line-height: 1;color: #020C15D1;padding-left: 40px;}
 .access > .ico_acc09::before {content: '';position: absolute;top : 50%;left: 20px;transform: translateY(-50%);width: 28px;height: 28px;background: url('../img/ico_setting_d_15.svg') no-repeat center/100%;}
 .access > .ico_acc09.active::before {background-image: url('../img/ico_setting_on_15.svg');}
-
-
 
 
 .access01 {
@@ -107,21 +98,23 @@
 .access01 > .ico_acc08 > .txt01 {
     width: 100%;
     display: block;
+
     font-size: 17rem;
     font-weight: 400;
     line-height: 1;
     color: #020C15D1;
+    word-break: break-all;
 }
 .access01 > .ico_acc08 > .txt02 {
     width: 100%;
     display: block;
+
     font-size: 15rem;
     font-weight: 400;
     line-height: 1;
     color: #EE444A;
+    word-break: break-all;
 }
-
-/* //접근권한 설정 */
 
 
 
@@ -150,6 +143,7 @@
     font-weight: 700;
     line-height: 1.4;
     color: #2C333B;
+    word-break: break-all;
 }
 .myapp02 > .right_box {
     width: 100%;
@@ -196,6 +190,7 @@
     color: #2B3942;
     text-align: center;
     margin-top: 6px;
+    word-break: break-all;
 }
 .app_item>.ico {
     width: 74px;
@@ -229,18 +224,12 @@
 /* //드래그 앤 드롭 */
 
 
-/* banner */
 .banner {
     width: 100%;
     display: block;
 }
-
 .banner-swiper {
     width: 100%;
-    /* width: calc(100% - 40px); */
-    /* margin: 0 auto; */
-    /* padding-top: 200px; */
-    /* border: 1px solid red; */
 }
 .banner_item {
     width: 100%;
@@ -256,18 +245,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: 0 20px; */
 }
 .banner_img img {
-    /* width: 340px; */
     width: 100%;
     max-height: 90px;
 }
-
 .banner-swiper .swiper-pagination {position: relative;margin-top: 16px;}
 .banner-swiper .swiper-pagination-bullet {width: 8px;height: 8px;background: #ccc;opacity: 1;}
 .banner-swiper .swiper-pagination-bullet-active {width: 20px;border-radius: 4px;background: #333;}
-/* //banner */
+
 
 
 
@@ -303,11 +289,11 @@
     display: block;
 
     font-family: "TheJamsil";
-    /* font-size: 42rem; */
     font-size: 42px;
     font-weight: 400;
     line-height: 1;
     color: #0A1648;
+    word-break: break-all;
 }
 .splash .area_contents01 .logo_02 {
     width: 100%;
@@ -327,11 +313,9 @@
     font-weight: 400;
     line-height: 23px;
     color: #505B66;
+    word-break: break-all;
 }
 
-
-
-/* login */
 .login {
     width: 100%;
     height: 100%;
@@ -383,6 +367,7 @@
     line-height: 1;
     letter-spacing: -4%;
     color: #0A1648;
+    word-break: break-all;
 }
 .login > .area_content01 .right_box {
     width: 100%;
@@ -433,6 +418,7 @@
     font-weight: 400;
     line-height: 1;
     color: #4D555C;
+    word-break: break-all;
 }
 .login .group_tit01 .left_box01 .txt02 {
     width: max-content;
@@ -442,6 +428,7 @@
     font-weight: 400;
     line-height: 1;
     color: #1F5EFF;
+    word-break: break-all;
 }
 .login .group_tit01 .line {
     width: 2px;
@@ -454,9 +441,6 @@
     width: max-content;
     display: block;
 }
-/* // login */
-
-
 
 .myapp01 {
     width: calc(100% - 40px);
@@ -474,7 +458,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding: 0 20px; */
 }
 .myapp01 > .left_box .area_tit01 {
     width: 100%;
@@ -488,6 +471,7 @@
     font-weight: 600;
     line-height: 1;
     color: #191B1D;
+    word-break: break-all;
 }
 .myapp01 > .left_box .area_content01 {
     width: 100%;
@@ -504,6 +488,7 @@
     color: #191B1D;
     position: relative;
     padding-right: 14px;
+    word-break: break-all;
 }
 .myapp01 > .left_box .area_content01 .txt01::after {
     content: '';
@@ -521,8 +506,6 @@
 }
 
 
-
-/* 개인정보 수집 */
 .area_terms {
     width: calc(100% - 40px);
     margin: 0 auto;
@@ -551,6 +534,7 @@
     font-weight: 400;
     line-height: 1.7;
     color: #070F16D1;
+    word-break: break-all;
 }
 .area_terms .info01 .depth01 {
     width: 100%;
@@ -568,6 +552,7 @@
     font-weight: 400;
     line-height: 1.4;
     color: #020C15B8;
+    word-break: break-all;
 }
 .area_terms .info01 .depth01 .depth02 {
     width: 100%;
@@ -585,6 +570,7 @@
     font-weight: 400;
     line-height: 1.4;
     color: #020C15B8;
+    word-break: break-all;
 }
 .area_terms .info01 .depth01 .depth02 .depth03 {
     width: 100%;
@@ -599,12 +585,10 @@
     font-weight: 400;
     line-height: 1.4;
     color: #020C15B8;
+    word-break: break-all;
 }
-/* //개인정보 수집 */
 
 
-
-/* 비밀번호 등록,찾기 */
 .area_regist_pw {
     width: 100%;
     max-width: 360px;
@@ -631,15 +615,18 @@
     line-height: 1.4;
     color: #2C333B;
     text-align: center;
+    word-break: break-all;
 }
 .area_regist_pw .left_box .txt02 {
     width: 100%;
     display: block;
+
     font-size: 17rem;
     font-weight: 400;
     line-height: 1.4;
     color: #2C333B;
     text-align: center;
+    word-break: break-all;
 }
 
 .area_regist_check {
@@ -651,7 +638,6 @@
 }
 
 
-/* 간편로그인 */
 .area_simple {
     width: calc(100% - 40px);
     max-width: 360px;
@@ -673,20 +659,24 @@
 .area_simple .left_box .txt01 {
     width: 100%;
     display: block;
+
     font-size: 20rem;
     font-weight: 700;
     line-height: 1.4;
     color: #2C333B;
     text-align: center;
+    word-break: break-all;
 }
 .area_simple .left_box .txt02 {
     width: 100%;
     display: block;
+
     font-size: 17rem;
     font-weight: 400;
     line-height: 1.4;
     color: #2C333B;
     text-align: center;
+    word-break: break-all;
 }
 
 .area_simple_check {
@@ -698,10 +688,6 @@
 }
 
 
-
-
-
-/* //간편로그인 */
 
 .f_group02 {
     width: calc(100% - 40px);
@@ -735,6 +721,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #020C15B8;
+    word-break: break-all;
 }
 .f_group02 > .area_tit01 .left_box02 .txt02 {
     width: 100%;
@@ -744,6 +731,7 @@
     font-weight: 400;
     line-height: 1.2;
     color: #FF5930;
+    word-break: break-all;
 }
 .f_group02 > .area_tit01 .right_box02 {
     width: 100%;
@@ -780,6 +768,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #020C15B8;
+    word-break: break-all;
 }
 .f_group03 > .area_tit01 .left_box03 .txt02 {
     width: 100%;
@@ -789,6 +778,7 @@
     font-weight: 400;
     line-height: 1.2;
     color: #FF5930;
+    word-break: break-all;
 }
 .f_group03 > .area_tit01 .right_box03 {
     width: 100%;
@@ -799,7 +789,6 @@
     height: 40px;
 }
 .f_group03 > .area_tit01 .right_box03 .common_inp04 .btn_secondary .txt{
-    /* font-size: 15rem; */
     font-size: 15px;
 }
 .f_group03 .time {
@@ -954,7 +943,6 @@
 }
 
 
-/* 간편인증 등록 */
 .popup_wrap > .right_box .area_tit01 {
     width: 100%;
     min-height: 200px;
@@ -991,12 +979,14 @@
     font-weight: 400;
     line-height: 1.4;
     color: #2C333B;
+    word-break: break-all;
 }
 
 .popup_wrap > .right_box .area_tit01.ec_case01 .box_tit01 li .txt01 {
     font-size: 17rem;
     font-weight: 600;
     text-align: left;
+    word-break: break-all;
 }
 
 .popup_wrap > .right_box .area_tit01 .box_tit01 li .txt02 {
@@ -1008,6 +998,7 @@
     font-weight: 700;
     line-height: 1.4;
     color: #2C333B;
+    word-break: break-all;
 }
 
 
@@ -1032,6 +1023,7 @@
     font-weight: 600;
     line-height: 1.4;
     color: #070F16;
+    word-break: break-all;
 }
 .popup_wrap > .right_box .area_tit01 .box_tit02 > .txt01 .txt02 {
     width: max-content;
@@ -1041,6 +1033,7 @@
     font-weight: 600;
     line-height: 1.4;
     color: #1F5EFF;
+    word-break: break-all;
 }
 
 .popup_wrap > .right_box .area_tit01 .box_tit03 {
@@ -1056,12 +1049,9 @@
     font-weight: 400;
     line-height: 1.4;
     color: #2C333B;
+    word-break: break-all;
 }
 
-/* //간편인증 등록 */
-
-
-/* 다른 간편인증 방법으로 로그인 */
 
 .area_btn01 {
     width: 100%;
@@ -1184,10 +1174,8 @@
     line-height: 1;
     color: #2B3942;
 }
-/* /다른 간편인증 방법으로 로그인 */
 
 
-/* 알림함 */
 .tab_content {
     width: 100%;
     display: flex;
@@ -1235,6 +1223,7 @@
     font-weight: 500;
     line-height: 1;
     color:  #73757E;
+    word-break: break-all;
 }
 .message {
     width: 100%;
@@ -1286,6 +1275,7 @@
     font-weight: 500;
     line-height: 1;
     color: #191B1D;
+    word-break: break-all;
 }
 .message .msg_tit01 .txt02 {
     width: 100%;
@@ -1295,15 +1285,13 @@
     font-weight: 500;
     line-height: 1.4;
     color: #4D4D4D;
+    word-break: break-all;
 }
-
 .message .msg_img {
     display: block;
     margin-left: auto;
     margin-right: 14px;
 }
-
-/* //알림함 */
 
 
 .common_inp21 {
@@ -1359,6 +1347,7 @@
     line-height: 1.4;
     color: #2C333B;
     text-align: center;
+    word-break: break-all;
 }
 .area_add01 > .txt02 {
     width: 100%;
@@ -1369,6 +1358,7 @@
     line-height: 1.4;
     color: #2C333B;
     text-align: center;
+    word-break: break-all;
 }
 
 
@@ -1396,6 +1386,7 @@
     font-weight: 700;
     line-height: 1.4;
     color: #070F16D1;
+    word-break: break-all;
 }
 .area_favorites > .right_box {
     width: 100%;
@@ -1428,6 +1419,7 @@
     font-weight: 400;
     line-height: 1;
     color: #2C333B;
+    word-break: break-all;
 }
 .list_fav > .btn_fav {
     width: max-content;
@@ -1474,7 +1466,6 @@
     max-height: 40px;
 }
 .box_app_store > .left_box > .btn_secondary > .txt {
-    /* font-size: 15rem; */
     font-size: 15px;
 }
 
@@ -1715,7 +1706,6 @@
     width: 100%;
     display: block;
 
-    /* font-size: 15rem; */
     font-size: 15px;
     font-weight: 600;
     line-height: 1.4;
@@ -1759,6 +1749,7 @@
     line-height: 1.5;
     color: #1F5EFF;
     text-align: center;
+    word-break: break-all;
 }
 .area_event01 > .box_event01 {
     width: 100%;
@@ -1779,6 +1770,7 @@
     font-weight: 400;
     line-height: 1.4;
     color: #2C333B;
+    word-break: break-all;
 }
 .area_event01 > .box_event01 > li .txt02 {
     width: max-content;
@@ -1788,6 +1780,7 @@
     font-weight: 400;
     line-height: 1.4;
     color: #73757E;
+    word-break: break-all;
 }
 
 
@@ -1810,6 +1803,7 @@
     width: max-content;
     max-width: 320px;
     display: inline-block;
+
     font-size: 20rem;
     font-weight: 600;
     line-height: 1.5;
@@ -1820,11 +1814,13 @@
 .area_event02 > .txt01 .txt02 {
     width: max-content;
     display: block;
+
     font-size: 20rem;
     font-weight: 600;
     line-height: 1.5;
     color: #1F5EFF;
     text-align: center;
+    word-break: break-all;
 }
 .area_event02 > .box_event02 {
     width: 100%;
@@ -1877,6 +1873,7 @@
     font-weight: 600;
     line-height: 1.4;
     color: #070F16;
+    word-break: break-all;
 }
 .area_history01 > .area_tit01 > .rank .txt02 {
     width: max-content;
@@ -1886,6 +1883,7 @@
     font-weight: 400;
     line-height: 1.4;
     color: #2C333B;
+    word-break: break-all;
 }
 .area_history01 > .area_tit01 > .rank .line {
     width: 1px;
@@ -1939,6 +1937,7 @@
     font-weight: 400;
     line-height: 1.2;
     color: #070F16;
+    word-break: break-all;
 }
 .history_item > .txt02 {
     width: max-content;
@@ -1948,6 +1947,7 @@
     font-weight: 400;
     line-height: 1.2;
     color: #070F16;
+    word-break: break-all;
 }
 
 
@@ -1987,7 +1987,6 @@
     width: 100%;
     height: 100%;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
 
@@ -2036,6 +2035,7 @@
     font-weight: 600;
     line-height: 1.4;
     color: #070F16;
+    word-break: break-all;
 }
 .card > .user .member01 {
     width: 100%;
@@ -2051,6 +2051,7 @@
     font-weight: 400;
     line-height: 1.4;
     color: #2C333B;
+    word-break: break-all;
 }
 .card > .user > li .txt03 {
     width: 100%;
@@ -2059,7 +2060,8 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 1.4;
-    color: #2C333B
+    color: #2C333B;
+    word-break: break-all;
 }
 .card > .user > li .txt03.m5 {
     margin-top: 5px;
@@ -2092,6 +2094,7 @@
     font-weight: 400;
     line-height: 1.4;
     color: #2C333B;
+    word-break: break-all;
 }
 .card > .user .member02 > .txt05 {
     width: 100%;
@@ -2101,12 +2104,12 @@
     font-weight: 400;
     line-height: 1.4;
     color: #2C333B;
+    word-break: break-all;
 }
 
 
 .card.active {
     transform: rotate(90deg);
-    /* max-width: 400px; */
     max-width: 360px;
     height: 230px;
     transition: transform 0.3s ease;
@@ -2116,15 +2119,19 @@
 }
 .card.active > .user .member01 > .txt02 {
     font-size: 15px;
+    word-break: break-all;
 }
 .card.active > .user > li .txt03 {
     font-size: 14px;
+    word-break: break-all;
 }
 .card.active > .user .member02 .box_card01 .txt04 {
     font-size: 14px;
+    word-break: break-all;
 }
 .card.active > .user .member02 > .txt05 {
     font-size: 14px;
+    word-break: break-all;
 }
 .card.active > .user > li .txt03.m5 {
     margin-top: 15px;
@@ -2153,15 +2160,15 @@
 .area_mail > .txt01 {
     width: 100%;
     display: block;
+    margin-top: 14px;
 
     text-align: center;
-    /* font-size: 15rem; */
     font-size: 15px;
     font-weight: 500;
     line-height: 1.4;
     color: #EE444A;
 
-    margin-top: 14px;
+    word-break: break-all;
 }
 
 
@@ -2212,10 +2219,9 @@
 }
 .area_main > .user > .area_info .left_box > .box_info .txt01 {
     width: max-content;
-    display: inline-block;
     max-width: 90px;
+    display: inline-block;
 
-    /* font-size: 25rem; */
     font-size: 25px;
     font-weight: 500;
     line-height: 1;
@@ -2231,21 +2237,21 @@
     width: max-content;
     display: inline-block;
 
-    /* font-size: 18rem; */
     font-size: 18px;
     font-weight: 400;
     line-height: 1;
-    color: #fff;    
+    color: #fff;
+    word-break: break-all;
 }
 .area_main > .user > .area_info .left_box > .box_info .txt03 {
     width: max-content;
     display: inline-block;
 
-    /* font-size: 17rem; */
     font-size: 17px;
     font-weight: 400;
     line-height: 1;
     color: #fff;
+    word-break: break-all;
 }
 
 .area_main > .user > .area_info .right_box {
@@ -2311,12 +2317,13 @@
 .btn_n_card > .txt01 {
     width: max-content;
     display: block;
-    /* font-size: 16rem; */
+
     font-size: 16px;
     font-weight: 400;
     line-height: 1;
     color: #fff;
     padding-top: 36px;
+    word-break: break-all;
 }
 .btn_history {
     width: 84px;
@@ -2339,12 +2346,13 @@
 .btn_history > .txt01 {
     width: max-content;
     display: block;
-    /* font-size: 16rem; */
+
     font-size: 16px;
     font-weight: 400;
     line-height: 1;
     color: #fff;
     padding-top: 36px;
+    word-break: break-all;
 }
 
 
@@ -2361,8 +2369,6 @@
 
 
 
-
-/* 베너 */
 .message01 {
     width: 100%;
     height: 90px;
@@ -2413,6 +2419,7 @@
     font-weight: 500;
     line-height: 1;
     color: #191B1D;
+    word-break: break-all;
 }
 .message01 .msg_tit01 .txt02 {
     width: 100%;
@@ -2422,6 +2429,7 @@
     font-weight: 500;
     line-height: 1.4;
     color: #4D4D4D;
+    word-break: break-all;
 }
 
 .message01 .msg_img {
@@ -2429,12 +2437,9 @@
     margin-left: auto;
     margin-right: 14px;
 }
-/* //베너 */
 
 
 
-
-/* banner type2 */
 .message02 {
     width: 100%;
     height: 90px;
@@ -2467,6 +2472,7 @@
     font-weight: 500;
     line-height: 1;
     color: #191B1D;
+    word-break: break-all;
 }
 .message02 .msg_tit01 .txt02 {
     width: 100%;
@@ -2476,14 +2482,13 @@
     font-weight: 500;
     line-height: 1;
     color: #4D4D4D;
+    word-break: break-all;
 }
 .message02 .msg_img {
     display: block;
     margin-left: auto;
-    /* margin-right: 14px; */
     margin-right: 0px;
 }
-/* //banner type2 */
 
 
 

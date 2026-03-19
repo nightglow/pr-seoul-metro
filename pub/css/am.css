@@ -45,11 +45,13 @@
 .a_group01 > .area_tit01 > .left_box .txt01 {
     width: max-content;
     display: block;
+
     font-size: 15rem;
     font-weight: 400;
     line-height: 1.2;
     color: #4B5058;
     flex-shrink: 0;
+    word-break: break-all;
 }
 .a_group01 > .area_tit01 > .left_box .txt02 {
     width: 100%;
@@ -58,6 +60,7 @@
     font-weight: 500;
     line-height: 1.2;
     color: #FF5930;
+    word-break: break-all;
 }
 .a_group01 > .area_tit01 > .right_box {
     width: 100%;
@@ -386,7 +389,7 @@
     font-weight: 500;
     line-height: 1.2;
     color: #070F16;
-
+    word-break: break-all;
 }
 .area_acquisition > .right_box .ico {
     display: block;
@@ -419,6 +422,7 @@
     font-weight: 500;
     line-height: 1.2;
     color: #070F16;
+    word-break: break-all;
 }
 .area_acquisition01 > .left_box .ico {
     display: block;
@@ -440,7 +444,7 @@
     font-weight: 400;
     line-height: 1.4;
     color: #73757E;
-
+    word-break: break-all;
 }
 
 
@@ -458,10 +462,12 @@
 .result_tit01 > .txt01 {
     width: max-content;
     display: inline-block;
+
     font-size: 17rem;
     font-weight: 400;
     line-height: 1.4;
     color: #070F16;
+    word-break: break-all;
 }
 .result_tit01 > .line {
     width: 1px;
@@ -478,6 +484,7 @@
     font-weight: 400;
     line-height: 1.4;
     color: #070F16;
+    word-break: break-all;
 }
 
 
@@ -494,10 +501,12 @@
 .result_tit02 > .txt01 {
     width: max-content;
     display: inline-block;
+
     font-size: 15rem;
     font-weight: 400;
     line-height: 1.2;
     color: #2C333B;
+    word-break: break-all;
 }
 .result_tit02 > .txt01 .txt02 {
     width: max-content;
@@ -507,6 +516,7 @@
     font-weight: 600;
     line-height: 1.3;
     color: #2C333B;
+    word-break: break-all;
 }
 
 
@@ -525,11 +535,11 @@
     font-weight: 600;
     line-height: 1.2;
     color: #2C333B;
+    word-break: break-all;
 }
 .result_contnet01 > .info {
     width: 100%;
     display: flex;
-    /* align-items: center; */
     gap: 6px;
 }
 .result_contnet01 > .info > li {
@@ -545,7 +555,6 @@
     font-weight: 400;
     line-height: 1.4;
     color: #2C333B;
-    
     word-break: break-all;
 }
 .result_contnet01 > .info .txt03 {
@@ -606,6 +615,7 @@
     font-weight: 600;
     line-height: 1.2;
     color: #2C333B;
+    word-break: break-all;
 }
 .result_contnet02 > .info {
     width: 100%;
@@ -625,7 +635,6 @@
     font-weight: 400;
     line-height: 1.4;
     color: #2C333B;
-    
     word-break: break-all;
 }
 .result_contnet02 > .info .txt03 {
@@ -795,6 +804,7 @@ input.inp01 {
     font-weight: 400;
     line-height: 1.4;
     color: #070F16;
+    word-break: break-all;
 }
 .box_table01 tr td > .txt02 {
     width: 100%;
@@ -805,6 +815,7 @@ input.inp01 {
     line-height: 1.4;
     color: #070F16;
     text-align: right;
+    word-break: break-all;
 }
 .box_table01 tr td > .txt03 {
     width: 100%;
@@ -815,6 +826,7 @@ input.inp01 {
     line-height: 1.4;
     color: #070F16;
     text-align: right;
+    word-break: break-all;
 }
 
 
@@ -836,6 +848,7 @@ input.inp01 {
     font-weight: 400;
     line-height: 1.4;
     color: #2C333B;
+    word-break: break-all;
 }
 .box_table02 tr td > .txt02 {
     width: 100%;
@@ -846,6 +859,7 @@ input.inp01 {
     line-height: 1.4;
     color: #070F16;
     text-align: right;
+    word-break: break-all;
 }
 .box_table02 > tbody tr td > .txt03 {
     width: 100%;
@@ -856,6 +870,7 @@ input.inp01 {
     line-height: 1.4;
     color: #73757E;
     text-align: right;
+    word-break: break-all;
 }
 .box_table02 > tbody tr td.img01{
     width: 100%;
@@ -893,6 +908,7 @@ input.inp01 {
     font-weight: 400;
     line-height: 1.4;
     color: #2C333B;
+    word-break: break-all;
 }
 .box_table03 tr td > .txt02 {
     width: 100%;
@@ -903,6 +919,7 @@ input.inp01 {
     line-height: 1.4;
     color: #070F16;
     text-align: right;
+    word-break: break-all;
 }
 
 
@@ -932,6 +949,7 @@ input.inp01 {
     font-weight: 500;
     line-height: 1.4;
     color: #2C333B;
+    word-break: break-all;
 }
 
 .box_table04 > tbody  tr {
@@ -953,6 +971,7 @@ input.inp01 {
     line-height: 1.4;
     color: #2C333B;
     text-align: left;
+    word-break: break-all;
 }
 .box_table04 > tbody tr td > .txt03 {
     width: 100%;
@@ -962,6 +981,7 @@ input.inp01 {
     font-weight: 400;
     line-height: 1.4;
     color: #2C333B;
+    word-break: break-all;
 }
 
 
@@ -992,6 +1012,7 @@ input.inp01 {
     font-weight: 500;
     line-height: 1.4;
     color: #2C333B;
+    word-break: break-all;
 }
 .box_table05 > tbody  tr {
     width: 100%;
@@ -1016,6 +1037,7 @@ input.inp01 {
     line-height: 1.4;
     color: #2C333B;
     text-align: left;
+    word-break: break-all;
 }
 .box_table05 > tbody tr td > .txt03 {
     width: 100%;
@@ -1025,6 +1047,7 @@ input.inp01 {
     font-weight: 400;
     line-height: 1.4;
     color: #2C333B;
+    word-break: break-all;
 }
 .box_table05 > tbody tr td.box_inp {
     padding: 11px 10px;
@@ -1058,6 +1081,7 @@ input.inp01 {
     line-height: 1.4;
     color: #2C333B;
     text-align: left;
+    word-break: break-all;
 }
 .box_table06 > tbody tr td > .txt02 {
     width: 100%;
@@ -1068,6 +1092,7 @@ input.inp01 {
     line-height: 1.4;
     color: #070F16;
     text-align: right;
+    word-break: break-all;
 }
 .box_table06 > tbody tr td > .txt03 {
     width: 100%;
@@ -1078,6 +1103,7 @@ input.inp01 {
     line-height: 1.4;
     color: #73757E;
     text-align: right;
+    word-break: break-all;
 }
 .box_table06 > tbody tr td.img01{
     width: 100%;
@@ -1114,12 +1140,14 @@ input.inp01 {
     font-weight: 400;
     line-height: 1.4;
     color: #070F16;
+    word-break: break-all;
 }
 .product li > .txt01 a {
     width: 100%;
     display: inline;
     padding-bottom: 2px;
     border-bottom: 1px solid #070F16;
+    word-break: break-all;
 }
 
 
@@ -1179,11 +1207,13 @@ input.inp01 {
 }
 .common_tit04 > .left_box01 .txt01 {
     width: max-content;
-    display: inline-block;   
+    display: inline-block;
+
     font-size: 18rem;
     font-weight: 600;
     line-height: 1.4;
     color: #070F16;
+    word-break: break-all;
 }
 .common_tit04 > .left_box01 .txt02 {
     width: max-content;
@@ -1193,6 +1223,7 @@ input.inp01 {
     font-weight: 600;
     line-height: 1.4;
     color: #FF5930;
+    word-break: break-all;
 }
 .common_tit04 > .right_box01 {
     width: 100%;
@@ -1207,6 +1238,7 @@ input.inp01 {
     line-height: 1.4;
     color: #2C333B;
     padding-left: 6px;
+    word-break: break-all;
 }
 
 .area_wealth {
@@ -1258,19 +1290,23 @@ input.inp01 {
 .a_group02 > .area_tit01 > .left_box .txt01 {
     width: max-content;
     display: block;
+
     font-size: 15rem;
     font-weight: 400;
     line-height: 1.2;
     color: #4B5058;
     flex-shrink: 0;
+    word-break: break-all;
 }
 .a_group02 > .area_tit01 > .left_box .txt02 {
     width: 100%;
     display: block;
+
     font-size: 18rem;
     font-weight: 500;
     line-height: 1.2;
     color: #FF5930;
+    word-break: break-all;
 }
 .a_group02 > .area_tit01 > .right_box {
     width: 100%;
@@ -1360,6 +1396,8 @@ input.inp01 {
     font-weight: 400;
     line-height: 1;
     color: #020C15D1;
+    padding-right: 20px;
+    word-break: break-all;
 }
 
 .btn_group01 {
@@ -1445,6 +1483,7 @@ input.inp01 {
     font-weight: 600;
     line-height: 1.2;
     color: #73757E;
+    word-break: break-all;
 }
 .real_auth > .box_info .txt02 {
     width: 100%;
@@ -1454,6 +1493,7 @@ input.inp01 {
     font-weight: 400;
     line-height: 1.4;
     color: #73757E;
+    word-break: break-all;
 }
 .real_auth > .badge {
     width: 100%;
@@ -1480,9 +1520,11 @@ input.inp01 {
 }
 .real_auth.type01 > .box_info .txt01 {
     color: #070F16;
+    word-break: break-all;
 }
 .real_auth.type01 > .box_info .txt02 {
     color: #2C333B;
+    word-break: break-all;
 }
 .real_auth.type01 > .badge {
     background-color: #D9D9D9;
@@ -1536,6 +1578,7 @@ input.inp01 {
     color: #2C333B;
     padding: 18px 0 12px 0;
     position: relative;
+    word-break: break-all;
 }
 
 
@@ -1571,6 +1614,7 @@ input.inp01 {
     font-weight: 600;
     line-height: 1.4;
     color: #2C333B;
+    word-break: break-all;
 
     position: relative;
     padding-left: 24px;
@@ -1624,6 +1668,7 @@ input.inp01 {
     line-height: 1.4;
     color: #73757E;
     text-align: right;
+    word-break: break-all;
 }
 
 

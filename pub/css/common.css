@@ -154,6 +154,37 @@ html.menu_open {
 
 
 
+.btn_senary {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #1F5EFF;
+}
+.btn_senary > .txt {
+    width: 100%;
+    display: block;
+    font-size: 17rem;
+    font-weight: 600;
+    color: #1F5EFF;
+    line-height: 1.4;
+}
+.btn_senary:hover {
+    border: 1px solid 1F5EFF;
+    background-color: #ffffff;
+}
+.btn_senary:hover > .txt {color: #2C333B;}
+.btn_senary:disabled {
+    border: 1px solid #B5B5B599;
+    background-color: #73757E33;
+}
+.btn_senary:disabled > .txt {color: #383C4C80;}
+
+
+
 
 
 .btn_lineblue {
@@ -315,7 +346,6 @@ html.menu_open {
     width: 100%;
     display: block;
 
-    /* font-size: 15rem; */
     font-size: 15px;
     font-weight: 600;
     line-height: 1.4;
@@ -350,11 +380,12 @@ html.menu_open {
 .btn_login > .txt01 {
     width: 100%;
     display: block;
-    /* font-size: 20rem; */
+
     font-size: 20px;
     font-weight: 500;
     color: #fff;
     line-height: 1;
+    word-break: break-all;
 }
 
 
@@ -383,7 +414,7 @@ html.menu_open {
 .btn_login_office > .txt01 {
     width: 100%;
     display: block;
-    /* font-size: 17rem; */
+
     font-size: 17PX;
     font-weight: 500;
     color: #fff;
@@ -474,7 +505,7 @@ html.menu_open {
 .btn_nav_home .txt01 {
     width: 100%;
     display: block;
-    /* font-size: 15rem; */
+
     font-size: 15px;
     font-weight: 400;
     line-height: 1;
@@ -503,7 +534,7 @@ html.menu_open {
 .btn_nav_fac .txt01 {
     width: 100%;
     display: block;
-    /* font-size: 15rem; */
+
     font-size: 15px;
     font-weight: 400;
     line-height: 1;
@@ -532,7 +563,7 @@ html.menu_open {
 .btn_nav_store .txt01 {
     width: 100%;
     display: block;
-    /* font-size: 15rem; */
+
     font-size: 15px;
     font-weight: 400;
     line-height: 1;
@@ -561,7 +592,7 @@ html.menu_open {
 .btn_nav_setting .txt01 {
     width: 100%;
     display: block;
-    /* font-size: 15rem; */
+
     font-size: 15px;
     font-weight: 400;
     line-height: 1;
@@ -693,7 +724,6 @@ html.menu_open {
     background-color: #fff;
 }
 
-/* 헤더 즐겨찾기 버튼 체크박스타입 */
 .btn_fav {
     width: 100%;
     position: relative;
@@ -742,11 +772,9 @@ html.menu_open {
 .btn_plus.active {
     background-image: url('../img/ico_minus.svg');
 }
-
 /* //button */
 
 
-/* 첨부파일 */
 .btn_close_file {
     display: block;
     background-image: url('../img/btn_close_file.svg');
@@ -819,6 +847,7 @@ html.menu_open {
     font-weight: 400;
     line-height: 1.5;
     color: #FF5930;
+    word-break: break-all;
 }
 .f_group07  > .area_tit01 .right_box02 {
     width: 100%;
@@ -887,8 +916,8 @@ html.menu_open {
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis;
+    word-break: break-all;
 }
-/* // 첨부파일 */
 
 
 /* input */
@@ -1099,17 +1128,16 @@ html.menu_open {
     width: max-content;
     display: block;
     
-    /* font-size:  20rem; */
     font-size:  20px;
     font-weight: 700;
     line-height: 1.4;
     color: #2C333B;
+    word-break: break-all;
 }
 .sheet .right_box {
     height: 100%;
     margin-top: 16px;
     overflow-y: scroll;
-    /* padding-bottom: 30px; */
 }
 .sheet .right_box.noscl {
     overflow-y: initial;
@@ -1420,15 +1448,14 @@ body.bg {
 }
 .alert_wrap {
     width: max-content;
+    min-width: 280px;
+    max-width: 85%;
+    max-height: 85%;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     
-    min-width: 280px;
-    /* min-height: 236px; */
-    max-width: 85%;
-    max-height: 85%;
-
     padding: 20px 16px 16px 16px;
     border-radius: 16px;
     background-color: #fff;
@@ -1436,7 +1463,6 @@ body.bg {
 .alert_wrap > .left_box {
     width: 100%;
     display: block;
-    /* min-height: 172px; */
 }
 .alert_wrap > .left_box .area_tit01 {
     width: 100%;
@@ -1451,8 +1477,8 @@ body.bg {
 
 .alert_wrap > .left_box .area_content01 {
     width: 100%;
-    /* min-height: 52px; */
     display: flex;
+
     align-items: center;
     justify-content: center;
     padding: 0 4px;
@@ -1467,6 +1493,7 @@ body.bg {
     line-height: 1.4;
     color: #070F16;
     margin-top: 12px;
+    word-break: break-all;
 }
 .alert_wrap .inp_err .txt02 {
     width: 100%;
@@ -1476,6 +1503,7 @@ body.bg {
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.9;
+    word-break: break-all;
 }
 .alert_wrap .inp_err .txt03 {
     width: max-content;
@@ -1486,6 +1514,7 @@ body.bg {
     font-weight: 400;
     line-height: 1.9;
     color: #EE444A;
+    word-break: break-all;
 }
 .alert_wrap .right_box {
     width: 100%;
@@ -1603,6 +1632,7 @@ body.bg {
     font-weight: 600;
     line-height: 1.4;
     color: #070F16D1;
+    word-break: break-all;
 }
 .full_popup_wrap > .left_box .area_content01 {
     width: max-content;
@@ -1679,16 +1709,16 @@ body.bg {
 }
 .swith_label.type02 span {
     position: absolute;
-    color: #fff;
-    /* font-size: 12rem; */
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 14px;
-    letter-spacing: -0.12px;
     top: 50%;
     left: 25px;
     transform: translateY(-50%);
     transition: left 250ms linear;
+    
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: -0.12px;
+    color: #fff;
     cursor: default;
 }
 .swith_label.type02:has(.swith_check:checked) span {
@@ -1822,8 +1852,6 @@ body.bg {
     padding-top: 16px;
 }
 
-
-/* list style */
 .dot_list01 {
     display: flex;
     flex-direction: column;
@@ -1958,6 +1986,7 @@ body.bg {
     font-size: 17rem;
     font-weight: 400;
     margin-right: 16px;
+    word-break: break-all;
 }
 .item_rdo01 > .rdo_select:has(input:checked) {
     background-color: #EBF0F5;
@@ -2114,9 +2143,9 @@ body.bg {
     font-size: 17rem;
     font-weight: 400;
     line-height: 1.4;
+    word-break: break-all;
 }
 
-/* data list */
 .tbl_box01 {
     width: 100%;
     border-radius: 10px;
@@ -2157,6 +2186,7 @@ body.bg {
     font-size: 17rem;
     font-weight: 400;
     line-height: 1.4;
+    word-break: break-all;
 }
 .tbl_list > li .txt_box02 {
     display: flex;
@@ -2197,7 +2227,6 @@ body.bg {
     border: 2px solid #d0d0d0;
     box-sizing: border-box;
     background: #fff;
-    /* transition: all 0.2s ease; */
 }
 .rdo_item input:checked + span::before {
     border-width: 8px;
@@ -2313,6 +2342,7 @@ select {
     line-height: 1.4;
     color: #2C333B;
     padding-left: 8px;
+    word-break: break-all;
 }
 /* //라디오, 체크박스 라벨없음 */
 
@@ -2352,8 +2382,6 @@ select {
 }
 
 
-
-/*  */
 .btn_all {
     width: 100%;
     display: flex;
@@ -2458,6 +2486,7 @@ select {
     font-weight: 600;
     line-height: 1.4;
     color: #73757E;
+    word-break: break-all;
 }
 
 .btn_top {
@@ -2499,6 +2528,7 @@ select {
     font-weight: 600;
     line-height: 1.4;
     color: #070F16;
+    word-break: break-all;
 }
 .board_header .txt02 {
     width: max-content;
@@ -2509,6 +2539,7 @@ select {
     line-height: 1.5;
     color: #2C333B;
     flex-shrink: 0;
+    word-break: break-all;
 }
 .board_header .txt03 {
     width: max-content;
@@ -2520,6 +2551,7 @@ select {
     color: #1F5EFF;
     flex-shrink: 0;
     padding-left: 4px;
+    word-break: break-all;
 }
 
 
@@ -2540,6 +2572,7 @@ select {
     font-weight: 600;
     line-height: 1.4;
     color: #070F16;
+    word-break: break-all;
 }
 .board_header01 .txt02 {
     width: max-content;
@@ -2550,6 +2583,7 @@ select {
     line-height: 1.5;
     color: #2C333B;
     flex-shrink: 0;
+    word-break: break-all;
 }
 .board_header01 .txt03 {
     width: max-content;
@@ -2561,6 +2595,7 @@ select {
     color: #1F5EFF;
     flex-shrink: 0;
     padding-left: 4px;
+    word-break: break-all;
 }
 
 

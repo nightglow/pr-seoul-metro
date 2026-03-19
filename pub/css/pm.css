@@ -3,7 +3,6 @@
 .tab_content01 {
     width: 100%;
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
 }
 .tab_content01 > .left_box {
@@ -15,9 +14,9 @@
 .tab_content02 {
     width: 100%;
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     gap: 12px 0;
+
     padding-bottom: 100px;
 }
 .tab_content02 > .left_box {
@@ -28,10 +27,10 @@
 
 .tab_content03 {
     width: 100%;
-    /* min-height: 100px; */
     display: flex;
     flex-direction: column;
     gap: 12px 0;
+
     padding-bottom: 40px;
 }
 .tab_content03 > .left_box {
@@ -73,6 +72,7 @@
     line-height: 1.4;
     color: #070F16;
     flex-shrink: 0;
+    word-break: break-all;
 }
 .area_summation li > .area_tit01 .txt02 {
     width: 100%;
@@ -82,6 +82,7 @@
     font-weight: 600;
     line-height: 1.4;
     color: #FF5930;
+    word-break: break-all;
 }
 .area_summation li .area_contents01 {
     padding: 16px 20px;
@@ -107,12 +108,14 @@
     font-weight: 400;
     line-height: 1.4;
     color: #070F16;
+    word-break: break-all;
 }
 .file_list li > .txt01 a {
     width: 100%;
     display: inline;
     padding-bottom: 2px;
     border-bottom: 1px solid #070F16;
+    word-break: break-all;
 }
 
 
@@ -156,6 +159,7 @@
     font-weight: 400;
     line-height: 1.4;
     color: #070F16;
+    word-break: break-all;
 }
 .summation tr td > .txt02 {
     width: 100%;
@@ -166,6 +170,7 @@
     line-height: 1.4;
     color: #070F16;
     text-align: right;
+    word-break: break-all;
 }
 .summation tr td > .txt03 {
     width: 100%;
@@ -176,6 +181,7 @@
     line-height: 1.4;
     color: #070F16;
     text-align: right;
+    word-break: break-all;
 }
 
 
@@ -203,6 +209,7 @@
     font-weight: 400;
     line-height: 1.4;
     color: #2C333B;
+    word-break: break-all;
 }
 .area_summation01 > .summation01 tr td > .txt02 {
     width: 100%;
@@ -213,6 +220,7 @@
     line-height: 1.4;
     color: #070F16;
     text-align: right;
+    word-break: break-all;
 }
 .area_summation01 > .summation01 tr td > .txt03 {
     width: 100%;
@@ -223,6 +231,7 @@
     line-height: 1.4;
     color: #1F5EFF;
     text-align: right;
+    word-break: break-all;
 }
 
 
@@ -262,6 +271,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #020C15B8;
+    word-break: break-all;
 }
 .f_group04 > .area_tit01 .left_box02 .txt02 {
     width: 100%;
@@ -271,6 +281,7 @@
     font-weight: 400;
     line-height: 1.2;
     color: #FF5930;
+    word-break: break-all;
 }
 .f_group04 > .area_tit01 .right_box02 {
     width: 100%;
@@ -282,8 +293,8 @@
 
 .reply {
     width: 100%;
-    /* display: flex; */
     display: none;
+
     position: relative;
     padding: 0 36px;
     margin-top: 6px;
@@ -419,6 +430,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #020C15B8;
+    word-break: break-all;
 }
 .f_group05 > .area_tit01 .left_box02 .txt02 {
     width: max-content;
@@ -429,6 +441,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #FF5930;
+    word-break: break-all;
 }
 .f_group05 > .area_tit01 .right_box02 {
     width: 100%;
@@ -459,8 +472,6 @@
     line-height: 1.2;
 }
 .common_inp06 .ico_txt {
-    /* width: 24px;
-    height: 24px;  */
     position: absolute;
     top: 50%;
     right: 0;   
@@ -472,9 +483,8 @@
     color: #070F1680;
 }
 .common_inp06 > input[type='text'] {
-    border: 1px solid transparent;
-    /* text-align: right; */
     padding-right: 32px;
+    border: 1px solid transparent;
     background-color: transparent;
 }
 .common_inp06 > input[type='text']:focus  {
@@ -516,6 +526,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #020C15B8;
+    word-break: break-all;
 }
 .f_group06 > .area_tit01 .left_box02 .txt02 {
     width: 100%;
@@ -525,6 +536,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #FF5930;
+    word-break: break-all;
 }
 .f_group06 > .area_tit01 .right_box02 {
     width: 100%;
@@ -615,18 +627,10 @@
     font-weight: 400;
     line-height: 1.4;
     color: #2C333B;
-    /* padding-left: 21px; */
+
     position: relative;
+    word-break: break-all;
 }
-/* .caution01 > li .txt01::before {
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 0;
-    background: url('../img/ico_alert_07.svg') no-repeat center/100%;
-    width: 16px;
-    height: 16px;
-} */
 
 .caution02 {
     width: 100%;
@@ -642,6 +646,7 @@
     color: #73757E;
     padding-left: 21px;
     position: relative;
+    word-break: break-all;
 }
 .caution02 > h3 .txt01::before {
     content: '';
@@ -676,6 +681,7 @@
     font-weight: 400;
     line-height: 1.4;
     color: #73757E;
+    word-break: break-all;
 
     padding-left: 35px;
     position: relative;
@@ -713,6 +719,7 @@
     font-weight: 400;
     line-height: 1.4;
     color: #73757E;
+    word-break: break-all;
 }
 
 
@@ -734,6 +741,7 @@
     font-weight: 600;
     line-height: 1.4;
     color: #070F16;
+    word-break: break-all;
 }
 .approver > .left_box01 .txt02{
     width: max-content;
@@ -743,6 +751,7 @@
     font-weight: 600;
     line-height: 1.4;
     color: #FF5930;
+    word-break: break-all;
 }
 .approver .right_box01 {
     width: 100%;
@@ -801,6 +810,7 @@
     font-weight: 600;
     line-height: 1.2;
     color: #2C333B;
+    word-break: break-all;
 }
 .apro_user .right_box {
     width: 100%;
@@ -850,6 +860,7 @@
     line-height: 1.4;
     color: #2C333B;
     flex-shrink: 0;
+    word-break: break-all;
 }
 .apro_user .right_box > .area_tit01 .txt03 {
     width: max-content;
@@ -860,6 +871,7 @@
     font-weight: 400;
     line-height: 1.4;
     color: #2C333B;
+    word-break: break-all;
 }
 .apro_user .right_box > .area_contents01 {
     width: max-content;
@@ -887,7 +899,6 @@
     padding: 12px 20px 14px 20px;
     border: 1px solid #8597A880;
     border-radius: 8px;
-    /* background-color: #E6E6E680; */
 }
 .f_group08 > .area_tit01:has(.inp_pw:focus) {
     border: 1px solid #8597A880;
@@ -906,6 +917,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #020C15B8;
+    word-break: break-all;
 }
 .f_group08 > .area_tit01 .left_box02 .txt02 {
     width: 100%;
@@ -915,6 +927,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #FF5930;
+    word-break: break-all;
 }
 .f_group08 > .area_tit01 .right_box02 {
     width: 100%;
@@ -959,11 +972,11 @@
 
 .area_line {
     width: 100%;
-    /* height: 429px; */
     display: flex;
     flex-direction: column;
-    padding: 0 16px;
     gap: 20px;
+
+    padding: 0 16px;
     padding-bottom: 100px;
 }
 .area_line > .left_box01 {
@@ -1042,6 +1055,7 @@
     font-weight: 600;
     line-height: 1.4;
     color: #070F16;
+    word-break: break-all;
 }
 .area_pick .right_box01 .area_tit01 .txt02 {
     width: max-content;
@@ -1052,6 +1066,7 @@
     font-weight: 600;
     line-height: 1.2;
     color: #2C333B;
+    word-break: break-all;
 
     flex-shrink: 0;
 }
@@ -1066,12 +1081,11 @@
     color: #1F5EFF;
     
     flex-shrink: 0;
+    word-break: break-all;
 }
 .area_pick .right_box01 .area_contents01 {
     width: 100%;
     height: 100%;
-    /* max-height: 223px;
-    overflow-y: scroll; */
     padding-bottom: 110px;
 }
 
@@ -1213,6 +1227,7 @@
     font-weight: 700;
     line-height: 1.4;
     color: #070F16D1;
+    word-break: break-all;
 }
 .area_receipt .leave {
     width: 100%;
@@ -1236,6 +1251,7 @@
     font-weight: 600;
     line-height: 1.4;
     color: #070F16;
+    word-break: break-all;
 }
 .area_receipt .leave .txt02 {
     width: 100%;
@@ -1248,6 +1264,7 @@
     color: #4B5058;
     text-align: center;
     margin-top: 10px;
+    word-break: break-all;
 }
 
 
@@ -1300,6 +1317,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #020C15B8;
+    word-break: break-all;
 }
 .f_group10 > .area_tit01 .left_box02 .txt02 {
     width: 100%;
@@ -1309,6 +1327,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #FF5930;
+    word-break: break-all;
 }
 .f_group10 > .area_tit01 .right_box02 {
     width: 100%;
@@ -1336,54 +1355,6 @@
     border: 1px solid transparent;
 }
 
-
-
-
-
-/* 
-.auto_h {
-    width: 100%;
-    height: calc(100% - 94px);
-}
-.board_contain{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-}
-.board_title {
-    width: 100%;
-    padding: 0 16px;
-}
-.board_contents {
-    width: 100%;
-    display: flex;
-    min-height: 0;
-    margin-bottom: 100px;
-}
-.board_list{
-    flex: 1;   
-    display: flex;
-    flex-direction: column;
-    min-height: 0;
-
-    margin-bottom: 10px;
-    padding: 0 16px;
-}
-.list-box{
-    flex: 1;
-    overflow-y: auto;
-    padding-right: 8px;
-}
-.list-box li {
-    border-bottom: 1px solid #8597A880;
-}
-.list-box li + li {
-    margin-top: 12px;
-}
-.list-box.noline li {
-    border-bottom: 1px solid transparent;
-} */
 
 .amends {
     width: 100%;
@@ -1430,6 +1401,7 @@
     font-weight: 400;
     line-height: 1.2;
     color: #383C4CB2;
+    word-break: break-all;
 }
 .amends .right_box {
     width: 25%;
@@ -1443,19 +1415,18 @@
     width: 100%;
     height: 24px;
     max-width: 61px;
+
     display: flex;
     align-items: center;
     justify-content: center;
-
-    border-radius: 8px;
-    background-color: #669FD533;
-
-    /* font-size: 13rem; */
+    
     font-size: 13px;
     font-weight: 400;
     line-height: 1.2;
     color: #162C8F;
-
+    
+    border-radius: 8px;
+    background-color: #669FD533;
     padding: 4px 8px;
 }
 
@@ -1590,6 +1561,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #020C15B8;
+    word-break: break-all;
 }
 .f_group11 > .area_tit01 .left_box02 .txt02 {
     width: 100%;
@@ -1599,6 +1571,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #FF5930;
+    word-break: break-all;
 }
 .f_group11 > .area_tit01 .right_box02 {
     width: 100%;
@@ -1661,7 +1634,6 @@
 
 
 
-/* EDUC-001 */
 .comm_list01 {
     width: 100%;
     display: flex;
@@ -1756,6 +1728,7 @@
     font-weight: 400;
     line-height: 1.4;
     color: #070F16D1;
+    word-break: break-all;
 }
 .area_summation02 > .summation02 tr td > .txt02 {
     width: 100%;
@@ -1767,6 +1740,7 @@
     color: #070F16;
     text-align: right;
     flex-shrink: 0;
+    word-break: break-all;
 }
 .area_summation02 > .summation02 tr td > .txt03 {
     width: 100%;
@@ -1777,6 +1751,7 @@
     line-height: 1.4;
     color: #1F5EFF;
     text-align: right;
+    word-break: break-all;
 }
 
 
@@ -1784,8 +1759,6 @@
     width: 100%;
     display: block;
     padding: 16px 20px;
-    /* border-radius: 10px; */
-    /* background-color: #F5F8FA80; */
 }
 .area_summation03 > .summation03 {
     width: 100%;
@@ -1808,6 +1781,7 @@
     font-weight: 400;
     line-height: 1.4;
     color: #070F16D1;
+    word-break: break-all;
 }
 .area_summation03 > .summation03 tr td > .txt02 {
     width: 100%;
@@ -1819,6 +1793,7 @@
     color: #070F16;
     text-align: right;
     flex-shrink: 0;
+    word-break: break-all;
 }
 .area_summation03 > .summation03 tr td > .txt03 {
     width: 100%;
@@ -1829,6 +1804,7 @@
     line-height: 1.4;
     color: #1F5EFF;
     text-align: right;
+    word-break: break-all;
 }
 .area_summation03 > .summation03 tr td .txt04 {
     width: max-content;
@@ -1839,6 +1815,7 @@
     line-height: 1.4;
     color: #1F5EFF;
     text-align: right;
+    word-break: break-all;
 }
 
 
@@ -1873,6 +1850,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #020C15B8;
+    word-break: break-all;
 }
 .f_group13 > .area_tit01 .left_box02 .txt02 {
     width: 100%;
@@ -1882,6 +1860,7 @@
     font-weight: 400;
     line-height: 1.2;
     color: #FF5930;
+    word-break: break-all;
 }
 .f_group13 > .area_tit01 .right_box02 {
     width: 100%;
@@ -1890,7 +1869,6 @@
 .f_group13 .cm_area {
     width: 100%;
     margin-top: 10px;
-    /* margin-left: 16px; */
     padding-left: 16px;
 }
 .f_group13 .cm_area .cm_label {
@@ -1967,6 +1945,7 @@
     font-weight: 600;
     line-height: 1.4;
     color: #FF5930;
+    word-break: break-all;
 }
 .common_tit01 > .right_box01 {
     width: 100%;
@@ -2002,6 +1981,7 @@
     font-weight: 600;
     line-height: 1.4;
     color: #FF5930;
+    word-break: break-all;
 }
 .common_tit02 > .right_box01 {
     width: 100%;
@@ -2016,6 +1996,7 @@
     line-height: 1.4;
     color: #2C333B;
     padding-left: 6px;
+    word-break: break-all;
 }
 
 
@@ -2089,6 +2070,7 @@
     line-height: 1.4;
     color: #2C333B;
     padding-top: 5px;
+    word-break: break-all;
 }
 
 .examine_info  {
@@ -2113,6 +2095,7 @@
     font-weight: 700;
     line-height: 1.4;
     color: #1F5EFF;
+    word-break: break-all;
 }
 .examine_info .txt03 {
     width: 100%;
@@ -2122,6 +2105,7 @@
     font-weight: 400;
     line-height: 1.4;
     color: #2C333B;
+    word-break: break-all;
 }
 
 
@@ -2143,11 +2127,9 @@
 }
 
 .area_restore03 {
-    /* width: calc(100% - 40px); */
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    /* gap: 12px; */
+    margin: 0 auto;
 }
 
 
@@ -2161,7 +2143,6 @@
     display: flex;
     flex-direction: column;
 
-    /* padding: 12px 20px 14px 20px; */
     padding: 12px 20px 9.5px 20px;
     border: 1px solid #8597A880;
     border-radius: 8px;
@@ -2187,6 +2168,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #020C15B8;
+    word-break: break-all;
 }
 .f_group14 > .area_tit01 .left_box02 .txt02 {
     width: 100%;
@@ -2196,6 +2178,7 @@
     font-weight: 400;
     line-height: 1.2;
     color: #FF5930;
+    word-break: break-all;
 }
 .f_group14 > .area_tit01 .right_box02 {
     width: 100%;
@@ -2268,6 +2251,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #020C15B8;
+    word-break: break-all;
 }
 .f_group15 > .area_tit01 .left_box02 .txt02 {
     width: 100%;
@@ -2277,6 +2261,7 @@
     font-weight: 400;
     line-height: 1.2;
     color: #FF5930;
+    word-break: break-all;
 }
 .f_group15 > .area_tit01 .right_box02 {
     width: 100%;
@@ -2290,9 +2275,9 @@
 .common_inp13 {width: 100%;display: block;position: relative;}
 .common_inp13 > .inp_pw {
     width: 100%;
-    /* max-width: 256px; */
     height: 22px;
     display: block;
+
     font-size: 18rem;
     font-weight: 400;
     line-height: 1.2;
@@ -2327,6 +2312,7 @@
     line-height: 1.4;
     color: #070F16;
     flex-shrink: 0;
+    word-break: break-all;
 }
 .area_cancel01 > .left_box .txt02 {
     width: max-content;
@@ -2336,6 +2322,7 @@
     font-weight: 600;
     line-height: 1.2;
     color: #FF5930;
+    word-break: break-all;
 }
 .area_cancel01 > .right_box {
     width: 100%;
@@ -2379,6 +2366,7 @@
     font-weight: 500;
     line-height: 1.4;
     color: #070F16D1;
+    word-break: break-all;
 }
 .approval_result > table tbody {
     width: 100%;
@@ -2402,6 +2390,7 @@
     font-weight: 400;
     line-height: 1.4;
     color: #070F16;
+    word-break: break-all;
 }
 
 .approval_result > table tbody tr td > .txt02 {
@@ -2466,6 +2455,7 @@
     font-weight: 400;
     line-height: 1.4;
     color: #2C333B;
+    word-break: break-all;
 }
 .summation04 tr td > .txt02 {
     width: 100%;
@@ -2476,6 +2466,7 @@
     line-height: 1.4;
     color: #070F16;
     text-align: right;
+    word-break: break-all;
 }
 .summation04 tr td > .txt03 {
     width: 100%;
@@ -2486,6 +2477,7 @@
     line-height: 1.4;
     color: #1F5EFF;
     text-align: right;
+    word-break: break-all;
 }
 .summation04 > tbody tr:last-child td {
     width: 100%;
@@ -2529,6 +2521,7 @@
     font-weight: 400;
     line-height: 1.4;
     color: #2C333B;
+    word-break: break-all;
 }
 .summation05 tr td > .txt02 {
     width: 100%;
@@ -2539,6 +2532,7 @@
     line-height: 1.4;
     color: #070F16;
     text-align: right;
+    word-break: break-all;
 }
 .summation05 tr td > .txt03 {
     width: 100%;
@@ -2549,6 +2543,7 @@
     line-height: 1.4;
     color: #1F5EFF;
     text-align: right;
+    word-break: break-all;
 }
 .summation05 > tfoot {
     width: 100%;
@@ -2565,7 +2560,6 @@
     display: flex;
     flex-direction: column;
 
-    /* padding: 12px 20px 9.5px 20px; */
     padding: 13px 12px 9.5px 20px;
     border: 1px solid #8597A880;
     border-radius: 8px;
@@ -2591,6 +2585,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #020C15B8;
+    word-break: break-all;
 }
 .f_group16 > .area_tit01 .left_box02 .txt02 {
     width: 100%;
@@ -2600,6 +2595,7 @@
     font-weight: 400;
     line-height: 1.2;
     color: #FF5930;
+    word-break: break-all;
 }
 .f_group16 > .area_tit01 .right_box02 {
     width: 100%;
@@ -2638,6 +2634,7 @@
     font-weight: 400;
     line-height: 1.2;
     color: #070F1680;
+    word-break: break-all;
 }
 
 .common_inp14 .ico_arr {
@@ -2796,6 +2793,7 @@
     line-height: 1.4;
     color:  #2C333B;
     padding-left: 24px;
+    word-break: break-all;
 }
 .area_proof > .box_proof01 li > .txt01::before {
     content: '';
@@ -2826,6 +2824,7 @@
     line-height: 1.35;
     color:  #2C333B;
     padding-left: 24px;
+    word-break: break-all;
 }
 .area_proof > .box_proof02 li > .txt01::before {
     content: '';
@@ -2862,6 +2861,7 @@
     color: #1F5EFF;
     padding-top: 3px;
     padding-left: 20px;
+    word-break: break-all;
 }
 
 
@@ -2889,6 +2889,7 @@
     font-weight: 600;
     line-height: 1.4;
     color: #070F16;
+    word-break: break-all;
 }
 .people > .left_box .area_tit01 .txt02 {
     width: max-content;
@@ -2898,6 +2899,7 @@
     font-weight: 600;
     line-height: 1.2;
     color: #FF5930;
+    word-break: break-all;
 }
 .people > .right_box {
     width: 100%;
@@ -2976,6 +2978,7 @@
     font-weight: 600;
     line-height: 1.4;
     color: #070F16;
+    word-break: break-all;
 }
 .people01 > .left_box .area_tit01 .txt02 {
     width: max-content;
@@ -2985,6 +2988,7 @@
     font-weight: 600;
     line-height: 1.2;
     color: #FF5930;
+    word-break: break-all;
 }
 .people01 > .right_box {
     width: 100%;
@@ -3068,6 +3072,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #020C15B8;
+    word-break: break-all;
 }
 .f_group21 > .area_tit01 .left_box02 .txt02 {
     width: 100%;
@@ -3077,6 +3082,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #FF5930;
+    word-break: break-all;
 }
 .f_group21 > .area_tit01 .right_box02 {
     width: 100%;
@@ -3162,6 +3168,7 @@
     color: #1F5EFF;
     padding-left: 20px;
     margin-left: 4px;
+    word-break: break-all;
 }
 .check_list > .box_check_list li > .txt01::before {
     content: '※';
@@ -3179,6 +3186,7 @@
     line-height: 1.4;
     color: #73757E;
     padding: 0 8px;
+    word-break: break-all;
 }
 
 
@@ -3214,6 +3222,7 @@
     font-weight: 600;
     line-height: 1.4;
     color: #070F16;
+    word-break: break-all;
 }
 .people02 > .left_box .area_tit01 .txt02 {
     width: max-content;
@@ -3223,6 +3232,7 @@
     font-weight: 600;
     line-height: 1.2;
     color: #FF5930;
+    word-break: break-all;
 }
 .people02 > .right_box {
     width: 100%;
@@ -3258,10 +3268,6 @@
 .common_inp20 > input:focus  {
     border: 1px solid transparent;
 }
-/* .common_inp20 > input:disabled {
-    background-color: #E6E6E680;
-} */
-
 
 .keeping {
     width: 100%;
@@ -3295,6 +3301,7 @@
     font-weight: 400;
     line-height: 1.2;
     color: #020C15B8;
+    word-break: break-all;
 }
 .keeping > .box_keeping > li .txt02 {
     width: 100%;
@@ -3306,6 +3313,7 @@
     color: #EE444A;
     position: relative;
     padding-left: 20px;
+    word-break: break-all;
 }
 .keeping > .box_keeping > li .txt02::before {
     content: '※';
@@ -3349,7 +3357,4 @@
     .radio_group01 > li {
         width: 100%;
     }
-    /* .area_pick > .right_box01 .area_contents01 {
-        max-height: 187px;
-    } */
 }

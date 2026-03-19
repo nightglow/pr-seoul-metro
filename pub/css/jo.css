@@ -82,6 +82,7 @@
     font-size: 18rem;
     font-weight: 400;
     line-height: 1.2;
+    word-break: break-all;
 }
 
 .sel_item {
@@ -476,10 +477,12 @@
 .f_group04 > .area_tit01 .left_box02 .txt02 {
     width: 100%;
     display: block;
+
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.2;
     color: #FF5930;
+    word-break: break-all;
 }
 .f_group04 > .area_tit01 .right_box02 {
     width: 100%;
@@ -632,6 +635,7 @@
     font-size: 17rem;
     font-weight: 400;
     line-height: 1.4;
+    word-break: break-all;
 }
 .edit_cont_box > .txt02 b {
     color: #2C333B;
@@ -680,6 +684,7 @@
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.4;
+    word-break: break-all;
 }
 .popup_wrap .right_box .area_tit01 .box_tit01 li .img01 {
     display: block;
@@ -931,12 +936,14 @@
 .caution03 > li .txt01 {
     width: 100%;
     display: inline-block;
+
     font-size: 17rem;
     font-weight: 400;
     line-height: 1.4;
     color: #2C333B;
     padding-left: 21px;
     position: relative;
+    word-break: break-all;
 }
 .caution03 > li .txt01::before {
     content: '※';
@@ -963,6 +970,7 @@
     font-size: 17rem;
     font-weight: 400;
     line-height: 1.4;
+    word-break: break-all;
 }
 .center_call_num .txt01 span {
     color: #070F16;

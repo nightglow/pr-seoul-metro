@@ -125,6 +125,7 @@
     font-size: 17rem;
     font-weight: 400;
     margin-left: 12px;
+    word-break: break-all;
 }
 
 .f_group25 .item_chk .chk_select > .box_info01 {
@@ -235,10 +236,12 @@
 .btn_reportEdit > .txt01 {
     width: 100%;
     display: block;
+
     font-size: 15rem;
     font-weight: 600;
     line-height: 1.4;
     color: #1F5EFF;
+    word-break: break-all;
 }
 
 .report_tbl {
@@ -349,7 +352,7 @@
     color: #2C333B;
     font-size: 18rem;
     font-weight: 700;
-    line-height: 1.4; /* 25.2px */
+    line-height: 1.4;
 }
 .detail_tit_box .date_area01 {
     display: flex;
@@ -361,13 +364,14 @@
     color: #73757E;
     font-size: 14rem;
     font-weight: 400;
-    line-height: 1.4; /* 19.6px */
+    line-height: 1.4;
+    word-break: break-all;
 }
 .detail_tit_box .date_area01 .date01 {
     color: #2C333B;
     font-size: 16rem;
     font-weight: 400;
-    line-height: 1.4; /* 22.4px */
+    line-height: 1.4;
 }
 
 .detail_cont_box {
