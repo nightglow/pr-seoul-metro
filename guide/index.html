@@ -338,6 +338,39 @@
             </tbody>
         </table>
     </div>
+    <!-- 사내방송 -->
+    <div class="wrap">
+        <h3>사내방송</h3>
+        <table>
+            <caption>사내방송</caption>
+            <colgroup>
+                <col class="lv01">
+                <col class="lv02">
+                <col class="lv03">
+                <col class="lv04">
+                <col class="lv05">
+                <col class="lv06">
+                <col class="lv07">
+                <col class="lv08">
+                <col class="lv09">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">Depth 01</th>
+                    <th scope="col">Depth 02</th>
+                    <th scope="col">Depth 03</th>
+                    <th scope="col">Depth 04</th>
+                    <th scope="col">경로</th>
+                    <th scope="col">파일명</th>
+                    <th scope="col">타입</th>
+                    <th scope="col">상태</th>
+                    <th scope="col">Issue/Memo</th>
+                </tr>
+            </thead>
+            <tbody id='ov'>
+            </tbody>
+        </table>
+    </div>
 
     <!-- 관리시스템 -->
     <div class="wrap">
@@ -990,6 +1023,14 @@
             dep01: '', dep02: '', dep03: '신고현황상세(안전계획처의 조치 결과 지정)', dep04: '', memo: '' },
     ]
 
+    // 사내방송
+    const data_ov = [
+        { path: '/ov', f_name: 'BROD-001.html', type: 'page', state:'완료',
+            dep01: '사내방송 앱', dep02: '', dep03: '', dep04: '', memo: '' },
+        { path: '/ov', f_name: 'BROD-002.html', type: 'page', state:'완료',
+            dep01: '', dep02: '상세보기', dep03: '', dep04: '', memo: '' },
+    ]
+
     // 관리시스템
     const data_admin = [
         { path: '/admin', f_name: 'ADLO-001.html', type: 'page', state:'완료',
@@ -1236,6 +1277,21 @@
             <td>${el.dep04}</td>
             <td class='tac'>${el.path}</td>
             <td><a href='../pub/html/af/${el.f_name}'> ${el.f_name}</a></td>
+            <td >${el.type}</td>
+            <td class='tac'>${el.state}</td>
+            <td>${el.memo}</td>
+        </tr>
+    `).join('');
+
+    // 사내방송
+    document.getElementById('ov').innerHTML = data_ov.map(el => `
+        <tr>
+            <td>${el.dep01}</td>
+            <td>${el.dep02}</td>
+            <td>${el.dep03}</td>
+            <td>${el.dep04}</td>
+            <td class='tac'>${el.path}</td>
+            <td><a href='../pub/html/ov/${el.f_name}'> ${el.f_name}</a></td>
             <td >${el.type}</td>
             <td class='tac'>${el.state}</td>
             <td>${el.memo}</td>

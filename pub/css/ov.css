@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+
+
+.area_work02 {
+    width: 100%;
+    display: block;
+}
+.area_work02 > .box_work {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.area_work02 > .box_work > .left_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.area_work02 > .box_work > .left_box > .thmub01 {
+    width: 130px;
+    height: 73px;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid #E6EAED;
+    flex-shrink: 0;
+}
+.area_work02 > .box_work > .left_box .txt01 {
+    width: 100%;
+    display: block;
+
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #2C333B;
+    
+    word-break: break-all;
+}
+.area_work02 > .box_work > .right_box {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+}
+.area_work02 > .box_work > .right_box .txt02 {
+    width: max-content;
+    display: block;
+
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #73757E;
+    word-break: break-all;
+    
+    position: relative;
+    margin-left: auto;
+    padding-left: 24px;
+}
+
+.area_work02 > .box_work > .right_box .txt02::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: url('../img/ico_count.svg') no-repeat center/100%;
+}
+
+
+.area_tit04 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.area_tit04 > .left_box01 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.area_tit04 > .left_box01 .vi_player {
+    width: 100%;
+    height: auto;
+}
+
+.area_tit04 > .right_box01 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.area_tit04 > .right_box01 .txt01 {
+    width: 100%;
+    display: inline-block;
+
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #2C333B;
+    word-break: break-all;
+}
+
+.area_tit04 > .right_box01 .txt02 {
+    width: 100%;
+    display: inline-block;
+
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #73757E;
+    word-break: break-all;
+
+    position: relative;
+    padding-left: 20px;
+    /* margin-left: auto;     */
+}
+.area_tit04 > .right_box01 .txt02::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: url('../img/ico_count.svg') no-repeat center/100%;
+}
+
+
+@media (min-width: 749px) {
+
+}
